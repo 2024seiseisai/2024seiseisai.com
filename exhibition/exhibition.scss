@@ -1,0 +1,392 @@
+@import "../common/setting.scss";
+@import "../common/parts.scss";
+
+/**********************************************************************/
+/*本要素*/
+/**********************************************************************/
+main{
+	padding-bottom: 34px;
+    @include media(pc){
+        margin-bottom: 95px;
+    }
+}
+
+.page_title{
+    margin-top: 0;
+    position:relative;
+    @include media(tb){
+        width:auto;
+        height:78px;
+    }
+    @include media(pc){
+        width:auto;
+        height:20vw;
+    }
+}
+
+.page_title_img{
+	@include media(tb){
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 75px;
+	}
+	@include media(pc){
+		position: absolute;
+		width: auto;
+		height: 20vw;
+		top: 0;
+	}
+}
+
+.page_title_white{
+    font-family: franklin-gothic-condensed, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	letter-spacing: 0.1em;
+	color: #ffffff;
+	margin: 0;
+	@include media(tb){
+		position: absolute;
+		top: 92 - 63px;
+		left: 60px;
+		width: 255px;
+		height: 21px;
+	}
+
+	@include media(pc){
+		position: absolute;
+		margin: 0;
+		padding: 0;
+		top: 8.229vw;
+		left: 13.02vw;
+		width: 42.448vw;
+		height: 4.323vw;
+		font-size: 4.323vw ;
+		line-height: 4.323vw ;
+	}
+}
+
+.club_top{
+   margin-left: 26px;
+   margin-top: 25px;
+   margin-bottom: 26px;
+   display: flex;
+}
+
+.back_arrow_white1{
+    width:45.66px;
+    height:45.66px;
+    padding:11px 9.66px 9.66px 11px;
+    position: relative;
+    top:5px;
+}
+
+.icon{
+    float: left;
+    width: 55px;
+    height:55px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-right:15px;
+    border-right:1px solid blue;
+}
+
+.club_top_font{
+    color:white;
+    float:left;
+}
+
+.blog_article_h2{
+    font-family: Noto Sans,Bold;
+    font-size:13px;
+    height:18px;
+    padding-top:2.33px;
+}
+
+.club_title{
+    padding-top:10px;
+    padding-bottom: 2.33px;
+    font-family: Noto Sans,Bold;
+    font-size:22px;
+    height:30px;
+}
+
+.picture{
+    padding-left: 45px;
+    width:90%;
+    height:50vw;
+}
+
+.reading_body{
+    padding-left: 45px;
+    width:90%;
+    padding-bottom: 25px;
+    font-family: Noto Sans,Regular;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    height:32px;
+}
+
+.sns{
+    float:left;
+    position: relative;
+    top: 200px;
+}
+
+.sns_font{
+    font-family: ITCFranklinGothic LT Pro, CnMd;
+    font-size: 12px;
+    height:15px;
+    padding-left: 73px;
+    position:relative;
+    top:-25px;
+}
+
+.sns_icon1{
+    width:15.5px;
+    height:12.59px;
+    margin-left: 46.26px;
+    margin-bottom: 13px;
+}
+
+.sns_icon2{
+    width:16.25px;
+    height:16.25px;
+    margin-left: 45.88px;
+    margin-bottom:13px;
+}
+
+.sns_icon3{
+    width:18.02px;
+    height:12.61px;
+    margin-left: 45px;
+    margin-bottom: 13px;
+}
+
+.sns_icon4{
+    width:15.5px;
+    height:17.44px;
+    margin-left: 46.26px;
+    margin-bottom: 13px;
+}
+
+.sns_link_mark1{
+    margin-left: 180px;
+    width:8px;
+    height:8px;
+    position:relative;
+    top: -48px;
+}
+
+.sns_link_mark2{
+    margin-left: 198px;
+    width:8px;
+    height:8px;
+    position:relative;
+    top: -48px;
+}
+
+.sns_link_mark3{
+    margin-left: 187px;
+    width:8px;
+    height:8px;
+    position:relative;
+    top: -48px;
+}
+
+.sns_link_mark4{
+    margin-left: 183px;
+    width:8px;
+    height:8px;
+    position:relative;
+    top: -48px;
+}
+
+.sns1{
+    height:30px;
+    padding-bottom: 13px;
+}
+
+.sns2{
+    height:30px;
+    padding-bottom: 13px;
+}
+
+.sns3{
+    height:30px;
+    padding-bottom: 13px;
+}
+
+.sns4{
+    height:30px;
+    padding-bottom: 13px;
+}
+
+.contents{
+    color:white;
+    position: relative;
+    top:360px;
+    left: -160px;
+    font-family: Noto Sans,Bold;
+    font-size: 13px;
+    height:18px;
+}
+
+.blog{
+    width: 100%;
+    height: 60px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    position:relative;
+    top:280px;
+    
+    padding: 0 60 / 375 * 100%;
+    display: grid;
+
+    grid-template-columns: (60 / 9 * 16px) 1fr;
+     grid-template-rows: 60px;
+
+    grid-template-areas: "img text";
+
+    &__img{
+        height: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        grid-area: img;
+        @include media(tb){
+            width:95px;
+        }
+    }
+    &__block{
+        background-color: $base_color1;
+        grid-area: text;
+        padding: 7px 10px;
+
+        position: relative;
+        @include media(tb){
+            left:-12px;
+            width:170px;
+        }
+    }
+    &__title{
+        color: $base_color2;
+        @include jp_Bold(9.5px, 0, 13px);
+    }
+    &__info-block{
+        position: absolute;
+        bottom: 4px;
+        left: 10px;
+        transform-origin: left bottom;
+        transform: scale(.5);
+    }
+    &__writer{
+        color: #737373;
+        @include jp_Bold(14px, 0, 24px);
+    }
+    &__date{
+        color: #737373;
+        @include jp_Bold(12x, 0, 24px);
+    }
+}
+
+.return_map{
+    display: flex;
+    position: relative;
+    top:200px;
+}
+
+.back_arrow_white2{
+    width:45.66px;
+    height:45.66px;
+    padding-left: 45px;
+    position: relative;
+    top:63px;
+    color: #ffffff;
+    /**なぜか黒い**/
+}
+
+.return_map_font{
+    position: relative;
+    top:100px;
+    left: 30px;
+    font-family: Noto Sans,Bold;
+    font-size:13px;
+    height:18px;
+    color:white;
+}
+
+/**javascript**/
+
+.club{
+    margin-left: 44px;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    display: flex;
+    position: relative;
+    top: 350px;
+    height: 64px;
+}
+
+.club_picture_block{
+    width: 95px;
+    height:64px;
+    padding-right: 9.5px;
+    border-right: 1px solid blue;
+    /**ボーダーもおかしい**/
+    position: relative;
+    top:-30px;
+}
+
+.back_picture{
+    position: absolute;
+    background-color: #000000;
+    opacity:.5;
+    width: 95px;
+    height:64px;
+}
+
+.club_icon{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+    width:45.66px;
+    height:45.66px;
+}
+
+.club_block{
+    float: left;
+    padding-left: 10.5px;
+    color: #ffffff;
+    position: relative;
+    top:-95px;
+    left:100px;
+    width:170px;
+}
+
+.club_place{
+    padding-bottom: 10px;
+    font-family: Noto Sans,Bold;
+    font-size: 9.5px;
+    height:13px;
+}
+
+.club_name{
+    padding-bottom: 7px;
+    font-family: Noto Sans,Bold;
+    font-size: 9.5px;
+    height:13px;
+}
+
+.club_banner{
+    float: left;
+    font-family: Noto Sans,Bold;
+    font-size: 8px;
+    height:11px;
+}
+/**文字の設定がはんえいされない**/
+/**footerのいちを変えたい**/

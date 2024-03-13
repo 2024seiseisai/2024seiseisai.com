@@ -1,0 +1,108 @@
+@import "../common/setting.scss";
+@import "../common/parts.scss";
+
+/**********************************************************************/
+/*本要素*/
+/**********************************************************************/
+main{
+	padding-bottom: 34px;
+    color:white;
+    @include media(pc){
+        margin-bottom: 95px;
+    }
+}
+
+.page_title_img{
+    padding-top:0px;
+    margin-top:0px;
+    width:100%;
+    height:78px;
+    position:absolute;
+}
+
+.page_title_white{
+    top:74px;
+    left:60px;
+    width:255px;
+    height:21px;
+    float:left;
+    @include jp_Regular(18px,.1em,25px);
+    color:white;
+    
+}
+
+.place{
+    width:284.5px;
+    float:left;
+    margin-bottom:1px;
+    border-bottom:0px solid blue;
+    .koukou{
+        color:white;
+        width:29px;
+        height:12px;
+        background-color:blue;
+        margin-left:44px;
+        padding-left:3px;
+        padding-right:24px;
+        font-family:Noto Sans,Bold;
+        @include jp_Regular(9.5px,0em,13px);
+    }
+    .tyugaku{
+        color:white;
+        width:29px;
+        height:12px;
+        background-color:gray;
+        padding-right:24px;
+        padding-left:3px;
+        font-family:Noto Sans,Bold;
+        @include jp_Regular(9.5px,0em,13px);
+    }
+}
+
+.club_list{
+    width:287px;
+    height:63.5px;
+    padding-left:44px;
+    padding-top:15px;
+    .back_picture{
+        left:44px;
+        width:95px;
+        height:64px;
+        padding-right:9.5px;
+        border-right:0px solid blue;
+        position:absolute;
+        background-color:#000000;
+        opacity: .5;
+    }
+    .club_icon{
+        left:69px;
+        width:45.66px;
+        height:45.66px;
+        position:absolute;
+    }
+    .club_place{
+        float:left;
+        font-family:Noto Sans,Bold;
+        @include jp_Regular(9.5px,0em,13px);
+        width:140px;
+        height:12px;
+        padding-left:10.5px;
+        padding-bottom:10px;
+    }
+    .club_name{
+        width:140px;
+        height:12px;
+        padding-left:10.5px;
+        float:left;
+        font-family:Noto Sans,Bold;
+        @include jp_Regular(9.5px,0em,13px);
+    }
+    .club_banner{
+        width:170px;
+        padding-left:10.5px;
+        float:left;
+        padding-top:7px;
+        font-family:Noto Sans,Bold;
+        @include jp_Regular(8px,0em,11px);
+    }
+}

@@ -1,0 +1,208 @@
+@import "../common/setting.scss";
+@import "../common/parts.scss";
+
+
+$color-orange: #f15d2f;
+$color-blue: #0078c0;
+$color-yellow: #efe141;
+$color-yellow-green: #bbd75e;
+$color-sky: #56CBF5;
+$color-purple: #b32e92;
+$color-green: #77b141;
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    @include media(pc){
+        scroll-padding-top: 100px;
+    }
+}
+
+summary{
+    cursor: pointer;
+}
+
+main{
+	padding-bottom: 34px;
+    color:white;
+    @include media(pc){
+        margin-bottom: 95px;
+    }
+}
+
+.page_title_img{
+    padding-top:0px;
+    margin-top:0px;
+    width:100%;
+    height:78px;
+    position:absolute;
+}
+
+.page_title_white{
+    top:74px;
+    left:60px;
+    width:255px;
+    height:21px;
+    float:left;
+    @include jp_Regular(18px,.1em,25px);
+    color:white;
+    
+}
+.page-title{
+    position: relative;
+    display: grid;
+    align-items: center;
+    
+    @include media(pc){
+        margin-top: -90px;
+    }
+    &__img{
+        height: 75px;
+        width: auto;
+        @include media(pc){
+            height: 400px;
+        }
+    }
+    &__text{
+        @include en_CnDm(18px, .1em, 25px);
+        color: $base_color1;
+        position: absolute;
+        margin-left: 60px;
+        @include media(pc){
+            margin-left: 250px;
+            @include en_CnDm(72px, .1em, 86px);
+        }
+    }
+}
+
+.eventlist{
+    @include jp_Bold(22px, .0em, 30px);
+    color: white;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+.events{
+    padding: 0px 45px 0px 45px;
+}
+
+.list{
+    @include jp_Regular(11px, .05em, 20px);
+    color: white;
+    padding: 13px 32px 13px 20px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.backtotimetable{
+    @include jp_Bold(13px, .0em, 18px);
+    color: white;
+    width: 331px;
+    height: 45.66px;
+    margin-left: 22px;
+    margin-top: 15px;   
+}
+
+.sump{
+    @include jp_Bold(15px, .0em, 15px);
+    display: inline;
+    margin-left: 12px;
+    width: 208px;
+    height: 20px;
+}
+
+.at{
+    margin-top: 5px;
+}
+
+.explain{
+    margin-left: 25px;
+}
+
+.background{
+    position: absolute;
+    inset: 0;
+    background-color: white;
+    mix-blend-mode: soft-light;
+    z-index: -1;
+}
+
+.whenwhere{
+    @include jp_Bold(11px, .05em, 20px);
+    width: 233px;
+    margin-top: 10px;
+}
+
+.what{
+   margin-top: 15px;
+}
+
+.gym{
+    display: inline;
+}
+
+.day{
+    display: inline-flex;
+}
+
+.time{
+    display: inline-flex;
+}
+
+.ticket{
+    @include jp_Bold(11px, .0em, 20px);
+    display: inline;
+    padding: 0px 8px;
+    width: 44px;
+    height: 15px;
+    border-radius: 8px;
+    background-color: #F6166A;
+    white-space: nowrap;
+}
+
+.link{
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+.where{
+    display: inline;
+}
+
+.club{
+    display: inline;
+}
+
+.icon{
+    display: inline;
+}
+
+.last{
+    margin-top: 15px;
+    margin-left: 45px;
+    
+}
+
+.backtotable{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    &__text{
+        @include jp_Regular(13px, .0em, 18px);
+    }
+}
+
+#bttsvg{
+    width: 25px;
+    height: 25px;
+    padding: 11px 9.7px 9.7px 11px;
+    color: #FFFFFF;
+}
+
+#backtotimetable{
+}

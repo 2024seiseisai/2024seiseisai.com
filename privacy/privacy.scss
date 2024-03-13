@@ -1,0 +1,93 @@
+@import "../common/setting.scss";
+@import "../common/parts.scss";
+
+/*本要素*/
+
+.reading_body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11px;
+  font-feature-settings: "palt" 1;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin:0 60px;
+  margin-bottom:70px;
+}
+
+.page_title_white {
+  font-family: franklin-gothic-condensed, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-left:45px;
+  margin-bottom: 29px;
+}
+
+.top_tab_jp {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 12px;
+  font-feature-settings: "palt" 1;
+  line-height: 17px;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: 45px;
+}
+
+.page_title {
+  display: flex;
+  margin-top: 3px;
+}
+
+.reading_body p{
+  margin-bottom:40px;
+}
+
+.reading_body a{
+  color:#52CC89;
+}
+
+@media only screen and (min-width:1024px){
+  .page_title {
+    display: flex;
+    margin: 105px 0 247px 0;
+  }
+  
+  .page_title_white{
+    font-size: 50px;
+    line-height: 60px;
+    margin-left:250px;
+  }
+
+  .top_tab_jp{
+    font-size: 30px;
+    line-height: 41px;
+    margin-right:250px;
+  }
+
+  .reading_body{
+    width:920px;/*小さすぎると潰れたのでwidth指定しました。*/
+    font-size: 16px;
+    line-height: 42px;
+    margin:auto;
+    margin-bottom:332px;
+  }
+  
+  .content1{
+    margin-bottom:82px;
+  }
+
+  .content2{
+    margin-bottom:102px;
+  }
+}
+/**********************************************************************/
+
+/*本要素ここから*//*# sourceMappingURL=style.css.map */

@@ -1,0 +1,514 @@
+{
+    "nakaniwa": {
+        "name": "中庭",
+        "color": "yellow-green",
+
+        "selecter": "#js-nakaniwa",
+        "date": [
+            {
+                "event": [
+                    {
+                        "name": "Mr.美少女コンテストAブロック",
+                        "url": "",
+                        "start": "09:30",
+                        "end": "09:50"
+                    },
+                    {
+                        "name": "ラブライブ！サンスクリット!!",
+                        "url": "",
+                        "start": "10:00",
+                        "end": "10:25"
+                    },
+                    {
+                        "name": "TDJ48",
+                        "url": "",
+                        "start": "10:25",
+                        "end": "10:50"
+                    },
+                    {
+                        "name": "寺マス",
+                        "url": "",
+                        "start": "10:50",
+                        "end": "11:15"
+                    },
+                    {
+                        "name": "寺ザイル",
+                        "url": "",
+                        "start": "11:15",
+                        "end": "11:40"
+                    },
+                    {
+                        "name": "Mr.美少女コンテストBブロック",
+                        "url": "",
+                        "start": "11:50",
+                        "end": "12:20"
+                    },
+                    {
+                        "name": "T1グランプリ",
+                        "url": "",
+                        "start": "13:50",
+                        "end": "14:20"
+                    },
+                    {
+                        "name": "イケメンコンテスト",
+                        "url": "",
+                        "start": "14:20",
+                        "end": "14:50"
+                    }
+                ],
+                "surround":[
+                    {
+                        "#########1": "nameがある場合のみ上にタグが表示されます。",
+                        "#########2": "表示したくない場合はnameプロパティを name: も含め消してください。",
+
+                        "name": "中夜祭",
+                        "color": "tyuyasai",
+                        "start": "13:50",
+                        "end": "14:50"
+                        
+                    }
+                ]
+                
+                
+            },
+            {
+                "event": [
+                    {
+                        "name": "中庭2",
+                        "url": "",
+                        "start": "10:00",
+                        "end": "11:00"
+                    }
+                ],
+                "surround":[
+                    {
+                        "#########1": "nameがある場合のみ上にタグが表示されます。",
+                        "#########2": "表示したくない場合はnameプロパティを name: も含め消してください。",
+
+                        "name": "後夜祭",
+                        "color": "koyasai",
+                        "start": "09:00",
+                        "end": "16:00"
+                        
+                    }
+                ]
+            }
+        ]
+    },
+    "taiikukan": {
+        "name": "体育館 晴天時",
+        "color": "sky",
+
+        "selecter": "#js-taiikukan",
+        "date": [
+            {
+                "event": [
+                    {
+                        "name": "体育館1",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            },
+            {
+                "event": [
+                    {
+                        "name": "体育館2",
+                        "url": "",
+                        "start": "10:00",
+                        "end": "11:00"
+                    }
+                ],
+                "surround":[
+                ]
+            }
+        ]
+    },
+    "taiikukan-rain": {
+        "name": "体育館 雨天時",
+        "color": "sky",
+
+        "selecter": "#js-taiikukan-rain",
+        "date": [
+            {
+                "event": [
+                    {
+                        "name": "体育館雨天時1",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            },
+            {
+                "event": [
+                    {
+                        "name": "体育館雨天時2",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            }
+        ]
+    },
+    "ennyuukann": {
+        "name": "圓融館 晴天時",
+        "color": "purple",
+
+        "selecter": "#js-ennyuukann",
+        "date": [
+            {
+                "event": [
+                    {
+                        "name": "圓融館 晴天時1",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            },
+            {
+                "event": [
+                    {
+                        "name": "圓融館 晴天時2",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            }
+        ]
+    },
+    "ennyuukann-rain": {
+        "name": "圓融館 雨天時",
+        "color": "purple",
+
+        "selecter": "#js-ennyuukann-rain",
+        "date": [
+            {
+                "event": [
+                    {
+                        "name": "圓融館 雨天時1",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            },
+            {
+                "event": [
+                    {
+                        "name": "圓融館 雨天時2",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            }
+        ]
+    },
+    "tensindenmae": {
+        "name": "転心殿前",
+        "color": "green",
+
+        "selecter": "#js-tensindenmae",
+        "date": [
+            {
+                "event": [
+                    {
+                        "name": "転心殿前1",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            },
+            {
+                "event": [
+                    {
+                        "name": "転心殿前2",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            }
+        ]
+    },
+    "ground": {
+        "name": "グラウンド",
+        "color": "yellow",
+
+        "selecter": "#js-ground",
+        "date": [
+            {
+                "event": [
+                    {
+                        "name": "グラウンド1",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            },
+            {
+                "event": [
+                    {
+                        "name": "グラウンド2",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            }
+        ]
+    },
+    "syoukoudou": {
+        "name": "小講堂",
+        "color": "orange",
+
+        "selecter": "#js-syoukoudou",
+        "date": [
+            {
+                "event": [
+                    {
+                        "name": "小講堂1",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            },
+            {
+                "event": [
+                    {
+                        "name": "小講堂2",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            }
+        ]
+    },
+    "ennsyuusitu": {
+        "name": "演習室",
+        "color": "blue",
+
+        "selecter": "#js-ensyuusituB-C",
+        "date": [
+            {
+                "event": [
+                    {
+                        "name": "演習室1",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            },
+            {
+                "event": [
+                    {
+                        "name": "演習室2",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            }
+        ]
+    },
+    "tigakusitu": {
+        "name": "地学室",
+        "color": "blue",
+
+        "selecter": "#js-tigakusitu",
+        "date": [
+            {
+                "event": [
+                    {
+                        "name": "地学室1",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            },
+            {
+                "event": [
+                    {
+                        "name": "地学室2",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            }
+        ]
+    },
+    "buturisitu": {
+        "name": "物理室",
+        "color": "blue",
+
+        "selecter": "#js-buturisitu",
+        "date": [
+            {
+                "event": [
+                    {
+                        "name": "物理室1",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            },
+            {
+                "event": [
+                    {
+                        "name": "物理室2",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            }
+        ]
+    },
+    "sityoukakusitu": {
+        "name": "視聴覚室",
+        "color": "blue",
+
+        "selecter": "#js-sityoukakusitu",
+        "date": [
+            {
+                "event": [
+                    {
+                        "name": "視聴覚室1",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            },
+            {
+                "event": [
+                    {
+                        "name": "視聴覚室2",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            }
+        ]
+    },
+    "jouhoukyousitu": {
+        "name": "情報教室",
+        "color": "blue",
+
+        "selecter": "#js-jouhoukyousitu",
+        "date": [
+            {
+                "event": [
+                    {
+                        "name": "情報教室1",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            },
+            {
+                "event": [
+                    {
+                        "name": "情報教室2",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            }
+        ]
+    },
+    "4-E": {
+        "name": "4年E組",
+        "color": "blue",
+
+        "selecter": "#js-4-E",
+        "date": [
+            {
+                "event": [
+                    {
+                        "name": "4年E組1",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            },
+            {
+                "event": [
+                    {
+                        "name": "4年E組2",
+                        "url": "",
+                        "start": "09:00",
+                        "end": "10:00"
+                    }
+                ],
+                "surround":[
+                ]
+            }
+        ]
+    }
+}

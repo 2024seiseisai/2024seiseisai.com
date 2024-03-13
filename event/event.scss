@@ -1,0 +1,519 @@
+@import "../common/setting.scss";
+@import "../common/parts.scss";
+
+/*タイムテーブル用*/
+.page-title{
+    position: relative;
+    display: grid;
+    align-items: center;
+    
+    @include media(pc){
+        margin-top: -90px;
+    }
+    &__img{
+        height: 75px;
+        width: auto;
+        @include media(pc){
+            height: 400px;
+        }
+    }
+    &__text{
+        @include en_CnDm(18px, .1em, 25px);
+        color: $base_color1;
+        position: absolute;
+        margin-left: 60px;
+        @include media(pc){
+            margin-left: 250px;
+            @include en_CnDm(72px, .1em, 86px);
+        }
+    }
+}
+.time-table{
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+
+    &__buttons{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        max-width: 500px;
+
+        width: 100%;
+        height: 55px;
+
+        margin-top: 10px;
+        padding: 0 35px;
+        margin: 0 auto;
+        @include media(pc){
+            height: 80px;
+            gap: 40px;
+        }
+    }
+    &__move-button{
+        color: white;
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+
+        &--not-touch-device{
+            display: block;
+            height: 40px;
+            width: 40px;
+        }
+    }
+    &__move-button-img{
+        width: 100%;
+        height: 100%;
+    }
+
+    &__day-button{
+        height: 100%;
+        width: 100%;
+    }
+    .day-button{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        @include media(pc){
+            gap: 30px;
+        }
+
+        &__button{
+            height: 100%;
+            aspect-ratio: 47/25;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            &:nth-child(2n-1){
+                background-image: url(img/1-off.webp);
+            }
+            &:nth-child(2n){
+                background-image: url(img/2-off.webp);
+            }
+        }
+        &__img{
+            width: auto;
+            height: 100%;
+            transition: opacity .3s;
+            &--opacity0{
+                opacity: 0;
+            }
+        }
+    }
+
+    &__block{
+        display: flex;
+
+        padding: 0 13px;
+        padding-bottom: 28px;
+        gap: 26px;
+
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+
+        &--not-touch-device{
+            scroll-snap-type: none;
+        }
+
+        
+        &::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(#fff, .3);
+            border-radius: 2.5px;
+            border: 0px solid #ffffff;
+        }
+        
+
+        width: 100%;
+        @include media(tbpc){
+            scroll-padding-left: 13px;
+        }
+    }
+    &__wrapper{
+        width: calc(100% - 13px);
+        flex-shrink: 0;
+        scroll-snap-align: center;
+
+        @include media(tbpc){
+            width: calc(50% - 13px);
+            scroll-snap-align: start;
+        }
+        @include media(pc){
+            width: 360px;
+        }
+    }
+    &__title-block{
+        display: grid;
+        grid-template: 
+            "title" auto
+            / auto;
+        width: 100%;
+
+        margin-top: 30px;
+    }
+    &__title{
+        grid-area: title;
+
+        @include jp_Bold(22px, 0, 1);
+        color: $base_color1;
+        text-align: center;
+    }
+    &__sub-title{
+        @include jp_Bold(14px, 0, 1);
+        color: $base_color1;
+        margin-left: 5px;
+    }
+
+    &__table{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: "clock contents";
+        gap: 15px;
+
+        margin-top: 20px;
+    }
+    &__clock{
+        text-align: end;
+
+        grid-area: clock;
+        
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(8, 55 * 2px);
+    }
+    &__clock-number{
+        @include en_CnMd(16px, 0, 1);
+        font-style: italic;
+        color: $base_color1;
+
+        height: fit-content;
+        transform: translateY(-50%);
+    }
+    
+    &__line-block{
+        grid-area: contents;
+
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(16, 55px);
+    }
+    &__line{
+        $color-white-5: rgba($base_color1, .5);
+        background-image : linear-gradient(to right, $color-white-5, $color-white-5 5px, transparent 5px, transparent 5px); 
+        background-size: 10px 1px;  
+        background-position: left top;  
+        background-repeat: repeat-x;
+    }
+
+    &__contents-wrapper{
+        grid-area: contents;
+        margin: 0 5%;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat( (8 * 12), (55px * 2 / 12) );
+        //5分ごとに分ける
+    }
+
+    $color-orange: #f15d2f;
+    $color-blue: #0078c0;
+    $color-yellow: #efe141;
+    $color-yellow-green: #bbd75e;
+    $color-sky: #56CBF5;
+    $color-purple: #b32e92;
+    $color-green: #77b141;
+
+
+    $color-surround-tyuyasai: #585199;
+    $color-surround-koyasai: #724f8e;
+    $color-surround-rain: #bebebe;
+
+    &__contents-block{
+
+        &--shorten{
+            margin-bottom: 5px;
+            .time-content__etime{
+                display: none;
+            }
+        }
+    }
+    .time-content{
+        position: relative;
+        border-left: #000000 3px solid;
+
+        display: grid;
+        grid-template-columns: auto 1fr 30px;
+        grid-template-rows: 1fr;
+        grid-template-areas: "time title arrow";
+        align-items: center;
+        align-content: center;
+        gap: 20px;
+
+        &--orange{
+            border-color: $color-orange;
+            &::before{
+                background-color: $color-orange;
+            }
+        }
+        &--blue{
+            border-color: $color-blue;
+            &::before{
+                background-color: $color-blue;
+            }
+        }
+        &--yellow{
+            border-color: $color-yellow;
+            &::before{
+                background-color: $color-yellow;
+            }
+        }
+        &--yellow-green{
+            border-color: $color-yellow-green;
+            &::before{
+                background-color: $color-yellow-green;
+            }
+        }
+        &--sky{
+            border-color: $color-sky;
+            &::before{
+                background-color: $color-sky;
+            }
+        }
+        &--purple{
+            border-color: $color-purple;
+            &::before{
+                background-color: $color-purple;
+            }
+        }
+        &--green{
+            border-color: $color-green;
+            &::before{
+                background-color: $color-green;
+            }
+        }
+
+        padding-right: 10px;
+
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            inset: 0;
+            mix-blend-mode: soft-light;
+            z-index: -1;
+        }
+
+        &__time{
+            grid-area: time;
+            @include en_CnMd(12px, 0, 1);
+            font-style: italic;
+            color: $base_color1;
+
+            height: calc(100% + 7px);
+            margin-top: -3.5px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &__title{
+            @include jp_Bold(12px, 0, 15px);
+            
+            &--tickets{
+                display: flex;
+                gap: 5px;
+                flex-wrap: wrap;
+
+                &::after{
+                content: "要整理券";
+                background-color: #F6166A;
+                border-radius: 100vh;
+                padding: 0 5px;
+                white-space: nowrap;
+                }
+            }
+        }
+        &__arrow{
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+        }
+    }
+
+    &__surround-box{
+        grid-area: contents;
+    }
+    .surround-box{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat( (8 * 12), (55px * 2 / 12) );
+
+        margin: 0 5%;
+
+        position: relative;
+        &__block{
+            position: absolute;
+            inset: 0;
+            margin: auto;
+
+            outline: #000 4px solid;
+            outline-offset: 5px;
+            &--tyuyasai{
+                outline-color: rgba( $color-surround-tyuyasai, .8);
+                .surround-box__label{
+                    background-color: rgba( $color-surround-tyuyasai, .8);
+                }
+            }
+            &--koyasai{
+                outline-color: rgba( $color-surround-koyasai, .8);
+                .surround-box__label{
+                    background-color: rgba( $color-surround-koyasai, .8);
+                }
+            }
+            &--rain{
+                outline-color: rgba( $color-surround-rain, .8);
+                outline-offset: 12px;
+                .surround-box__label{
+                    background-color: rgba( $color-surround-rain, .8);
+                }
+            }
+        }
+        &__label{
+            position: absolute;
+            top: -9px + 1;
+            left: -9px;
+            color: $base_color1;
+            @include jp_Bold(12px, 0, 15px);
+
+            background-color: white;
+
+            transform: translateY(-100%);
+
+            padding: 2px 20px 3px 10px;
+            clip-path: polygon(0 0, calc(100% - 20px) 0%, 100% 100%, 0% 100%);
+        }
+        &__current-block{
+            width: 110%;
+            margin-left: -5%;
+            grid-area: 1 / 1 / 97 / 2;
+            position: relative;
+
+            z-index: 1;
+        }
+        &__current-time{
+            $color-current-time: red;
+
+            position: absolute;
+            background-color: $color-current-time;
+            height: 1px;
+            width: 100%;
+            display: none;
+            
+            &--appear{
+                display: block;
+            }
+            &::before{
+                content: "現在";
+                @include jp_Bold(10px, 0, 1.5);
+                color: white;
+                background-color: $color-current-time;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translate(-100%, -50%);
+                padding-left: 5px;
+                padding-right: 10px;
+                clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+            }
+        }
+    }
+}
+
+.supplement{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    padding: 0 50px;
+
+    margin-top: 30px;
+
+    $color-red: #F6166A;
+
+    counter-reset: list-number 0;
+
+    @include media(tbpc){
+        flex-direction: row;
+    }
+
+    &__block{
+        border: $color-red 3px solid;
+        padding: 20px;
+        position: relative;
+        margin-top: 26px;
+
+        max-width: 500px;
+
+        &::before{
+            counter-increment: list-number 1;
+            content: "0" counter(list-number) ".";
+
+            @include en_CnDm(20px, 0, 24px);
+            color: $color-red;
+            position: absolute;
+            left: 0;
+            top: -2px;
+            transform: translateY(-100%);
+        }
+    }
+    &__title-wrapper{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__icon{
+        width: 25px;
+        height: auto;
+    }
+    &__title{
+        @include jp_Bold(13px, 0, 1.5);
+        color: white;
+    }
+    &__description{
+        @include jp_Regular(11px, 0.05em, 32px);
+        color: white;
+        margin-top: 5px;
+    }
+}
+
+.list-link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 30px 0 50px;
+    padding: 0 50px;
+    &--now-closed{
+        opacity: .5;
+        pointer-events: none;
+    }
+    
+    &__text{
+        @include jp_Bold(13px, 0, 1.5);
+    }
+    &__img{
+        width: 25px;
+        height: 25px;
+    }
+}
