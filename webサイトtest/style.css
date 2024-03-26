@@ -72,13 +72,13 @@ header{
     position: absolute;
     content: "";
     width: 0%;
-    height: 2px;
-    background-color: #000;
+    height: 2px;/*下線の太さ*/
+    background-color: #000;/*下線の色*/
     transform: translateY(24px);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;/*アニメーション時間*/
 }
 
-
+/*カーソルが載ったときafter要素を表示*/
 .menuDiv:hover:after{
     width: 70px;
     transform: translateY(24px);
