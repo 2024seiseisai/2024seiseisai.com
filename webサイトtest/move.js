@@ -24,8 +24,9 @@ $(document).ready(function(){
         if(menu_open_rate == 0){
             $("#menu_open").fadeTo(100,0);
             $("#menu_close").fadeTo(100,1);
-            $("body").css("overflow","visible");
-            $(".menu_large").css("transform","scaleY(1)")
+            $("body").css("overflow","hidden");
+            $(".menu_large").css("transform","scaleY(1)");
+            $(".menu").css("display","flex");
             menu_open_rate = 1;
         }else{
             $("#menu_close").fadeTo(100,0);
@@ -46,10 +47,12 @@ $(document).ready(function(){
 
     //スクロール時にメニューを表示・非表示にする関数
     $(window).on('scroll',function(){
-        if(get_scroll() >= 0){
-            $(".menu").css("display","none");
-        }else{
-            $(".menu").css("display","flex");
-        }
+        if(menu_open_rate == 0){
+            if(get_scroll() >= 0){
+                $(".menu").css("display","none");
+            }else{
+                $(".menu").css("display","flex");
+            };
+        };
     });
 });

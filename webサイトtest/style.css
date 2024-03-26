@@ -2,6 +2,7 @@
 
 body{
     margin: 0;
+    height: 5000px;
 }
 
 header{
@@ -11,7 +12,7 @@ header{
     border: 2px solid #000;
     border-radius: 5px;
     height: 60px;
-    background-color: #fafafa;
+    background-color: transparent;
     z-index: 15;
 }
 
@@ -106,15 +107,14 @@ header{
 }
 
 .menu_large{
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     height: 100vh;
     background-color: antiquewhite;
     transform: scaleY(0);
     transform-origin: top;
-    transition: all 50ms;
+    transition: all 0.3s ease-out;
 
     display: flex;
     justify-content: center;
