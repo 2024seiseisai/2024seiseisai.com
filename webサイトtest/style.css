@@ -29,9 +29,11 @@ header{
 }
 
 .aligin_left{
+    position: fixed;
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    transform: translate(-70px,16px);
 }
 
 .aligin_left_content{
