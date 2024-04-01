@@ -1,0 +1,70 @@
+.splite {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+.splite__img {
+  width: 100%;
+  height: auto;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+  animation-direction: normal;
+}
+.splite__img--01 {
+  animation-name: splite-01;
+  animation-duration: 333.3333333333ms;
+  animation-timing-function: steps(8, end);
+}
+@keyframes splite-01 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2400px);
+  }
+}
+.splite__img--02 {
+  animation-name: splite-02;
+  animation-duration: 333.3333333333ms;
+  animation-timing-function: steps(8, end);
+}
+@keyframes splite-02 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2400px);
+  }
+}
+.splite__img--03 {
+  animation-name: splite-03;
+  animation-duration: 333.3333333333ms;
+  animation-timing-function: steps(8, end);
+}
+@keyframes splite-03 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2400px);
+  }
+}
+.splite__img--04 {
+  animation-name: splite-04;
+  animation-duration: 333.3333333333ms;
+  animation-timing-function: steps(8, end);
+}
+@keyframes splite-04 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2400px);
+  }
+}
+.splite__img--play {
+  animation-play-state: running;
+}
+.splite__img--reverse {
+  animation-direction: reverse;
+}/*# sourceMappingURL=test.css.map */
