@@ -13,6 +13,8 @@ header{
     height: 60px;
     background-color: transparent;
     z-index: 15;
+    top: 0;
+    left: 0;
 }
 
 .logo{
@@ -122,4 +124,61 @@ header{
 .menu_large_content{
     display: inline-block;
     font-size: 100px;
+}
+
+.more_btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 192px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #000;
+    border-radius: 15px;
+    transition: background-color 0.2s ease-out;
+}
+
+.More{
+    display: inline-block;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 400;
+    color: #FF0084;
+}
+
+.more_btn_arrows{
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease-out;
+}
+
+.arrow{
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #FF0084;
+    border-left: 1px solid #FF0084;
+    transform: rotate(135deg);
+    transition: all 0.2s ease-out;
+}
+
+.more_btn:hover{
+    background-color: #FF0084;
+}
+
+.more_btn:hover .More{
+    color: #000;
+}
+
+.more_btn:hover .more_btn_arrows{
+    transform: translateX(20px);
+}
+
+.more_btn:hover .arrow{
+    border-color: #000;
+    transform: rotate(135deg);
+    left: 10px;
 }
