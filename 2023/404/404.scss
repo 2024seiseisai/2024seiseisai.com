@@ -1,0 +1,177 @@
+@import "../common/setting.scss";
+@import "../common/parts.scss";
+
+/**********************************************************************/
+/*本要素*/
+.page_title_white {
+  font-family: franklin-gothic-condensed, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-left:45px;
+  margin-bottom: 55px;
+}
+
+.top_tab_jp {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 12px;
+  font-feature-settings: "palt" 1;
+  line-height: 17px;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: 45px;
+}
+.TOP_jp {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  font-feature-settings: "palt" 1;
+  line-height: 26px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  margin: 8px 0;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 25px;
+  padding: 5px 0 10px 10px;
+}
+.reading_body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11px;
+  font-feature-settings: "palt" 1;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+.countdown_jp, .countdown_number small {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+  font-feature-settings: "palt" 1;
+  line-height: 15px;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 0;
+}
+.countdown_number {
+  font-family: franklin-gothic-condensed, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 22px 0 50px 0;
+}
+.TOP_jp span {
+  display: block;
+}
+
+.page_title {
+  display: flex;
+  margin-top:3px;
+}
+
+.top_content,.middle_content,.return_home{
+    margin:0 40px;
+}
+
+.return_home{
+  margin-bottom:176px;
+}
+
+.return_home_bottun{
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  font-style: normal;
+  font-feature-settings: "palt" 1;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color:#52CC89;
+}
+
+@media only screen and (min-width:1024px){
+  .page_title {
+    display: flex;
+    margin: 105px 0 130px 0;
+  }
+  
+  .page_title_white{
+    font-size: 50px;
+    line-height: 60px;
+    margin-left:250px;
+  }
+
+  .top_tab_jp{
+    font-size: 30px;
+    line-height: 41px;
+    margin-right:250px;
+  }
+  
+  .top_content,.middle_content,.return_home{
+    width:916px;
+    margin:auto;/*privacyページと同じく小さすぎると潰れたのでwidth指定しました。*/
+  }
+  
+  .TOP_jp{
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    padding:15px 0 20px 0;
+  }
+  
+  .TOP_jp span {
+    display:contents;
+  }
+  
+  .reading_body{
+    font-size: 16px;
+    line-height: 42px;
+    margin:50px 0 100px 0;
+  }
+  
+  .countdown_jp{
+    font-size: 16px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+  }
+  
+  .countdown_number{
+    font-size: 125px;
+    line-height: 150px;
+    letter-spacing: 0;
+    margin-bottom:80px;
+  }
+  
+  .countdown_number small{
+    font-size: 30px;
+    line-height: 44px;
+  }
+  
+  .return_home {
+    margin-bottom:200px;
+  }
+  
+  .return_home_bottun{
+    font-size: 16px;
+    line-height: 64px;
+  }
+}
+
+
+
+/**********************************************************************/
+
+
+/*本要素ここから*//*# sourceMappingURL=style.css.map */

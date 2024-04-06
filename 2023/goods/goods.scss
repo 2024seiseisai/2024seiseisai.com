@@ -1,0 +1,183 @@
+@import "../common/setting.scss";
+@import "../common/parts.scss";
+
+/*本要素ここから*/
+/*# sourceMappingURL=style.css.map */
+
+.page_title{
+	margin: 0 0 50px;
+	height: 75px;
+	position: relative;
+    display: flex;
+    align-items: center;
+	@include media(pc){
+		height: 20vw;
+        margin-top: -85px;
+	}
+	
+	.page_title_img{
+		@include media(tb){
+			position: absolute;
+			top: 0;
+			width: auto;
+			height: 75px;
+		}
+		@include media(pc){
+			position: absolute;
+			width: auto;
+			height: 20vw;
+			top: 0;
+		}
+	}
+	.page_title_white{
+        @include en_CnDm(18px, 0.1em, 25px);
+	@include media(pc){
+		@include en_CnDm(30px, 0.1em, 25px);
+	}
+	color: $base_color1;
+		/*margin: 0;*/
+		@include media(tb){
+			position: absolute;
+			/*top: 92 - 63px;
+			left: 60px;*/
+            margin: auto 60px;
+			width: 255px;
+			height: 21px;
+		}
+
+		@include media(pc){
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			top: 8.229vw;
+			left: 13.02vw;
+			width: 42.448vw;
+			height: 4.323vw;
+			font-size: 4.323vw ;
+			line-height: 4.323vw ;
+		}
+	}
+}
+/*kokomade*/
+
+
+.page_information{
+    @include jp_Regular(11px, 0.05em, 32px);       
+     /* $size: 大きさ　(内部的には font-size)
+    $spacing: 字間  (内部的には letter-spacing)
+    $height: 文字の高さ　(内部的には line-height　)*/
+
+    color: #ffffff;
+    position: relative;
+    max-width: 500 + 120px;
+    margin:25px auto 0px ;
+    padding: 0 60px;
+}
+
+.goods_body{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.goods_detail{
+    position: relative;
+    display: flex;
+    max-width: 500px;
+    height: 200px;
+    margin: 45px 60px 0;
+
+}
+
+.goods_T-shirt_img{
+    width: 60%;
+    flex-shrink: 0;
+    object-fit: cover;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.goods_detail_letter{   
+    margin-left: -10px;
+    
+    
+}
+
+.goods_number{
+    flex-shrink: 0;
+    position: relative;
+    margin-top: 5px;
+
+}
+
+.goods_name{
+    @include jp_Bold(17px, 0em, 23px);
+    color: #ffffff;
+    margin-top: 10px;
+
+}
+
+.goods_price_and_unit{
+    display: flex
+
+}
+
+.goods_price{
+    @include en_CnDm(30px, 0em, 36px);
+    color: #ffffff;
+    margin-top: 5px
+
+}
+
+.goods_price_unit{
+    @include jp_Bold(13px, 0em, 18px);
+    color: #ffffff;
+    margin-left: 6px;
+    margin-top: 17px;
+
+}
+
+.goods_explanation{
+    @include jp_Regular(11px, 0.05em, 20px);
+    color: #ffffff;
+    margin-top: 5px;
+    width: 110%; /*実際は100％　こっちの方が見やすいかも*/
+
+}
+
+/*No.2_goods ここから*/
+.goods_detail_left{
+    position: relative;
+    display: flex;
+    max-width: 500px;
+    height: 200px;
+    margin: 45px 60px 0;
+    flex-direction: row-reverse;
+
+}
+
+.goods_left_img{
+    width: 60%;
+    flex-shrink: 0;
+    object-fit: cover;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    margin-left: -30px;
+    
+}
+
+.goods_detail_letter_left{   
+    margin-right: -10px;
+    z-index: 1;
+}
+
+/*最終ボックス*/
+
+.goods_detail_end{
+    position: relative;
+    display: flex;
+    max-width: 500px;
+    height: 200px;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    margin: 45px 60px 50px;
+    flex-direction: row-reverse;
+
+}
