@@ -1,0 +1,322 @@
+.TOP_jp {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  font-feature-settings: "palt" 1;
+  line-height: 26px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  margin: 8px 0;
+}
+@media only screen and (min-width: 1025px) {
+  .TOP_jp {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    font-feature-settings: "palt" 1;
+    line-height: 44px;
+    letter-spacing: 0.2em;
+    margin: 10px 0;
+  }
+}
+
+.TOP_en {
+  font-family: franklin-gothic-condensed, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 8px 0;
+}
+@media only screen and (min-width: 1025px) {
+  .TOP_en {
+    font-family: franklin-gothic-condensed, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+  }
+}
+
+.TOP_title_en {
+  font-family: franklin-gothic-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0;
+}
+
+.countdown_jp {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 10px;
+  font-feature-settings: "palt" 1;
+  line-height: 15px;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 0;
+}
+@media only screen and (min-width: 1025px) {
+  .countdown_jp {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    font-feature-settings: "palt" 1;
+    line-height: 29px;
+    letter-spacing: 0;
+  }
+}
+
+.countdown_jp2 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  font-feature-settings: "palt" 1;
+  line-height: 26px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  margin: 8px 0;
+}
+@media only screen and (min-width: 1025px) {
+  .countdown_jp2 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    font-feature-settings: "palt" 1;
+    line-height: 44px;
+    letter-spacing: 0.2em;
+    margin: 10px 0;
+  }
+}
+
+.countdown_number {
+  font-family: franklin-gothic-condensed, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 22px 0;
+}
+@media only screen and (min-width: 1025px) {
+  .countdown_number {
+    font-family: franklin-gothic-condensed, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 90px;
+    line-height: 105px;
+    letter-spacing: 0;
+  }
+}
+
+.footer_copy_right {
+  font-family: franklin-gothic-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+@media only screen and (min-width: 1025px) {
+  .footer_copy_right {
+    margin: 0;
+  }
+}
+
+.footer_sns {
+  font-family: franklin-gothic-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 8px;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 0;
+}
+@media only screen and (min-width: 1025px) {
+  .footer_sns {
+    font-family: franklin-gothic-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 8px;
+    letter-spacing: 0;
+  }
+}
+
+.blog_article_date {
+  font-family: franklin-gothic-condensed, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 0;
+}
+@media only screen and (min-width: 1025px) {
+  .blog_article_date {
+    font-family: franklin-gothic-condensed, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0;
+  }
+}
+
+.top_ta_en {
+  font-family: franklin-gothic-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 0;
+}
+@media only screen and (min-width: 1025px) {
+  .top_ta_en {
+    font-family: franklin-gothic-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0;
+  }
+}
+
+.nav_ta_en {
+  font-family: franklin-gothic-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4.8vw;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+@media only screen and (min-width: 1025px) {
+  .nav_ta_en {
+    font-family: franklin-gothic-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+}
+
+.top_tab_jp {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 12px;
+  font-feature-settings: "palt" 1;
+  line-height: 17px;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 0;
+}
+section .top_tab_jp {
+  text-shadow: 0 0 6px #000000;
+}
+@media only screen and (min-width: 1025px) {
+  .top_tab_jp {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 24px;
+    font-feature-settings: "palt" 1;
+    line-height: 35px;
+    letter-spacing: 0;
+  }
+}
+
+.top_ta_jp_body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 9.5px;
+  font-feature-settings: "palt" 1;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin: 0;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+@media only screen and (min-width: 1025px) {
+  .top_ta_jp_body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    font-feature-settings: "palt" 1;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+  }
+}
+
+.top_more_button {
+  font-family: franklin-gothic-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 9px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin: 0;
+}
+@media only screen and (min-width: 1025px) {
+  .top_more_button {
+    font-family: franklin-gothic-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 44px;
+    letter-spacing: 0.05em;
+  }
+}
+
+.reading_body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11px;
+  font-feature-settings: "palt" 1;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin: 0;
+}
+@media only screen and (min-width: 1025px) {
+  .reading_body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    font-feature-settings: "palt" 1;
+    line-height: 42px;
+    letter-spacing: 0.05em;
+  }
+}
+
+::-moz-selection {
+  background-color: #52CC89;
+}
+
+::selection {
+  background-color: #52CC89;
+}/*# sourceMappingURL=setting.css.map */

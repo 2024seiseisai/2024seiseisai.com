@@ -1,0 +1,244 @@
+//ページ設定
+$base_color1: #ffffff;
+$base_color2: #000000;
+$base_color3: #52CC89;
+
+$IMG_PATH: "/2023/common/img/";
+$COMMON_IMG_PATH: "/2023/common/img/";
+
+
+//フォントスタイル一覧
+@mixin en_CnBk($size, $spacing, $height){
+    font: {
+        family: franklin-gothic-condensed, sans-serif;
+        weight: 400;
+        style: normal;
+        size: $size;
+    }
+    line-height: $height;
+    letter-spacing: $spacing;
+}
+@mixin en_CnDm($size, $spacing, $height){
+    font: {
+        family: franklin-gothic-condensed, sans-serif;
+        weight: 600;
+        style: normal;
+        size: $size;
+    }
+    line-height: $height;
+    letter-spacing: $spacing;
+}
+@mixin en_CnMd($size, $spacing, $height){
+    font: {
+        family: franklin-gothic-condensed, sans-serif;
+        weight: 500;
+        style: normal;
+        size: $size;
+    }
+    line-height: $height;
+    letter-spacing: $spacing;
+}
+
+@mixin jp_ExtraLight($size, $spacing, $height){
+    font: {
+        family: 'Noto Sans JP',sans-serif;
+        weight: 100;
+        style: normal;
+        size: $size;
+        feature-settings: "palt" 1;
+    }
+    line-height: $height;
+    letter-spacing: $spacing;
+}
+@mixin  jp_Normal($size, $spacing, $height){
+    font: {
+        family: 'Noto Sans JP',sans-serif;
+        weight: 400;
+        style: normal;
+        size: $size;
+        feature-settings: "palt" 1;
+    }
+    line-height: $height;
+    letter-spacing: $spacing;
+}
+@mixin jp_Regular($size, $spacing, $height){
+    font: {
+        family: 'Noto Sans JP',sans-serif;
+        weight: 400;
+        style: normal;
+        size: $size;
+        feature-settings: "palt" 1;
+    }
+    line-height: $height;
+    letter-spacing: $spacing;
+}
+@mixin jp_Bold($size, $spacing, $height){
+    font: {
+        family: 'Noto Sans JP',sans-serif;
+        weight: 600;
+        style: normal;
+        size: $size;
+        feature-settings: "palt" 1;
+    }
+    line-height: $height;
+    letter-spacing: $spacing;
+}
+
+
+//float後の回り込み防止用
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+//メディアクエリ用Sass
+$breakpoints: (
+    sm: "only screen and (max-width: 600px)",
+    tb: "only screen and (max-width: 1024px)",
+    pc: "only screen and (min-width: 1025px)",
+    tbpc: "only screen and (min-width: 601px)"
+);
+
+@mixin media($breakpoint){
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+@mixin hover() {
+    @media (hover: hover) {
+        &:hover {
+            @content
+        }
+    }
+}
+
+//文字スタイル
+.TOP_jp{
+    @include jp_Normal(18px, 0.2em, 26px);
+    color: $base_color1;
+    margin: 8px 0;
+    @include media(pc){
+        @include jp_Normal(30px, 0.2em, 44px);
+        margin: 10px 0;
+    }
+}
+.TOP_en{
+    @include en_CnDm(25px, 0, 30px);
+    color: $base_color1;
+    margin: 8px 0;
+    @include media(pc){
+        @include en_CnDm(42px, 0.05em, 50px);
+    }
+}
+.TOP_title_en{
+    @include en_CnBk(22px, 0, 27px)
+}
+.countdown_jp{
+    @include jp_Bold(10px, 0, 15px);
+    color: $base_color1;
+    margin: 0;
+    @include media(pc){
+        @include jp_Bold(20px, 0, 29px);
+    }
+}
+.countdown_jp2{
+    @include jp_Bold(18px, 0.2em, 26px);
+    color: $base_color1;
+    margin: 8px 0;
+    @include media(pc){
+        @include jp_Bold(30px, 0.2em, 44px);
+        margin: 10px 0;
+    }
+}
+.countdown_number{
+    @include en_CnDm(40px, 0, 30px);
+    color: $base_color1;
+    margin: 22px 0;
+    @include media(pc){
+        @include en_CnDm(90px, 0, 105px);
+    }
+}
+.footer_copy_right{
+    @include en_CnBk(12px, 0, 12px);
+    color: $base_color1;
+    @include media(pc){
+        margin: 0;
+    }
+}
+.footer_sns{
+    @include en_CnBk(14px, 0, 8px);
+    color: $base_color1;
+    margin: 0;
+    @include media(pc){
+        @include en_CnBk(12px, 0, 8px);
+    }
+}
+.blog_article_date{
+    @include en_CnMd(12px, 0, 15px);
+    color: $base_color1;
+    margin: 0;
+    @include media(pc){
+        @include en_CnMd(12px, 0, 15px);
+    }
+}
+.top_ta_en{
+    @include en_CnBk(18px, 0, 22px);
+    color: $base_color1;
+    margin: 0;
+    @include media(pc){
+        @include en_CnBk(36px, 0, 44px);
+    }
+}
+.nav_ta_en{
+    @include en_CnBk(4.8vw, 0, 22px);
+    @include media(pc){
+        @include en_CnBk(20px, 0, 24px);
+    }
+    color: $base_color1;
+}
+.top_tab_jp{
+    @include jp_ExtraLight(12px, 0, 17px);
+    color: $base_color1;
+    margin: 0;
+    section &{
+        text-shadow: 0 0 6px $base_color2
+    }
+    @include media(pc){
+        @include jp_ExtraLight(24px, 0, 35px);
+    }
+}
+.top_ta_jp_body{
+    @include jp_Normal(9.5px, 0.05em, 18px);
+    color: $base_color1;
+    margin: 0;
+
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    @include media(pc){
+        @include jp_Normal(16px, 0.05em, 30px);
+    }
+}
+.top_more_button{
+    @include en_CnBk(9px, 0.05em, 22px);
+    color: $base_color1;
+    margin: 0;
+    @include media(pc){
+        @include en_CnBk(18px, 0.05em, 44px);
+    }
+}
+.reading_body{
+    @include jp_Regular(11px, 0.05em, 32px);
+    color: $base_color1;
+    margin: 0;
+    @include media(pc){
+        @include jp_Regular(16px, 0.05em, 42px)
+    }
+}
+
+::selection{
+    background-color: $base_color3;
+}

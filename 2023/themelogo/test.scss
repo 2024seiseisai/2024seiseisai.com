@@ -1,0 +1,50 @@
+
+
+.splite{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+
+    @mixin splite($name, $size, $steps){
+        animation-name: #{$name};
+        animation-duration: $steps / 24 * 1000ms;
+        animation-timing-function: steps($steps, end);
+    
+        @keyframes #{$name} {
+            from{
+                transform: translateY(0);
+            }
+            to{
+                transform: translateY(-1 * $steps * $size);
+            }
+        }
+    }
+
+    &__img{
+        width: 100%;
+        height: auto;
+
+        animation-fill-mode: both;
+        animation-play-state: paused;
+        animation-direction: normal;
+
+        &--01{
+            @include splite("splite-01", 300px, 8);
+        }
+        &--02{
+            @include splite("splite-02", 300px, 8);
+        }
+        &--03{
+            @include splite("splite-03", 300px, 8);
+        }
+        &--04{
+            @include splite("splite-04", 300px, 8);
+        }
+        &--play{
+            animation-play-state: running;
+        }
+        &--reverse{
+            animation-direction: reverse;
+        }
+    }
+}
