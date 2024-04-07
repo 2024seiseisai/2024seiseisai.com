@@ -27,7 +27,7 @@ header{
 }
 
 .logo p::before, .logo p::after{
-    content: "🔥";
+    content: "⭐";
 }
 
 .aligin_left{
