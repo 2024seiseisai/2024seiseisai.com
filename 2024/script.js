@@ -8,5 +8,5 @@ var hamburger_animation_PC = lottie.loadAnimation({
 });
 
 $("#hamburger").click(function(){
-    hamburger_animation_PC.playSegments([0, 100], true);
+    hamburger_animation_PC.play();
 });
