@@ -131,13 +131,13 @@ header{
     height: 2px;/*下線の太さ*/
     background-color: #FFFFFF;/*下線の色*/
     transition: all 0.2s ease;/*アニメーション時間*/
-    transform: translate(-100%,40px) scaleX(0);
+    transform: translate(-100%,45px) scaleX(0);
     transform-origin: left;
 }
 
 /*カーソルが載ったときにafter要素を表示*/
 .menu_main_item:hover:after{
-    transform: translate(-100%,40px) scaleX(1);
+    transform: translate(-100%,45px) scaleX(1);
 }
 
 
