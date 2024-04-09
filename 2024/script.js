@@ -27,8 +27,10 @@ $("#hamburger").click(function(){
         hamburger_animation_PC.setDirection(-1); // 逆再生方向を設定
         hamburger_animation_PC.play(); // アニメーションを再生
         $(".menu").css("transform","scaleY(0)");
-        $("header").css("border-bottom","");
         menu = "closed";
+        setTimeout(function(){
+            $("header").css("border-bottom","");
+        },200)
     }
 });
     

@@ -77,3 +77,7 @@ header{
     z-index: 127;
     top: 100px;
 }
+
+.menu_main{
+    display: flex;
+}
