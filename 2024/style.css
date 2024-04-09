@@ -21,7 +21,6 @@ header{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    margin-right: 18px;
 }
 
 .hamburger{
