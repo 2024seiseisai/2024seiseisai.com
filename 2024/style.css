@@ -106,7 +106,7 @@ header{
 
 .menu_main_item_container{
     border-left: 1px solid #FF0084;
-    margin-left: 11px;
+    margin: 16px 0 0 11px;
 }
 
 .menu_main_item{
