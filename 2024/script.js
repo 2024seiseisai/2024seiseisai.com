@@ -30,7 +30,7 @@ $("#hamburger").click(function(){
         menu = "closed";
         setTimeout(function(){
             $("header").css("border-bottom","");
-        },200)
+        },200);
     }
 });
     

@@ -80,4 +80,68 @@ header{
 
 .menu_main{
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 108px 0 0 0;
+    gap: 8%;
+}
+
+.menu_main_title_English{
+    margin: 0;
+    /*以下フォント情報*/
+    color: #FFFFFF;
+    font-family: 'Nunito Sans';
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.menu_main_title_Japanese{
+    margin: 0;
+    /*以下フォント情報*/
+    color: #FFFFFF;
+    font-family: 'Noto Sans JP';
+    font-weight: Medium;
+    font-size: 24px;
+}
+
+.menu_main_item_container{
+    border-left: 1px solid #FF0084;
+    margin-left: 11px;
+}
+
+.menu_main_item{
+    position: relative;
+    display: block;
+    width: fit-content;
+    transition: text-decoration 0.2s ease-out;
+    margin: 0 0 17px 29px;
+    /*以下フォント情報*/
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    font-size: 36px;
+}
+
+/*after要素で下線部分を作る*/
+.menu_main_item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;/*下線の太さ*/
+    background-color: #FFFFFF;/*下線の色*/
+    transition: all 0.2s ease;/*アニメーション時間*/
+    transform: translate(-100%,40px) scaleX(0);
+    transform-origin: left;
+}
+
+/*カーソルが載ったときにafter要素を表示*/
+.menu_main_item:hover:after{
+    transform: translate(-100%,40px) scaleX(1);
+}
+
+
+.unfinished{
+    pointer-events:none;/*クリック不可にする*/
+    color: #B2B2B2;
 }
