@@ -178,7 +178,7 @@ header{
 .menu_SNS_item_link-out{
     position: relative;
     transform: translate(0,3px);
-    transition: all 0.2s;
+    transition: all 0.1s;
 }
 
 #menu_SNS_item_X:hover #menu_SNS_item_X_img{
