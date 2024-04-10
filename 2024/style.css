@@ -181,10 +181,6 @@ header{
     transition: all 0.2s;
 }
 
-#menu_SNS_item_X_img{
-    transition: all 0.2s;
-}
-
 #menu_SNS_item_X:hover #menu_SNS_item_X_img{
     content: url(top_img/twitter_white.svg);
 }
