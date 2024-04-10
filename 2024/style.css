@@ -66,23 +66,17 @@ header{
     background-color: #000000;
     width: 100%;
     height: calc(100vh - 100px);
-    transform: scaleY(0);
-    transform-origin: top;
-    -webkit-transform: scaleY(0);
-    -webkit-transform-origin: top;
-    -moz-transform: scaleY(0);
-    -moz-transform-origin: top;
     transition: all 0.2s ease-out;
     position: fixed;
     z-index: 127;
-    top: 100px;
+    top: -100vh;
 }
 
 .menu_main{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin: 108px 0 0 0;
+    margin: 7.5% 0 0 0;
     gap: 8%;
 }
 
@@ -113,7 +107,6 @@ header{
     position: relative;
     display: block;
     width: fit-content;
-    transition: text-decoration 0.2s ease-out;
     margin: 0 0 17px 29px;
     /*以下フォント情報*/
     color: #FFFFFF;
@@ -138,6 +131,54 @@ header{
 /*カーソルが載ったときにafter要素を表示*/
 .menu_main_item:hover:after{
     transform: translate(-100%,45px) scaleX(1);
+}
+
+.menu_SNS{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.menu_SNS_title{
+    text-align: center;
+    margin: 0;
+    border-bottom: 1px solid #FFFFFF;
+    font-family: 'Nunito Sans';
+    font-weight: 800;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.menu_SNS_item_container{
+    margin-top: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.menu_SNS_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu_SNS_item_name{
+    margin: 0;
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.menu_SNS_item_link-out{
+    transform: translate(0,3px);
+}
+
+
+/*PC版で高さが足りなくなることへの対策*/
+@media only screen and (max-width: 1024px) {
+
 }
 
 
