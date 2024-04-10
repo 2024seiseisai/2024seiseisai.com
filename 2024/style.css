@@ -135,7 +135,7 @@ header{
 
 .menu_SNS{
     width: 640px;
-    margin: 0 auto;
+    margin: 73px auto 0 auto;
 }
 
 .menu_SNS_title{
@@ -172,12 +172,25 @@ header{
 }
 
 .menu_SNS_item_link-out{
-    transform: translate(0,3px);
+    position: relative;
+    top: 3px;
+}
+
+#menu_SNS_item_X:hover #menu_SNS_item_X_img{
+    content: url(top_img/twitter_white.svg);
+}
+
+.SNS_link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
 /*PC版で高さが足りなくなることへの対策*/
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1680px) {
 
 }
 
