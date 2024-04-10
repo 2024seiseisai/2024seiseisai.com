@@ -156,6 +156,10 @@ header{
     gap: 48px;
 }
 
+.menu_SNS_btn{
+    position: relative;
+}
+
 .menu_SNS_item{
     display: flex;
     justify-content: center;
@@ -173,11 +177,20 @@ header{
 
 .menu_SNS_item_link-out{
     position: relative;
-    top: 3px;
+    transform: translate(0,3px);
+    transition: all 0.2s;
+}
+
+#menu_SNS_item_X_img{
+    transition: all 0.2s;
 }
 
 #menu_SNS_item_X:hover #menu_SNS_item_X_img{
     content: url(top_img/twitter_white.svg);
+}
+
+.menu_SNS_btn:hover .menu_SNS_item_link-out{
+    transform: translate(3px,0)
 }
 
 .SNS_link{
