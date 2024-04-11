@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
+/*ここからcommon行き*/
+
 body{
     margin: 0;
-    height: 3000px;
+    min-height: 100vh;
 }
 
 header{
@@ -185,7 +187,7 @@ header{
 }
 
 #menu_SNS_item_X:hover #menu_SNS_item_X_img{
-    content: url(top_img/twitter_white.svg);
+    content: url(../top_img/twitter_white.svg);
 }
 
 .menu_SNS_btn:hover .menu_SNS_item_link-out{
@@ -202,7 +204,7 @@ header{
 
 
 /*PC版で高さが足りなくなることへの対策*/
-@media only screen and (max-width: 1679px) {
+@media only screen and (max-width: 1560px) {
 
     .menu_main{
         margin-top: 7vh;
@@ -243,3 +245,48 @@ header{
     pointer-events:none;/*クリック不可にする*/
     color: #B2B2B2;
 }
+
+/*common行きここまで*/
+
+/*ここからトップページ本体*/
+
+main{
+    position: relative;
+    top: 100px;
+}
+
+.top_picture{
+    width: 100%;
+    background: #C6C6C6;
+    aspect-ratio: 16/9;
+}
+
+.top_main{
+    display: flex;
+    align-items: center;
+}
+
+.top_slogan{
+    background: url(../top_img/Vector.svg);
+    min-width: 448px;
+    min-height: 493px;
+    width: 35vw;
+    aspect-ratio: 448/493;
+    background-size: cover;
+    position: relative;
+}
+
+.top_slogan_text{
+    margin: 0;
+    text-align: right;
+    position: relative;
+    top: 24%;
+    /*以下フォント情報*/
+    font-family: 'Noto Sans JP';
+    font-weight: Medium;
+    font-size: 48px;
+} 
+
+
+
+
