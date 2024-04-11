@@ -76,8 +76,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin: 7.5% 0 0 0;
-    gap: 8%;
+    margin: 7.5vw 0 0 0;
+    gap: 8vw;
 }
 
 .menu_main_title_English{
@@ -107,6 +107,7 @@ header{
     position: relative;
     display: block;
     width: fit-content;
+    width: -moz-fit-content;
     margin: 0 0 17px 29px;
     /*以下フォント情報*/
     color: #FFFFFF;
@@ -135,7 +136,9 @@ header{
 
 .menu_SNS{
     width: 640px;
-    margin: 73px auto 0 auto;
+    margin: 90px auto 0 auto;
+    position: relative;
+    top: -17px;
 }
 
 .menu_SNS_title{
@@ -199,7 +202,39 @@ header{
 
 
 /*PC版で高さが足りなくなることへの対策*/
-@media only screen and (max-width: 1680px) {
+@media only screen and (max-width: 1679px) {
+
+    .menu_main{
+        margin-top: 7vh;
+    }
+
+    .menu_main_title_English{
+        font-size: 3.3vw;
+    }
+
+    .menu_main_title_Japanese{
+        font-size: 1.6vw;
+    }
+
+    .menu_main_item{
+        font-size: 2.5vw;
+    }
+
+    .menu_SNS{
+        margin-top: 5vh;
+    }
+
+    .menu_SNS_title{
+        font-size: 2.5vw;
+    }
+
+    .menu_SNS_item_container{
+        margin-top: 1.8vh;
+    }
+
+    .menu_SNS_item{
+        font-size: 1.6vw;
+    }
 
 }
 
