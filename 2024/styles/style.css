@@ -351,6 +351,35 @@ main{
     color: #FFFFFF;
 }
 
+.top_news{
+    width: 100%;
+    aspect-ratio: 4/3;
+    background-color: #000000;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
 
+.top_news_h2{
+    margin: 0;
+    padding: 7% 0 0 11%;
+    width: fit-content;
+    width: -moz-fit-content;
+    border-bottom: 2px solid #FFFFFF;
+    /*以下フォント情報*/
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    font-size: 64px;
+    color: #FF0084;
+    position: relative;
+}
 
-
+.top_news_h2::after{
+    content: "";
+    width: 141px;
+    height: 2px;
+    background-color: #FFFFFF;
+    display: block;
+    position: absolute;
+    right: 0;
+    transform: rotate(135deg);
+    transform-origin: right;
+}
