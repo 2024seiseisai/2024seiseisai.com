@@ -186,9 +186,13 @@ header{
     transition: all 0.1s;
 }
 
+/*
+
 #menu_SNS_item_X:hover #menu_SNS_item_X_img{
     content: url(../top_img/twitter_white.svg);
 }
+
+*/
 
 .menu_SNS_btn:hover .menu_SNS_item_link-out{
     transform: translate(3px,0)

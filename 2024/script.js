@@ -36,3 +36,17 @@ $("#hamburger").click(function(){
     }
 });
     
+
+
+//Xアイコン<=>Twitterアイコンのアニメーション
+$("#menu_SNS_item_X").hover(function(){
+    $("#menu_SNS_item_X_img").fadeTo(50,0,function(){
+        $("#menu_SNS_item_X_img").attr("src","top_img/twitter_white.svg");
+        $("#menu_SNS_item_X_img").fadeTo(50,1);
+    });
+},function(){
+    $("#menu_SNS_item_X_img").fadeTo(50,0,function(){
+        $("#menu_SNS_item_X_img").attr("src","top_img/X_white.svg")
+        $("#menu_SNS_item_X_img").fadeTo(50,1);
+    });
+});
