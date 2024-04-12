@@ -263,13 +263,15 @@ main{
 
 .top_main{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .top_slogan{
     background: url(../top_img/Vector.svg);
+    /*
     min-width: 448px;
     min-height: 493px;
+    */
     width: 35vw;
     aspect-ratio: 448/493;
     background-size: cover;
@@ -283,9 +285,71 @@ main{
     top: 24%;
     /*以下フォント情報*/
     font-family: 'Noto Sans JP';
-    font-weight: Medium;
+    font-weight: 500;
     font-size: 48px;
-} 
+}
+
+.top_description{
+    margin: 10vh 0 0 26px;
+}
+
+.top_description_title{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+    /*以下フォント情報*/
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.top_description_title::before, .top_description_title::after{
+    content: "";
+    width: 15vw;
+    height: 2px;
+    background-color: #FF0084;
+}
+
+.top_description_main{
+    margin: 14px 0 0 0;
+    max-width: 55vw;
+    /*以下フォント情報*/
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.top_countdown{
+    margin: 69px 0 79px 0;
+}
+
+.top_countdown::before{
+    content: "第60回菁々祭まで...";
+    position: relative;
+    left: calc(50% - 360px);
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.top_countdown_timer{
+    margin: 0;
+    width: 720px;
+    height: 120px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /*以下フォント情報*/
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+    font-size: 40px;
+    color: #FFFFFF;
+}
 
 
 
