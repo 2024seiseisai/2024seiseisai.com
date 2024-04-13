@@ -101,7 +101,7 @@ const now_date = new Date();
 if( !dateFns.isValid(now_date) ){
     clearInterval(countdown)
 
-    $('#countdown_timer').html('<p class="countdown_jp2">時刻取得エラー<span class="countdown_jp">ER01</span></p>');
+    $('#countdown').html('<p class="countdown_jp2">時刻取得エラー<span class="countdown_jp">ER01</span></p>');
 
     $('#countdown_massage').html('');//今はbefore疑似要素 タイマーのhtml作り直しも視野
     $('.countdown_unit').hide();
