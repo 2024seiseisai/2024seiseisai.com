@@ -54,10 +54,10 @@ $("#menu_SNS_item_X").hover(function(){
 
 
 //カウントダウン
-const seiseisai_date = dateFns.parse('2023-09-09 09:00:00', 'yyyy-MM-dd HH:mm:ss', new Date()); //一日目開始
-const seiseisai_1day_end = dateFns.parse('2023-09-09 17:00:00', 'yyyy-MM-dd HH:mm:ss', new Date()); //一日目終了
-const seiseisai_2day_start = dateFns.parse('2023-09-10 09:00:00', 'yyyy-MM-dd HH:mm:ss', new Date()); //二日目開始
-const seiseisai_2day_end = dateFns.parse('2023-09-10 17:00:00', 'yyyy-MM-dd HH:mm:ss', new Date()); //二日目終了
+const seiseisai_date = dateFns.parse('2024-09-07 09:00:00', 'yyyy-MM-dd HH:mm:ss', new Date()); //一日目開始
+const seiseisai_1day_end = dateFns.parse('2024-09-07 17:00:00', 'yyyy-MM-dd HH:mm:ss', new Date()); //一日目終了
+const seiseisai_2day_start = dateFns.parse('2024-09-08 09:00:00', 'yyyy-MM-dd HH:mm:ss', new Date()); //二日目開始
+const seiseisai_2day_end = dateFns.parse('2024-09-08 17:00:00', 'yyyy-MM-dd HH:mm:ss', new Date()); //二日目終了
 
 const to_1day_end = dateFns.differenceInSeconds(seiseisai_date, seiseisai_1day_end);
 const to_2day_start = dateFns.differenceInSeconds(seiseisai_date, seiseisai_2day_start);
@@ -115,7 +115,7 @@ function countDown(){
     if(span > 0){
         //菁々祭開始まで
         $('.countdown_unit').show();
-        $('#countdown_massage').html('第59回菁々祭まで');
+        $('#countdown_massage').html('第60回菁々祭まで...');
 
         $('#countdown').html( spanWithFormat(span) );
 
@@ -144,7 +144,7 @@ function countDown(){
         $('#countdown').html('<span class="countdown_end countdown_jp2">終了しました。<br>ご来場ありがとうございました。</span>');
 
         $('.countdown_unit').show();
-        $('#countdown_massage').html('第59回菁々祭は');
+        $('#countdown_massage').html('第60回菁々祭は');
 
         //指定の日時になればカウントを止める
         clearInterval(countdown)
