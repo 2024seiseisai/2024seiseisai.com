@@ -297,6 +297,14 @@ header{
     color: #B2B2B2;
 }
 
+
+
+footer{
+    width: 100%;
+    height: 760px;
+    background-color: #000000;
+}
+
 /*common行きここまで*/
 
 /*ここからトップページ本体*/
