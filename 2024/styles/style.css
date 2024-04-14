@@ -86,7 +86,7 @@ header{
     transform: translate(-100%,45px) scaleX(1);
 }
 
-@media only screen and (max-width: 1440px){
+@media only screen and (max-width: 1439px){
     
     .header_nav{
         gap: 2.5vw;
@@ -106,13 +106,18 @@ header{
     position: fixed;
     z-index: 127;
     top: -100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 .menu_main{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin: 7.5vw 0 0 0;
+    margin: 0;
     gap: 8vw;
 }
 
@@ -247,12 +252,9 @@ header{
 }
 
 
-/*PC版で高さが足りなくなることへの対策*/
-@media only screen and (max-width: 1560px) {
 
-    .menu_main{
-        margin-top: 7vh;
-    }
+/*PC版で高さが足りなくなることへの対策*/
+@media only screen and (max-width: 1439px) {
 
     .menu_main_title_English{
         font-size: 3.3vw;
@@ -280,6 +282,11 @@ header{
 
     .menu_SNS_item{
         font-size: 1.6vw;
+    }
+
+    .menu_credit{
+        font-size: 1vw;
+        margin-top: 3vw;
     }
 
 }
@@ -401,7 +408,7 @@ main{
 
 .top_introduction_container{
     display: grid;
-    grid-template-rows: repeat(4,50vw 80px);
+    grid-template-rows: repeat(3,50vw 80px) 50vw;
     grid-template-columns: 160px 1fr 1fr 160px;
 }
 
@@ -442,7 +449,7 @@ main{
     grid-row: 1/2;
     grid-column: 1/3;
     transform: scale(1.11);
-    transform-origin: left;
+    transform-origin: left top;
 }
 
 
@@ -458,7 +465,7 @@ main{
     grid-row: 3/4;
     grid-column: 3/5;
     transform: scale(1.11);
-    transform-origin: right;
+    transform-origin: right top;
 }
 
 
@@ -474,7 +481,7 @@ main{
     grid-row: 5/6;
     grid-column: 1/3;
     transform: scale(1.11);
-    transform-origin: left;
+    transform-origin: left top;
 }
 
 
@@ -490,5 +497,5 @@ main{
     grid-row: 7/8;
     grid-column: 3/5;
     transform: scale(1.11);
-    transform-origin: right;
+    transform-origin: right top;
 }
