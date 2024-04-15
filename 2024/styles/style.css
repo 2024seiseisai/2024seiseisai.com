@@ -299,6 +299,12 @@ header{
 
 
 
+main{
+    padding-top: 100px;
+}
+
+
+
 footer{
     width: 100%;
     height: 760px;
@@ -309,10 +315,7 @@ footer{
 
 /*ここからトップページ本体*/
 
-main{
-    position: relative;
-    top: 100px;
-}
+
 
 .top_picture{
     width: 100%;
@@ -417,7 +420,33 @@ main{
 .top_introduction_container{
     display: grid;
     grid-template-rows: repeat(3,50vw 80px) 50vw;
-    grid-template-columns: 160px 1fr 1fr 160px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.top_introduction_container_Blog{
+    grid-row: 1/2;
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.top_introduction_container_Special{
+    grid-row: 3/4;
+    grid-column: 1/3;
+    display: flex;
+}
+
+.top_introduction_container_Archives{
+    grid-row: 5/6;
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.top_introduction_container_Access{
+    grid-row: 7/8;
+    grid-column: 1/3;
+    display: flex;
 }
 
 .top_introduction_title_English{
@@ -446,64 +475,48 @@ main{
 
 
 .top_introduction_Blog{
-    grid-row: 1/2;
-    grid-column: 3/4;
+    position: relative;
+    right: 160px;
 }
 
 .top_introduction_img_Blog{
     aspect-ratio: 10/9;
     clip-path: polygon(0 0,60% 0,100% 100%,40% 100%);
     background: #5F5F5F;
-    grid-row: 1/2;
-    grid-column: 1/3;
-    transform: scale(1.11);
-    transform-origin: left top;
 }
 
 
 .top_introduction_Special{
-    grid-row: 3/4;
-    grid-column: 2/3;
+    position: relative;
+    left: 160px;
 }
 
 .top_introduction_img_Special{
     aspect-ratio: 10/9;
     clip-path: polygon(40% 0,100% 0,60% 100%,0 100%);
     background: #5F5F5F;
-    grid-row: 3/4;
-    grid-column: 3/5;
-    transform: scale(1.11);
-    transform-origin: right top;
 }
 
 
 .top_introduction_Archives{
-    grid-row: 5/6;
-    grid-column: 3/4;
+    position: relative;
+    right: 160px;
 }
 
 .top_introduction_img_Archives{
     aspect-ratio: 10/9;
     clip-path: polygon(0 0,60% 0,100% 100%,40% 100%);
     background: #5F5F5F;
-    grid-row: 5/6;
-    grid-column: 1/3;
-    transform: scale(1.11);
-    transform-origin: left top;
 }
 
 
 .top_introduction_Access{
-    grid-row: 7/8;
-    grid-column: 2/3;
+    position: relative;
+    left: 160px;
 }
 
 .top_introduction_img_Access{
     aspect-ratio: 10/9;
     clip-path: polygon(40% 0,100% 0,60% 100%,0 100%);
     background: #5F5F5F;
-    grid-row: 7/8;
-    grid-column: 3/5;
-    transform: scale(1.11);
-    transform-origin: right top;
 }
