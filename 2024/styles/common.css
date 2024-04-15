@@ -1,1 +1,31 @@
 @charset "UTF-8";
+
+/*カウントダウン*/
+.countdown{
+    margin: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown_unit{
+    /*以下フォント情報*/
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+    font-size: 32px;
+
+}
+
+.countdown_number{
+    width: 760px;
+    height: 120px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*以下フォント情報*/
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+    font-size: 40px;
+    color: #FFFFFF;
+}

@@ -54,14 +54,48 @@ header{
 .header_nav{
     display: flex;
     align-items: center;
+    gap: 40px;
+    margin-left: 40px;
 }
 
 .header_nav_item{
+    position: relative;
     display: inline-block;
+    margin: 0;
+    text-decoration: none;
     /*以下フォント情報*/
     color: #FFFFFF;
     font-weight: Medium;
     font-size: 32px;
+}
+
+/*after要素で下線部分を作る*/
+.header_nav_item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;/*下線の太さ*/
+    background-color: #FFFFFF;/*下線の色*/
+    transition: all 0.2s ease-out;/*アニメーション時間*/
+    transform: translate(-100%,45px) scaleX(0);
+    transform-origin: left;
+}
+
+/*カーソルが載ったときにafter要素を表示*/
+.header_nav_item:hover:after{
+    transform: translate(-100%,45px) scaleX(1);
+}
+
+@media only screen and (max-width: 1439px){
+    
+    .header_nav{
+        gap: 2.5vw;
+        margin-left: 2.5vw;
+    }
+
+    .header_nav_item{
+        font-size: 2.2vw;
+    }
 }
 
 .menu{
@@ -72,13 +106,18 @@ header{
     position: fixed;
     z-index: 127;
     top: -100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 .menu_main{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin: 7.5vw 0 0 0;
+    margin: 0;
     gap: 8vw;
 }
 
@@ -186,14 +225,6 @@ header{
     transition: all 0.1s;
 }
 
-/*
-
-#menu_SNS_item_X:hover #menu_SNS_item_X_img{
-    content: url(../top_img/twitter_white.svg);
-}
-
-*/
-
 .menu_SNS_btn:hover .menu_SNS_item_link-out{
     transform: translate(3px,0)
 }
@@ -206,13 +237,24 @@ header{
     height: 100%;
 }
 
+.menu_credit{
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 44px 0 0 0;
+    position: absolute;
+    right: -13.5vw;
+    text-align: right;
+    /*以下フォント情報*/
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+
 
 /*PC版で高さが足りなくなることへの対策*/
-@media only screen and (max-width: 1560px) {
-
-    .menu_main{
-        margin-top: 7vh;
-    }
+@media only screen and (max-width: 1439px) {
 
     .menu_main_title_English{
         font-size: 3.3vw;
@@ -242,6 +284,11 @@ header{
         font-size: 1.6vw;
     }
 
+    .menu_credit{
+        font-size: 1vw;
+        margin-top: 3vw;
+    }
+
 }
 
 
@@ -250,14 +297,25 @@ header{
     color: #B2B2B2;
 }
 
+
+
+main{
+    padding-top: 100px;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 760px;
+    background-color: #000000;
+}
+
 /*common行きここまで*/
 
 /*ここからトップページ本体*/
 
-main{
-    position: relative;
-    top: 100px;
-}
+
 
 .top_picture{
     width: 100%;
@@ -271,7 +329,7 @@ main{
 }
 
 .top_slogan{
-    background: url(../top_img/Vector.svg);
+    background: url(../header_img/Vector.svg);
     /*
     min-width: 448px;
     min-height: 493px;
@@ -324,37 +382,6 @@ main{
     font-size: 24px;
 }
 
-.top_countdown{
-    margin: 69px 0 79px 0;
-}
-
-.top_countdown::before{
-    content: "第60回菁々祭まで...";
-    position: relative;
-    left: calc(50% - 360px);
-    font-family: 'Noto Sans JP';
-    font-weight: 500;
-    font-size: 32px;
-}
-
-.top_countdown_timer{
-    margin: 0;
-    width: 720px;
-    height: 120px;
-    background-color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    /*以下フォント情報*/
-    font-family: 'Noto Sans JP';
-    font-weight: 500;
-    font-size: 40px;
-    color: #FFFFFF;
-}
-
 .top_news{
     width: 100%;
     aspect-ratio: 4/3;
@@ -386,4 +413,110 @@ main{
     right: 0;
     transform: rotate(135deg);
     transform-origin: right;
+}
+
+
+
+.top_introduction_container{
+    display: grid;
+    grid-template-rows: repeat(3,50vw 80px) 50vw;
+    grid-template-columns: 1fr 1fr;
+}
+
+.top_introduction_container_Blog{
+    grid-row: 1/2;
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.top_introduction_container_Special{
+    grid-row: 3/4;
+    grid-column: 1/3;
+    display: flex;
+}
+
+.top_introduction_container_Archives{
+    grid-row: 5/6;
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.top_introduction_container_Access{
+    grid-row: 7/8;
+    grid-column: 1/3;
+    display: flex;
+}
+
+.top_introduction_title_English{
+    margin: 0;
+    /*以下フォント情報*/
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+    font-size: 96px;
+}
+
+.top_introduction_title_Japanese{
+    margin: 0;
+    /*以下フォント情報*/
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.top_introduction_detail{
+    margin: 56px 0 0 0;
+    /*以下フォント情報*/
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+    font-size: 32px;
+}
+
+
+.top_introduction_Blog{
+    position: relative;
+    right: 160px;
+}
+
+.top_introduction_img_Blog{
+    aspect-ratio: 10/9;
+    clip-path: polygon(0 0,60% 0,100% 100%,40% 100%);
+    background: #5F5F5F;
+}
+
+
+.top_introduction_Special{
+    position: relative;
+    left: 160px;
+}
+
+.top_introduction_img_Special{
+    aspect-ratio: 10/9;
+    clip-path: polygon(40% 0,100% 0,60% 100%,0 100%);
+    background: #5F5F5F;
+}
+
+
+.top_introduction_Archives{
+    position: relative;
+    right: 160px;
+}
+
+.top_introduction_img_Archives{
+    aspect-ratio: 10/9;
+    clip-path: polygon(0 0,60% 0,100% 100%,40% 100%);
+    background: #5F5F5F;
+}
+
+
+.top_introduction_Access{
+    position: relative;
+    left: 160px;
+}
+
+.top_introduction_img_Access{
+    aspect-ratio: 10/9;
+    clip-path: polygon(40% 0,100% 0,60% 100%,0 100%);
+    background: #5F5F5F;
 }
