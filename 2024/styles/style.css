@@ -311,6 +311,22 @@ footer{
     background-color: #000000;
 }
 
+.footer_logo{
+    padding: 80px 0 0 160px;
+}
+
+.footer_logo_img{
+    height: 82px;
+}
+
+.footer_logo_img_caption{
+    /*以下フォント情報*/
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
 /*common行きここまで*/
 
 /*ここからトップページ本体*/
@@ -329,7 +345,7 @@ footer{
 }
 
 .top_slogan{
-    background: url(../header_img/Vector.svg);
+    background: url(../img/Vector.svg);
     /*
     min-width: 448px;
     min-height: 493px;
@@ -481,6 +497,7 @@ footer{
 .top_introduction_Blog{
     position: relative;
     right: 160px;
+    aspect-ratio: 7/9;
 }
 
 .top_introduction_img_Blog{
@@ -493,6 +510,7 @@ footer{
 .top_introduction_Special{
     position: relative;
     left: 160px;
+    aspect-ratio: 7/9;
 }
 
 .top_introduction_img_Special{
@@ -505,6 +523,7 @@ footer{
 .top_introduction_Archives{
     position: relative;
     right: 160px;
+    aspect-ratio: 7/9;
 }
 
 .top_introduction_img_Archives{
@@ -517,6 +536,7 @@ footer{
 .top_introduction_Access{
     position: relative;
     left: 160px;
+    aspect-ratio: 7/9;
 }
 
 .top_introduction_img_Access{
