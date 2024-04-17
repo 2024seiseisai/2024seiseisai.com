@@ -428,12 +428,14 @@ footer{
     grid-column: 1/3;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 .top_introduction_container_Special{
     grid-row: 3/4;
     grid-column: 1/3;
     display: flex;
+    justify-content: space-between;
 }
 
 .top_introduction_container_Archives{
@@ -441,12 +443,14 @@ footer{
     grid-column: 1/3;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 .top_introduction_container_Access{
     grid-row: 7/8;
     grid-column: 1/3;
     display: flex;
+    justify-content: space-between;
 }
 
 .top_introduction_title_English{
@@ -519,4 +523,37 @@ footer{
     aspect-ratio: 10/9;
     clip-path: polygon(40% 0,100% 0,60% 100%,0 100%);
     background: #5F5F5F;
+}
+
+@media only screen and (max-width: 1439px) {
+
+    .top_introduction_title_English{
+        font-size: 6.5vw;
+    }
+
+    .top_introduction_title_Japanese{
+        font-size: 2.2vw;
+    }
+
+    .top_introduction_detail{
+        font-size: 2.2vw;
+        margin-top: 3.88vw;
+    }
+
+    .top_introduction_Blog{
+        right: 8vw;
+    }
+
+    .top_introduction_Special{
+        left: 8vw;
+    }
+
+    .top_introduction_Archives{
+        right: 8vw;
+    }
+
+    .top_introduction_Access{
+        left: 8vw;
+    }
+
 }
