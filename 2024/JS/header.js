@@ -9,9 +9,21 @@ var hamburger_animation_PC = lottie.loadAnimation({
     renderer: 'svg',
     loop: false,
     autoplay: false,
-    path: "../header_img/hamburger.json" // JSONファイルのパス
+    path: "../img/hamburger.json" // JSONファイルのパス
 });
 hamburger_animation_PC.setSpeed(2.0);
+
+
+
+//Xアイコン、Twitterアイコンのアニメーション
+var menu_icon_animation = lottie.loadAnimation({
+    container: document.getElementById('menu_SNS_item_X_img'),// アニメーションを格納するDOM要素 
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: "../img/X-Twitter.json" // JSONファイルのパス
+});
+menu_icon_animation.setSpeed(3.0);
 
 
 
@@ -40,15 +52,11 @@ $("#hamburger").click(function(){
 
 //Xアイコン<=>Twitterアイコンのアニメーション
 $("#menu_SNS_item_X").hover(function(){
-    $("#menu_SNS_item_X_img").fadeTo(50,0,function(){
-        $("#menu_SNS_item_X_img").attr("src","../header_img/twitter_white.svg");
-        $("#menu_SNS_item_X_img").fadeTo(50,1);
-    });
+    menu_icon_animation.setDirection(1);
+    menu_icon_animation.play();
 },function(){
-    $("#menu_SNS_item_X_img").fadeTo(50,0,function(){
-        $("#menu_SNS_item_X_img").attr("src","../header_img/X_white.svg")
-        $("#menu_SNS_item_X_img").fadeTo(50,1);
-    });
+    menu_icon_animation.setDirection(-1);
+    menu_icon_animation.play();
 });
 
 
