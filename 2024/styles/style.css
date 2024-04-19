@@ -293,8 +293,8 @@ header{
 
 
 .unfinished{
-    pointer-events:none;/*クリック不可にする*/
-    color: #B2B2B2;
+    pointer-events:none!important;/*クリック不可にする*/
+    color: #B2B2B2!important;
 }
 
 
@@ -325,6 +325,61 @@ footer{
     font-weight: 500;
     font-size: 13px;
     color: #FFFFFF;
+}
+
+.footer_nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.footer_nav_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+
+
+.footer_nav_body_title_English{
+    margin: 0;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #FFFFFF;
+    font-family: 'Nunito Sans';
+    font-weight: 800;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.footer_nav_body_item{
+    display: block;
+    width: fit-content;
+    width: -moz-fit-content;
+    text-decoration: none;
+    margin-top: 20px;
+    position: relative;
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+/*after要素で下線部分を作る*/
+.footer_nav_body_item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;/*下線の太さ*/
+    background-color: #FFFFFF;/*下線の色*/
+    transition: all 0.2s ease-out;/*アニメーション時間*/
+    transform: translate(-100%,25px) scaleX(0);
+    transform-origin: left;
+}
+
+/*カーソルが載ったときにafter要素を表示*/
+.footer_nav_body_item:hover:after{
+    transform: translate(-100%,25px) scaleX(1);
 }
 
 /*common行きここまで*/
