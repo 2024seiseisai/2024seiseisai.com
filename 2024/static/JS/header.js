@@ -9,7 +9,7 @@ var hamburger_animation_PC = lottie.loadAnimation({
     renderer: 'svg',
     loop: false,
     autoplay: false,
-    path: "../img/hamburger.json" // JSONファイルのパス
+    path: "2024/static/img/hamburger.json" // JSONファイルのパス
 });
 hamburger_animation_PC.setSpeed(2.0);
 
@@ -21,7 +21,7 @@ var menu_icon_animation = lottie.loadAnimation({
     renderer: 'svg',
     loop: false,
     autoplay: false,
-    path: "../img/X-Twitter.json" // JSONファイルのパス
+    path: "2024/static/img/X-Twitter.json" // JSONファイルのパス
 });
 menu_icon_animation.setSpeed(3.0);
 
