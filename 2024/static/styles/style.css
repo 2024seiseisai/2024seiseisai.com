@@ -30,6 +30,7 @@ header{
 
 .hamburger{
     height: 100px;
+    cursor: pointer;
 }
 
 .header_reserve_btn{
@@ -340,9 +341,16 @@ header{
         font-size: 1.6vw;
     }
 
+    .menu_credit_container{
+        margin-top: 0;
+    }
+
+    .menu_privacy_policy{
+        transform: scale(0.8);
+    }
+
     .menu_credit{
         font-size: 1vw;
-        margin-top: 3vw;
     }
 
 }
@@ -426,7 +434,7 @@ footer{
     position: absolute;
     content: "";
     width: 100%;
-    height: 2px;/*下線の太さ*/
+    height: 1px;/*下線の太さ*/
     background-color: #FFFFFF;/*下線の色*/
     transition: all 0.2s ease-out;/*アニメーション時間*/
     transform: translate(-100%,25px) scaleX(0);
