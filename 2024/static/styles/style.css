@@ -30,6 +30,7 @@ header{
 
 .hamburger{
     height: 100px;
+    cursor: pointer;
 }
 
 .header_reserve_btn{
@@ -340,9 +341,16 @@ header{
         font-size: 1.6vw;
     }
 
+    .menu_credit_container{
+        margin-top: 0;
+    }
+
+    .menu_privacy_policy{
+        transform: scale(0.8);
+    }
+
     .menu_credit{
         font-size: 1vw;
-        margin-top: 3vw;
     }
 
 }
@@ -426,7 +434,7 @@ footer{
     position: absolute;
     content: "";
     width: 100%;
-    height: 2px;/*下線の太さ*/
+    height: 1px;/*下線の太さ*/
     background-color: #FFFFFF;/*下線の色*/
     transition: all 0.2s ease-out;/*アニメーション時間*/
     transform: translate(-100%,25px) scaleX(0);
@@ -509,11 +517,94 @@ footer{
     font-size: 24px;
 }
 
+@media only screen and (max-width: 1439px) {
+
+    .top_slogan_text{
+        font-size: 3vw;
+    }
+
+    .top_description_title{
+        font-size: 2.22vw;
+    }
+
+    .top_description_main{
+        font-size: 1.67vw;
+    }
+
+}
+
+.more_btn{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: #000000;
+    width: 192px;
+    aspect-ratio: 3/1;
+    margin: 20px auto;
+    transition: all 0.2s ease-out;
+}
+
+.more_btn_text{
+    margin: 0;
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+    font-size: 32px;
+    color: #FFFFFF;
+    padding-left: 50px;
+    transition: all 0.2s ease-out;
+}
+
+.more_btn_arrow{
+    display: inline-block;
+    border-right: 2px solid #FF0084;
+    border-bottom: 2px solid #FF0084;
+    width: 15px;
+    height: 15px;
+    transform: rotate(-45deg);
+    transition: all 0.2s ease-out;
+    position: relative;
+    left: 0;
+}
+
+.more_btn:hover{
+    background-color: #FF0084;
+}
+
+.more_btn:hover .more_btn_text{
+    color: #000000;
+}
+
+.more_btn:hover .more_btn_arrow{
+    left: 10px;
+    border-color: #000000;
+}
+
+@media only screen and (max-width: 1439px) {
+    
+    .more_btn{
+        width: 13.3vw;
+    }
+
+    .more_btn_text{
+        font-size: 2.22vw;
+        padding-left: 3.5vw;
+    }
+
+    .more_btn_arrow{
+        width: 1vw;
+        height: 1vw;
+    }
+
+}
+
 .top_news{
     width: 100%;
     aspect-ratio: 4/3;
     background-color: #000000;
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .top_news_h2{
@@ -540,6 +631,66 @@ footer{
     right: 0;
     transform: rotate(135deg);
     transform-origin: right;
+}
+
+.top_news_contents_static{
+    aspect-ratio: 3/1;
+    display: flex;
+    flex-direction: column;
+}
+
+.top_news_container{
+    margin: 0 160px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    gap: 72px;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.top_news_date{
+    margin: 0;
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.top_news_title{
+    width: calc(100% - 320px);
+    margin: 0;
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.top_news_more_btn{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    padding-bottom: 174px;
+}
+
+.top_news_more_btn_text{
+    margin: 0;
+    /*以下フォント情報*/
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.top_news_more_btn_link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
