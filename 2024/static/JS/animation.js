@@ -25,6 +25,15 @@ var menu_icon_animation = lottie.loadAnimation({
 });
 menu_icon_animation.setSpeed(3.0);
 
+var footer_icon_animation = lottie.loadAnimation({
+    container: document.getElementById('footer_X-Twitter'),// アニメーションを格納するDOM要素 
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: "./static/img/X-Twitter.json" // JSONファイルのパス
+});
+footer_icon_animation.setSpeed(3.0);
+
 
 
 //メニューの開閉
@@ -57,6 +66,14 @@ $("#menu_SNS_item_X").hover(function(){
 },function(){
     menu_icon_animation.setDirection(-1);
     menu_icon_animation.play();
+});
+
+$("#footer_nav_X").hover(function(){
+    footer_icon_animation.setDirection(1);
+    footer_icon_animation.play();
+},function(){
+    footer_icon_animation.setDirection(-1);
+    footer_icon_animation.play();
 });
 
 
