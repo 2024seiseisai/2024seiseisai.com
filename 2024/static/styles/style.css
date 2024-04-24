@@ -400,11 +400,9 @@ footer{
 .footer_nav_container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 80px;
 }
-
-
 
 .footer_nav_body_title_English{
     margin: 0;
@@ -437,14 +435,46 @@ footer{
     height: 1px;/*下線の太さ*/
     background-color: #FFFFFF;/*下線の色*/
     transition: all 0.2s ease-out;/*アニメーション時間*/
-    transform: translate(-100%,25px) scaleX(0);
+    transform: translate(-100%,27px) scaleX(0);
     transform-origin: left;
 }
 
 /*カーソルが載ったときにafter要素を表示*/
 .footer_nav_body_item:hover:after{
-    transform: translate(-100%,25px) scaleX(1);
+    transform: translate(-100%,27px) scaleX(1);
 }
+
+.footer_nav_SNS{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+    width: -moz-fit-content;
+    text-decoration: none;
+    margin-top: 20px;
+    position: relative;
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.footer_nav_SNS_btn{
+    display: block;
+    width: fit-content;
+    width: -moz-fit-content;
+    text-decoration: none;
+}
+
+.footer_X-Twitter_icon{
+    width: 26px;
+    height: 26px;
+}
+
+.footer_nav_body_item_SNS{
+    margin: 0;
+}
+
 
 /*common行きここまで*/
 
