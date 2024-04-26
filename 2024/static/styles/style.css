@@ -729,6 +729,22 @@ footer{
 }
 
 
+.top_description_title_bg{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-image: url(/2024/static/img/top_description_title_bg.svg);
+    width: 865px;
+    height: 120px;
+    background-repeat: no-repeat;
+    transform: scale(-1, 1);
+}
+
+.top_description_title{
+    transform: scale(-1, 1);
+}
+
+
 .top_news{
     width: 100%;
     aspect-ratio: 4/3;
