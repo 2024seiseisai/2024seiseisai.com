@@ -632,7 +632,7 @@ footer{
     color: #00FFFB;
 }
 
-.countdown_massage{
+.countdown_message{
     text-align: center;
     margin: 0;
     font-family: 'Noto Sans JP';
@@ -726,6 +726,22 @@ footer{
     font-weight: 500;
     font-size: 24px;
     color: #FFFFFF;
+}
+
+
+.top_description_title_bg{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-image: url(/2024/static/img/top_description_title_bg.svg);
+    width: 865px;
+    height: 120px;
+    background-repeat: no-repeat;
+    transform: scale(-1, 1);
+}
+
+.top_description_title{
+    transform: scale(-1, 1);
 }
 
 
