@@ -611,8 +611,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    top: -70px;
+    margin-top: -70px;
 }
 
 .date_info_sub{
@@ -621,6 +620,112 @@ footer{
     font-weight: 500;
     font-size: 48px;
     color: #FF0084;
+}
+
+.countdown_title{
+    text-align: center;
+    margin: 0;
+    margin-top: 22px;
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+    font-size: 40px;
+    color: #00FFFB;
+}
+
+.countdown_massage{
+    text-align: center;
+    margin: 0;
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.countdown_error{
+    text-align: center;
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.countdown_holding{
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: 40px;
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+    font-size: 60px;
+    color: #FFFFFF;
+}
+
+.countdown_end{
+    text-align: center;
+    margin: 0;
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.countdown_number_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 13px;
+}
+
+.countdown_number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+    font-size: 64px;
+    color: #FF0084;
+}
+
+#day::after{
+    content: "DAYS";
+    text-align: center;
+    margin-top: -10px;
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+#hour::after{
+    content: "HOURS";
+    text-align: center;
+    margin-top: -10px;
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+#minute::after{
+    content: "MINS";
+    text-align: center;
+    margin-top: -10px;
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+#second::after{
+    content: "SECS";
+    text-align: center;
+    margin-top: -10px;
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
 }
 
 
