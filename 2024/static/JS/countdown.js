@@ -11,7 +11,7 @@ const to_2day_end = dateFns.differenceInSeconds(seiseisai_date, seiseisai_2day_e
 const format_word = ['<span class="countdown_jp">','</span> ']
 
 
-function spanWithFormat(span_sec, format) {
+function spanWithFormat(span_sec) {
     if( !Number.isInteger(span_sec) || span_sec === 0 ){
         console.error;
         return '<p class="TOP_jp"><b>時刻取得エラー</b></P>';
@@ -27,7 +27,10 @@ function spanWithFormat(span_sec, format) {
     let hour_w0 = String(hour).padStart(2, "0");
     let day_w0 = String(day).padStart(2, "0");
 
-    return day_w0 + format_word[0] + "日" + format_word[1] + hour_w0 + format_word[0] + "時間" + format_word[1] + min_w0 + format_word[0] + "分" + format_word[1] + sec_w0 + format_word[0] + "秒" + format_word[1];
+    $("#day").text(day_w0)
+    $("#hour").text(hour_w0)
+    $("#minute").text(min_w0)
+    $("#second").text(sec_w0)
 }
 
 
@@ -46,10 +49,9 @@ const now_date = new Date();
 if( !dateFns.isValid(now_date) ){
     clearInterval(countdown)
 
-    $('#countdown').html('<p class="countdown_jp2">時刻取得エラー<span class="countdown_jp">ER01</span></p>');
+    $('#countdown').html('<p class="countdown_error">時刻取得エラー<span class="countdown_jp">ER01</span></p>');
 
-    $('#countdown_massage').html('');//今はbefore疑似要素 タイマーのhtml作り直しも視野
-    $('.countdown_unit').hide();
+    $('#countdown_massage').text('');
 }
 
 //秒を取得
@@ -59,46 +61,46 @@ let span_2day = dateFns.differenceInSeconds(seiseisai_2day_start, now_date);
 function countDown(){
     if(span > 0){
         //菁々祭開始まで
-        $('.countdown_unit').show();
-        $('#countdown_massage').html('第60回菁々祭まで...');
+        $("#countdown_holding").text("");
+
+        $('#countdown_massage').text('第60回菁々祭まで...');
 
         $('#countdown').html( spanWithFormat(span) );
 
     }else if(span > to_1day_end){
         //1日目の9時から17時(一日目開催中)
-        $('#countdown').html('<p class="countdown_jp2">現在 菁々祭1日目開催中！</P>');
-
-        $('#countdown_massage').html('');
-        $('.countdown_unit').hide();
+        $("#countdown").hide();
+        
+        $("#countdown_holding").text("現在 菁々祭1日目開催中！");
+        $('#countdown_massage').text('');
 
     }else if(span > to_2day_start){
         $('#countdown').html( spanWithFormat( span_2day ));
         
-        $('.countdown_unit').show();
-        $('#countdown_massage').html('菁々祭 2日目開始まで');
+        $("#countdown_holding").text("");
+        $('#countdown_massage').text('菁々祭 2日目開始まで...');
 
     }else if(span > to_2day_end){
         //2日目の9時から17時(二日目開催中)
-        $('#countdown').html('<p class="countdown_jp2">現在 菁々祭2日目開催中！</P>');
-
-        $('#countdown_massage').html('');
-        $('.countdown_unit').hide();
+        $("#countdown").hide();
+        
+        $("#countdown_holding").text("現在 菁々祭2日目開催中！");
+        $('#countdown_massage').text('');
 
     }else if(span <= to_2day_end){
         //終了後
-        $('#countdown').html('<span class="countdown_end countdown_jp2">終了しました。<br>ご来場ありがとうございました。</span>');
+        $("#countdown_holding").text("");
+        $('#countdown').html('<p class="countdown_end">終了しました。<br>ご来場ありがとうございました。</p>');
 
-        $('.countdown_unit').show();
-        $('#countdown_massage').html('第60回菁々祭は');
+        $('#countdown_massage').text('第60回菁々祭は');
 
         //指定の日時になればカウントを止める
         clearInterval(countdown)
 
     }else{
-        $('#countdown').html('<p class="countdown_jp2">時刻取得エラー<span class="countdown_jp">ER02</span></p>');
+        $('#countdown').html('<p class="countdown_error">時刻取得エラー<span class="countdown_jp">ER02</span></p>');
 
         $('#countdown_massage').html('');
-        $('.countdown_unit').hide();
 
         clearInterval(countdown)
     }
