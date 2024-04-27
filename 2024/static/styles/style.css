@@ -729,6 +729,10 @@ footer{
 }
 
 
+.flip{
+    transform: scale(-1, 1);
+}
+
 .top_description_title_bg{
     display: flex;
     justify-content: right;
@@ -737,11 +741,44 @@ footer{
     width: 865px;
     height: 120px;
     background-repeat: no-repeat;
-    transform: scale(-1, 1);
 }
 
 .top_description_title{
-    transform: scale(-1, 1);
+    margin: 0 140px 0 0;
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    font-size: 64px;
+    color: #FFFFFF;
+}
+
+.top_description_Japanese{
+    width: 600px;
+    margin: 64px 0 0 160px;
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.top_description_English{
+    width: 600px;
+    margin: 40px 0 0 160px;
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.description_main{
+    margin-top: 76px;
+}
+
+.description_theme{
+    margin-top: 94px;
+}
+
+.theme_description_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
