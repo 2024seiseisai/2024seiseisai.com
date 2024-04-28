@@ -729,15 +729,28 @@ footer{
 }
 
 
-.flip{
-    transform: scale(-1, 1);
+.flip_x{
+    transform: scaleX(-1);
+}
+
+.flip_y{
+    transform: scaleY(-1);
+}
+
+.top_description_container{
+    width: 652px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 136px;
 }
 
 .top_description_title_bg{
     display: flex;
     justify-content: right;
     align-items: center;
-    background-image: url(/2024/static/img/top_description_title_bg.svg);
+    background: url(/2024/static/img/top_description_title_bg_PC.svg);
     width: 865px;
     height: 120px;
     background-repeat: no-repeat;
@@ -751,9 +764,15 @@ footer{
     color: #FFFFFF;
 }
 
+.top_description_frame{
+    display: block;
+    margin-top: 80px;
+    width: 648px;
+}
+
 .top_description_Japanese{
     width: 600px;
-    margin: 64px 0 0 160px;
+    margin: 64px 0 0 0;
     font-family: 'Noto Sans JP';
     font-weight: 500;
     font-size: 24px;
@@ -761,7 +780,7 @@ footer{
 
 .top_description_English{
     width: 600px;
-    margin: 40px 0 0 160px;
+    margin: 40px 0 0 0;
     font-family: 'Nunito Sans';
     font-weight: 500;
     font-size: 24px;
@@ -775,10 +794,29 @@ footer{
     margin-top: 94px;
 }
 
+.logo_PV{
+    margin-top: 316px;
+}
+
 .theme_description_container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
+    gap: 108px;
+}
+
+@media only screen and (max-width: 1023px) {
+
+    .top_description_title_bg{
+        background: url(/2024/static/img/top_description_title_bg_mobile.svg);
+        width: 200px;
+        height: 25px;
+    }
+
+    .top_description_title{
+        margin: 0 24px 0 0;
+        font-size: 15px;
+    }
+
 }
 
 
