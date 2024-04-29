@@ -78,4 +78,37 @@ $("#footer_nav_X").hover(function(){
 
 
 
+//ファーストビューのアニメーション
+var logo_animation = lottie.loadAnimation({
+    container: document.getElementById('logo_animation'),// アニメーションを格納するDOM要素 
+    renderer: 'svg',
+    loop: true,
+    autoplay: false,
+    path: "./static/img/logo.json" // JSONファイルのパス
+});
 
+var theme_animation = lottie.loadAnimation({
+    container: document.getElementById('theme_animation'),// アニメーションを格納するDOM要素 
+    renderer: 'svg',
+    loop: true,
+    autoplay: false,
+    path: "./static/img/ignitions.json" // JSONファイルのパス
+});
+
+function firstview_bg_animation(){
+    $("#top_firstview_bg").css("opacity","1");
+    $("#top_firstview_bg").fadeTo(2000,0,function(){
+        $(this).fadeTo(1000,0,function(){
+            $(this).fadeTo(3000,1);
+        });
+    });
+}
+
+$(document).ready(function(){
+    logo_animation.play();
+    theme_animation.play();
+    firstview_bg_animation();
+    setInterval(function(){
+        firstview_bg_animation();
+    },8000);
+});
