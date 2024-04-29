@@ -1,71 +1,72 @@
-.details {
-	border-top: 2px solid #00a5a0;
-	border-left: 2px solid #00a5a0;
-	border-right: 2px solid #00a5a0;
+
+a {
+	text-decoration: none;
+	color: #333;
 }
-.details:last-of-type {
-	border-bottom: 2px solid #00a5a0;
+
+.news-items {
+	width: 90%;
+	max-width: 700px;
+	margin: 0 auto;
+	font-family: 'Nunito Sans';
+	font-weight: 550;
 }
-.details-summary {
-	position: relative;
+
+.news-item {
+	display: flex;
+	padding: 20px 0 12px;
+}
+
+.news-item:not(:first-child){
+	border-top: 1px solid #ddd;
+}
+
+.news-head {
+	display: flex;
+	width: 200px;
+}
+
+.news-date {
+	width: 110px;
+	padding-top: 3px;
+}
+
+.news-label a {
 	display: block;
-	padding: 20px;
+	width: 90px;
+	height: 32px;
+	line-height: 32px;
 	color: #fff;
-	font-size: 24px;
+	background: #00CC99;
 	font-weight: bold;
 	text-align: center;
-	background-color: #b2e4e2;
+	border-radius: 5px;
 }
-.details-summary:hover {
-	cursor: pointer;
-	opacity: 0.8;
+
+.news-label a.pink-label {
+	background:palevioletred;
 }
-.details-summary .btn {
-	position: absolute;
-	top: 37%;
-	left: 10%;
-	width: 18px;
-	height: 18px;
-	transform-origin: center center;
-	transition-duration: 0.2s;
+
+.news-label a.orange-label {
+	background: orange;
 }
-.details-summary .btn:before,
-.details-summary .btn:after {
-	content: "";
-	background-color: #fff;
-	border-radius: 10px;
-	width: 18px;
-	height: 4px;
-	position: absolute;
-	top: 7px;
-	left: 0;
-	transform-origin: center center;
+
+.news-title {
+	width: calc(100% - 200px);
+	padding-left: 30px;
+	padding-top: 3px;
+	line-height: 1.5;
 }
-.details-summary .btn:before {
-	width: 4px;
-	height: 18px;
-	top: 0;
-	left: 7px;
-}
-.details-summary.is-active .btn {
-	-webkit-transform: rotate(-180deg);
-	transform: rotate(-180deg);
-}
-.details-summary.is-active .btn:before {
-	content: none;
-}
-.details-summary::-webkit-details-marker {
-	display: none;
-}
-.details-content {
-	padding: 20px;
-}
-.details-content p {
-	margin: 0 0 20px;
-	color: #000;
-	font-size: 18px;
-	text-align: left;
-}
-.details-content p:last-of-type {
-	margin: 0 0 0;
+
+@media screen and (max-width: 480px) {
+	.news-item {
+	display: block;
+	}
+
+.news-title {
+	width: 100%;
+	padding-left: 0;
+	padding-top: 0;
+	margin-top: 10px;
+	}
 }
