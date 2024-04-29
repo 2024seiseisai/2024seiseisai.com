@@ -482,10 +482,33 @@ footer{
 
 
 
-.top_picture{
+.top_firstview{
     width: 100%;
-    background: #C6C6C6;
+    background: url(/2024/static/img/firstview_bg_mono.png);
     aspect-ratio: 16/9;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top_firstview_bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(/2024/static/img/firstview_bg_color.png);
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.firstview_center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    width: 100%;
 }
 
 .top_countdown{
