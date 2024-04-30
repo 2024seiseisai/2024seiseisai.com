@@ -6,6 +6,9 @@ a {
 	text-decoration: none;
 	color: #333;
 }
+.top_news{
+    background-color: #ffffff;
+}
 
 .top_news_h2{
     margin: 0;
@@ -102,8 +105,8 @@ a {
     border-top: 1px solid #000000;
     align-items: center; /* 中央揃え */
 }
-.news-items:last-of-type .news-item {
-    border-bottom: 1px solid #000000;
+.border{
+    border-top: 1px solid #000000;
 }
 @media screen and (min-width: 480px) {
     .news-head {
@@ -148,16 +151,16 @@ a {
     background: #00CC99;
     font-weight: bold;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 
-.news-label p.pink-label {
-    background: palevioletred;
+.news-label p.all-label {
+    background:#a09e9e;
 }
 
-.news-label p.orange-label {
-    background: orange;
+.news-label p.important-label {
+    background: rgb(226, 77, 147);
 }
 
 .news-title {
@@ -205,3 +208,4 @@ a {
 	}
 
 }
+
