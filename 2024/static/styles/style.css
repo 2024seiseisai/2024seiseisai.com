@@ -30,7 +30,7 @@ header{
 
 .hamburger{
     height: 100px;
-    cursor: pointer;
+    cursor: url(/2024/static/img/logo.svg),pointer;
 }
 
 .header_reserve_btn{
