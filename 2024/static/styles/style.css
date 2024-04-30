@@ -815,7 +815,7 @@ footer{
     margin-top: 94px;
 }
 
-.logo_PV{
+.top_description_logo_PV{
     margin-top: 316px;
 }
 
@@ -853,6 +853,66 @@ footer{
     right: 0;
     box-sizing: border-box;
 }
+
+.theme_description_more_btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 134px;
+}
+
+.theme_description_more_btn_bg{
+    width: 346px;
+    height: 80px;
+    background-color: #FF0084;
+    clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease-out;
+}
+
+.theme_description_more_btn_bg_after{
+    width: 40px;
+    height: 80px;
+    background-color: #FF0084;
+    clip-path: polygon(0 0, 50% 0, 100% 50%, 50% 100%, 0 100%, 50% 50%);
+    position: relative;
+    left: 0;
+    transition: all 0.2s ease-out;
+}
+
+.theme_description_more_btn_text{
+    margin: 0 0 0 43px;
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.theme_description_more_btn_img{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.theme_description_more_btn_link{
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.theme_description_more_btn:hover .theme_description_more_btn_bg{
+    width: 386px;
+    height: 90px;
+}
+
+.theme_description_more_btn:hover .theme_description_more_btn_bg_after{
+    width: 50px;
+    height: 90px;
+}
+
 
 @media only screen and (max-width:1319px) {
 
