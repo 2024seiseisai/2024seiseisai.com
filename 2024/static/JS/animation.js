@@ -115,9 +115,11 @@ $(window).on('load',function(){
 $(window).on('scroll',function(){
     if($(window).scrollTop() >= $(window).height()){
         $("header").css("display","flex");
-        $("header").fadeTo(200,1);
+        if($("header").css("opacity") === "0"){
+            $("header").fadeTo(1000,1);
+        }
     }else if($(window).scrollTop() == 0){
-        $("header").fadeTo(200,0,function(){
+        $("header").fadeTo(1000,0,function(){
             $("header").css("display","none");
         });
     };
