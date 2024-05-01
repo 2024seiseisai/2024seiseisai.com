@@ -95,10 +95,30 @@ var theme_animation = lottie.loadAnimation({
     path: "./static/img/ignitions.json" // JSONファイルのパス
 });
 
+var scroll_animation = lottie.loadAnimation({
+    container: document.getElementById('scroll_animation'),// アニメーションを格納するDOM要素 
+    renderer: 'svg',
+    loop: true,
+    autoplay: false,
+    path: "./static/img/scroll.json" // JSONファイルのパス
+});
+
 //画像等もすべて読み込まれた後に実行
 $(window).on('load',function(){
     logo_animation.play();
     theme_animation.play();
+    scroll_animation.play();
 });
 
 
+
+$(window).on('scroll',function(){
+    if($(window).scrollTop() >= $(window).height()){
+        $("header").css("display","flex");
+        $("header").fadeTo(200,1);
+    }else if($(window).scrollTop() == 0){
+        $("header").fadeTo(200,0,function(){
+            $("header").css("display","none");
+        });
+    };
+})
