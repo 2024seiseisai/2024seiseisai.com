@@ -4,6 +4,7 @@
 
 body{
     margin: 0;
+    max-width: 100vw;
     min-height: 100vh;
 }
 
@@ -514,6 +515,7 @@ footer{
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .top_firstview_bg{
@@ -537,8 +539,15 @@ footer{
 }
 
 .theme_animation{
-    width: 100%;
+    width: 200%;
 }
+
+.scroll_animation{
+    top: 90%;
+    width: 10vw;
+}
+
+
 
 .top_countdown{
     width: 100%;
