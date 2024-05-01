@@ -82,7 +82,7 @@ $("#footer_nav_X").hover(function(){
 var logo_animation = lottie.loadAnimation({
     container: document.getElementById('logo_animation'),// アニメーションを格納するDOM要素 
     renderer: 'svg',
-    loop: false,
+    loop: true,
     autoplay: false,
     path: "./static/img/logo.json" // JSONファイルのパス
 });
@@ -90,28 +90,15 @@ var logo_animation = lottie.loadAnimation({
 var theme_animation = lottie.loadAnimation({
     container: document.getElementById('theme_animation'),// アニメーションを格納するDOM要素 
     renderer: 'svg',
-    loop: false,
+    loop: true,
     autoplay: false,
     path: "./static/img/ignitions.json" // JSONファイルのパス
 });
 
-function firstview_animation(){
-    logo_animation.stop();
-    theme_animation.stop();
+//画像等もすべて読み込まれた後に実行
+$(window).on('load',function(){
     logo_animation.play();
     theme_animation.play();
-    $("#top_firstview_bg").fadeTo(2000,0,function(){
-        $(this).fadeTo(1000,0,function(){
-            $(this).fadeTo(3000,1)
-        });
-    });
-}
-
-$(document).ready(function(){
-    $("#top_firstview_bg").css("opacity","1");
-    firstview_animation();
-    setInterval(function(){
-        $("#top_firstview_bg").css("opacity","1");
-        firstview_animation();
-    },8000);
 });
+
+

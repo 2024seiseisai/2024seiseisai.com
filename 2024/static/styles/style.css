@@ -481,6 +481,31 @@ footer{
 /*ここからトップページ本体*/
 
 
+/*ファーストビューの背景のアニメーションを定義*/
+@keyframes top_firstview_bg_animation {
+
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    37.5% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
 
 .top_firstview{
     width: 100%;
@@ -500,6 +525,7 @@ footer{
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    animation: top_firstview_bg_animation 8s infinite linear;
 }
 
 .firstview_center{
