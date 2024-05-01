@@ -95,20 +95,10 @@ var theme_animation = lottie.loadAnimation({
     path: "./static/img/ignitions.json" // JSONファイルのパス
 });
 
-function firstview_animation(){
+//画像等もすべて読み込まれた後に実行
+$(window).on('load',function(){
     logo_animation.play();
     theme_animation.play();
-    $("#top_firstview_bg").css("opacity","1");
-    $("#top_firstview_bg").fadeTo(2000,0,function(){
-        $(this).fadeTo(1000,0,function(){
-            $(this).fadeTo(3000,1);
-        });
-    });
-}
-
-$(document).ready(function(){
-    firstview_animation();
-    setInterval(function(){
-        firstview_animation();
-    },8000);
 });
+
+
