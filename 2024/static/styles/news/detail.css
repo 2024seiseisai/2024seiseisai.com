@@ -1,0 +1,80 @@
+a {
+	text-decoration: none;
+	color: #333;
+}
+.news_detail {
+    margin: auto;
+    text-align: left; /* 左寄せ */
+    max-width: 800px; /* 必要に応じて適切な幅を設定 */
+    padding: 20px; /* 左右のマージンを20pxに設定 */
+    font-family: 'Noto Sans JP', sans-serif; /* 日本語フォントを適用 */
+    margin-top:30px;
+}
+
+.article_head{
+    display: flex;
+}
+.detail_date{
+    font-family: 'Nunito Sans';
+    margin:0;
+    font-size:20px;
+}
+.article_title {
+    margin: 20px 0; /* 上下のマージンを20pxに設定 */
+    font-family: 'Noto Sans JP', sans-serif; /* 英語や数字のフォントを適用 */
+    font-size:24px;
+}
+@media only screen and (min-width: 1024px){
+    .article_title {
+        font-size:30px;
+    }
+}
+
+
+.article_head span {
+    padding: 2px;
+    font-size: 15px;
+    color: #fff;
+    background: #00CC99;
+    font-weight: bold;
+    border-radius: 15px;
+    font-family: 'Noto Sans JP';
+    margin-right:10px;
+}
+
+
+.article_head span.all-label {
+    background:#a09e9e;
+}
+
+.article_head span.important-label {
+    background: rgb(226, 77, 147);
+}
+
+.article_content{
+    font-size:15px;
+}
+@media only screen and (min-width: 1024px){
+    .article_content{
+        font-size:18px;
+    }
+}
+
+.back_list{
+    font-size:15px;
+    width:100px;
+    margin: 50px auto 50px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #acabab; /* 黒い枠 */
+    padding: 3px; /* 枠内の余白 */
+    box-sizing: border-box; /* 枠の外側に余白を追加しない */
+	border-radius:50px;
+}
+@media only screen and (min-width: 1024px){
+    .back_list{
+        width:150px;
+        font-size:18px;
+    }
+}
+
