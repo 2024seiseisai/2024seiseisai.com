@@ -6,7 +6,11 @@ let header = "hide";
 
 //最初はヘッダーを非表示に
 $(document).ready(function(){
-    $("header").css("display","none");
+    if($(window).scrollTop() < $(window).height() - $("header").height()){
+        $("header").css("display","none");
+    }else{
+        $("header").css("display","flex");
+    }
 })
 
 
