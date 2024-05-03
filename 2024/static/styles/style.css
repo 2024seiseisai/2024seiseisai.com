@@ -921,7 +921,7 @@ footer{
     margin-top: 94px;
 }
 
-.top_description_logo_PV{
+.description_logo_PV{
     margin-top: 316px;
 }
 
@@ -1020,6 +1020,29 @@ footer{
     height: 90px;
 }
 
+.logo_PV_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 105px;
+    margin: 100px 0 290px 0;
+}
+
+.logo_PV{
+    width: 600px;
+    aspect-ratio: 16/9;
+    margin: 0 0 0 160px;
+}
+
+.logo_PV iframe{
+    width: 600px;
+    aspect-ratio: 16/9;
+}
+
+.logo_PV_caption{
+    margin: 50px 105px 0 0;
+}
+
 
 @media only screen and (max-width:1319px) {
 
@@ -1031,6 +1054,19 @@ footer{
 
     .theme_description_logo{
         margin: 186px 318px 0 0;
+    }
+
+    .logo_PV_container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo_PV{
+        margin: 0 0 0 160px;
+    }
+
+    .logo_PV_caption{
+        margin: 50px 0 0 160px;
     }
 
     .top_description_frame{
@@ -1066,30 +1102,43 @@ footer{
     justify-content: space-between;
 }
 
+.top_news_h2_bg{
+    width: 450px;
+    height: 100px;
+    background-color: #FF0084;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    position: relative;
+}
+
 .top_news_h2{
+    margin-top: 100px;
+    position: relative;
+}
+
+.top_news_h2_text{
     margin: 0;
-    padding: 100px 0 0 11%;
-    width: fit-content;
-    width: -moz-fit-content;
-    border-bottom: 2px solid #FFFFFF;
+    position: absolute;
+    top: 50%;
+    right: 108px;
+    transform: translateY(-50%);
     /*以下フォント情報*/
     font-family: 'Nunito Sans';
     font-weight: 600;
     font-size: 64px;
-    color: #FF0084;
-    position: relative;
+    color: #FFFFFF;
 }
 
-.top_news_h2::after{
-    content: "";
-    width: 140px;
-    height: 2px;
-    background-color: #FFFFFF;
-    display: block;
+.top_news_h2_bg_after{
+    width: 65px;
+    height: 100px;
+    background-color: #FF0084;
     position: absolute;
+    display: block;
+    top: 0;
+    left: 420px;
     right: 0;
-    transform: rotate(135deg);
-    transform-origin: right;
+    z-index: 1000;
+    clip-path: polygon(45px 0, 65px 0, 20px 100%, 0 100%);
 }
 
 .top_news_contents{
