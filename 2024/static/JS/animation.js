@@ -1,6 +1,17 @@
 //メニューの開閉状況を示す変数を定義
 let menu = "closed";
 
+//ヘッダーの表示・非表示を示す変数を定義
+let header = "hide";
+
+//最初はヘッダーを非表示に
+$(document).ready(function(){
+    if($(window).scrollTop() < $(window).height() - $("header").height()){
+        $("header").css("display","none");
+    }else{
+        $("header").css("display","flex");
+    }
+})
 
 
 //ハンバーガーのアニメーション
@@ -112,15 +123,24 @@ $(window).on('load',function(){
 
 
 
-$(window).on('scroll',function(){
-    if($(window).scrollTop() >= $(window).height()){
-        $("header").css("display","flex");
-        if($("header").css("opacity") === "0"){
-            $("header").fadeTo(1000,1);
+
+
+//ヘッダーの表示・非表示を切り替える
+$(window).on('scroll',function(){ 
+    if($(window).scrollTop() >= $(window).height() - $("header").height()){
+        header = "show";
+        $("header").css("animation","header_show 1s ease-out");
+        if(header === "show"){
+            $("header").css("display","flex");
         }
-    }else if($(window).scrollTop() == 0){
-        $("header").fadeTo(1000,0,function(){
-            $("header").css("display","none");
-        });
-    };
-})
+    }else{
+        header = "hide";
+        $("header").css("animation","header_hide 1s ease-out");
+        setTimeout(function(){
+            if(header === "hide"){
+                $("header").css("display","none");
+            }
+        },1000)
+    }
+    console.log($("header").height());
+});
