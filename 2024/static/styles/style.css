@@ -394,6 +394,7 @@ footer{
 }
 
 .footer_logo_img{
+    display: inline-block;
     height: 82px;
 }
 
