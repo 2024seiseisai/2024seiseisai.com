@@ -22,6 +22,10 @@ header{
     margin-left: 42px;
 }
 
+.header_theme_img{
+    height: 30px;
+}
+
 .header_nav_container{
     display: flex;
     flex-direction: row-reverse;
@@ -491,6 +495,33 @@ footer{
 }
 
 
+
+@media only screen and (max-width: 1023px) {
+
+    header{
+        position: fixed;
+        height: 48px;
+    }
+
+    .header_theme{
+        margin-left: 15px;
+    }
+
+    .header_theme_img{
+        height: 10px;
+    }
+
+    .header_nav{
+        display: none;
+    }
+
+    .hamburger{
+        height: 48px;
+    }
+
+}
+
+
 /*common行きここまで*/
 
 /*ここからトップページ本体*/
@@ -590,7 +621,6 @@ footer{
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: top_firstview_bg_animation 8s infinite linear;
 }
 
 .firstview_center{
@@ -599,6 +629,7 @@ footer{
     left: 50%;
     transform: translate(-50%,-50%);
     height: 100%;
+    width: 100%;
 }
 
 .theme_animation{
@@ -615,7 +646,6 @@ footer{
     position: absolute;
     top: 64px;
     left: 48px;
-    animation: top_title_animation 8s infinite linear;
     font-family: 'Noto Sans JP';
     font-weight: 500;
     font-size: 3vw;
@@ -627,7 +657,6 @@ footer{
     position: absolute;
     right: 64px;
     bottom: 48px;
-    animation: top_title_animation 8s infinite linear;
     font-family: 'Nunito Sans';
     font-weight: 700;
     font-size: 3vw;
@@ -829,6 +858,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 0;
     font-family: 'Nunito Sans';
     font-weight: 500;
@@ -1436,6 +1466,129 @@ footer{
 
     .top_introduction_Access{
         left: 8vw;
+    }
+
+}
+
+
+
+/*メディアクエリ*/
+@media only screen and (max-width: 1023px) {
+
+    .top_firstview{
+        aspect-ratio: 1/1;
+        height: auto;
+    }
+
+    .scroll_animation{
+        top: 85%;
+        width: 100px;
+    }
+
+    .top_title_Japanese,.top_title_English{
+        font-size: 4.44vw;
+    }
+
+    .top_title_Japanese{
+        top: 14px;
+        left: 18px;
+    }
+
+    .top_title_English{
+        right: 18px;
+        bottom: 30px;
+    }
+
+    .top_countdown{
+        height: 262px;
+        top: -32px;
+    }
+
+    .top_countdown_bg_1{
+        height: 262px;
+        clip-path: polygon(0 53px, 100% 0, 100% 209px, 0 100%);
+    }
+
+    .top_countdown_bg_2{
+        height: 242px;
+        clip-path: polygon(0 33px, 100% 0, 100% 209px, 0 100%);
+        top: 10px;
+    }
+
+    .top_countdown_bg_main{
+        height: 222px;
+        clip-path: polygon(0 13px, 100% 0, 100% 209px, 0 100%);
+        top: 20px;
+    }
+
+    .top_countdown_main_container{
+        width: 268px;
+        height: 160px;
+    }
+
+    .top_countdown_border{
+        width: 16px;
+        height: 16px;
+        border-width: 1px;
+    }
+
+    .top_countdown_main{
+        position: relative;
+        width: 268px;
+        height: 160px;
+        top: -8px;
+    }
+
+    .date{
+        font-size: 64px;
+        letter-spacing: -5px;
+    }
+
+    .day{
+        font-size: 20px;
+        left: -10px;
+    }
+
+    .date_info_container{
+        width: 205px;
+        margin: 0 auto;
+    }
+
+    .date_info{
+        position: relative;
+        left: -5px;
+    }
+
+    .date_info_sub_container{
+        width: 205px;
+        margin: -20px auto 0 auto;
+    }
+
+    .date_info_sub{
+        font-size: 14px;
+    }
+
+    .countdown_title,.countdown_error,.countdown_holding,.countdown_end{
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+    .countdown_message{
+        font-size: 12px;
+    }
+
+    .countdown_number_container{
+        margin-top: 0;
+        gap: 24px;
+    }
+
+    .countdown_number{
+        font-size: 24px;
+        gap: 2px;
+    }
+
+    #day::after,#hour::after,#minute::after,#second::after{
+        font-size: 12px;
     }
 
 }
