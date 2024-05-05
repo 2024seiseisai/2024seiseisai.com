@@ -22,6 +22,10 @@ header{
     margin-left: 42px;
 }
 
+.header_theme_img{
+    height: 30px;
+}
+
 .header_nav_container{
     display: flex;
     flex-direction: row-reverse;
@@ -488,6 +492,33 @@ footer{
 
 .footer_nav_body_item_SNS{
     margin: 0;
+}
+
+
+
+@media only screen and (max-width: 1023px) {
+
+    header{
+        position: fixed;
+        height: 48px;
+    }
+
+    .header_theme{
+        margin-left: 15px;
+    }
+
+    .header_theme_img{
+        height: 10px;
+    }
+
+    .header_nav{
+        display: none;
+    }
+
+    .hamburger{
+        height: 48px;
+    }
+
 }
 
 
@@ -1464,8 +1495,8 @@ footer{
     }
 
     .top_title_English{
-        right: 30px;
-        bottom: 57px;
+        right: 18px;
+        bottom: 30px;
     }
 
     .top_countdown{

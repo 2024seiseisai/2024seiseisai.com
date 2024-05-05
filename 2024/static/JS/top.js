@@ -50,7 +50,7 @@ $(window).on('load',function(){
 
 //ヘッダーの表示・非表示を切り替える
 $(window).on('scroll',function(){ 
-    if($(window).scrollTop() >= $("#top_firstview_bg").height() - $("header").height()){
+    if($(window).scrollTop() >= $(".top_firstview").height() - $("header").height()){
         header = "show";
         $("header").css("animation","header_show 1s ease-out");
         if(header === "show"){
