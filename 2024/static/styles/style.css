@@ -590,7 +590,6 @@ footer{
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: top_firstview_bg_animation 8s infinite linear;
 }
 
 .firstview_center{
@@ -615,7 +614,6 @@ footer{
     position: absolute;
     top: 64px;
     left: 48px;
-    animation: top_title_animation 8s infinite linear;
     font-family: 'Noto Sans JP';
     font-weight: 500;
     font-size: 3vw;
@@ -627,7 +625,6 @@ footer{
     position: absolute;
     right: 64px;
     bottom: 48px;
-    animation: top_title_animation 8s infinite linear;
     font-family: 'Nunito Sans';
     font-weight: 700;
     font-size: 3vw;

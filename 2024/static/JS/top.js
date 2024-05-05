@@ -3,7 +3,7 @@ let header = "hide";
 
 //最初はヘッダーを非表示に
 $(document).ready(function(){
-    if($(window).scrollTop() < $(window).height() - $("header").height()){
+    if($(window).scrollTop() < $("#top_firstview_bg").height() - $("header").height()){
         $("header").css("display","none");
     }else{
         $("header").css("display","flex");
@@ -40,6 +40,8 @@ $(window).on('load',function(){
     logo_animation.play();
     theme_animation.play();
     scroll_animation.play();
+    $("#top_firstview_bg").css("animation","top_firstview_bg_animation 8s infinite linear")
+    $(".__Top_title").css("animation","top_title_animation 8s infinite linear")
 });
 
 
@@ -48,7 +50,7 @@ $(window).on('load',function(){
 
 //ヘッダーの表示・非表示を切り替える
 $(window).on('scroll',function(){ 
-    if($(window).scrollTop() >= $(window).height() - $("header").height()){
+    if($(window).scrollTop() >= $("#top_firstview_bg").height() - $("header").height()){
         header = "show";
         $("header").css("animation","header_show 1s ease-out");
         if(header === "show"){
@@ -63,5 +65,4 @@ $(window).on('scroll',function(){
             }
         },1000)
     }
-    console.log($("header").height());
 });
