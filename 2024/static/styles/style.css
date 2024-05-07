@@ -1079,7 +1079,7 @@ footer{
 }
 
 .theme_description_logo{
-    margin: 0 0 0 176px;
+    margin: 0 60px;
     width: fit-content;
     width: -moz-fit-content;
 }
@@ -1447,6 +1447,7 @@ footer{
     aspect-ratio: 10/9;
     clip-path: polygon(0 0,60% 0,100% 100%,40% 100%);
     background: #5F5F5F;
+    position: relative;
 }
 
 
@@ -1460,6 +1461,7 @@ footer{
     aspect-ratio: 10/9;
     clip-path: polygon(40% 0,100% 0,60% 100%,0 100%);
     background: #5F5F5F;
+    position: relative;
 }
 
 
@@ -1473,6 +1475,7 @@ footer{
     aspect-ratio: 10/9;
     clip-path: polygon(0 0,60% 0,100% 100%,40% 100%);
     background: #5F5F5F;
+    position: relative;
 }
 
 
@@ -1486,6 +1489,15 @@ footer{
     aspect-ratio: 10/9;
     clip-path: polygon(40% 0,100% 0,60% 100%,0 100%);
     background: #5F5F5F;
+    position: relative;
+}
+
+.top_introduction_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
