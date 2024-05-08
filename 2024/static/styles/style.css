@@ -391,6 +391,7 @@ footer{
     width: 100%;
     height: 760px;
     background-color: #000000;
+    position: relative;
 }
 
 .footer_logo{
@@ -403,6 +404,7 @@ footer{
 }
 
 .footer_logo_img_caption{
+    margin: 0;
     /*以下フォント情報*/
     font-family: 'Nunito Sans';
     font-weight: 500;
@@ -490,12 +492,17 @@ footer{
     height: 26px;
 }
 
+.footer_nav_SNS_Twitter_caption{
+    font-size: 20px;
+    display: inline-block;
+}
+
 .footer_nav_body_item_SNS{
     margin: 0;
 }
 
 
-
+/*メディアクエリ*/
 @media only screen and (max-width: 1023px) {
 
     header{
@@ -517,6 +524,97 @@ footer{
 
     .hamburger{
         height: 48px;
+    }
+
+    footer{
+        height: 119px;
+    }
+
+    .footer_logo{
+        padding: 22px 0 0 30px;
+    }
+
+    .footer_logo_img{
+        height: 32px;
+    }
+
+    .footer_logo_img_caption{
+        font-size: 10px;
+        transform: scale(0.5);
+        transform-origin: top left;
+    }
+
+    .menu_privacy_policy_text{
+        font-size: 8px;
+    }
+
+    .menu_privacy_policy_arrow{
+        width: 3px;
+        height: 3px;
+    }
+
+    .footer_nav{
+        margin-top: -100px;
+    }
+
+    .footer_nav_body{
+        display: none;
+    }
+
+    .footer_show{
+        display: block;
+        position: absolute;
+        right: 60px;
+        top: 31px;
+    }
+
+    .footer_nav_body_title_English{
+        font-size: 10px;
+        transform: scale(0.9);
+        transform-origin: top left;
+        margin-bottom: 0;
+    }
+
+    .footer_nav_body_item{
+        font-size: 10px;
+        transform: scale(0.8);
+        transform-origin: top left;
+        position: relative;
+        top: 1px;
+    }
+
+    .footer_nav_body_item::after{
+        transform: translate(-100%,13px) scaleX(0);
+    }
+
+    .footer_nav_body_item:hover:after{
+        transform: translate(-100%,13px) scaleX(1);
+    }
+
+    .footer_nav_SNS{
+        margin-top: 4px;
+        height: 14px;
+    }
+
+    .footer_X-Twitter_icon{
+        width: 8px;
+        height: 8px;
+        position: relative;
+    }
+
+    .footer_X-Twitter_icon svg{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .footer_nav_SNS_Twitter_caption{
+        font-size: 10px;
+    }
+
+    .footer_nav_SNS_img{
+        width: 8px;
+        height: 8px;
     }
 
 }
@@ -981,7 +1079,7 @@ footer{
 }
 
 .theme_description_logo{
-    margin: 0 0 0 176px;
+    margin: 0 60px;
     width: fit-content;
     width: -moz-fit-content;
 }
@@ -1349,6 +1447,7 @@ footer{
     aspect-ratio: 10/9;
     clip-path: polygon(0 0,60% 0,100% 100%,40% 100%);
     background: #5F5F5F;
+    position: relative;
 }
 
 
@@ -1362,6 +1461,7 @@ footer{
     aspect-ratio: 10/9;
     clip-path: polygon(40% 0,100% 0,60% 100%,0 100%);
     background: #5F5F5F;
+    position: relative;
 }
 
 
@@ -1375,6 +1475,7 @@ footer{
     aspect-ratio: 10/9;
     clip-path: polygon(0 0,60% 0,100% 100%,40% 100%);
     background: #5F5F5F;
+    position: relative;
 }
 
 
@@ -1388,6 +1489,15 @@ footer{
     aspect-ratio: 10/9;
     clip-path: polygon(40% 0,100% 0,60% 100%,0 100%);
     background: #5F5F5F;
+    position: relative;
+}
+
+.top_introduction_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -1589,6 +1699,10 @@ footer{
 
     #day::after,#hour::after,#minute::after,#second::after{
         font-size: 12px;
+    }
+
+    .top_introduction_container{
+        display: none;
     }
 
 }
