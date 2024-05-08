@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Class Example</title>
+<style>
+/* 共通のスタイル */
+.news_top {
+    color: black;
+}
+
+/* 1024px以上の場合のスタイル */
+@media screen and (min-width: 1024px) {
+    .JP-bold-24 {
+        font-weight: bold;
+        font-size: 24px;
+    }
+}
+
+/* 1024px以下の場合のスタイル */
+@media screen and (max-width: 1024px) {
+    .JP-bold-18 {
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+</style>
+</head>
+<body>
+<!-- 画面サイズによって適切なクラス名が適用される -->
+<div class="news_top JP-bold-24">
+    <p>This text is bold and has a font size of 24px on screens wider than 1024px.</p>
+</div>
+<div class="news_top JP-bold-18">
+    <p>This text is bold and has a font size of 18px on screens narrower than or equal to 1024px.</p>
+</div>
+</body>
+</html>
