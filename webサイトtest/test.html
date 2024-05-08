@@ -16,12 +16,22 @@
         font-weight: bold;
         font-size: 24px;
     }
+
+    .JP-thin-18 {
+        font-weight: thin;
+        font-size: 18px;
+    }
 }
 
 /* 1024px以下の場合のスタイル */
 @media screen and (max-width: 1024px) {
-    .JP-bold-18 {
+    .mobile_JP-bold-24 {
         font-weight: bold;
+        font-size: 24px;
+    }
+
+    .mobile_JP-thin-18 {
+        font-weight: thin;
         font-size: 18px;
     }
 }
@@ -29,10 +39,10 @@
 </head>
 <body>
 <!-- 画面サイズによって適切なクラス名が適用される -->
-<div class="news_top JP-bold-24">
+<div class="news_top JP-bold-24 mobile_JP-thin-18">
     <p>This text is bold and has a font size of 24px on screens wider than 1024px.</p>
 </div>
-<div class="news_top JP-bold-18">
+<div class="news_top JP-thin-18 mobile_JP-bold-24">
     <p>This text is bold and has a font size of 18px on screens narrower than or equal to 1024px.</p>
 </div>
 </body>
