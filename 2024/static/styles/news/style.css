@@ -80,6 +80,7 @@ a {
     color: #808080;
 	text-decoration: none;
 	margin-right:15px;
+    font-family:  'Noto Sans JP';
 }
 @media screen and (min-width: 1020px) {
     .tag_choices a {
@@ -152,6 +153,7 @@ a {
     font-weight: bold;
     text-align: center;
     border-radius: 15px;
+    font-family: 'Noto Sans JP';
 }
 
 
@@ -166,6 +168,7 @@ a {
 .news-title {
     width: calc(100% - 200px);
     font-size: 15px;
+    font-family:  'Noto Sans JP';
 }
 @media screen and (min-width: 1020px) {
     .news-title {
@@ -195,6 +198,7 @@ a {
     padding: 3px; /* 枠内の余白 */
     box-sizing: border-box; /* 枠の外側に余白を追加しない */
 	border-radius:50px;
+    font-family:  'Noto Sans JP';
 }
 @media screen and (min-width: 1020px) {
     .return_top{
