@@ -1,1 +1,26 @@
 @charset "UTF-8";
+/* PC版(1024px以上)*/
+@media screen and (min-width: 1024px) {
+    .JP-bold-24 {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .JP-thin-18 {
+        font-weight: thin;
+        font-size: 18px;
+    }
+}
+
+/* スマホ版(1024px以下)*/
+@media screen and (max-width: 1024px) {
+    .mobile_JP-bold-24 {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .mobile_JP-thin-18 {
+        font-weight: thin;
+        font-size: 18px;
+    }
+}
