@@ -1,6 +1,18 @@
 //メニューの開閉状況を示す変数を定義
 let menu = "closed";
 
+//ヘッダーの表示・非表示を示す変数を定義
+let header = "hide";
+
+//最初はヘッダーを非表示に
+$(document).ready(function(){
+    if($(window).scrollTop() < $("#top_firstview_bg").height() - $("header").height()){
+        $("header").css("display","none");
+    }else{
+        $("header").css("display","flex");
+    }
+})
+
 
 //ハンバーガーのアニメーション
 var hamburger_animation_PC = lottie.loadAnimation({
@@ -11,6 +23,17 @@ var hamburger_animation_PC = lottie.loadAnimation({
     path: "./static/img/hamburger.json" // JSONファイルのパス
 });
 hamburger_animation_PC.setSpeed(2.0);
+
+
+
+//あとで使う
+var menu_mobile_plus_btn_animation = lottie.loadAnimation({
+    container: document.getElementById('menu_mobile_plus_btn'),// アニメーションを格納するDOM要素 
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: "./static/img/pink_plus.json" // JSONファイルのパス
+});
 
 
 
@@ -43,11 +66,25 @@ $("#hamburger").click(function(){
         $(".menu").css("top","100px");
         $("header").css("border-bottom","1px solid #FFFFFF");
         menu = "opened";
+        header = "show";
+        $("header").css("animation","header_show 1s ease-out");
+        if(header === "show"){
+            $("header").css("display","flex");
+        }
     }else if(menu === "opened"){
         hamburger_animation_PC.setDirection(-1); // 逆再生方向を設定
         hamburger_animation_PC.play(); // アニメーションを再生
         $(".menu").css("top","-100vh");
         menu = "closed";
+        if($(window).scrollTop() < $(".top_firstview").height() - $("header").height()){
+            header = "hide";
+            $("header").css("animation","header_hide 1s ease-out");
+            setTimeout(function(){
+                if(header === "hide"){
+                    $("header").css("display","none");
+                }
+            },1000)
+        }
         setTimeout(function(){
             if(menu === "closed"){
                 $("header").css("border-bottom","");
@@ -76,4 +113,25 @@ $("#footer_nav_X").hover(function(){
 });
 
 
+
+//ヘッダーの表示・非表示を切り替える
+$(window).on('scroll',function(){ 
+    if($(window).scrollTop() >= $(".top_firstview").height() - $("header").height()){
+        header = "show";
+        $("header").css("animation","header_show 1s ease-out");
+        if(header === "show"){
+            $("header").css("display","flex");
+        }
+    }else{
+        if(menu == "closed"){
+            header = "hide";
+            $("header").css("animation","header_hide 1s ease-out");
+            setTimeout(function(){
+                if(header === "hide"){
+                    $("header").css("display","none");
+                }
+            },1000)
+        }
+    }
+});
 
