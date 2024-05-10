@@ -57,12 +57,14 @@ $(window).on('scroll',function(){
             $("header").css("display","flex");
         }
     }else{
-        header = "hide";
-        $("header").css("animation","header_hide 1s ease-out");
-        setTimeout(function(){
-            if(header === "hide"){
-                $("header").css("display","none");
-            }
-        },1000)
+        if(menu == "closed"){
+            header = "hide";
+            $("header").css("animation","header_hide 1s ease-out");
+            setTimeout(function(){
+                if(header === "hide"){
+                    $("header").css("display","none");
+                }
+            },1000)
+        }
     }
 });
