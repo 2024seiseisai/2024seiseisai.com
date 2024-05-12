@@ -391,6 +391,7 @@ header{
 .menu_mobile_main{
     border-top: 1px solid #FFFFFF;
     border-bottom: 1px solid #FFFFFF;
+    margin-top: -1px;
 }
 
 .menu_mobile_main_container{
@@ -424,6 +425,7 @@ header{
 .menu_mobile_plus_btn{
     width: 16px;
     height: 16px;
+    margin-right: 16px;
 }
 
 .menu_mobile_main_detail{
@@ -1640,7 +1642,7 @@ footer{
 
     .scroll_animation{
         top: 90%;
-        width: 50px;
+        width: 15%;
     }
 
     .top_title_Japanese,.top_title_English{
