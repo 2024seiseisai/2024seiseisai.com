@@ -13,6 +13,15 @@ $(document).ready(function(){
     }
 })
 
+//ページが読み込まれたときにmobile版メニューの表示・非表示を切り替える
+$(document).ready(function(){
+    if($(window).width() >= 1024){
+        $("#menu_mobile").hide();
+    }else{
+        $("#menu_mobile").show();
+    }
+})
+
 
 //ハンバーガーのアニメーション
 var hamburger_animation_PC = lottie.loadAnimation({
@@ -135,3 +144,13 @@ $(window).on('scroll',function(){
     }
 });
 
+
+
+//mobile版メニューの表示・非表示を切り替える
+$(window).on('resize',function(){
+    if($(window).width() >= 1024){
+        $("#menu_mobile").hide();
+    }else{
+        $("#menu_mobile").show();
+    }
+})
