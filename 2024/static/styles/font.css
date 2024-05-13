@@ -142,6 +142,149 @@
         font-size: 96px;
         font-weight: bold; 
     }
+    .EN_16_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 16px;
+        font-weight: normal; 
+    }
+    
+    .EN_16_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 16px;
+        font-weight: medium; 
+    }
+    
+    .EN_16_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 16px;
+        font-weight: bold; 
+    }
+    
+    .EN_18_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 18px;
+        font-weight: normal; 
+    }
+    
+    .EN_18_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 18px;
+        font-weight: medium; 
+    }
+    
+    .EN_18_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 18px;
+        font-weight: bold; 
+    }
+    
+    .EN_20_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 20px;
+        font-weight: normal; 
+    }
+    
+    .EN_20_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 20px;
+        font-weight: medium; 
+    }
+    
+    .EN_20_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 20px;
+        font-weight: bold; 
+    }
+    
+    .EN_24_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 24px;
+        font-weight: normal; 
+    }
+    
+    .EN_24_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 24px;
+        font-weight: medium; 
+    }
+    
+    .EN_24_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 24px;
+        font-weight: bold; 
+    }
+    
+    .EN_32_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 32px;
+        font-weight: normal; 
+    }
+    
+    .EN_32_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 32px;
+        font-weight: medium; 
+    }
+    
+    .EN_32_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 32px;
+        font-weight: bold; 
+    }
+    
+    .EN_40_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 40px;
+        font-weight: normal; 
+    }
+    
+    .EN_40_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 40px;
+        font-weight: medium; 
+    }
+    
+    .EN_40_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 40px;
+        font-weight: bold; 
+    }
+    
+    .EN_64_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 64px;
+        font-weight: normal; 
+    }
+    
+    .EN_64_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 64px;
+        font-weight: medium; 
+    }
+    
+    .EN_64_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 64px;
+        font-weight: bold; 
+    }
+    
+    .EN_96_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 96px;
+        font-weight: normal; 
+    }
+    
+    .EN_96_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 96px;
+        font-weight: medium; 
+    }
+    
+    .EN_96_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 96px;
+        font-weight: bold; 
+    }
 }
 
 /* スマホ版(1024px以下)*/
@@ -286,6 +429,149 @@
     
     .m_JP_40_Bold {
         font-family: 'Noto Sans JP';
+        font-size: 40px;
+        font-weight: bold; 
+    }
+    .m_EN_10_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 10px;
+        font-weight: normal; 
+    }
+    
+    .m_EN_10_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 10px;
+        font-weight: medium; 
+    }
+    
+    .m_EN_10_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 10px;
+        font-weight: bold; 
+    }
+    
+    .m_EN_12_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 12px;
+        font-weight: normal; 
+    }
+    
+    .m_EN_12_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 12px;
+        font-weight: medium; 
+    }
+    
+    .m_EN_12_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 12px;
+        font-weight: bold; 
+    }
+    
+    .m_EN_14_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 14px;
+        font-weight: normal; 
+    }
+    
+    .m_EN_14_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 14px;
+        font-weight: medium; 
+    }
+    
+    .m_EN_14_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 14px;
+        font-weight: bold; 
+    }
+    
+    .m_EN_16_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 16px;
+        font-weight: normal; 
+    }
+    
+    .m_EN_16_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 16px;
+        font-weight: medium; 
+    }
+    
+    .m_EN_16_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 16px;
+        font-weight: bold; 
+    }
+    
+    .m_EN_20_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 20px;
+        font-weight: normal; 
+    }
+    
+    .m_EN_20_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 20px;
+        font-weight: medium; 
+    }
+    
+    .m_EN_20_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 20px;
+        font-weight: bold; 
+    }
+    
+    .m_EN_24_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 24px;
+        font-weight: normal; 
+    }
+    
+    .m_EN_24_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 24px;
+        font-weight: medium; 
+    }
+    
+    .m_EN_24_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 24px;
+        font-weight: bold; 
+    }
+    
+    .m_EN_32_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 32px;
+        font-weight: normal; 
+    }
+    
+    .m_EN_32_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 32px;
+        font-weight: medium; 
+    }
+    
+    .m_EN_32_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 32px;
+        font-weight: bold; 
+    }
+    
+    .m_EN_40_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 40px;
+        font-weight: normal; 
+    }
+    
+    .m_EN_40_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 40px;
+        font-weight: medium; 
+    }
+    
+    .m_EN_40_Bold {
+        font-family: 'Nunito Sans';
         font-size: 40px;
         font-weight: bold; 
     }
