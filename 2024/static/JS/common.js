@@ -35,17 +35,6 @@ hamburger_animation_PC.setSpeed(2.0);
 
 
 
-//あとで使う
-var menu_mobile_plus_btn_animation = lottie.loadAnimation({
-    container: document.getElementById('menu_mobile_plus_btn'),// アニメーションを格納するDOM要素 
-    renderer: 'svg',
-    loop: false,
-    autoplay: false,
-    path: "./static/img/pink_plus.json" // JSONファイルのパス
-});
-
-
-
 //Xアイコン、Twitterアイコンのアニメーション
 var menu_icon_animation = lottie.loadAnimation({
     container: document.getElementById('menu_SNS_item_X_img'),// アニメーションを格納するDOM要素 
