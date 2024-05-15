@@ -4,6 +4,11 @@ let menu = "closed";
 //ヘッダーの表示・非表示を示す変数を定義
 let header = "hide";
 
+//mobile版メニューの開閉を表すリストを定義
+menu_mobile = [0,0,0,0];
+
+
+
 //最初はヘッダーを非表示に
 $(document).ready(function(){
     if($(window).scrollTop() < $("#top_firstview_bg").height() - $("header").height()){
@@ -109,6 +114,44 @@ $("#footer_nav_X").hover(function(){
     footer_icon_animation.setDirection(-1);
     footer_icon_animation.play();
 });
+
+
+
+
+//mobile版メニューのプラスボタンのアニメーション
+var menu_mobile_plus_btn_1 = lottie.loadAnimation({
+    container: document.getElementById('menu_mobile_plus_btn_1'),// アニメーションを格納するDOM要素 
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: "./static/img/pink_plus.json" // JSONファイルのパス
+});
+
+var menu_mobile_plus_btn_2 = lottie.loadAnimation({
+    container: document.getElementById('menu_mobile_plus_btn_2'),// アニメーションを格納するDOM要素 
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: "./static/img/pink_plus.json" // JSONファイルのパス
+});
+
+var menu_mobile_plus_btn_3 = lottie.loadAnimation({
+    container: document.getElementById('menu_mobile_plus_btn_3'),// アニメーションを格納するDOM要素 
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: "./static/img/pink_plus.json" // JSONファイルのパス
+});
+
+
+var menu_mobile_plus_btn_4 = lottie.loadAnimation({
+    container: document.getElementById('menu_mobile_plus_btn_4'),// アニメーションを格納するDOM要素 
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: "./static/img/pink_plus.json" // JSONファイルのパス
+});
+
 
 
 
