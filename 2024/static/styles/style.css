@@ -446,6 +446,17 @@ header{
     color: #FFFFFF;
 }
 
+.menu_mobile_SNS_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.menu_mobile_SNS{
+    width: 24px;
+    height: 24px;
+}
 
 
 
