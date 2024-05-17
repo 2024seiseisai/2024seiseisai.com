@@ -389,14 +389,16 @@ header{
     overflow: auto;
 }
 
+.menu_mobile_container{
+    margin: 64px 8%;
+}
+
 .menu_mobile_main{
+    height: 64px;
     border-top: 1px solid #FFFFFF;
     border-bottom: 1px solid #FFFFFF;
     margin-top: -1px;
-}
-
-.menu_mobile_main_container{
-    margin: 64px 8%;
+    transition: all 0.2s ease-out;
 }
 
 .menu_mobile_main_title_container{
@@ -430,8 +432,11 @@ header{
 }
 
 .menu_mobile_main_detail{
-    margin: -4px 10px 12px 10px;
+    margin: 0 10px 12px 10px;
     border-left: 1px solid #FF0084;
+    transition: all 0.2s ease-out;
+    transform: scaleY(0);
+    transform-origin: top;
 }
 
 .menu_mobile_main_detail_link{
