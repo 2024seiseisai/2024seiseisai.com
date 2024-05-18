@@ -1,8 +1,6 @@
 //メニューの開閉状況を示す変数を定義
 let menu = "closed";
 
-export default menu; 
-
 
 //mobile版メニューの開閉を表すリストを定義
 menu_mobile = [0,0,0,0];

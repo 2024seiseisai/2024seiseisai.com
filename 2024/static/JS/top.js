@@ -1,38 +1,3 @@
-import menu from "./common";
-
-//ヘッダーの表示・非表示を示す変数を定義
-let header = "hide";
-
-//最初はヘッダーを非表示に
-$(document).ready(function(){
-    if($(window).scrollTop() < $("#top_firstview_bg").height() - $("header").height()){
-        $("header").css("display","none");
-    }else{
-        $("header").css("display","flex");
-    }
-})
-
-//ヘッダーの表示・非表示を切り替える
-$(window).on('scroll',function(){ 
-    if($(window).scrollTop() >= $(".top_firstview").height() - $("header").height()){
-        header = "show";
-        $("header").css("animation","header_show 1s ease-out");
-        if(header === "show"){
-            $("header").css("display","flex");
-        }
-    }else{
-        if(menu == "closed"){
-            header = "hide";
-            $("header").css("animation","header_hide 1s ease-out");
-            setTimeout(function(){
-                if(header === "hide"){
-                    $("header").css("display","none");
-                }
-            },1000)
-        }
-    }
-});
-
 //ファーストビューのアニメーション
 var logo_animation = lottie.loadAnimation({
     container: document.getElementById('logo_animation'),// アニメーションを格納するDOM要素 
@@ -68,6 +33,39 @@ $(window).on('load',function(){
 });
 
 
+
+//ヘッダーの表示・非表示を示す変数を定義
+let header = "hide";
+
+//最初はヘッダーを非表示に
+$(document).ready(function(){
+    if($(window).scrollTop() < $("#top_firstview_bg").height() - $("header").height()){
+        $("header").css("display","none");
+    }else{
+        $("header").css("display","flex");
+    }
+})
+
+//ヘッダーの表示・非表示を切り替える
+$(window).on('scroll',function(){ 
+    if($(window).scrollTop() >= $(".top_firstview").height() - $("header").height()){
+        header = "show";
+        $("header").css("animation","header_show 1s ease-out");
+        if(header === "show"){
+            $("header").css("display","flex");
+        }
+    }else{
+        if(menu == "closed"){
+            header = "hide";
+            $("header").css("animation","header_hide 1s ease-out");
+            setTimeout(function(){
+                if(header === "hide"){
+                    $("header").css("display","none");
+                }
+            },1000)
+        }
+    }
+});
 
 $("#hamburger").click(function(){
     if(menu == "closed"){
