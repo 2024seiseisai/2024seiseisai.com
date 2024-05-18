@@ -1,22 +1,14 @@
 //メニューの開閉状況を示す変数を定義
 let menu = "closed";
 
-//ヘッダーの表示・非表示を示す変数を定義
-let header = "hide";
+export default menu; 
+
 
 //mobile版メニューの開閉を表すリストを定義
 menu_mobile = [0,0,0,0];
 
 
 
-//最初はヘッダーを非表示に
-$(document).ready(function(){
-    if($(window).scrollTop() < $("#top_firstview_bg").height() - $("header").height()){
-        $("header").css("display","none");
-    }else{
-        $("header").css("display","flex");
-    }
-})
 
 //ページが読み込まれたときにmobile版メニューの表示・非表示を切り替える
 $(document).ready(function(){
@@ -67,32 +59,12 @@ $("#hamburger").click(function(){
         hamburger_animation_PC.setDirection(1);
         hamburger_animation_PC.play();
         $(".menu").css("top","100px");
-        $("header").css("border-bottom","1px solid #FFFFFF");
         menu = "opened";
-        header = "show";
-        $("header").css("animation","header_show 1s ease-out");
-        if(header === "show"){
-            $("header").css("display","flex");
-        }
     }else if(menu === "opened"){
         hamburger_animation_PC.setDirection(-1); // 逆再生方向を設定
         hamburger_animation_PC.play(); // アニメーションを再生
         $(".menu").css("top","-100vh");
         menu = "closed";
-        if($(window).scrollTop() < $(".top_firstview").height() - $("header").height()){
-            header = "hide";
-            $("header").css("animation","header_hide 1s ease-out");
-            setTimeout(function(){
-                if(header === "hide"){
-                    $("header").css("display","none");
-                }
-            },1000)
-        }
-        setTimeout(function(){
-            if(menu === "closed"){
-                $("header").css("border-bottom","");
-            }
-        },200);
     }
 });
     
@@ -224,26 +196,6 @@ $("#menu_mobile_trigger_4").click(function(){
 
 
 
-//ヘッダーの表示・非表示を切り替える
-$(window).on('scroll',function(){ 
-    if($(window).scrollTop() >= $(".top_firstview").height() - $("header").height()){
-        header = "show";
-        $("header").css("animation","header_show 1s ease-out");
-        if(header === "show"){
-            $("header").css("display","flex");
-        }
-    }else{
-        if(menu == "closed"){
-            header = "hide";
-            $("header").css("animation","header_hide 1s ease-out");
-            setTimeout(function(){
-                if(header === "hide"){
-                    $("header").css("display","none");
-                }
-            },1000)
-        }
-    }
-});
 
 
 
