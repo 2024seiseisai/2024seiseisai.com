@@ -16,7 +16,6 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 255;
-    box-sizing: border-box;
 }
 
 .header_theme{
