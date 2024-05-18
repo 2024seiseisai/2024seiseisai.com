@@ -57,12 +57,23 @@ $("#hamburger").click(function(){
         hamburger_animation_PC.setDirection(1);
         hamburger_animation_PC.play();
         $(".menu").css("top","100px");
+        $("header").css("border-bottom","1px solid #FFFFFF");
+        header = "show";
+        $("header").css("animation","header_show 1s ease-out");
+        if(header === "show"){
+            $("header").css("display","flex");
+        }
         menu = "opened";
     }else if(menu === "opened"){
         hamburger_animation_PC.setDirection(-1); // 逆再生方向を設定
         hamburger_animation_PC.play(); // アニメーションを再生
         $(".menu").css("top","-100vh");
         menu = "closed";
+        setTimeout(function(){
+            if(menu === "closed"){
+                $("header").css("border-bottom","");
+            }
+        },200);
     }
 });
     

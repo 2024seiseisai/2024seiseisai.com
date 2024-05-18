@@ -69,27 +69,15 @@ $(window).on('scroll',function(){
 
 $("#hamburger").click(function(){
     if(menu == "closed"){
-        $("header").css("border-bottom","1px solid #FFFFFF");
-        header = "show";
-        $("header").css("animation","header_show 1s ease-out");
-        if(header === "show"){
-            $("header").css("display","flex");
-        }
-    }else if(menu == "opened"){
         if($(window).scrollTop() < $(".top_firstview").height() - $("header").height()){
-            header = "hide";
-            $("header").css("animation","header_hide 1s ease-out");
-            setTimeout(function(){
-                if(header === "hide"){
-                    $("header").css("display","none");
-                }
-            },1000)
+                    header = "hide";
+                    $("header").css("animation","header_hide 1s ease-out");
+                    setTimeout(function(){
+                        if(header === "hide"){
+                            $("header").css("display","none");
+                        }
+                    },1000)
         }
-        setTimeout(function(){
-            if(menu === "closed"){
-                $("header").css("border-bottom","");
-            }
-        },200);
     }
 });
 
