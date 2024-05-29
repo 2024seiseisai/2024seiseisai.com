@@ -335,6 +335,10 @@ header{
 /*PC版で高さが足りなくなることへの対策*/
 @media only screen and (max-width: 1439px) {
 
+    .menu{
+        transition: all 0.3s ease-out;
+    }
+
     .menu_main_title_English{
         font-size: 3.3vw;
     }
