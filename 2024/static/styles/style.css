@@ -335,6 +335,10 @@ header{
 /*PC版で高さが足りなくなることへの対策*/
 @media only screen and (max-width: 1439px) {
 
+    .menu{
+        transition: all 0.3s ease-out;
+    }
+
     .menu_main_title_English{
         font-size: 3.3vw;
     }
@@ -520,6 +524,7 @@ footer{
     height: 760px;
     background-color: #000000;
     position: relative;
+    margin-top: 100px;
 }
 
 .footer_logo{
@@ -589,7 +594,7 @@ footer{
 }
 
 /*カーソルが載ったときにafter要素を表示*/
-.footer_nav_body_item:hover:after{
+.footer_nav_SNS:hover .footer_nav_body_item::after{
     transform: translate(-100%,27px) scaleX(1);
 }
 
@@ -617,7 +622,7 @@ footer{
 
 .footer_X-Twitter_icon{
     width: 26px;
-    height: 26px;
+    height: 30px;
 }
 
 .footer_nav_SNS_Twitter_caption{
