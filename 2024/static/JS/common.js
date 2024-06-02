@@ -24,7 +24,7 @@ var hamburger_animation_PC = lottie.loadAnimation({
     renderer: 'svg',
     loop: false,
     autoplay: false,
-    path: "./static/img/hamburger.json" // JSONファイルのパス
+    path: "/2024/static/img/hamburger.json" // JSONファイルのパス
 });
 hamburger_animation_PC.setSpeed(2.0);
 
@@ -36,7 +36,7 @@ var menu_icon_animation = lottie.loadAnimation({
     renderer: 'svg',
     loop: false,
     autoplay: false,
-    path: "./static/img/X-Twitter.json" // JSONファイルのパス
+    path: "/2024/static/img/X-Twitter.json" // JSONファイルのパス
 });
 menu_icon_animation.setSpeed(3.0);
 
@@ -45,7 +45,7 @@ var footer_icon_animation = lottie.loadAnimation({
     renderer: 'svg',
     loop: false,
     autoplay: false,
-    path: "./static/img/X-Twitter.json" // JSONファイルのパス
+    path: "/2024/static/img/X-Twitter.json" // JSONファイルのパス
 });
 footer_icon_animation.setSpeed(3.0);
 
@@ -105,7 +105,7 @@ var menu_mobile_plus_btn_1 = lottie.loadAnimation({
     renderer: 'svg',
     loop: false,
     autoplay: false,
-    path: "./static/img/pink_plus.json" // JSONファイルのパス
+    path: "/2024/static/img/pink_plus.json" // JSONファイルのパス
 });
 menu_mobile_plus_btn_1.setSpeed(2.5);
 
@@ -114,7 +114,7 @@ var menu_mobile_plus_btn_2 = lottie.loadAnimation({
     renderer: 'svg',
     loop: false,
     autoplay: false,
-    path: "./static/img/pink_plus.json" // JSONファイルのパス
+    path: "/2024/static/img/pink_plus.json" // JSONファイルのパス
 });
 menu_mobile_plus_btn_2.setSpeed(2.5);
 
@@ -123,7 +123,7 @@ var menu_mobile_plus_btn_3 = lottie.loadAnimation({
     renderer: 'svg',
     loop: false,
     autoplay: false,
-    path: "./static/img/pink_plus.json" // JSONファイルのパス
+    path: "/2024/static/img/pink_plus.json" // JSONファイルのパス
 });
 menu_mobile_plus_btn_3.setSpeed(2.5);
 
@@ -132,7 +132,7 @@ var menu_mobile_plus_btn_4 = lottie.loadAnimation({
     renderer: 'svg',
     loop: false,
     autoplay: false,
-    path: "./static/img/pink_plus.json" // JSONファイルのパス
+    path: "/2024/static/img/pink_plus.json" // JSONファイルのパス
 });
 menu_mobile_plus_btn_4.setSpeed(2.5);
 
