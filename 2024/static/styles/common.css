@@ -545,7 +545,13 @@ header{
 
 
 main{
-    padding-top: 0;
+    padding-top: 100px;
+}
+
+@media only screen and (max-width: 1023px) {
+    main{
+        padding-top: 48px;
+    }
 }
 
 

@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
-/*ここからcommon行き*/
 
+main{
+    padding-top: 0!important;
+}
 
 
 /*ここからトップページ本体*/
