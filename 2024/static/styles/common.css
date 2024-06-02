@@ -555,7 +555,7 @@ footer{
     height: 760px;
     background-color: #000000;
     position: relative;
-    margin-top: 100px;
+    top: 100px;
 }
 
 .footer_logo{
@@ -625,6 +625,10 @@ footer{
 }
 
 /*カーソルが載ったときにafter要素を表示*/
+.footer_nav_body_item:hover:after{
+    transform: translate(-100%,27px) scaleX(1);
+}
+
 .footer_nav_SNS:hover .footer_nav_body_item::after{
     transform: translate(-100%,27px) scaleX(1);
 }
@@ -785,3 +789,9 @@ footer{
 
 
 /*common行きここまで*/
+
+.unfinished{
+    pointer-events:none!important;/*クリック不可にする*/
+    color: #B2B2B2!important;
+    opacity: 0.5!important;
+}
