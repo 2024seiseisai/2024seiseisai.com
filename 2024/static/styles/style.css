@@ -1123,8 +1123,4 @@
 
 }
 
-.unfinished{
-    pointer-events:none!important;/*クリック不可にする*/
-    color: #B2B2B2!important;
-    opacity: 0.5!important;
-}
+
