@@ -245,11 +245,45 @@
 
     <!--　main ここから　-->
     <main>
-        <p class = "JP_32_Regular m_JP_16_Regularm access_top←(自前のクラスの一例)">ここにいい感じに書いてって―、クラスの指定はこのpタグにやってる感じでお願いします。フォント用2個、自前の一個、ってなると思います。</p>
-        <p class="EN_96_Bold m_EN_96_Bold topic">CONTACT</p>
-        <p class="JP_32_Regular explanation">
+        <p class="m_EN_40_Bold Topic">CONTACT</p>
+        <p class="m_JP_16_Regular Top_consultation">
             何かご不明な点がございましたら、いつでもお気軽にご相談ください。
         </p>
+        <p class="m_JP_12_Medium Top_explanation">
+            下記のフォームに必要事項をご入力の上、「送信する」ボタンを押してください。
+            <br>
+            担当者より回答・返信させていただきます。
+            <br>
+            ※印は入力の必須項目となります。
+        </p>
+        <div class="contact_SNS">
+            <ul>
+                <li class="m_JP_14_Medium contact_SNS_Top">各種ＳＮＳでのお問い合わせ</li>
+                <li class="m_JP_12_Medium contact_SNS_Sub">各種ＳＮＳでも受け付けております</li>
+            </ul>    
+        </div>
+        <p class="m_JP_16_Medium form_explanation">お客様の情報をご入力お願いします</p>
+        <form action="" method="post" name="contact_from">
+            <div calss="item">
+                <label class="m_JP_12_Medium name">お名前※</label><br>
+                <input type="text" placeholder="例）山田 太郎" required>
+            </div>
+            <div class="item">
+                <label class="m_JP_12_Medium email">メールアドレス※</label><br>
+                <input type="email" placeholder="例）60seisei.prpart@gmail.com" required>
+            </div>
+            <div class="item">
+                <label class="m_JP_12_Medium email">メールアドレス（確認）※</label>
+                <input type="email" placeholder="もう一度メールアドレスを入力してください" required>
+            </div>
+            <div class="item">
+                <label class="m_JP_12_Medium telephone_number">電話番号※</label>
+                <input type="tel" placeholder="例）0742-47-5511" required>
+            </div>
+            
+            
+        </form>
+
 
     </main>
     <!--　main ここまで　-->
