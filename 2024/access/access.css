@@ -1,2 +1,67 @@
-@media screen and (min-width: 1025px) { }
-@media screen and (max-width: 1024px) { }
+@media screen and (min-width: 1024px) { }
+@media screen and (max-width: 1023px) {
+      .title{
+            margin: 0;
+            width: 128px;
+            height: 55px;
+            padding-left: 20px;
+            padding-bottom: 147.63px;
+            color: #FF0084;
+            ;
+      }
+      
+      .top{
+            background-image: url(/2024/access/img/image1.png);
+            background-size: cover;
+            width: 100%;
+      }
+      
+      .rectangle70{
+            position: relative;
+            z-index: 1;
+      }
+      .rectangle70::before{
+            transform: skewY(-3deg);
+            background-color: #fff;
+            z-index: -1;
+            content: "";     
+            position: absolute;
+            margin-top: -10px;
+            width: 100%;
+            height: 487px;
+      }
+      .info{
+            width: 320px;
+            text-align: left;
+            padding-top: 0.37px;
+            display: grid;
+            grid-template-columns: minmax(auto, 320px);
+      }
+      .info_text{
+            width: 320px;
+            height: 40px;
+            text-align: center;
+            border-bottom: 1px solid #FF0084;
+            padding: 10px, 0px, 10px, 0px;
+      }
+      .info_text2{
+            width: 320px;
+            height: 40px;
+            border-bottom: 1px solid #FF0084;
+            display: flex;
+            padding-left: -8px;
+      }
+      .tx1{
+            margin-top: 0px;
+            margin-left: 35px;
+      }
+      .info_text3{
+            width: 320px;
+            height: 40px;
+            border-bottom: 1px solid #FF0084;
+      }
+      .info_text4{
+            width: 320px;
+            height: 40px;
+      }
+ }
