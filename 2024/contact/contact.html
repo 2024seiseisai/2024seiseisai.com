@@ -254,34 +254,51 @@
             <br>
             担当者より回答・返信させていただきます。
             <br>
-            ※印は入力の必須項目となります。
+            <sapn class="Top_explanation_red">※</sapn>印は入力の必須項目となります。
         </p>
         <div class="contact_SNS">
             <ul>
                 <li class="m_JP_14_Medium contact_SNS_Top">各種ＳＮＳでのお問い合わせ</li>
                 <li class="m_JP_12_Medium contact_SNS_Sub">各種ＳＮＳでも受け付けております</li>
-            </ul>    
+            </ul>
+        
         </div>
-        <p class="m_JP_16_Medium form_explanation">お客様の情報をご入力お願いします</p>
         <form action="" method="post" name="contact_from">
-            <div calss="item">
-                <label class="m_JP_12_Medium name">お名前※</label><br>
+            <p class="m_JP_16_Medium form_explanation">お客様の情報をご入力お願いします</p>
+            <div calss="form_item">
+                <label class="m_JP_12_Medium name">お名前<span class="form_item_red">※</span></label>
+                <br>
                 <input type="text" placeholder="例）山田 太郎" required>
             </div>
-            <div class="item">
-                <label class="m_JP_12_Medium email">メールアドレス※</label><br>
-                <input type="email" placeholder="例）60seisei.prpart@gmail.com" required>
+            <div class="form_item">    
+                <label class="m_JP_12_Medium email">メールアドレス※</label>
+                <br>
+                <input type="email" placeholder="例）60seisei.prpart@gmail.com" required> 
             </div>
-            <div class="item">
+            <div class="form_item">    
                 <label class="m_JP_12_Medium email">メールアドレス（確認）※</label>
+                <br>
                 <input type="email" placeholder="もう一度メールアドレスを入力してください" required>
             </div>
-            <div class="item">
+            <div class="form_item">    
                 <label class="m_JP_12_Medium telephone_number">電話番号※</label>
+                <br>
                 <input type="tel" placeholder="例）0742-47-5511" required>
             </div>
-            
-            
+            <div class="form_item">
+                <label class="m_JP_12_Medium living">都道府県</label>
+                <br>
+                <input type="text" placeholder="例）奈良県"> 
+            </div>    
+            <div class="form_item">
+                <label calss="m_JP_12_Medium substance">内容※</label>
+                <br>
+                <textarea name="massage" required></textarea>
+            </div>
+            <div class="form_item">
+                <input type="submit" value="送信">
+            </div>    
+            </div>
         </form>
 
 
