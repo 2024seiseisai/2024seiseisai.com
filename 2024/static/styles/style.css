@@ -676,7 +676,9 @@ main{
     display: flex;
     flex-direction: column;
 }
-
+.top_news_contents a {
+    text-decoration: none !important; /* 重要度を高める */
+}
 .top_news_container{
     margin: 0 160px;
     height: 160px;
