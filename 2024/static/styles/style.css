@@ -151,6 +151,7 @@ main{
     width: 100%;
     height: 860px;
     position: relative;
+    margin-top: 80px;
 }
 
 .top_countdown_bg_1{
@@ -392,16 +393,12 @@ main{
 
 
 .top_description_container{
-    width: 652px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 0 136px;
+    width: 45vw;
+    margin: 0;
 }
 
 .top_description_container_fliped{
-    margin: 0 136px 0 0;
+    margin: 0;
 }
 
 .top_description_title_bg{
@@ -424,24 +421,29 @@ main{
 
 .top_description_frame{
     display: block;
-    margin-top: 80px;
-    width: 648px;
+    margin-top: 11.1vw;
+    width: 45vw;
+}
+
+.frame_fliped{
+    position: relative;
+    top: -7.6vw;
 }
 
 .top_description_Japanese{
-    width: 600px;
-    margin: 64px 0 0 0;
+    width: 41.7vw;
+    margin: 3.5vw auto 0 auto;
     font-family: 'Noto Sans JP';
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.7vw;
 }
 
 .top_description_English{
-    width: 600px;
-    margin: 40px 0 0 0;
+    width: 41.7vw;
+    margin: 2.8vw auto 3.5vw auto;
     font-family: 'Nunito Sans';
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.7vw;
 }
 
 .description_main{
@@ -460,12 +462,17 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 10vw;
 }
 
 .theme_description_logo{
     margin: 0 60px;
     width: fit-content;
     width: -moz-fit-content;
+}
+
+.top_description_img{
+    width: 20.8vw;
 }
 
 .logo_frame{
@@ -478,7 +485,7 @@ main{
     border-top: 1px solid #000000;
     position: absolute;
     top: -64px;
-    right: -16px;
+    right: -32px;
     box-sizing: border-box;
 }
 
@@ -488,36 +495,42 @@ main{
     border-right: 1px solid #000000;
     position: absolute;
     top: -80px;
-    right: 0;
+    right: -16px;
     box-sizing: border-box;
 }
 
 .theme_description_more_btn{
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-top: 134px;
+    margin-top: 3.5vw;
     color: #FFFFFF;
+    transform: scale(1);
+    transition: all 0.2s ease-out;
 }
 
 .theme_description_more_btn_bg{
-    width: 346px;
-    height: 80px;
+    width: 24vw;
+    height: 5.6vw;
     background-color: #FF0084;
     clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transform: scale(1);
     transition: all 0.2s ease-out;
 }
 
 .theme_description_more_btn_bg_after{
-    width: 40px;
-    height: 80px;
+    width: 2.8vw;
+    height: 5.6vw;
     background-color: #FF0084;
     clip-path: polygon(0 0, 50% 0, 100% 50%, 50% 100%, 0 100%, 50% 50%);
     position: relative;
     left: 0;
+    transform: scale(1);
+    -webkit-transform: scale(1);
     transition: all 0.2s ease-out;
 }
 
@@ -525,30 +538,26 @@ main{
     margin: 0 0 0 43px;
     font-family: 'Nunito Sans';
     font-weight: 500;
-    font-size: 32px;
+    font-size: 2.2vw;
 }
 
 .theme_description_more_btn_img{
     display: inline-block;
-    margin-right: 25px;
+    margin-right: 1.7vw;
+    width: 3.3vw;
 }
 
 .theme_description_more_btn_link{
     position: absolute;
     top: 0;
-    height: 0;
+    left: 0;
     width: 100%;
     height: 100%;
 }
 
-.theme_description_more_btn:hover .theme_description_more_btn_bg{
-    width: 386px;
-    height: 90px;
-}
-
-.theme_description_more_btn:hover .theme_description_more_btn_bg_after{
-    width: 45px;
-    height: 90px;
+.theme_description_more_btn:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
 }
 
 .logo_PV_container{
@@ -575,36 +584,7 @@ main{
 }
 
 
-@media only screen and (max-width:1319px) {
 
-    .theme_description_container{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    .theme_description_logo{
-        margin: 186px 318px 0 0;
-    }
-
-    .logo_PV_container{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .logo_PV{
-        margin: 0 0 0 160px;
-    }
-
-    .logo_PV_caption{
-        margin: 50px 0 0 160px;
-    }
-
-    .top_description_frame{
-        margin-top: 160px;
-    }
-
-}
 
 
 @media only screen and (max-width: 1023px) {
@@ -981,6 +961,7 @@ main{
     .top_countdown{
         height: 262px;
         top: -32px;
+        margin-top: 0;
     }
 
     .top_countdown_bg_1{
