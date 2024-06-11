@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.blog_top{
+    color: #FF0084;
+    margin-left: 20px;
+    line-height: 55px;
+}
+.blog_radious{
+    border: 1px solid #FF0084;
+    border-radius: 18px;
+    width: 200px;
+    height: 36px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+.blog_button60{
+    color: white;
+    text-align: center;
+    background-color: #FF0084;
+    border-radius: 100px;
+    border-color: white;
+    display: block;
+    width: 100px;
+    padding: 2px 2px;
+    box-sizing: border-box;
+}
+.blog_button59{
+    color: #FF0084;
+    text-align: center;
+    background-color: white;
+    border-radius: 100px;
+    border-color: white;
+    display: block;
+    width: 100px;
+    padding: 2px 2px;
+    box-sizing: border-box;
+}
