@@ -1,0 +1,241 @@
+@import "../common/setting.scss";
+@import "../common/parts.scss";
+
+/**********************************************************************/
+/*本要素*/
+/**********************************************************************/
+
+main{
+	padding-bottom: 34px;
+    @include media(pc){
+        margin-bottom: 95px;
+    }
+}
+
+.page_title{
+	margin-top: 0;
+	height: 75px;
+	position: relative;
+	@include media(pc){
+		height: 20vw;
+        margin-top: -85px;
+	}
+}
+.page_title_img{
+	@include media(tb){
+		position: absolute;
+		top: 0;
+		width: auto;
+		height: 75px;
+	}
+	@include media(pc){
+		position: absolute;
+		width: auto;
+		height: 20vw;
+		top: 0;
+	}
+}
+.page_title_white{
+	@include media(tb){
+		position: absolute;
+		top: 92 - 63px;
+		left: 60px;
+		width: 255px;
+		height: 21px;
+	}
+
+	@include media(pc){
+		position: absolute;
+		margin: 0;
+		padding: 0;
+		top: 8.229vw;
+		left: 13.02vw;
+		width: 42.448vw;
+		height: 4.323vw;
+		font-size: 4.323vw ;
+		line-height: 4.323vw ;
+	}
+}
+
+/*追加ここから*/
+.page_title_white {
+	font-family: franklin-gothic-condensed, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	letter-spacing: 0.1em;
+	color: #ffffff;
+	margin: 0;
+}
+.blog_list_writer {
+	font-family: "Noto Sans JP", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 8px;
+	font-feature-settings: "palt" 1;
+	line-height: 11px;
+	letter-spacing: 0;
+	color: #737373;
+	margin: 0;
+}
+.blog_list_title {
+    @include jp_Bold(10px, 0, 14px);
+    @include media(pc){
+        @include jp_Bold(15px, 0, 21px);
+    }
+	color: #000000;
+	margin: 0;
+}
+.top_more_button {
+	font-family: franklin-gothic-condensed, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 9px;
+	line-height: 25px;
+	letter-spacing: 0.05em;
+	color: #ffffff;
+	margin: 0;
+}
+
+.blog_title{
+	background:url("img/blog_title.webp");
+	width:188px;
+	height:78px;
+	padding-top:29px;
+	padding-left:60px;
+	margin-bottom:40px;
+}
+
+.blog_article_list{
+    @include media(tb){
+        margin: 0 16%;
+        .blog_article_link{
+            width: 100%;
+            margin-top: 40px;
+            display: block;
+            .blog_article_list_img{
+                width: 100%;
+                height: 38.25vw;
+                object-fit: cover;
+                //16:9以外の画像にも対応
+            }
+        }
+    }
+    @include media(pc){
+        margin: 0 13%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        .blog_article_link{
+            width: 28%;
+            margin-top: 105px;
+			margin-right: 8%;
+            display: block;
+
+			transition: opacity .3s;
+			&:nth-child(3n){
+				margin-right: 0;
+			}
+			&:hover{
+				opacity: .8;
+			}
+            .blog_article_list_img{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+				aspect-ratio: 16 / 9;
+                //16:9以外の画像にも対応
+            }
+        }
+    }
+	
+}
+
+
+.blog_info{
+	width:100%; //blog_infoを入れ子構造的に下に入れれば100%でOK
+    height: 74px;
+	background-color:#fff;
+	padding: 14px;
+	display: flex;
+
+	flex-wrap: wrap;
+	justify-content: space-between;
+    align-content: space-between;
+
+    @include media(pc){
+        height: 100px;
+        padding: 20px;
+    }
+
+	.blog_list_title{
+		width: 100%;
+		padding-right: 30%;
+		margin-bottom: 7px;
+
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+	}
+
+}
+
+
+
+.blog_more{
+	position:relative;
+	display:inline-block;
+	width:70px;
+	height:22px;
+	margin:40px 16%;
+	vertical-align:middle;
+	border:#fff 1px solid;
+	border-radius:11px;
+}
+
+/*
+@media only screen and (min-width:1024px){
+
+	.blog_title{
+		background:url("img/blog_title_pc.webp");
+		width:962px;
+		height:399px;
+		font-size: 72px;
+		line-height: 86px;
+		padding-top:158px;
+		padding-left:250px;
+		margin-bottom:10vw;
+	}
+
+	.blog_article_link{
+		margin-right:9vw;
+		width:20%;
+	}
+
+	.blog_article_list{
+		display:flex;
+		flex-wrap: wrap;
+		width:70%;
+		margin:0px 15vw 0px 18vw;
+	}
+
+	.blog_article_list_img{
+		width:20vw;
+	}
+
+	.blog_info{
+		width:20vw;
+	}
+
+	.blog_more{
+		margin:40px calc(50vw - 35px);
+	}
+	
+}*/
+
+/*追加ここまで*/
+
+
+
+
+/*本要素ここから*//*# sourceMappingURL=style.css.map */

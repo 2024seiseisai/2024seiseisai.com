@@ -1,0 +1,533 @@
+@import "../common/setting.scss";
+@import "../common/parts.scss";
+
+
+.page_title_white {
+	@include en_CnDm(18px, 0.1em, 25px);
+	@include media(pc){
+		@include en_CnDm(30px, 0.1em, 25px);
+	}
+	color: $base_color1;
+}
+
+.blog_article_date{
+	@include en_CnMd(12px, 0, 15px);
+	@include media(pc){
+		@include en_CnMd(18px, 0, 15px);
+	}
+	color: $base_color1;
+}
+
+.footer_sns {
+	@include en_CnBk(14px, 0, 8px);
+	@include media(pc){
+		@include en_CnBk(14px, 0, 28px);
+	}
+	color: $base_color1;
+}
+
+/**********************************************************************/
+/*本要素*/
+/**********************************************************************/
+
+
+.page_title{
+	margin: 0 0 50px;
+	height: 75px;
+	position: relative;
+	@include media(pc){
+		height: 20vw;
+        margin-top: -85px;
+	}
+	
+	.page_title_img{
+		@include media(tb){
+			position: absolute;
+			top: 0;
+			width: auto;
+			height: 75px;
+		}
+		@include media(pc){
+			position: absolute;
+			width: auto;
+			height: 20vw;
+			top: 0;
+		}
+	}
+	.page_title_white{
+		margin: 0;
+		@include media(tb){
+			position: absolute;
+			top: 92 - 63px;
+			left: 60px;
+			width: 255px;
+			height: 21px;
+		}
+
+		@include media(pc){
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			top: 8.229vw;
+			left: 13.02vw;
+			width: 42.448vw;
+			height: 4.323vw;
+			font-size: 4.323vw ;
+			line-height: 4.323vw ;
+		}
+	}
+}
+
+.pamphlet{
+	padding: 0 60px;
+	margin: 0 auto;
+	max-width: 1000px;
+	&__img{
+		width: 100%;
+	}
+	&__title{
+		@include jp_Bold(13px, 0, 18px);
+		@include media(pc){
+			@include jp_Bold(22px, 0, 30px)
+		}
+		color: $base_color1;
+		margin-top: 10px;
+	}
+	&__description{
+		margin-top: 5px;
+	}
+	&__button{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: fit-content;
+		height: 35px;
+
+		padding: 0 30px;
+		margin: 15px auto 0;
+
+		border: $base_color3 solid 1px;
+		border-radius: (35px / 2);
+
+		transition: background-color .3s;
+
+		&:hover{
+			background-color: $base_color3;
+		}
+		@include media(pc){
+			border-radius: (50px / 2);
+			height: 50px;
+			padding: 0 50px;
+		}
+	}
+}
+
+.page_explain{
+	@include media(tb){
+		margin: 0 60px;
+	}
+	@include media(pc){
+		margin: 110px auto 0;
+		padding: 0 250px;
+		max-width: 1000px;
+		box-sizing: content-box;
+	}
+	p{
+		margin-bottom: 10px;
+	}
+	h2{
+		margin: 40px 0 0;
+		@include jp_Bold(13px, 0, 18px);
+		@include media(pc){
+			@include jp_Bold(22px, 0, 30px)
+		}
+		color: $base_color1;
+
+		display: flex;
+		align-items: center;
+
+		&:after{
+			content: "";
+			background-color: $base_color1;
+			height: 1px;
+			display: inline-block;
+			flex-grow: 1;
+			margin-left: 12px;
+		}
+	}
+	ul{
+		margin: 10px 0 15px;
+		li{
+			&::before{
+				content: "・ ";
+			}
+		}
+	}
+	.border{
+		width: 100%;
+		height: 1px;
+		background-color: $base_color1;
+	}
+	a{
+		display: flex;
+		align-items: center;
+		color: $base_color3;
+		
+		img{
+			width: 7px;
+			height: auto;
+			margin: 6px 8px 0;
+			@include media(pc){
+				width: 10px;
+			}
+		}
+	}
+}
+
+//splideここから
+
+
+.splide{
+	position: relative;
+	img.dl_button{
+		opacity: 0;
+		position: absolute;
+		z-index: 2;
+		
+	}
+	li.is-active img.dl_button{
+		opacity: 1;
+	}
+
+	.paginations{
+		display: flex !important;
+	}
+	
+	.pagination{
+		margin: 0 7px;
+		width: 5px;
+		height: 5px;
+		background-color: #737373;
+	}
+	.pagination.is-active{
+		background-color: #52CC89;
+	}
+	
+	.splide_arrow{
+		transition: background-position-x .3s;
+		margin: 0 10px;
+		svg{
+			opacity: 0;
+		}
+		&.arrow--next{
+			background-image: url(splide/arrow_right.svg);
+			
+			&:hover{
+				background-position-x: 10px;
+			}
+		}
+		&.arrow--prev{
+			background-image: url(splide/arrow_left.svg);
+			
+			&:hover{
+				background-position-x: -10px;
+			}
+		}
+	}
+}
+
+.wallpapers,.icons{
+	img.dl_button{
+		transition: transform .5s, opacity .3s;
+		@include media(pc){
+			&:hover{
+				transform: translate(50%, -50%) scale(1.1);
+			}
+		}
+	}
+}
+.headers{
+	img.dl_button{
+		transition: transform .5s, opacity .3s;
+		@include media(pc){
+			&:hover{
+				transform: translate(50%, 50%) scale(1.1);
+			}
+		}
+	}
+}
+
+.wallpapers{
+	margin: 15px 0 60px;
+	img:not(.dl_button){
+		width: 100%;
+		height: auto;
+		margin-bottom: 50px;
+	}
+	img.dl_button{
+		right: 0;
+		bottom: 0;
+		transform: translate(50%, -50%);
+	}
+
+}
+.icons{
+	margin: 15px 0 60px;
+	img:not(.dl_button){
+		width: 100%;
+		height: auto;
+		margin-bottom: 50px;
+	}
+	img.dl_button{
+		right: 12%;
+		bottom: 12%;
+		transform: translate(50%, -50%);
+		@include media(pc){
+			right: 15%;
+			bottom: 12%;
+		}
+	}
+}
+
+.headers{
+	margin: -10px 0 100px;
+	@include media(pc){
+		.header_img{
+			width: fit-content;
+			height: 30vw;
+			img{
+				width: 32.5vw;
+				aspect-ratio: 3 / 1;
+				margin-bottom: 30px;
+	
+				transform-origin: right bottom;
+				transform: translateX(-48%) rotate(-30deg) ;
+			}
+		}
+		
+		img.dl_button{
+			position: absolute;
+			right: -4.5vw;
+			bottom: 40%;
+			transform: translate(50%, 50%);
+		}
+	}
+	
+	@include media(tb){
+		.header_img{
+			width: 100%;
+			height: 80vw;
+			img{
+				width: calc(100vw - 45px);
+				aspect-ratio: 3 / 1;
+				margin-bottom: 30px;
+	
+				transform-origin: right bottom;
+				transform: translateX(-25%) rotate(-30deg) ;
+			}
+		}
+		
+		img.dl_button{
+			right: 10%;
+			bottom: 40%;
+			transform: translate(50%, 50%);
+		}
+	}
+}
+
+//splideここまで
+
+
+
+.special_title.blog_article_date{
+	margin-bottom: 20px;		
+}
+
+img.dl_button{
+	width: 45px;
+	height: 45px;
+	@include media(pc){
+		width: 60px;
+		height: 60px;
+	}
+}
+
+.page_title_white{
+	margin: 80px 13.02vw 30px;
+}
+section.logo_download{
+	@include media(pc){
+		padding: 0 250px;
+		margin: 0 auto 50px;
+		max-width: 1000px;
+		box-sizing: content-box;
+	}
+	@include media(tb){
+		padding: 0 60px;
+		margin-bottom: 60px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.page_title_white{
+		margin-left: 0;
+	}
+	
+	.symbol_mark_title{
+		margin-top: 50px;
+		@include media(pc){
+			margin-top: 85px;
+		}
+	}
+	.prev{
+		border: #737373 solid 3px;
+		@include media(tb){
+			border: #737373 solid 1px;
+		}
+	}
+}
+.special_logo{
+	>img{
+		width: 100%;
+		height: auto;
+	}
+	.logo_description{
+		margin: 3px 0 32px;
+		display: flex;
+		position: relative;
+	}
+	.dl_button{
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translate(50% , -50%);
+		@include media(pc){
+			transition: transform .5s;
+			&:hover{
+				transform: translate(50% , -50%) scale(1.1);
+			}
+		}
+				
+	}
+	@include media(pc){
+		.logo_description{
+			.logo_name{
+				transform-origin: left;
+			}.logo_size{
+				transform-origin: center;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+			
+			}
+		}
+	}
+
+	@include media(tb){
+		.logo_description{
+			.logo_name{
+				transform-origin: left;
+				transform: scale(.5);
+			}.logo_size{
+				transform-origin: center;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%) scale(.5) ;
+			}
+		}
+	
+	}
+}
+.symbol_mark{
+	@include media(tb){
+		display: flex;
+		justify-content: space-between;
+		>div{
+			width: calc(50% - 22.5px);
+			.prev{
+				width: 100%;
+				height: auto;
+			}
+	
+			.logo_description{
+				position: relative;
+				p{
+					transform: scale(.5);
+					transform-origin: left;
+				}
+				.dl_button{
+					position: absolute;
+					top: 0;
+					right: 0;
+					transform: translate(50%, -50%);
+				}
+			}
+		}
+	}
+	@include media(pc){
+		display: flex;
+		justify-content: space-between;
+		>div{
+			width: calc(50% - 22.5px);
+			.prev{
+				width: 100%;
+				height: auto;
+			}
+	
+			.logo_description{
+				position: relative;
+				p{
+					transform-origin: left;
+				}
+				.dl_button{
+					position: absolute;
+					top: 0;
+					right: 0;
+					transform: translate(50%, -50%);
+					transition: transform .5s;
+					&:hover{
+						transform: translate(50%, -50%) scale(1.1);
+					}
+				}
+			}
+		}
+	}
+}
+.logo_userules{
+	margin-top: 52px;
+	>p{
+		margin: 20px 0 20px;
+	}
+	h2{
+		@include jp_Bold(13px, 0, 18px);
+		@include media(pc){
+			@include jp_Bold(22px, 0, 30px)
+		}
+		color: $base_color1;
+	}
+	.readme_download{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: fit-content;
+		height: 35px;
+
+		padding: 0 30px;
+		margin: 0 auto;
+
+		border: $base_color3 solid 1px;
+		border-radius: (35px / 2);
+
+		transition: background-color .3s;
+
+		&:hover{
+			background-color: $base_color3;
+		}
+		@include media(pc){
+			border-radius: (50px / 2);
+			height: 50px;
+			padding: 0 50px;
+		}
+	}
+}
