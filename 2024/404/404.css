@@ -1,19 +1,24 @@
 .content{
     text-align: center;
-}
-.top{
-    color: #FF0084;
+    background-image: url(2024/404/img/back.jpeg);
 }
 .title{
+    color: #FF0084;
     font-family: 'Nunito Sans';
     font-size: 300px;
     font-weight: bold; 
     margin-top: 30px;
-    margin-bottom: 0;
+    margin-bottom: -60px;
 }
-
+.title2{
+    color: #FF0084;
+    margin-bottom: 30px;
+}
+.textbox{
+    margin: 16px auto;
+	display: block;
+}
 .text{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+	text-align: left;
+	display: inline-block;
 }
