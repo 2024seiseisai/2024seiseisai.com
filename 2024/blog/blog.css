@@ -16,7 +16,7 @@
 
 }
 .blog_button{
-    line-height:36px;
+    line-height:32px;
     color: #FF0084;
     text-align: center;
     background-color: white;
@@ -25,6 +25,8 @@
     display: block;
     width: 100px;
     box-sizing: border-box;
+    margin-left:2px;
+ 
 }
 .blog_button_pink{
     color: white;
