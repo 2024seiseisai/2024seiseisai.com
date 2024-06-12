@@ -1,0 +1,19 @@
+.content{
+    text-align: center;
+}
+.top{
+    color: #FF0084;
+}
+.title{
+    font-family: 'Nunito Sans';
+    font-size: 300px;
+    font-weight: bold; 
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.text{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
