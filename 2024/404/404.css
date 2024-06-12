@@ -1,6 +1,10 @@
+main{
+    background-image: url(img/back.jpeg);
+    background-size: 100%;
+    background-position: bottom;
+}
 .content{
     text-align: center;
-    background-image: url(2024/404/img/back.jpeg);
 }
 .title{
     color: #FF0084;
