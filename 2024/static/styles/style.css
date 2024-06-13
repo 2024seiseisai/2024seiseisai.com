@@ -713,9 +713,9 @@ main{
 
 .top_introduction_container{
     display: grid;
-    grid-template-rows: repeat(3,50vw 80px) 50vw;
+    grid-template-rows: repeat(3,50vw 5.55vw) 50vw;
     grid-template-columns: 1fr 1fr;
-    margin-top: 100px;
+    margin-top: 7vw;
 }
 
 .top_introduction_container_Blog{
@@ -753,7 +753,7 @@ main{
     /*以下フォント情報*/
     font-family: 'Nunito Sans';
     font-weight: 500;
-    font-size: 96px;
+    font-size: 6.5vw;
 }
 
 .top_introduction_title_Japanese{
@@ -761,21 +761,21 @@ main{
     /*以下フォント情報*/
     font-family: 'Noto Sans JP';
     font-weight: 500;
-    font-size: 32px;
+    font-size: 2.22vw;
 }
 
 .top_introduction_detail{
-    margin: 56px 0 0 0;
+    margin: 4vw 0 0 0;
     /*以下フォント情報*/
     font-family: 'Noto Sans JP';
     font-weight: 500;
-    font-size: 32px;
+    font-size: 2.22vw;
 }
 
 
 .top_introduction_Blog{
     position: relative;
-    right: 160px;
+    right: 11.1vw;
     aspect-ratio: 7/9;
 }
 
@@ -789,7 +789,7 @@ main{
 
 .top_introduction_Special{
     position: relative;
-    left: 160px;
+    left: 11.1vw;
     aspect-ratio: 7/9;
 }
 
@@ -803,7 +803,7 @@ main{
 
 .top_introduction_Archives{
     position: relative;
-    right: 160px;
+    right: 11.1vw;
     aspect-ratio: 7/9;
 }
 
@@ -817,7 +817,7 @@ main{
 
 .top_introduction_Access{
     position: relative;
-    left: 160px;
+    left: 11.1vw;
     aspect-ratio: 7/9;
 }
 
@@ -839,21 +839,21 @@ main{
 
 .top_introduction_more_btn_container{
     width: inherit;
-    height: 72px;
+    height: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 5.55vw;
 }
 
 .top_introduction_more_btn{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 240px;
-    height: 72px;
+    width: 16.7vw;
+    height: 5vw;
     position: relative;
-    gap: 24px;
+    gap: 1.67vw;
 }
 
 .top_introduction_more_btn_arrow{
@@ -869,7 +869,7 @@ main{
     /*以下フォント情報*/
     font-family: 'Nunito Sans';
     font-weight: 500;
-    font-size: 36px;
+    font-size: 2.5vw;
 }
 
 .top_introduction_more_btn_link{
@@ -883,40 +883,6 @@ main{
 .top_introduction_more_btn:hover .top_introduction_more_btn_arrow{
     left: 20px;
 }
-
-@media only screen and (max-width: 1439px) {
-
-    .top_introduction_title_English{
-        font-size: 6.5vw;
-    }
-
-    .top_introduction_title_Japanese{
-        font-size: 2.2vw;
-    }
-
-    .top_introduction_detail{
-        font-size: 2.2vw;
-        margin-top: 3.88vw;
-    }
-
-    .top_introduction_Blog{
-        right: 8vw;
-    }
-
-    .top_introduction_Special{
-        left: 8vw;
-    }
-
-    .top_introduction_Archives{
-        right: 8vw;
-    }
-
-    .top_introduction_Access{
-        left: 8vw;
-    }
-
-}
-
 
 
 /*メディアクエリ*/
@@ -1039,9 +1005,7 @@ main{
         font-size: 12px;
     }
 
-    .top_introduction_container{
-        display: none;
-    }
+    
 
     /*temp*/
 
