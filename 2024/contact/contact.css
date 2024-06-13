@@ -1,6 +1,13 @@
 @charset "UTF-8";
 @media screen and(max-width: 1023px){
-    main{
+    .Topic{
+        color:#FF0084;
+        width:144px;
+        height:55px;
+        top:48px;
+        left:20px;
+    }
+    .main_topic{
         position:fixed;
         height:719px;
         width: 320px;
