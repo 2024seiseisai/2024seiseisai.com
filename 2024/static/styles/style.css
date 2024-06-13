@@ -397,8 +397,8 @@ main{
     margin: 0;
 }
 
-.top_description_container_fliped{
-    margin: 0;
+.top_description{
+    margin: 7vw 0;
 }
 
 .top_description_title_bg{
@@ -446,18 +446,6 @@ main{
     font-size: 1.7vw;
 }
 
-.description_main{
-    margin-top: 76px;
-}
-
-.description_theme{
-    margin-top: 94px;
-}
-
-.description_logo_PV{
-    margin-top: 316px;
-}
-
 .theme_description_container{
     display: flex;
     justify-content: space-between;
@@ -466,7 +454,6 @@ main{
 }
 
 .theme_description_logo{
-    margin: 0 60px;
     width: fit-content;
     width: -moz-fit-content;
 }
@@ -480,22 +467,22 @@ main{
 }
 
 .logo_frame_border_top{
-    width: 64px;
-    height: 64px;
+    width: 4.4vw;
+    height: 4.4vw;
     border-top: 1px solid #000000;
     position: absolute;
-    top: -64px;
-    right: -32px;
+    top: -4.4vw;
+    right: -2.2vw;
     box-sizing: border-box;
 }
 
 .logo_frame_border_right{
-    width: 64px;
-    height: 64px;
+    width: 4.4vw;
+    height: 4.4vw;
     border-right: 1px solid #000000;
     position: absolute;
-    top: -80px;
-    right: -16px;
+    top: -5.5vw;
+    right: -1.1vw;
     box-sizing: border-box;
 }
 
@@ -535,7 +522,7 @@ main{
 }
 
 .theme_description_more_btn_text{
-    margin: 0 0 0 43px;
+    margin: 0 0 0 2.8vw;
     font-family: 'Nunito Sans';
     font-weight: 500;
     font-size: 2.2vw;
@@ -564,23 +551,22 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 105px;
-    margin: 100px 0 290px 0;
+    gap: 5vw;
+    margin: 7vw 10vw;
 }
 
 .logo_PV{
-    width: 600px;
+    width: 45vw;
     aspect-ratio: 16/9;
-    margin: 0 0 0 160px;
 }
 
 .logo_PV iframe{
-    width: 600px;
+    width: 45vw;
     aspect-ratio: 16/9;
 }
 
 .logo_PV_caption{
-    margin: 0 105px 0 0;
+    margin: 0;
 }
 
 
@@ -729,6 +715,7 @@ main{
     display: grid;
     grid-template-rows: repeat(3,50vw 80px) 50vw;
     grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
 }
 
 .top_introduction_container_Blog{
@@ -1056,9 +1043,6 @@ main{
     }
 
     /*temp*/
-    .top_description{
-        display: none;
-    }
 
     .top_news{
         display: none;
