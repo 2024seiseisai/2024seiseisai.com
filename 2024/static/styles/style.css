@@ -591,24 +591,24 @@ main{
 
 .top_news{
     width: 100%;
-    height: 1080px;
+    height: 75vw;
     background-color: #000000;
-    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 980px);
+    clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 91%);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .top_news_h2_bg{
-    width: 450px;
-    height: 100px;
+    width: 31vw;
+    height: 7vw;
     background-color: #FF0084;
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
     position: relative;
 }
 
 .top_news_h2{
-    margin-top: 100px;
+    margin-top: 7vw;
     position: relative;
 }
 
@@ -616,26 +616,26 @@ main{
     margin: 0;
     position: absolute;
     top: 50%;
-    right: 108px;
+    right: 7.5vw;
     transform: translateY(-50%);
     /*以下フォント情報*/
     font-family: 'Nunito Sans';
     font-weight: 600;
-    font-size: 64px;
+    font-size: 4.44vw;
     color: #FFFFFF;
 }
 
 .top_news_h2_bg_after{
-    width: 65px;
-    height: 100px;
+    width: 4.55vw;
+    height: 7vw;
     background-color: #FF0084;
     position: absolute;
     display: block;
     top: 0;
-    left: 420px;
+    left: 29vw;
     right: 0;
     z-index: 1000;
-    clip-path: polygon(45px 0, 65px 0, 20px 100%, 0 100%);
+    clip-path: polygon(3.15vw 0, 4.55vw 0, 1.4vw 100%, 0 100%);
 }
 
 .top_news_contents{
@@ -646,11 +646,11 @@ main{
     text-decoration: none !important; /* 重要度を高める */
 }
 .top_news_container{
-    margin: 0 160px;
-    height: 160px;
+    margin: 0 11.1vw;
+    height: 11.1vw;
     display: flex;
     align-items: center;
-    gap: 72px;
+    gap: 5vw;
     border-top: 1px solid #FFFFFF;
     border-bottom: 1px solid #FFFFFF;
 }
@@ -659,7 +659,7 @@ main{
     margin: 0;
     font-family: 'Nunito Sans';
     font-weight: 600;
-    font-size: 32px;
+    font-size: 2.22vw;
     color: #FFFFFF;
 }
 
@@ -668,7 +668,7 @@ main{
     margin: 0;
     font-family: 'Noto Sans JP';
     font-weight: 500;
-    font-size: 32px;
+    font-size: 2.22vw;
     color: #FFFFFF;
     display: flex;
     align-items: center;
@@ -680,11 +680,11 @@ main{
 }
 
 .top_news_more_btn{
-    margin: 0 auto 174px auto;
+    margin: 0 auto 12vw auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 1.7vw;
     position: relative;
     box-sizing: content-box;
 }
@@ -694,7 +694,7 @@ main{
     /*以下フォント情報*/
     font-family: 'Nunito Sans';
     font-weight: 500;
-    font-size: 36px;
+    font-size: 2.5vw;
     color: #FFFFFF;
 }
 
@@ -860,6 +860,7 @@ main{
     position: relative;
     transition: all 0.2s ease-out;
     left: 0;
+    width: 5vw;
 }
 
 
@@ -1043,10 +1044,6 @@ main{
     }
 
     /*temp*/
-
-    .top_news{
-        display: none;
-    }
 
     body{
         height: 2000px;
