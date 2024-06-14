@@ -60,6 +60,45 @@
         height: 20px;
         line-height: 20.27px;
     }
+    .contact_SNS_Sub{
+        position: absolute;
+        width:190px;
+        height: auto;
+        line-height: 17.38px;
+    }
+    .contact_SNS_link{
+        position: absolute;
+        width: 292px;
+        height: auto;
+        padding:0px,39px,0,39px;
+        gap:80px;
+    }
+    .contact_SNS_X{
+        position: absolute;
+        float: left;
+        display: flex;
+        align-items: center;
+        width:62px;
+        height:20px;
+        gap:8px;
+    }
+    .logo_SNS{
+        position: absolute;
+        width: 20px;
+        height: auto;
+    }
+    .X_titile{
+        position: absolute;
+        width: 8px;
+        height: 16px;
+
+    }
+    .instagram_title{
+        position: absolute;
+        width: 56px;
+        height: 16px;
+    }
+
 }
 .red{
     color:#FF0084;
