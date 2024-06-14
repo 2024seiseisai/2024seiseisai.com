@@ -1,21 +1,43 @@
 @charset "UTF-8";
 @media screen and(max-width: 1023px){
     .Topic{
+        position:absolute;
         color:#FF0084;
         width:144px;
         height:55px;
-        top:48px;
+        top:0px;
         left:20px;
     }
     .main_topic{
-        position:fixed;
+        position:absolute;
         height:719px;
         width: 320px;
         margin-left:auto;
         margin-right:auto;
+        gap: 16px;
     }
-    
+    .Top_consultation{
+        position:absolute;
+        width:auto;
+        height: auto;
+        line-height: 23.17px;
+    }
+    .Top_explanation{
+        position: absolute;
+        width:auto;
+        height:auto;
+        line-height: 17.38px;
+    }
+    .contact_SNS{
+        position: absolute;
+        width:auto;
+        height:auto;
+        border: 2px;
+        border-color: #FF0084;
+        padding:4px;
+        gap:4px;
+    }
 }
 .red{
-    color:pink;
+    color:#FF0084;
 }
