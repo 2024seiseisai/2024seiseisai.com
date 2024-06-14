@@ -5,8 +5,7 @@
       }
       .title{
             margin: 0;
-            width: 128px;
-            width: 55%;
+            height: 55px;
             padding-left: 11%;
             padding-bottom: 147.63px;
             color: #FF0084;
@@ -16,6 +15,7 @@
       .top{
             background-image: url(/2024/access/img/image1.png);
             background-size: cover;
+            background-position: center;
             width: 100%;
       }
       
