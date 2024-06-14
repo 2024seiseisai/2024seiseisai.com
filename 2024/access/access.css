@@ -6,8 +6,8 @@
       .title{
             margin: 0;
             width: 128px;
-            height: 55px;
-            padding-left: 20px;
+            width: 55%;
+            padding-left: 11%;
             padding-bottom: 147.63px;
             color: #FF0084;
             ;
@@ -84,13 +84,15 @@
             margin-bottom: 43px;
       }
       .map_container{
+            margin-left: 20px;
+            margin-right: 20px;
             text-align: center;
       }
       .lapper{
-            border: 1px solid #FF0084;
+            aspect-ratio: 16/9;
             margin: auto;
-            width: 320px;
-            height: 200px;
+            width: 90%;
+            border: 1px solid #FF0084;
       }
       .map_text{
             margin: auto;
@@ -117,7 +119,7 @@
       }
       .rectangle66{
             margin: auto;
-            width: 280px;
+            width: 80%;
             height: 350px;
             background-color: #D9D9D9;
             margin-top: 22px;
@@ -128,8 +130,8 @@
       }
       .routemap_img{
             margin: auto;
-            width: 320px;
-            height: 225.93px;
+            width: 80%;
+            aspect-ratio: 141/100;
             background-size: cover;
             background-image: url(/2024/access/img/image2.png);
       }
