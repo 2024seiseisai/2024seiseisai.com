@@ -98,7 +98,17 @@
         width: 56px;
         height: 16px;
     }
-
+    .form_sheet{
+        position: absolute;
+        width:100%;
+        height: auto;
+    }
+    .form_explanation{
+        position: absolute;
+        width:256px;
+        height:auto;
+        line-height: 23.17px;
+    }
 }
 .red{
     color:#FF0084;
