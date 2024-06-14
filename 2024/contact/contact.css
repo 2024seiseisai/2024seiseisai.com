@@ -37,6 +37,29 @@
         padding:4px;
         gap:4px;
     }
+    .contact_SNS_main{
+        position:absolute;
+        width:310px;
+        height: 28px;
+        margin-left: auto;
+        margin-left: auto;
+        display:flex;
+        align-items: center;
+        border:0px,0px,1px,0px;
+        border-color: #FF0084;
+        gap: 8px;
+    }
+    .contact_speech{
+        position: absolute;
+        width:24px;
+        height: auto;
+    }
+    .contact_SNS_Top{
+        position: absolute;
+        width: 167px;
+        height: 20px;
+        line-height: 20.27px;
+    }
 }
 .red{
     color:#FF0084;
