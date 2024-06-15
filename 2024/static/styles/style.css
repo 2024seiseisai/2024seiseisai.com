@@ -884,14 +884,41 @@ main{
     left: 20px;
 }
 
+.top_guide_bg_1{
+    background: url(/2024/static/img/top_guide_bg.webp); 
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    z-index: 1;
+}
+
+.top_guide_bg_2{
+    background: #5F5F5F; 
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: 2;
+}
+
 .top_guide_container{
-    background: #5F5F5F;
+    background: transparent;
+    padding: 7vw 0;
+    margin-top: 11.1vw;
+    position: relative;
+}
+
+.top_guide_main{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 11vw;
-    padding: 7vw 0;
-    margin-top: 11.1vw;
 }
 
 .top_guide{
@@ -904,6 +931,8 @@ main{
     font-size: 4.44vw;
     color: #FF0084;
     margin: 0;
+    position: relative;
+    z-index: 64;
 }
 
 .top_guide_text{
@@ -914,6 +943,7 @@ main{
     margin: 0 0 3.75vw 0;
     position: relative;
     top: -1vw;
+    z-index: 64;
 }
 
 .top_guide_link_btn_main{
@@ -924,6 +954,7 @@ main{
     width: 33.3vw;
     margin: 0 auto;
     position: relative;
+    z-index: 64;
 }
 
 .top_guide_link_btn{
@@ -1067,7 +1098,6 @@ main{
     }
 
     .top_guide_container{
-        background: #5F5F5F;
         padding: 9vw 0;
         margin-top: 20.8vw;
         flex-direction: column;
