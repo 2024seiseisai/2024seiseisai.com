@@ -800,3 +800,7 @@ footer{
     color: #B2B2B2!important;
     opacity: 0.5!important;
 }
+
+.hide{
+    display: none;
+}
