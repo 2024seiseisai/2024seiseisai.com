@@ -32,3 +32,28 @@
     color: white;
     background-color: #FF0084;
 }
+.pagination{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin:40px 0;
+}
+.pagination a{
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid transparent;  
+    margin: 0 8px; 
+}
+.pagination a.prev{
+    color:#FF0084 !important;
+    margin:0;
+}
+.pagination a.next{
+    color:#FF0084 !important;
+    margin:0;
+}
+
+.pagination a.active{
+    border-bottom: 2px solid #FF0084;
+}
