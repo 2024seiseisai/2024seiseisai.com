@@ -1097,6 +1097,74 @@ main{
         font-size: 12px;
     }
 
+    .top_description_English{
+        font-size: 2.78vw;
+        font-weight: 600;
+        margin-top: 6vw;
+    }
+
+    .top_description_Japanese{
+        font-size: 2.78vw;
+    }
+
+    .top_news_container{
+        height: 13.3vw;
+        margin: 0 8.33vw;
+    }
+
+    .top_news_date{
+        font-size: 2.78vw;
+    }
+
+    .top_news_title{
+        width: 60vw;
+        font-size: 2.78vw;
+    }
+
+    .top_introduction_title_English{
+        font-size: 10vw;
+        font-weight: 600;
+    }
+
+    .top_introduction_title_Japanese{
+        font-size: 3.89vw;
+        position: relative;
+        top: -1vw;
+    }
+
+    .top_introduction_detail{
+        font-size: 2.78vw;
+        margin: 2.22vw 0 0 0;
+        position: relative;
+        top: -1vw;
+    }
+
+    .top_introduction_Access,.top_introduction_Special{
+        left: 8.33vw;
+    }
+
+    .top_introduction_Blog,.top_introduction_Archives{
+        right: 8.33vw;
+    }
+
+    .top_introduction_more_btn_container{
+        height: 8vw;
+        margin-top: 3vw;
+    }
+
+    .top_introduction_more_btn{
+        width: 21vw;
+        height: 8vw;
+    }
+
+    .top_introduction_more_btn_arrow{
+        width: 8vw;
+    }
+
+    .top_introduction_more_btn_text{
+        font-size: 5vw;
+    }
+
     .top_guide_container{
         padding: 9vw 0;
         margin-top: 20.8vw;
