@@ -32,6 +32,45 @@
     color: white;
     background-color: #FF0084;
 }
+.blog_preview {
+    margin:0 auto;
+    margin-top: 40px;
+    vertical-align: middle;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px ;
+    width: 320px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.blog_preview_img {
+    height: 200px;
+    width: 300px;
+
+}
+.blog_preview_top{
+    display: flex;
+    align-items: center;
+}
+.blog_preview_date {
+    color: #ff1493;
+    margin-top: 12px;
+}
+
+.blog_preview_club {
+    background-color:#FF0084;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 16px;
+    vertical-align: middle;
+}
+.blog_preview_author {
+    color: black;
+    text-align: right;
+}
 .pagination{
     font-size: 14px;
     display: flex;
