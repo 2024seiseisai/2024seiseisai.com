@@ -884,6 +884,67 @@ main{
     left: 20px;
 }
 
+.top_guide_container{
+    background: #5F5F5F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11vw;
+    padding: 7vw 0;
+    margin-top: 11.1vw;
+}
+
+.top_guide{
+    width: 33.3vw;
+}
+
+.top_guide_title{
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    font-size: 4.44vw;
+    color: #FF0084;
+    margin: 0;
+}
+
+.top_guide_text{
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+    font-size: 2.22vw;
+    color: #FFFFFF;
+    margin: 0 0 3.75vw 0;
+    position: relative;
+    top: -1vw;
+}
+
+.top_guide_link_btn_main{
+    border: 3px solid #FFFFFF;
+    height: 7vw;
+    display: flex;
+    align-items: center;
+    width: 33.3vw;
+    margin: 0 auto;
+    position: relative;
+}
+
+.top_guide_link_btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1.8vw;
+    width: 100%;
+}
+
+.top_guide_link_btn_text{
+    margin: 0;
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+    font-size: 1.67vw;
+    color: #FFFFFF;
+}
+
+.top_guide_btn_img{
+    width: 4.44vw;
+}
 
 /*メディアクエリ*/
 @media only screen and (max-width: 1023px) {
@@ -1005,14 +1066,43 @@ main{
         font-size: 12px;
     }
 
-    
-
-    /*temp*/
-
-    body{
-        height: 2000px;
+    .top_guide_container{
+        background: #5F5F5F;
+        padding: 9vw 0;
+        margin-top: 20.8vw;
+        flex-direction: column;
     }
-    /*tempここまで*/
+
+    .top_guide{
+        width: 83.3vw;
+    }
+    
+    .top_guide_title{
+        font-size: 7.22vw;
+    }
+    
+    .top_guide_text{
+        font-size: 3.33vw;
+        margin: 0 0 3.75vw 0;
+    }
+    
+    .top_guide_link_btn_main{
+        border: 1px solid #FFFFFF;
+        height: 17.8vw;
+        width: 83.3vw;
+    }
+    
+    .top_guide_link_btn{
+        margin: 0 5.56vw;
+    }
+    
+    .top_guide_link_btn_text{
+        font-size: 4vw;
+    }
+    
+    .top_guide_btn_img{
+        width: 8.89vw;
+    }
 
 }
 
