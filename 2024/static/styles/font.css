@@ -287,7 +287,7 @@
     }
 }
 
-/* スマホ版(1024px以下)*/
+/* スマホ版(1023px以下)*/
 @media screen and (max-width: 1023px) {
     .m_JP_10_Regular {
         font-family: 'Noto Sans JP';
