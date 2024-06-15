@@ -1100,6 +1100,9 @@ main{
     .top_guide_container{
         padding: 9vw 0;
         margin-top: 20.8vw;
+    }
+
+    .top_guide_main{
         flex-direction: column;
     }
 
