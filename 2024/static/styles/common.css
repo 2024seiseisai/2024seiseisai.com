@@ -560,7 +560,7 @@ footer{
     height: 760px;
     background-color: #000000;
     position: relative;
-    top: 100px;
+    top: 7vw;
 }
 
 .footer_logo{
@@ -799,4 +799,8 @@ footer{
     pointer-events:none!important;/*クリック不可にする*/
     color: #B2B2B2!important;
     opacity: 0.5!important;
+}
+
+.hide{
+    display: none;
 }
