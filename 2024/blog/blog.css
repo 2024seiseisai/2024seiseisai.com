@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.blog_top{
+    color: #FF0084;
+    margin-left: 20px;
+    line-height: 55px;
+}
+.blog_radious{
+    border: 1px solid #FF0084;
+    border-radius: 18px;
+    width: 200px;
+    height: 36px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+
+}
+.blog_button{
+    line-height:36px;
+    color: #FF0084;
+    text-align: center;
+    background-color: white;
+    border-radius: 100px;
+    border-color: white;
+    display: block;
+    width: 100px;
+    box-sizing: border-box;
+}
+.blog_button_pink{
+    color: white;
+    background-color: #FF0084;
+}
