@@ -61,7 +61,13 @@ header {
     right:0px;
     top:0px;
 }
-
+@media screen and (min-width: 1024px) {
+    .header_nav_container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+}
 .hamburger{
     height: 100px;
     cursor: url(/2024/static/img/logo.svg),pointer;
@@ -557,10 +563,10 @@ main{
 
 footer{
     width: 100%;
+    top: 100vh;
     height: 760px;
     background-color: #000000;
     position: sticky;
-    height: 119px;
 }
 
 .footer_logo{
