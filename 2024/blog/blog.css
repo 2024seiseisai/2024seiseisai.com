@@ -34,7 +34,7 @@
 }
 .blog_preview_link{
     text-decoration: none;
-    color: none;
+    color: black;
 }
 .blog_preview {/*全体の位置と枠*/
     margin:0 auto;
