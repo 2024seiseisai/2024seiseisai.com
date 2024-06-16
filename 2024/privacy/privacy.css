@@ -10,13 +10,25 @@ main{
 }
 h1{
     color: #FF0084;
+    margin-left: 15%;
+    margin-bottom: -1%;
+}
+.subtitle{
+    margin-top: 0%;
+    margin-left: 15%;
 }
 .textbox{
     margin: 16px auto;
 	display: block;
     width: 55%;
 }
+h2{
+    text-align: left;
+}
 .text{
 	text-align: left;
 	display: inline-block;
 }
+a {
+    color: #FF0084;
+  }
