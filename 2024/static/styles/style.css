@@ -1161,6 +1161,10 @@ main{
         font-size: 4.17vw;
     }
 
+    .top_introduction_container{
+        margin: 7vw 0 10vw 0;
+    }
+
     .top_introduction_title_English{
         font-size: 10vw;
         font-weight: 600;
