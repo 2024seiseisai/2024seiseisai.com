@@ -81,13 +81,13 @@ header {
         font-weight: 650; 
     }
 }
-@media only screen and (min-width: 450px) and (max-width: 1023px) {
+@media only screen and (min-width: 446px) and (max-width: 1023px) {
     ::-webkit-full-page-media, :future, :root  .header_nav_container{
         position: absolute; /* ここを追加 */
         right: -350px; /* ここを追加 */
     }
 }
-@media only screen and (max-width: 449px)  {
+@media only screen and (max-width: 445px)  {
     ::-webkit-full-page-media, :future, :root  .header_nav_container{
         position: absolute; /* ここを追加 */
         right: -80vw; /* ここを追加 */
@@ -591,13 +591,9 @@ footer{
     top: 100vh;
     height: 760px;
     background-color: #000000;
+    position: sticky;
 }
-@media only screen and (max-width: 1023px) {
-    ::-webkit-full-page-media, :future, :root  footer{
-        height: 40vw;
-        position: sticky;margin-bottom:-30vw;
-    }
-}
+
 
 .footer_logo{
     padding: 80px 0 0 160px;
