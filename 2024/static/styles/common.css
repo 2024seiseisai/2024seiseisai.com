@@ -598,9 +598,6 @@ footer{
         position: sticky;margin-bottom:-30vw;
     }
 }
-@media only screen and (min-width: 1023px) {
-
-}
 
 .footer_logo{
     padding: 80px 0 0 160px;
