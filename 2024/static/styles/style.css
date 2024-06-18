@@ -839,8 +839,21 @@ main{
     width: 100%;
     height: 100%;
 }
+::-webkit-full-page-media, :future, :root .top_introduction_img_Blog {
+    height:100%;
+}
 
+::-webkit-full-page-media, :future, :root .top_introduction_img_Special {
+    height:100%;
+}
 
+::-webkit-full-page-media, :future, :root .top_introduction_img_Archives {
+    height:100%;
+}
+
+::-webkit-full-page-media, :future, :root .top_introduction_img_Access {
+    height:100%;
+}
 .top_introduction_more_btn_container{
     width: inherit;
     height: 5vw;
