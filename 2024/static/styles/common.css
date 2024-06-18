@@ -1,5 +1,7 @@
 @charset "UTF-8";
-
+body{
+    -webkit-text-size-adjust: 100%;
+  }
 /*
 /*カウントダウン
 .countdown{
