@@ -65,35 +65,9 @@ header {
     align-items: center;
 }
 
-@media only screen and (min-width: 1024px){
-    ::-webkit-full-page-media, :future, :root  .header_nav_container{
-        position: absolute; /* ここを追加 */
-        right: -300px; /* ここを追加 */
-    }
-    ::-webkit-full-page-media, :future, :root  .header_nav{
-        position: absolute; /* ここを追加 */
-        right: 450px; /* ここを追加 */
-        font-family: 'Nunito Sans';
-    }
-    ::-webkit-full-page-media, :future, :root  .header_nav_item{
-        overflow: hidden;
-        white-space: nowrap;
-        font-weight: 650; 
-    }
-}
-@media only screen and (min-width: 446px) and (max-width: 1023px) {
-    ::-webkit-full-page-media, :future, :root  .header_nav_container{
-        position: absolute; /* ここを追加 */
-        right: -350px; /* ここを追加 */
-    }
-}
-@media only screen and (max-width: 445px)  {
-    ::-webkit-full-page-media, :future, :root  .header_nav_container{
-        position: absolute; /* ここを追加 */
-        right: -80vw; /* ここを追加 */
-    }
-}
+
 .hamburger{
+    width:160pX;
     height: 100px;
     cursor: url(/2024/static/img/logo.svg),pointer;
 }
@@ -729,6 +703,7 @@ footer{
 
     .hamburger{
         height: 48px;
+        width:80PX;
     }
 
     footer{
