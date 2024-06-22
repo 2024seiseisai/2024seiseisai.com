@@ -1,0 +1,73 @@
+<footer>
+        <div class="footer_logo">
+            <a href="" class="footer_logo_img">
+                <img class="footer_logo_img" src="/2024/static/img/logotype_white.svg" alt="ロゴ-フッター">
+            </a>
+            <p class="footer_logo_img_caption">© 2024 60th seiseisai “IGNITION”, Created by PR part</p>
+            <a href="" class="menu_privacy_policy unfinished PrivacyPolicy">
+                <span class="menu_privacy_policy_arrow_container">
+                    <div class="menu_privacy_policy_arrow"></div>
+                </span>
+                <span class="menu_privacy_policy_text">Privacy-Policy</span>
+            </a>
+        </div>
+        <div class="footer_nav">
+            <div class="footer_nav_container">
+                <div class="footer_nav_body">
+                    <h6 class="footer_nav_body_title_English">Overview</h6>
+                    <div class="footer_nav_body_item_container">
+                        <a href="/2024/index.html" class="footer_nav_body_item ">Top</a>
+                        <a href="/2024/themelogo/themelogo.html" class="footer_nav_body_item unfinished ThemeLogo">Theme & Logo</a>
+                        <a href="/2024/news/index.html" class="footer_nav_body_item ">News</a>
+                        <a href="/2024/access/access.html" class="footer_nav_body_item unfinished Access">Access</a>                      
+                    </div>
+                </div>
+                <div class="footer_nav_body">
+                    <h6 class="footer_nav_body_title_English">Guide</h6>
+                    <div class="footer_nav_body_item_container">
+                        <a href="/2024/event/event.html" class="footer_nav_body_item unfinished Events">Events</a>
+                        <a href="/2024/exhibition/exhibition.html" class="footer_nav_body_item unfinished Exhibition">Exhibition</a>
+                        <a href="/2024/bazzar/bazza.htmlr" class="footer_nav_body_item unfinished Bazaar">Bazaar</a>
+                        <a href="/2024/goods/goods.html" class="footer_nav_body_item unfinished Goods">Goods</a>
+                    </div>
+                </div>
+                <div class="footer_nav_body">
+                    <h6 class="footer_nav_body_title_English">Contents</h6>
+                    <div class="footer_nav_body_item_container">
+                        <a href="/2024/blog/blog.html" class="footer_nav_body_item unfinished Blog">Blog</a>
+                        <a href="" class="footer_nav_body_item unfinished ClubMagazine">Club Magazine</a>
+                        <a href="/2024/special/special.html" class="footer_nav_body_item unfinished Special">Special</a>
+                        <a href="/2024/archives/archives.html" class="footer_nav_body_item unfinished Archives">Archives</a>
+                    </div>
+                </div>
+                <div class="footer_nav_body footer_show">
+                    <h6 class="footer_nav_body_title_English">SNS</h6>
+                    <div class="footer_nav_body_item_container">
+                        <a target="_blank" href="https://x.com/seiseisai_tdj" class="footer_nav_SNS_btn" id="footer_nav_X">
+                            <div class="footer_nav_SNS">
+                                <div src="/2024/static/img/X-Twitter.json" id="footer_X-Twitter" class="footer_X-Twitter_icon"></div>
+                                <p class="footer_nav_body_item footer_nav_body_item_SNS">X(<span class="footer_nav_SNS_Twitter_caption"><span style="font-family: 'Noto Sans JP';">旧</span><span>Twitter)</span></p>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/seiseisai_tdj/" class="footer_nav_SNS_btn">
+                            <div class="footer_nav_SNS">
+                                <img src="/2024/static/img/instagram_white.svg" alt="" class="footer_nav_SNS_img">
+                                <p class="footer_nav_body_item footer_nav_body_item_SNS">Instagram</p>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://www.youtube.com/@seiseisai_tdj/videos" class="footer_nav_SNS_btn">
+                            <div class="footer_nav_SNS">
+                                <img src="/2024/static/img/youtube_white.svg" alt="" class="footer_nav_SNS_img">
+                                <p class="footer_nav_body_item footer_nav_body_item_SNS">Youtube</p>
+                            </div>
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>

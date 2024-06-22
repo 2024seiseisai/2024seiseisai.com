@@ -1,3 +1,26 @@
+// ハンバーガメニューの項目操作
+document.addEventListener("DOMContentLoaded", function() {
+    // 公開されているページのクラスをリストアップ
+    const availablePages = [
+        "Top", "News", "Access","Blog","PrivacyPolicy",
+    ];
+
+// 追加すると勝手に変わるページ一覧　"Top", "ThemeLogo", "News", "Access", "Events", "Exhibition", "Bazaar", "Goods", "Blog", "ClubMagazine", "Special", "Archives", "PrivacyPolicy"
+
+
+    // 公開されているページから unfinished クラスを削除
+    availablePages.forEach(function(pageClass) {
+        // '.'を含めないクラス名のセレクターを生成
+        const elements = document.querySelectorAll('.' + pageClass);
+        elements.forEach(function(element) {
+            element.classList.remove("unfinished");
+        });
+    });
+});
+
+
+
+
 //メニューの開閉状況を示す変数を定義
 let menu = "closed";
 
