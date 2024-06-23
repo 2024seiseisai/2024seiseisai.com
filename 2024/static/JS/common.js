@@ -2,10 +2,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     // 公開されているページのクラスをリストアップ
     const availablePages = [
-        "Top", "News", "Access","Blog","PrivacyPolicy",
+        "Top", "ThemeLogo", "News", "Access", "Events", "Exhibition", "Bazaar", "Goods", "Blog", "ClubMagazine", "Special", "Archives", "PrivacyPolicy","Contact","Reserve",
     ];
 
-// 追加すると勝手に変わるページ一覧　"Top", "ThemeLogo", "News", "Access", "Events", "Exhibition", "Bazaar", "Goods", "Blog", "ClubMagazine", "Special", "Archives", "PrivacyPolicy"
+// 追加すると勝手に変わるページ一覧　"Top", "ThemeLogo", "News", "Access", "Events", "Exhibition", "Bazaar", "Goods", "Blog", "ClubMagazine", "Special", "Archives", "PrivacyPolicy","Reserve",
 
 
     // 公開されているページから unfinished クラスを削除
@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const elements = document.querySelectorAll('.' + pageClass);
         elements.forEach(function(element) {
             element.classList.remove("unfinished");
+            element.classList.remove("hide");
         });
     });
 });
