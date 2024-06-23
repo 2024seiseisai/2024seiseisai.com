@@ -1,0 +1,35 @@
+main{
+    background-image: url(img/back.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.content{
+    text-align: center;
+}
+.title{
+    color: #FF0084;
+    font-family: 'Nunito Sans';
+    font-size: 300px;
+    font-weight: bold; 
+    margin-top: 30px;
+    margin-bottom: -90px;
+}
+.title2{
+    color: #FF0084;
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-bottom: 30px;
+}
+.textbox{
+    margin: 16px auto;
+	display: block;
+    width: 55%;
+}
+.text{
+	text-align: left;
+	display: inline-block;
+}
+.button{
+    size: 25%;
+}
