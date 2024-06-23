@@ -3,6 +3,7 @@ main{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height:924px;
 }
 .content{
     text-align: center;
@@ -19,7 +20,7 @@ main{
     color: #FF0084;
     margin-top: 0%;
     padding-top: 0%;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 .textbox{
     margin: 16px auto;
@@ -32,4 +33,5 @@ main{
 }
 .button{
     size: 25%;
+    margin-bottom:100px;
 }
