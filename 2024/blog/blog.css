@@ -28,6 +28,24 @@
     margin-left:2px;
  
 }
+
+.blog_list{
+    margin: 0 10%;
+}
+.blog_preview {/*全体の位置と枠*/
+    margin:0 auto;
+    margin-top: 40px;
+    vertical-align: middle;
+    border: 1px solid black;
+    border-radius: 10px; 
+    background-color: #fff;
+    box-shadow: 0 4px 8px black(0, 0, 0, 0.1);
+}
+.blog_preview_img {/*画像詳細*/
+    width:100%;   
+    border-radius: 10px 10px 0px 0px;
+    aspect-ratio:16/9;
+}
 .blog_button_pink{
     color: white;
     background-color: #FF0084;
@@ -36,21 +54,6 @@
     text-decoration: none;
     color: black;
 }
-.blog_preview {/*全体の位置と枠*/
-    margin:0 auto;
-    margin-top: 40px;
-    vertical-align: middle;
-    border: 1px solid black;
-    border-radius: 10px;    
-    width: 300px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px black(0, 0, 0, 0.1);
-}
-.blog_preview_img {/*画像詳細*/
-    height: 200px;
-    width: 300px;
-    border-radius: 10px 10px 0px 0px;
-}
 .blog_preview_sentence{/*文章全体を左右に余白30px,左揃え*/
     padding: 0 30px;
     text-align: left;
@@ -58,6 +61,7 @@
 .blog_preview_top{/*dateとclubを横一列*/
     display: flex;
     align-items: center;
+    margin-bottom:-20px;
 }
 .blog_preview_date {/*日付*/
     color: #ff1493;
@@ -72,7 +76,7 @@
     vertical-align: middle;
 }
 .blog_preview_title{/*タイトル*/
-    color:black
+    color:black;
 }
 .blog_preview_author {/*著者,右揃え*/
     text-align: right;
