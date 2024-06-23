@@ -22,6 +22,7 @@
       .rectangle70{
             position: relative;
             z-index: 1;
+            margin-bottom:30px;
       }
       .rectangle70::before{
             transform: skewY(-3deg);
@@ -56,6 +57,10 @@
             padding-left: 8px;
             box-sizing: border-box;
       }
+      .tx1_1{
+            display: flex;
+            align-items: center;
+      }
       .tx1{
             margin-top: 0px;
             margin-left: 35px;
@@ -67,13 +72,14 @@
             margin-left: 24px;
       }
       .info_text3{
-            margin: auto;
+            padding-top:-10px;
             width: 320px;
             height: 40px;
             border-bottom: 1px solid #FF0084;
             box-sizing: border-box;
             display: flex;
             padding-left: 8px;
+            align-items: center;
       }
       .info_text4{
             width: 320px;
@@ -82,6 +88,7 @@
             display: flex;
             padding-left: 8px;
             margin-bottom: 43px;
+            align-items: center;
       }
       .map_container{
             margin-left: 20px;
@@ -90,12 +97,12 @@
       }
       .lapper{
             aspect-ratio: 16/9;
-            margin: auto;
-            width: 90%;
+            margin:auto;
+            width:80%;
             border: 1px solid #FF0084;
       }
       .map_text{
-            margin: auto;
+            margin-left:10%;
             width: 320px;
             height: 47px;
       }
@@ -126,6 +133,7 @@
       }
       .routemap{
             margin-top: 40px;
+            margin-bottom:40px;
 
       }
       .routemap_img{
