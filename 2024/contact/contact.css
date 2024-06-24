@@ -71,6 +71,7 @@
         height:20px;
         gap:8px;
     }
+    
     .logo_SNS{
         width: 20px;
         height: auto;
@@ -124,7 +125,50 @@
         background-color: #FF0084;
         border-radius: 5px;
     }
+
+
+   .form_explanation{
+       
+       line-height: 23.17px;
+   }
+   .form_item{
+  
+       gap:8px;
+   }
+   .form_content{
+
+     
+       color: #FF0084;
+       opacity: 0.2;
+   }
+   .name{
+  
+       
+       line-height: 17.38px;
+   }
+   .form_massage{
+    
+ 
+       color: #FF0084;
+       opacity: 0.2;
+   }
+   .form_transmit{
+    display:inline-block;
+    border-radius: 5px;
+    text-align: center;
+    cursor:pointer;
+    padding: 7px 28px;
+    background: #FF0084;
+    color:#ffffff;
+    line-height: 17.38px;
+    transition: 0.3s;
+    border:0px;
+
+
+   }
+    
 }
+
 .red{
     color:#FF0084;
 }
