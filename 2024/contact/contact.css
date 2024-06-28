@@ -25,11 +25,10 @@
         line-height: 17.38px;
     }
     .contact_SNS{
-        width:auto;
-        height:auto;
+        display: flow-root;
         border: solid 2px #FF0084;
         padding:4px;
-        gap:4px;
+        row-gap: 4px;
     }
     .contact_SNS_main{
         width:310px;
