@@ -1,11 +1,10 @@
 @charset "UTF-8";
 @media screen and (max-width: 1023px){
     .Topic{
-        color:#FF0084;
-        width:144px;
-        height:55px;
-        top:0px;
-        margin-left: 20px;
+        display: flex;
+        margin-top: 2%;
+        margin-left: 5%;
+        flex-direction: column;
     }
     .main_topic{
         height:auto;
@@ -183,3 +182,7 @@
 .instagram_title{
     color: black;
 }
+@media screen and (min-width: 1024px){
+
+}
+    
