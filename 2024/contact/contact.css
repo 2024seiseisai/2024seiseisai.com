@@ -9,7 +9,8 @@
     }
     .main_topic{
         height:auto;
-        width: 320px;
+        width:90%;
+        max-width: 500px;
         margin-left:auto;
         margin-right:auto;
         gap: 16px;
@@ -31,7 +32,6 @@
         row-gap: 4px;
     }
     .contact_SNS_main{
-        width:310px;
         height: 28px;
         margin-left: auto;
         margin-left: auto;
@@ -57,7 +57,7 @@
         white-space: nowrap;
     }
     .contact_SNS_link{
-        width: 292px;
+        width:100%;
         height: auto;
         padding:0px,39px,0,39px;
         gap:80px;
@@ -75,9 +75,8 @@
         display: inline-flex;
         vertical-align: middle;
         float: right;
-        margin-right: 39px;
+        margin-right: 30px;
         gap: 8px;
-     
     }
     .X_titile{
         width: 8px;
@@ -177,4 +176,10 @@
 
 .red{
     color:#FF0084;
+}
+.X_titile{
+    color:black
+}
+.instagram_title{
+    color: black;
 }
