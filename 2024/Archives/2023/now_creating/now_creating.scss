@@ -1,0 +1,39 @@
+@import "../common/setting.scss";
+@import "../common/parts.scss";
+
+/**********************************************************************/
+/*本要素*/
+/**********************************************************************/
+
+/*本要素ここから*//*# sourceMappingURL=style.css.map */
+
+main{
+    text-align: center;
+    @include media(tb){
+        margin: 58px auto 0;
+    }
+    @include media(pc){
+        margin: 100px auto 120px;
+    }
+    @include media(tb){
+        padding: 0 45px;
+    }
+    
+    max-width: 400px;
+    img.cone{
+        width: 20vw;
+        max-width: 175px;
+    }
+    div{
+        @include media(tb){
+            height: 50px;
+        }
+        @include media(pc){
+            height: 60px;
+        }
+        width: 100%;
+    }
+    .back_to_top{
+        color: $base_color3;
+    }
+}
