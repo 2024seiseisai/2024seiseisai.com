@@ -1,8 +1,15 @@
 @charset "UTF-8";
-.blog_top{
-    color: #FF0084;
+.blog_top_title{
+    margin-top: 20px;
     margin-left: 20px;
-    line-height: 55px;
+    width:140px;
+    height: 32px;
+    vertical-align: top;
+}
+.blog_top{
+    margin-left: 20px;
+    line-height: 0px;
+    margin-bottom: 20px;
 }
 .blog_radious{
     border: 1px solid #FF0084;
@@ -74,6 +81,8 @@
     margin-top: 12px;
     margin-left: 16px;
     vertical-align: middle;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 .blog_preview_title{/*タイトル*/
     color:black;
