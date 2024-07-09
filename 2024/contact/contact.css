@@ -1,142 +1,128 @@
 @charset "UTF-8";
-@media screen and(max-width: 1023px){
+@media screen and (max-width: 1023px){
     .Topic{
-        position:absolute;
         color:#FF0084;
         width:144px;
         height:55px;
         top:0px;
-        left:20px;
+        margin-left: 20px;
     }
     .main_topic{
-        position:absolute;
-        height:719px;
-        width: 320px;
+        height:auto;
+        width:90%;
+        max-width: 500px;
         margin-left:auto;
         margin-right:auto;
         gap: 16px;
     }
     .Top_consultation{
-        position:absolute;
         width:auto;
         height: auto;
         line-height: 23.17px;
     }
     .Top_explanation{
-        position: absolute;
         width:auto;
         height:auto;
         line-height: 17.38px;
     }
     .contact_SNS{
-        position: absolute;
-        width:auto;
-        height:auto;
-        border: 2px;
-        border-color: #FF0084;
+        display: flow-root;
+        border: solid 2px #FF0084;
         padding:4px;
-        gap:4px;
+        row-gap: 4px;
     }
     .contact_SNS_main{
-        position:absolute;
-        width:310px;
         height: 28px;
         margin-left: auto;
         margin-left: auto;
         display:flex;
         align-items: center;
-        border:0px,0px,1px,0px;
-        border-color: #FF0084;
+        border-bottom: solid 1px #FF0084;
         gap: 8px;
     }
     .contact_speech{
-        position: absolute;
         width:24px;
         height: auto;
     }
     .contact_SNS_Top{
-        position: absolute;
         width: 167px;
-        height: 20px;
+        height: auto;
         line-height: 20.27px;
+        white-space: nowrap;
     }
     .contact_SNS_Sub{
-        position: absolute;
         width:190px;
         height: auto;
         line-height: 17.38px;
+        white-space: nowrap;
     }
     .contact_SNS_link{
-        position: absolute;
-        width: 292px;
+        width:100%;
         height: auto;
         padding:0px,39px,0,39px;
         gap:80px;
     }
     .contact_SNS_X{
-        position: absolute;
+        display: inline-flex;
+        vertical-align: middle;
         float: left;
-        display: flex;
-        align-items: center;
         width:62px;
+        margin-left: 39px;
         height:20px;
         gap:8px;
     }
-    .logo_SNS{
-        position: absolute;
-        width: 20px;
-        height: auto;
+    .contact_SNS_Instagram{
+        display: inline-flex;
+        vertical-align: middle;
+        float: right;
+        margin-right: 30px;
+        gap: 8px;
     }
     .X_titile{
-        position: absolute;
         width: 8px;
         height: 16px;
-
     }
     .instagram_title{
-        position: absolute;
-        width: 56px;
+        width: auto;
         height: 16px;
     }
     .form_sheet{
-        position: absolute;
-        width:100%;
+        width: 100%;
         height: auto;
+        
+        
     }
     .form_explanation{
-        position: absolute;
         width:256px;
         height:auto;
         line-height: 23.17px;
     }
     .form_item{
-        position:absolute;
-        width:auto;
+        width:100%;
         height: auto;
         gap:8px;
     }
-    .form_content{
-        position:absolute;
+    .from_content{
+        display: inline-flex;
         width: 100%;
-        height: 24px;
-        color: #FF0084;
-        opacity: 0.2;
+        color: #FFFFFF;
+        background-color: #FF0084;
+        border: 0px;
+        opacity: 20%;
     }
     .name{
-        position: absolute;
-        width:auto;
+        width:100%;
         height:17px;
         line-height: 17.38px;
     }
     .form_massage{
-        position: absolute;
         width: 100%;
         height: 120px;
-        color: #FF0084;
-        opacity: 0.2;
+        background-color: #FF0084;
+        border: 0px;
+        opacity: 20%;
     }
     .form_transmit{
-        position: absolute;
         margin-left: auto;
         margin-right: auto;
         width: 76px;
@@ -145,7 +131,55 @@
         background-color: #FF0084;
         border-radius: 5px;
     }
+
+
+   .form_explanation{
+       
+       line-height: 23.17px;
+   }
+   .form_item{
+  
+       gap:8px;
+   }
+   .form_content{
+
+     
+       color: #FF0084;
+       opacity: 0.2;
+   }
+   .name{
+  
+       
+       line-height: 17.38px;
+   }
+   .form_massage{
+    
+ 
+       color: #FF0084;
+       opacity: 0.2;
+   }
+   .form_transmit{
+        display: block;
+        margin: auto;
+         cursor: pointer;
+         box-sizing: border-box;
+        border: 1px solid #FF0084;
+        border-radius: 5px;
+   }
+   .form_transmit:hover{
+    box-shadow: none;
+    color:#FF0084;
+    background: #FFFFFF;
+   }
+    
 }
+
 .red{
     color:#FF0084;
+}
+.X_titile{
+    color:black
+}
+.instagram_title{
+    color: black;
 }
