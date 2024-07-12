@@ -123,6 +123,33 @@
     .blog_top{
         margin-left: 160px;
     }
+    .blog_radious{
+        border: 2px solid #FF0084;
+        border-radius: 40px;
+        width: 400px;
+        height: 80px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+    
+    }
+    .blog_button{
+        line-height:72px;
+        color: #FF0084;
+        text-align: center;
+        background-color: white;
+        border-radius: 100px;
+        border-color: white;
+        display: block;
+        width: 212px;
+        box-sizing: border-box;
+        margin-left:2px;
+    }
+    .blog_button_pink{
+        color: white;
+        background-color: #FF0084;
+    }
     .blog_list{
         display: flex;
         flex-wrap: wrap;
