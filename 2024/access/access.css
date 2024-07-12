@@ -171,6 +171,13 @@
             padding-top: 0; 
             color: #fff;
       }
+      .title_txt{
+            margin: 0;
+            height: 131px;
+            padding-left: 11%;
+            color: #FF0084;
+            padding-top: 20px;
+      }
       .top{
             background-image: url(/2024/access/img/image1.png);
             background-size: cover;
@@ -256,7 +263,7 @@
             margin-left: 112px;
       }
       .tx3{
-            margin-left: 24px;
+            margin-left: 119px;
       }
       .map_containner{
             margin: auto;
@@ -305,7 +312,7 @@
       }
       .routemap_img{
             margin: auto;
-            width: 55vw;
+            width: 56.875vw;
             height: auto;
             background-image: url(/2024/access/img/image2.png);
             margin-top: 22px;
