@@ -95,7 +95,6 @@
         width: 100%;
         height: auto;
         
-        
     }
     .form_explanation{
         width:256px;
@@ -188,6 +187,9 @@
 .instagram_title{
     color: black;
 }
+::placeholder{
+    color: #FFFFFF;
+}
 @media screen and (min-width: 1024px){
     
     .Topic{
@@ -201,6 +203,7 @@
         width:90%;
         margin-left:auto;
         margin-right:auto;
+        margin-bottom: 100px;
         gap: 16px;
     }
     .Top_consultation{
@@ -285,7 +288,7 @@
     .form_sheet{
         width: 100%;
         height: auto;
-        
+        gap: 64px;
         
     }
     .form_explanation{
@@ -301,6 +304,7 @@
     .from_content{
         display: inline-flex;
         width: 100%;
+        height: 40px;
         color: #FFFFFF;
         background-color: #FF0084;
         border: 0px;
@@ -313,7 +317,7 @@
     }
     .form_massage{
         width: 100%;
-        height: 120px;
+        height: 400px;
         background-color: #FF0084;
         border: 0px;
         opacity: 20%;
@@ -334,12 +338,10 @@
        line-height: 23.17px;
    }
    .form_item{
-  
+       padding-top: 32px;
        gap:8px;
    }
    .form_content{
-
-     
        color: #FF0084;
        opacity: 0.2;
    }
@@ -356,6 +358,8 @@
    }
    .form_transmit{
         display: block;
+        width: 156px;
+        height: 60px;
         margin: auto;
          cursor: pointer;
          box-sizing: border-box;
