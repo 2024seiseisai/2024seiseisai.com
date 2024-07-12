@@ -115,6 +115,9 @@
 .pagination a.active{
     border-bottom: 2px solid #FF0084;
 }
+.blogfooter{
+    margin-top: 320px;
+}
 @media screen and (min-width:1023px){
     .blog_top_title{
         margin-top: 20px;
