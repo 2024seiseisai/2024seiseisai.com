@@ -115,3 +115,25 @@
 .pagination a.active{
     border-bottom: 2px solid #FF0084;
 }
+@media screen and (min-width:1023px){
+    .blog_top_title{
+        margin-top: 20px;
+        margin-left: 160px;
+    }
+    .blog_top{
+        margin-left: 160px;
+    }
+    .blog_list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-left: 160px;
+        margin-right: 160px;
+    }
+    .blog_preview{
+        height: 348px;
+        width: 300px;
+        margin-left: 1px;
+        margin-top: 120px;
+    }
+}
