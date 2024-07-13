@@ -5,8 +5,22 @@ main{
     background-size: cover;
     height:924px;
 }
+@media screen and (max-width: 1024px){
+    main{
+        background-image: url(img/m_back.jpeg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        height:924px;
+    }
+}
 .content{
     text-align: center;
+}
+@media screen and (max-width: 1024px){
+    .content{
+        text-align: center;
+    }
 }
 .title{
     color: #FF0084;
@@ -16,16 +30,40 @@ main{
     margin-top: 30px;
     margin-bottom: -90px;
 }
+@media screen and (max-width: 1024px){
+    .title{
+        color: #FF0084;
+        font-family: 'Nunito Sans';
+        font-size: 128px;
+        font-weight: bold; 
+        margin-top: 30%;
+        margin-bottom: -5%;
+    }
+}
 .title2{
     color: #FF0084;
     margin-top: 0%;
     padding-top: 0%;
     margin-bottom: 70px;
 }
+@media screen and (max-width: 1024px){
+    .title2{
+        color: #FF0084;
+        margin-top: 0%;
+        padding-top: 0%;
+        margin-bottom: 70px;
+    }
+}
 .textbox{
     margin: 16px auto;
 	display: block;
     width: 55%;
+}
+@media screen and (max-width: 1024px){
+    .textbox{
+        margin: 5% auto;
+        display: block;
+    }
 }
 .text{
 	text-align: left;
@@ -34,4 +72,10 @@ main{
 .button{
     size: 25%;
     margin-bottom:100px;
+}
+@media screen and (max-width: 1024px){
+    .button{
+        size: 25%;
+        margin-bottom:100px;
+    }
 }

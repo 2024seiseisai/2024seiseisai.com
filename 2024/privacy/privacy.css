@@ -6,6 +6,16 @@ main{
     text-align: center;
     height:700px;
 }
+@media screen and (max-width: 1024px){
+    main{
+        background-image: url(m_back.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        height:700px;
+    }
+}
 .title{
     text-align: left;
 }
@@ -14,14 +24,34 @@ h1{
     margin-left: 15%;
     margin-bottom: -1%;
 }
+@media screen and (max-width: 1024px){
+    h1{
+        color: #FF0084;
+        margin-left: 5%;
+        margin-bottom: -1%;
+    }
+}
 .subtitle{
     margin-top: 0%;
     margin-left: 15%;
+}
+@media screen and (max-width: 1024px){
+    .subtitle{
+        margin-top: 0%;
+        margin-left: 5%;
+    }
 }
 .textbox{
     margin: 16px auto;
 	display: block;
     width: 55%;
+}
+@media screen and (max-width: 1024px){
+    .textbox{
+        margin: 16px auto;
+        display: block;
+        width: 90%;
+    }
 }
 h2{
     text-align: left;
@@ -33,3 +63,14 @@ h2{
 a {
     color: #FF0084;
   }
+
+.button{
+    display:none
+}
+@media screen and (max-width: 1024px){
+    .button{
+        display:contents;
+        color:black;
+        text-decoration: none;
+    }
+}
