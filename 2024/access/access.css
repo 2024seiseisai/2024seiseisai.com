@@ -128,7 +128,7 @@
       }
       .head_text{
             margin-top: 0;
-            margin-bottom: 0;
+            margin-bottom: 80px;
             height: 30px;
             padding-left: 12px;
       }
@@ -230,7 +230,7 @@
             height: 118px;
             border-bottom: 1px solid #FF0084;
             display: flex;
-            padding-left: 80px;
+            padding-left: 30px;
             box-sizing: border-box;
       }
       .info_text3{
@@ -239,7 +239,7 @@
             height: 118px;
             border-bottom: 1px solid #FF0084;
             display: flex;
-            padding-left: 80px;
+            padding-left: 30px;
             box-sizing: border-box;
       }
       .info_text4{
@@ -248,7 +248,7 @@
             height: 118px;
             border-bottom: 1px solid #FF0084;
             display: flex;
-            padding-left: 80px;
+            padding-left: 30px;
             box-sizing: border-box;
       }
       .tx1_1{
