@@ -154,16 +154,16 @@
         background-color: #FF0084;
     }
     .blog_list{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        margin-left: 160px;
-        margin-right: 160px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:4%; 
+        box-sizing: border-box;
+
     }
-    .blog_preview{
-        height: 348px;
-        width: 300px;
-        margin-left: 1px;
-        margin-top: 120px;
+    .blog_preview_sentence{
+        display: -webkit-box; 
+        -webkit-box-orient: vertical; 
+        -webkit-line-clamp: 3; 
+        overflow: hidden; 
     }
 }
