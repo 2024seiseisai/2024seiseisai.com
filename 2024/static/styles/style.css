@@ -1105,13 +1105,13 @@ main{
     }
 
     .top_description_English{
-        font-size: 2.78vw;
+        font-size: 3.2vw;
         font-weight: 600;
         margin-top: 6vw;
     }
 
     .top_description_Japanese{
-        font-size: 2.78vw;
+        font-size: 3.2vw;
     }
 
     .logo_PV_container{
@@ -1131,7 +1131,7 @@ main{
     }
 
     .top_news{
-        height: 85.6vw;
+        height: 106.7vw;
     }
 
     .top_news_h2{
@@ -1141,15 +1141,16 @@ main{
     .top_news_container{
         height: 13.3vw;
         margin: 0 8.33vw;
+        padding: 10px 0;
     }
 
     .top_news_date{
-        font-size: 2.78vw;
+        font-size: 3.2vw;
     }
 
     .top_news_title{
         width: 60vw;
-        font-size: 2.78vw;
+        font-size: 3.2vw;
     }
 
     .top_news_more_btn{
@@ -1180,7 +1181,7 @@ main{
     }
 
     .top_introduction_detail{
-        font-size: 2.78vw;
+        font-size: 3.2vw;
         margin: 2.22vw 0 0 0;
         position: relative;
         top: -1vw;
