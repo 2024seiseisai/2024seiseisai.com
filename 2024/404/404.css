@@ -11,7 +11,7 @@ main{
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
-        height:924px;
+        width:100%;
     }
 }
 .content{
@@ -51,7 +51,7 @@ main{
         color: #FF0084;
         margin-top: 0%;
         padding-top: 0%;
-        margin-bottom: 70px;
+        margin-bottom: 0px;
     }
 }
 .textbox{
@@ -63,6 +63,7 @@ main{
     .textbox{
         margin: 5% auto;
         display: block;
+        width: 80%;
     }
 }
 .text{
@@ -77,5 +78,14 @@ main{
     .button{
         size: 25%;
         margin-bottom:100px;
+    }
+}
+
+.button_img{
+    width:360px;
+}
+@media screen and (max-width: 1024px){
+    .button_img{
+        width:180px;
     }
 }
