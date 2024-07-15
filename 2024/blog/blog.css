@@ -3,7 +3,6 @@
     margin-top: 20px;
     margin-left: 20px;
     width:140px;
-    height: 32px;
     vertical-align: top;
 }
 .blog_top{
@@ -47,6 +46,7 @@
     border-radius: 10px; 
     background-color: #fff;
     box-shadow: 0 4px 8px black(0, 0, 0, 0.1);
+    height:100%;
 }
 .blog_preview_img {/*画像詳細*/
     width:100%;   
@@ -118,20 +118,21 @@
 .blogfooter{
     margin-top: 320px;
 }
-@media screen and (min-width:1023px){
+@media screen and (min-width:1024px){
     .blog_top_title{
-        margin-top: 20px;
-        margin-left: 160px;
+        width:300px;
+        margin-top: 40px;
+        margin-left: 10%;
     }
     .blog_top{
-        margin-left: 160px;
+        margin-left: 10%;
     }
     .blog_radious{
         border: 2px solid #FF0084;
         border-radius: 40px;
         width: 400px;
         height: 80px;
-        margin: 0 auto;
+        margin: 100px auto 50px auto;
         display: flex;
         align-items: center;
         vertical-align: middle;
@@ -158,12 +159,13 @@
         grid-template-columns: repeat(3, 1fr);
         gap:4%; 
         box-sizing: border-box;
+        
 
     }
     .blog_preview_sentence{
         display: -webkit-box; 
         -webkit-box-orient: vertical; 
-        -webkit-line-clamp: 3; 
+        -webkit-line-clamp: 2; 
         overflow: hidden; 
     }
 }
