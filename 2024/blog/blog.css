@@ -46,7 +46,6 @@
     border-radius: 10px; 
     background-color: #fff;
     box-shadow: 0 4px 8px black(0, 0, 0, 0.1);
-    height:100%;
 }
 .blog_preview_img {/*画像詳細*/
     width:100%;   
@@ -84,11 +83,15 @@
     padding-left: 8px;
     padding-right: 8px;
 }
-.blog_preview_title{/*タイトル*/
-    color:black;
-}
 .blog_preview_author {/*著者,右揃え*/
     text-align: right;
+}
+.blog_preview_title{/*タイトル*/
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    overflow:hidden;
+    color:black;
+    -webkit-line-clamp: 3;
 }
 .pagination{
     font-size: 14px;
@@ -162,10 +165,7 @@
         
 
     }
-    .blog_preview_sentence{
-        display: -webkit-box; 
-        -webkit-box-orient: vertical; 
-        -webkit-line-clamp: 2; 
-        overflow: hidden; 
+    .blog_preview_title{/*タイトル*/
+        -webkit-line-clamp: 2;
     }
 }
