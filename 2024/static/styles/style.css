@@ -1172,8 +1172,12 @@ main{
     .top_introduction_title_English{
         font-size: 10vw;
         font-weight: 600;
-        color: transparent;
-        -webkit-text-stroke: 1px #FF0084;
+        color: #FFFFFF;
+        text-shadow:
+           1px 1px 0px #FF0084, -1px -1px 0px #FF0084,
+          -1px 1px 0px #FF0084,  1px -1px 0px #FF0084,
+           1px 0px 0px #FF0084, -1px  0px 0px #FF0084,
+           0px 1px 0px #FF0084,  0px -1px 0px #FF0084;
     }
 
     .top_introduction_title_Japanese{
