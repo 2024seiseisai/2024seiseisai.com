@@ -48,7 +48,7 @@ h1{
 }
 @media screen and (max-width: 1024px){
     .textbox{
-        margin: 16px auto;
+        margin: 40px auto 160px auto;
         display: block;
         width: 90%;
     }
@@ -59,6 +59,7 @@ h2{
 .text{
 	text-align: left;
 	display: inline-block;
+    margin-top:20px;
 }
 a {
     color: #FF0084;
@@ -72,5 +73,9 @@ a {
         display:contents;
         color:black;
         text-decoration: none;
+    }
+
+    .button span {
+        color:#FF0084;
     }
 }
