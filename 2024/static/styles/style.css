@@ -910,7 +910,7 @@ main{
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.6;
+    opacity: 0.8;
     z-index: 2;
 }
 
@@ -1172,6 +1172,8 @@ main{
     .top_introduction_title_English{
         font-size: 10vw;
         font-weight: 600;
+        color: transparent;
+        -webkit-text-stroke: 1px #FF0084;
     }
 
     .top_introduction_title_Japanese{
