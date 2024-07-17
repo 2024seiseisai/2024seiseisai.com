@@ -1,4 +1,34 @@
 @charset "UTF-8";
+/* formのcssを、ブラウザのオートコンプリート機能を使った時も強制的に適用するための文言追加by福島*/
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    background-color:#FF0084;
+    border: none; /* optional, if you want to remove borders */
+}
+
+input[type="text"]:-webkit-autofill,
+input[type="email"]:-webkit-autofill,
+input[type="tel"]:-webkit-autofill,
+textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #FF0084  inset !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+input[type="text"]:-webkit-autofill:hover,
+input[type="text"]:-webkit-autofill:focus,
+input[type="email"]:-webkit-autofill:hover,
+input[type="email"]:-webkit-autofill:focus,
+input[type="tel"]:-webkit-autofill:hover,
+input[type="tel"]:-webkit-autofill:focus,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 30px #FF0084 inset !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+/*追加by福島おわり*/
+
 @media screen and (max-width: 1023px){
     .Topic{
         display: flex;
@@ -160,7 +190,7 @@
    .form_massage{
     
  
-       color: #FF0084;
+       color: #FFFFFF;
        opacity: 0.2;
    }
    .form_transmit{
@@ -358,7 +388,7 @@
    .form_massage{
     
  
-       color: #FF0084;
+       color: #FFFFFF;
        opacity: 0.2;
    }
    .form_transmit{

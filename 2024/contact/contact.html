@@ -340,40 +340,40 @@
                 </div>
             </section>
             <!-- 送り先の指定をする　-->
-            <form action="" method="post" name="contact_from" class="form_sheet">
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLScLOU2KqlY_flx3fn4S4Xw31drcGy6ibjY9XyPBCvfCWO6RTg/formResponse" onsubmit="clearForm()" method="POST" name="contact_from" class="form_sheet" target="_blank">
                 <p class="m_JP_16_Regular JP_24_Regular">お客様の情報をご入力お願いします</p>
                 <div class="form_item">
                     <label class="m_JP_12_Regular JP_20_Regular name">お名前<span class="red">※</span></label>
                     <br>
-                    <input type="text" placeholder="例）山田 太郎" required class="from_content JP_24_Regular m_JP_10_Regular">
+                    <input type="text" placeholder="例）山田 太郎" required class="from_content JP_24_Regular m_JP_10_Regular" name="entry.1500958942">
                 </div>
                 <div class="form_item">    
                     <label class="m_JP_12_Regular name JP_20_Regular">メールアドレス<span class="red">※</span></label>
                     <br>
-                    <input type="email" placeholder="例）60seisei.prpart@gmail.com" required class="from_content JP_24_Regular m_JP_10_Regular"> 
+                    <input type="email" placeholder="例）60seisei.prpart@gmail.com" required class="from_content JP_24_Regular m_JP_10_Regular" name="entry.417027643"> 
                 </div>
                 <div class="form_item">    
                     <label class="m_JP_12_Regular name JP_20_Regular">メールアドレス（確認）<span class="red">※</span></label>
                     <br>
-                    <input type="email" placeholder="もう一度メールアドレスを入力してください" required class="from_content JP_24_Regular m_JP_10_Regular">
+                    <input type="email" placeholder="もう一度メールアドレスを入力してください" required class="from_content JP_24_Regular m_JP_10_Regular" name="entry.2144899847">
                 </div>
                 <div class="form_item">    
                     <label class="m_JP_12_Regular name JP_20_Regular">電話番号<span class="red">※</span></label>
                     <br>
-                    <input type="tel" placeholder="例）0742-47-5511" required class="from_content JP_24_Regular m_JP_10_Regular">
+                    <input type="tel" placeholder="例）0742-47-5511" required class="from_content JP_24_Regular m_JP_10_Regular" name="entry.13311058">
                 </div>
                 <div class="form_item">
-                    <label class="m_JP_12_Regular name JP_20_Regular">都道府県</label>
+                    <label class="m_JP_12_Regular name JP_20_Regular">都道府県(任意)</label>
                     <br>
-                    <input type="text" placeholder="例）奈良県" class="from_content JP_24_Regular m_JP_10_Regular"> 
+                    <input type="text" placeholder="例）奈良県" class="from_content JP_24_Regular m_JP_10_Regular" name="entry.1129653540"> 
                 </div>    
                 <div class="form_item">
                     <label class="m_JP_12_Regular name JP_20_Regular">内容<span class="red">※</span></label>
                     <br>
-                    <textarea name="massage" required class="form_massage m_JP_10_Regular JP_24_Regular"></textarea>
+                    <textarea name="entry.291389102" required class="form_massage m_JP_10_Regular JP_24_Regular" placeholder="お問い合わせ内容を入力してください"></textarea>
                 </div>
                 <div class="form_item">
-                    <input type="button" value="送信" class="form_transmit m_JP_15_Medium JP_32_Medium">
+                    <button type="submit" class="form_transmit m_JP_15_Medium JP_32_Medium">送信する</button>
                 </div>    
             </form>
         </article>
@@ -453,6 +453,13 @@
             </div>
         </div>
     </footer>
+    <script>
+        function clearForm() {
+            setTimeout(() => {
+                document.querySelector('form[name="contact_from"]').reset();
+            }, 1000);
+        }
+    </script>
 </body>
 
 
