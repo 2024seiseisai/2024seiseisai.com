@@ -128,7 +128,7 @@
       }
       .head_text{
             margin-top: 0;
-            margin-bottom: 0;
+            margin-bottom: 80px;
             height: 30px;
             padding-left: 12px;
       }
@@ -160,9 +160,13 @@
       }
       .title{
             margin: 0;
-            height: 131px;
+            height: 120px;
             padding-left: 11%;
             color: #FF0084;
+      }
+      .title_txt{
+            padding-top: 30px;
+            height: 80px;
       }
       .title2{
             width: 100px;
@@ -170,13 +174,6 @@
             padding-bottom: 127.63px;
             padding-top: 0; 
             color: #fff;
-      }
-      .title_txt{
-            margin: 0;
-            height: 131px;
-            padding-left: 11%;
-            color: #FF0084;
-            padding-top: 20px;
       }
       .top{
             background-image: url(/2024/access/img/image1.png);
@@ -230,7 +227,7 @@
             height: 118px;
             border-bottom: 1px solid #FF0084;
             display: flex;
-            padding-left: 80px;
+            padding-left: 30px;
             box-sizing: border-box;
       }
       .info_text3{
@@ -239,7 +236,7 @@
             height: 118px;
             border-bottom: 1px solid #FF0084;
             display: flex;
-            padding-left: 80px;
+            padding-left: 30px;
             box-sizing: border-box;
       }
       .info_text4{
@@ -248,7 +245,7 @@
             height: 118px;
             border-bottom: 1px solid #FF0084;
             display: flex;
-            padding-left: 80px;
+            padding-left: 30px;
             box-sizing: border-box;
       }
       .tx1_1{
