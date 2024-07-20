@@ -39,7 +39,7 @@
     <meta name="twitter:site" content="@seiseisai_tdj" />
 
     <!--css-->
-    <link rel="stylesheet" href="/2024/static/styles/style.css">
+    <link rel="stylesheet" href="../../article.css">
     <link rel="stylesheet" href="/2024/static/styles/common.css">
     <link rel="stylesheet" href="/2024/static/styles/font.css">
     <!--css-->
@@ -247,290 +247,201 @@
         </div>
     </div>
 
+
+    
+
     <main>
-        <div class="top_firstview">
-            <div class="top_firstview_bg" id="top_firstview_bg"></div>
-            <div class="firstview_center" id="logo_animation"></div>
-            <div class="firstview_center theme_animation" id="theme_animation"></div>
-            <div class="firstview_center scroll_animation" id="scroll_animation"></div>
-            <h1 class="top_title_Japanese __Top_title">
-                第60回<br>
-                東大寺学園<br>
-                ｢菁々祭｣<br>
-                <span class="top_title_English" style="position: static;">“IGNITION”</span>
-            </h1>
-            <p class="top_title_English __Top_title"> 
-                9.07(sat.)<br>
-                　―　9.08(sun.)
-            </p>
-        </div>
+        <img id="page_top" src="../../img/page_top.svg" alt="この記事のトップに戻る">
 
-        <div class="top_countdown">
-            <div class="top_countdown_bg_1"></div>
-            <div class="top_countdown_bg_2"></div>
-            <div class="top_countdown_bg_main">
-                <div class="top_countdown_main_container">
-                    <div class="top_countdown_border border_TopLeft"></div>
-                    <div class="top_countdown_border border_TopRight"></div>
-                    <div class="top_countdown_border border_BottomRight"></div>
-                    <div class="top_countdown_border border_BottomLeft"></div>
-                    <div class="top_countdown_main">
-                        <div class="date_info_container">
-                            <div class="date_info">
-                                <h1 class="date">9.7</h1>
-                                <p class="day">SAT</p>
-                            </div>
-                            <div class="date_info">
-                                <h1 class="date">9.8</h1>
-                                <p class="day">SUN</p>
-                            </div>
-                        </div>
-                        <div class="date_info_sub_container">
-                            <p class="date_info_sub">2024 Autumn</p>
-                            <p class="date_info_sub">AM9:00 START</p>
-                        </div>
-                        <p class="countdown_title">COUNTDOWN UNIT</p>
-                        <div class="countdown_unit">
-                            <p class="countdown_message" id="countdown_message"></p>
-                            <p class="countdown_holding" id="countdown_holding"></p>
-                            <div class="countdown_number_container" id="countdown">
-                                <p class="countdown_number" id="day"></p>
-                                <p class="countdown_number" id="hour"></p>
-                                <p class="countdown_number" id="minute"></p>
-                                <p class="countdown_number" id="second"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!--記事のトップ画像 srcを編集してください-->
+        <img class="blog_article_img" src="../catch_img/01.webp">
 
-        <div class="top_description description_theme">
-            <div class="top_description_title_bg ">
-                <p class="top_description_title">SEISEISAI</p>
-            </div>
-            <div class="theme_description_container">
-                <div class="top_description_container top_description_container_fliped">
-                    <img src="/2024/static/img/top_description_frame.svg" alt="" class="top_description_frame">
-                    <p class="top_description_Japanese">
-                        菁々祭とは東大寺学園で行われる文化祭のこと。<br>
-                        第60回菁々祭 "IGNITION" は2024年9月に開催予定。<br>
-                        過去59年の伝統と令和の新しい風が鳴り響く菁々祭、ぜひご覧あれ！<br>
-                        こちらのサイトでは菁々祭についての情報を提供しています。<br>
-                        最新情報は各種SNSもチェック！</p>
-                    <p class="top_description_English">The seiseisai is a school festival held at Todaiji Gakuen.
-                        The 60th seiseisai "IGNITION" will be held in September 2024.
-                        Please come and see the 59 years of tradition, and feel the fresh breeze of a brand new seiseisai!
-                        This website provides information about "IGNITION".
-                        For the latest information, please also check our social media!</p>
-                    <img src="/2024/static/img/top_description_frame.svg" alt="" class="top_description_frame frame_fliped flip_y">
-                </div>
-                <div class="theme_description_logo">
-                    <div class="logo_frame">
-                        <div class="logo_frame_border_top"></div>
-                        <div class="logo_frame_border_right"></div>
-                    </div>
-                    <img src="/2024/static/img/sei-sei-sai.svg" alt="" class="top_description_img">
-                    <div class="logo_frame flip">
-                        <div class="logo_frame_border_top"></div>
-                        <div class="logo_frame_border_right"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="top_description description_theme flip_x">
-            <div class="top_description_title_bg ">
-                <p class="top_description_title flip_x">IGNITION</p>
-            </div>
-            <div class="theme_description_container flip_x">
-                <div class="theme_description_logo">
-                    <div class="logo_frame">
-                        <div class="logo_frame_border_top"></div>
-                        <div class="logo_frame_border_right"></div>
-                    </div>
-                    <img src="/2024/static/img/logo.svg" alt="" class="top_description_img">
-                    <div class="logo_frame flip">
-                        <div class="logo_frame_border_top"></div>
-                        <div class="logo_frame_border_right"></div>
-                    </div>
-                </div>
-                <div class="top_description_container top_description_container_fliped">
-                    <img src="/2024/static/img/top_description_frame.svg" alt="" class="top_description_frame">
-                    <p class="top_description_Japanese">第60回菁々祭のテーマは"IGNITION"です。 「発火」という意味があり、生徒ひとりひとりの持つ情熱についた火が集まって大きな炎となることで、来場者の方々とともに熱く盛り上がりたいという想いが込められています。</p>
-                    <p class="top_description_English">The theme of the 60th seiseisai is “IGNITION”.
-                        The theme expresses our hope that each student’s flame of passion will come together to IGNITE a roaring fire of excitement, heating up the festival with visitors. </p>
-                    <div class="theme_description_more_btn hide ThemeLogo">
-                        <div class="theme_description_more_btn_bg">
-                            <p class="theme_description_more_btn_text">Theme&logo</p>
-                        <img src="/2024/static/img/arrow-right-circle_white.svg" alt="" class="theme_description_more_btn_img">
-                        </div>
-                        <div class="theme_description_more_btn_bg_after"></div>
-                        <div class="theme_description_more_btn_bg_after"></div>
-                        <a href="/2024/themelogo/themelogo.html" class="theme_description_more_btn_link"></a>
-                    </div>
-                    <img src="/2024/static/img/top_description_frame.svg" alt="" class="top_description_frame frame_fliped flip_y">
-                </div>
-            </div>
-        </div>
-        <div class="top_description description_logo_PV">
-            <div class="top_description_title_bg">
-                <p class="top_description_title">LOGO-PV</p>
-            </div>
-            <div class="logo_PV_container">
-                <div class="logo_PV">
-                    <iframe src="https://www.youtube.com/embed/4h_s7_eRCo0?loop=1&playlist=4h_s7_eRCo0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <p class="top_description_Japanese logo_PV_caption">現在、ロゴ発表PVがYoutubeで公開中！！<br>「IGNITION」に込められた思いとは？！<br>画像をクリックして今すぐチェック！！</p>
-            </div>
-        </div>
+        <article>
 
-        <div class="top_news">
-            <div class="top_news_h2">
-                <div class="top_news_h2_bg">
-                    <h2 class="top_news_h2_text">News</h2>
-                </div>
-                <div class="top_news_h2_bg_after"></div>
-            </div>
-            
-            
-            <div class="top_news_contents">
-                <div class="top_news_container">
-                    <p class="top_news_date">2024.06.08</p>
-                    <a href="" class="top_news_title">”TVアニメ「８６―エイティシックス―」Online Exhibition”第2弾展示会場オープン！</a>
-                </div>
-                <div class="top_news_container">
-                    <p class="top_news_date">2024.06.08</p>
-                    <a href="" class="top_news_title">”TVアニメ「８６―エイティシックス―」Online Exhibition”第2弾展示会場オープン！</a>
-                </div>
-                <div class="top_news_container">
-                    <p class="top_news_date">2024.06.08</p>
-                    <a href="" class="top_news_title">”TVアニメ「８６―エイティシックス―」Online Exhibition”第2弾展示会場オープン！</a>
-                </div>
-            </div>
+            <!--記事一覧に戻る(変更しない)-->
+            <a href="../../blog.html">
+                <img src="../../img/back_arrow_1.svg" class="blog_back_arrow_1" alt="記事一覧に戻る">
+            </a>
 
-            <div class="top_news_more_btn">
-                <img src="/2024/static/img/arrow-right-circle_white.svg" alt="" class="top_introduction_more_btn_arrow m_news_more_btn_arrow">
-                <p class="top_news_more_btn_text">More</p>
-                <a href="" class="top_news_more_btn_link"></a>
-            </div>
-        </div>
 
-        <div class="top_introduction_container ">
-            <div class="top_introduction_container_Blog">
-                <div class="top_introduction_Blog">
-                    <p class="top_introduction_title_English">Blog</p>
-                    <p class="top_introduction_title_Japanese">ブログ</p>
-                    <p class="top_introduction_detail">菁々祭の匠たちが思いを綴ります。ここでしか見られないウラ側があったりなかったり？！</p>
-                    <div class="top_introduction_more_btn_container">
-                        <div class="top_introduction_more_btn unfinished Blog">
-                            <img src="/2024/static/img/arrow-right-circle.svg" alt="" class="top_introduction_more_btn_arrow">
-                            <p class="top_introduction_more_btn_text">More</p>
-                            <a href="/2024/blog/blog.html" class="top_introduction_more_btn_link"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="top_introduction_img_Blog">
-                    <img src="/2024/static/img/parallel_back.png" alt="" class="top_introduction_img flip_x">
-                    <img src="/2024/static/img/blog.svg" alt="" class="top_introduction_img">
-                </div>
-            </div>
-            
-            <div class="top_introduction_container_Special">
-                <div class="top_introduction_Special">
-                    <p class="top_introduction_title_English">Special</p>
-                    <p class="top_introduction_title_Japanese">スペシャル</p>
-                    <p class="top_introduction_detail">菁々祭の特別なコンテンツを配信しています。</p>
-                    <div class="top_introduction_more_btn_container">
-                        <div class="top_introduction_more_btn unfinished Special">
-                            <img src="/2024/static/img/arrow-right-circle.svg" alt="" class="top_introduction_more_btn_arrow">
-                            <p class="top_introduction_more_btn_text">More</p>
-                            <a href="/2024/special/special.html" class="top_introduction_more_btn_link"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="top_introduction_img_Special">
-                    <img src="/2024/static/img/parallel_back.png" alt="" class="top_introduction_img">
-                    <img src="/2024/static/img/special.svg" alt="" class="top_introduction_img">
-                </div>
-            </div>
+            <!-------------------------------------------
+                ここから
+            ---------------------------------------------->
 
-            <div class="top_introduction_container_Archives">
-                <div class="top_introduction_Archives">
-                    <p class="top_introduction_title_English">Archives</p>
-                    <p class="top_introduction_title_Japanese">アーカイブ</p>
-                    <p class="top_introduction_detail">昨年のBlog･Specialを公開しています！懐かしいあの記事やこの記事も...？</p>
-                    <div class="top_introduction_more_btn_container">
-                        <div class="top_introduction_more_btn unfinished Archives">
-                            <img src="/2024/static/img/arrow-right-circle.svg" alt="" class="top_introduction_more_btn_arrow">
-                            <p class="top_introduction_more_btn_text">More</p>
-                            <a href="/2024/archives/archives.html" class="top_introduction_more_btn_link"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="top_introduction_img_Archives">
-                    <img src="/2024/static/img/parallel_back.png" alt="" class="top_introduction_img flip_x">
-                    <img src="/2024/static/img/archives.svg" alt="" class="top_introduction_img">
-                </div>
-            </div>
-
-            <div class="top_introduction_container_Access">
-                <div class="top_introduction_Access">
-                    <p class="top_introduction_title_English">Access</p>
-                    <p class="top_introduction_title_Japanese">アクセス</p>
-                    <p class="top_introduction_detail">
-                        近鉄高の原･平城駅からは徒歩約25分｡文化祭特別便のバスも運行します！<br>
-                        詳しい案内はこちら…
-                    </p>
-                    <div class="top_introduction_more_btn_container">
-                        <div class="top_introduction_more_btn unfinished Contact">
-                            <img src="/2024/static/img/arrow-right-circle.svg" alt="" class="top_introduction_more_btn_arrow">
-                            <p class="top_introduction_more_btn_text">More</p>
-                            <a href="/2024/access/access.html" class="top_introduction_more_btn_link"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="top_introduction_img_Access">
-                    <img src="/2024/static/img/parallel_back.png" alt="" class="top_introduction_img">
-                    <img src="/2024/static/img/access.svg" alt="" class="top_introduction_img">
-                </div>
-            </div>
-        </div>
+            <!--タイトル-->
+            <h1>ロゴデザインの裏側に密着？！</h1>
         
-        <div class="top_guide_container">
-            <div class="top_guide_bg_1"></div>
-            <div class="top_guide_bg_2"></div>
-            <div class="top_guide_main">
-                <div class="top_guide hide Reserve">
-                    <p class="top_guide_title">Reservation</p>
-                    <p class="top_guide_text">ご予約</p>
-                    <p class="top_guide_text">来校の際はご予約が必要となります。ご予約はこちらからご確認ください。</p>
-                    <div class="top_guide_link_btn_main">
-                        <div class="top_guide_link_btn">
-                            <img src="/2024/static/img/smartphone.svg" class="top_guide_btn_img">
-                            <p class="top_guide_link_btn_text">予約はこちらから</p>
-                            <img src="/2024/static/img/log-out.svg" class="top_guide_btn_img">
-                        </div>
-                        <a href="" class="SNS_link"></a>
-                    </div>
-                </div>
-                <div class="top_guide hide Contact">
-                    <p class="top_guide_title">Contact</p>
-                    <p class="top_guide_text">お問い合わせ</p>
-                    <p class="top_guide_text">菁々祭に関するご質問はお問い合わせページからお願いいたします。</p>
-                    <div class="top_guide_link_btn_main">
-                        <div class="top_guide_link_btn">
-                            <img src="/2024/static/img/headphones.svg" class="top_guide_btn_img">
-                            <p class="top_guide_link_btn_text">お問い合わせ</p>
-                            <img src="/2024/static/img/log-out.svg" class="top_guide_btn_img">
-                        </div>
-                        <a href="/2024/contact/contact.html" class="SNS_link"></a>
-                    </div>
-                </div>
+
+
+            <!--日付、作者-->
+            <p class="blog_article_date blog_info_date" style="text-align:right;">2023.06.05</p>
+            <p class="blog_article_h3 blog_info_writer" style="text-align:right;">PRパート員 S.Y.</p>
+        
+        
+            <!--記事要約-->
+            <p class="blog_digest">菁々祭の顔、と聞いてロゴを思い浮かべる人も多いのではないでしょうか？ そんな菁々祭のロゴは、なんと生徒によって作られているのです！毎年クオリティが高くてすごいですよね。今回はなんと第58回菁々祭と第59回菁々祭のロゴデザインを手掛けた製作セクション長にお話を聞いてきました。</p>
+            
+
+
+            <!--目次-->
+            <div class="blog_contents">
+                <h2 class="blog_contents_h2">目次</h2>
+                <a href="#1"><h4 class="blog_contents_h4">Q.「まずどうしてロゴデザインをしようと思ったのですか？」 </h4></a>
+                <a href="#2"><h4 class="blog_contents_h4">Q.「初めてのロゴデザインで特に大変だったことは何ですか？」</h4></a>
+                <a href="#3"><h4 class="blog_contents_h4">Q.「今年のロゴに変化はありましたか？」</h4></a>
+                <a href="#4"><h4 class="blog_contents_h4">Q.「最後に将来のロゴを作る後輩達へのメッセージをお願いします。」</h4></a>
+                <a href="#5"><h4 class="blog_contents_h4">まとめ</h4></a>
             </div>
+        
+            
+            <!--
+                【書き方の説明】
+                
+                一番大きな見出しがh2です。
+                そこから一つ下がるごとにh3,h4となっていきます(h4以下は使用しないこと)
+
+                目次にはh2の目次をそのまま順番にすべて列挙してください。
+            -->
+            <!--第２タイトルから-->
+            <h2 id="1">Q.「まずどうしてロゴデザインをしようと思ったのですか？」 </h2>
+            <p>
+                「もちろんデザインに関する興味というのはもともとあって、デザイン自体には慣れていたんですけど。ただロゴデザインっていうのはなかなか機会がないというか。新しい経験だったし、ハードルに感じる部分はあったけどやってみようかなって。それでやってみたって感じですね。」
+            </p>
+
+            <h2 id="2">Q.「初めてのロゴデザインで特に大変だったことは何ですか？」 </h2>
+            <p>
+                「そうですね。中学三年生で製作セクション員になって、次の年にいきなりセクション長を任されたんですよね。だから、どう振る舞っていいかとか分からないままロゴデザインの業務を始めることになって。
+            </p>
+            <p>
+                とりあえずDiscordで会議して、10以上あった案の中から俺の案に決まったんですよね。でもその案で本当にいいのかどうか自分の中で疑心暗鬼になって、それで二週間くらい悩んで。それで自分でもう一個作り直して、みたいなのをしていました。」
+            </p>
+            <figure>
+                <img src="image2.webp" alt="第58回菁々祭「四季彩」の初期ロゴ案">
+                <figcaption>第58回菁々祭「四季彩」の初期ロゴ案</figcaption>
+            </figure>
+            <h3>「自分の案に自信を持てなくなったってことですね？」</h3>
+            <p>
+                「そうです。Discordで会議するんですけど、オンライン上でのやりとりじゃないですか。だから自分がセクション長だから否定しづらい空気になってるんじゃないかとか思いはじめちゃって。あとやっぱり顔が見えないから、表情とかわからないんですよね。だからこの案で本当に大丈夫なのかな、って思うようになったんですよね。」
+            </p>
+            <h3>「じゃあやっぱり、前回のロゴは後悔も多いんですか？」</h3>
+            <p>
+                「『四季彩』のロゴでは万人に愛されるようなテイストを目指していたんですよね。でも逆に個性みたいな、なんかそういうものがあまり出せなかったっていうような気もしてて。目指しすぎたっていうのがあったかもしれないですね。これが前回の反省かな？」
+            </p>
+            <p>「なるほど。気をつけたことが裏目に出たって感じですね。」</p>
+
+            <h2 id="3">Q.「今年のロゴに変化はありましたか？」</h2>
+            <p>
+                「二年連続で同じ人が作ったっていうのは、多分今までなくて。だからその経験を生かしたいなとも思ったし、あと同じ人間が作ると似通ったデザインになりがちだから、同じテイストで終わらせたくないなってのがあって。ちょっとそこは意識的にイメージを変えて制作しました。」
+            </p>
+            <p>
+                「確かに菁々祭のロゴは毎年違った個性が求められますからね。」
+            </p>
+            <p>
+                「ええ、ここ数年ずっと平面的なロゴ、いわゆるフラットデザインが主だったんですよ。だから、それを踏まえて今回のロゴはあえて変えていきたいなと思って。それで3DCGみたいな、新しい表現として立体的なデザインをできるように意識しましたね。」
+            </p>
+            <figure>
+                <img src="image3.webp" alt="第59回菁々祭「RESONANCE」ロゴの構想">
+                <figcaption>第59回菁々祭「RESONANCE」ロゴの構想</figcaption>
+            </figure>
+            
+            <h3>「今までにない表現ですね。でも随分攻めた表現にした分やっぱり緊張しますか？」</h3>
+            <p>
+                「そうですね。前回より攻めたデザインにしたという感覚がある分、反応ってのはどうしても気になってしまうし、不特定多数に見られるので怖いなって思う時もあります。ただ、一方で少し楽しみに思っているところもあります。」
+            </p>
+            <p>
+                「やっぱり菁々祭のデザインの根幹に関わることができますからね。」
+            </p>
+
+            <h2 id="4">Q.「最後に将来のロゴを作る後輩達へのメッセージをお願いします。」</h2>
+            <p>
+                「ロゴデザインするにあたって悩んだり、あるいは自信を失ってしまったりするかもしれません。でも、菁々祭の顔になるものを作れるっていうのは、やっぱりすごくやりがいがあるし、光栄なことだと思っています。だからこそ、迷ったときも『俺が次の菁々祭を背負っていく』という強い意志を持って突き進んでくれたらなと思います。」
+            </p>
+
+            <h2 id="5">まとめ</h2>
+            <p>いかがだったでしょうか？今回は製作セクション長にお話を伺いました！ロゴデザインってとっても難しいんですね…。是非みなさんにもロゴに数々の思いが込められていることを知っていただければ嬉しいです！</p>
+
+
+
+
+
+
+
+
+            <!-------------------------------------------
+                ここまで
+            ---------------------------------------------->
+        
+        
+            <!--記事一覧に戻る-->
+            <div class="blog_back_page">
+                <a href="../../blog.html">  
+                    <img src="../../img/back_arrow_2.svg" alt="">
+                    <p class="blog_back">記事一覧に戻る</p>
+                </a>
+            </div>
+        
+
+
+            <p class="blog_recommend">こちらの記事もおすすめ</p>
+
+        </article>
+
+        
+        <!--記事紹介-->
+        <div class="blog_article_more">
+
+            <a href="../11/11.html" class="blog_recommend_list">
+                <img class="blog_recommend_img" src="../catch_img/11.webp">
+                <div class="blog_recommend_info">
+                    <p class="blog_banner_title">新聞部とコラボ！パート長インタビュー！</p>
+                    <p class="blog_banner_writer">新聞部</p>
+                    <p class="blog_banner_date">2023.08.2525</p>
+                </div>
+            </a>
+
+            
+            <a href="../09/09.html" class="blog_recommend_list">
+                <img class="blog_recommend_img" src="../catch_img/09.webp">
+                <div class="blog_recommend_info">
+                    <p class="blog_banner_title">【ギャラリー】ロゴモニュメント「四季彩」の記録</p>
+                    <p class="blog_banner_writer">PRパート副パート長</p>
+                    <p class="blog_banner_date">2023.06.26</p>
+                </div>
+            </a>
+
+            <a href="../10/10.html" class="blog_recommend_list">
+                <img class="blog_recommend_img" src="../catch_img/10.webp">
+                <div class="blog_recommend_info">
+                    <p class="blog_banner_title">必見！菁々祭の整理券攻略＆射的の1等獲得の秘訣を大公開！</p>
+                    <p class="blog_banner_writer">PRパート員F.T.</p>
+                    <p class="blog_banner_date">2023.06.15</p>
+                </div>
+            </a>
+
+            <a href="../03/03.html" class="blog_recommend_list">
+                <img class="blog_recommend_img" src="../catch_img/03.webp">
+                <div class="blog_recommend_info">
+                    <p class="blog_banner_title">部誌編集者に聞く！「番茶党」のウラ苦労【新聞部】</p>
+                    <p class="blog_banner_writer">PRパート副パート長</p>
+                    <p class="blog_banner_date">2023.06.05</p>
+                </div>
+            </a>
+
+            <a href="../05/05.html" class="blog_recommend_list">
+                <img class="blog_recommend_img" src="../catch_img/05.webp">
+                <div class="blog_recommend_info">
+                    <p class="blog_banner_title">Webサイトができるまで...【技術＆製作セクション長インタビュー】</p>
+                    <p class="blog_banner_writer">PRパート長</p>
+                    <p class="blog_banner_date">2023.06.05</p>
+                </div>
+            </a>
+
         </div>
+
+
         
     </main>
-
+    <!--　main ここまで　-->
     <footer>
         <div class="footer_logo">
             <a href="" class="footer_logo_img">
@@ -607,9 +518,6 @@
 </body>
 
 
-<!--datefns-->
-<script src="https://cdn.jsdelivr.net/npm/date-fns@3.6.0/cdn.min.js"></script>
-
 <!--jQuery-->
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
@@ -620,8 +528,6 @@
 
 <!--script-->
 <script src="/2024/static/js/common.js"></script>
-<script src="/2024/static/js/top.js"></script>
-<script src="/2024/static/js/countdown.js"></script>
 
 
 </html>

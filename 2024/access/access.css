@@ -45,24 +45,24 @@
             position: absolute;
             margin-top: -10px;
             width: 100%;
-            height: 487px;
+            height:6vw;
       }
       .info{
             margin: auto;
-            width: 320px;
+            width: 280px;
             text-align: left;
             padding-top: 0.37px;
             display: grid;
             grid-template-columns: minmax(auto, 320px);
       }
       .info_text{
-            width: 320px;
+            width: 280px;
             height: 40px;
             text-align: center;
             padding: 10px, 0px, 10px, 0px;
       }
       .info_text2{
-            width: 320px;
+            width: 280px;
             height: 40px;
             border-top: 1px solid #FF0084;
             border-bottom: 1px solid #FF0084;
@@ -86,7 +86,7 @@
       }
       .info_text3{
             padding-top:-10px;
-            width: 320px;
+            width: 280px;
             height: 40px;
             border-bottom: 1px solid #FF0084;
             box-sizing: border-box;
@@ -95,7 +95,7 @@
             align-items: center;
       }
       .info_text4{
-            width: 320px;
+            width: 280px;
             height: 40px;
             box-sizing: border-box;
             display: flex;
@@ -111,7 +111,7 @@
       }
       .map_text{
             margin-left:10%;
-            width: 320px;
+            width: 280px;
             height: 47px;
       }
       .bus{
@@ -194,7 +194,7 @@
             content: "";     
             position: absolute;
             width: 100%;
-            height: 487px;
+            height:7vw;
       }
       .info{
             width: 80vw;
