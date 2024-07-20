@@ -125,7 +125,7 @@ textarea:-webkit-autofill:focus {
     .form_sheet{
         width: 100%;
         height: auto;
-        
+        margin-bottom:30px;
     }
     .form_explanation{
         width:256px;
