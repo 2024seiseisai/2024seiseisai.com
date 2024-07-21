@@ -781,6 +781,7 @@ main{
     position: relative;
     right: 11.1vw;
     aspect-ratio: 7/9;
+    height:100%;
 }
 
 .top_introduction_img_Blog{
@@ -796,6 +797,7 @@ main{
     position: relative;
     left: 11.1vw;
     aspect-ratio: 7/9;
+    height:100%;
 }
 
 .top_introduction_img_Special{
@@ -811,6 +813,7 @@ main{
     position: relative;
     right: 11.1vw;
     aspect-ratio: 7/9;
+    height:100%;
 }
 
 .top_introduction_img_Archives{
@@ -826,6 +829,7 @@ main{
     position: relative;
     left: 11.1vw;
     aspect-ratio: 7/9;
+    height:100%;
 }
 
 .top_introduction_img_Access{
