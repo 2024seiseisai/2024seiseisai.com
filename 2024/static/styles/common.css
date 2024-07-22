@@ -767,11 +767,7 @@ footer{
     }
 
     .footer_nav_body_item::after{
-        transform: translate(-100%,13px) scaleX(0);
-    }
-
-    .footer_nav_body_item:hover:after{
-        transform: translate(-100%,13px) scaleX(1);
+        display: none;
     }
 
     .footer_nav_SNS{
