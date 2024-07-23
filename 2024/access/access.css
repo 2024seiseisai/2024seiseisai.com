@@ -30,22 +30,13 @@
             background-position: center;
             width: 100%;
             margin-bottom: -2.7%;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
       }
       
       .rectangle70{
             position: relative;
             z-index: 1;
             margin-bottom:30px;
-      }
-      .rectangle70::before{
-            transform: skewY(-3deg);
-            background-color: #fff;
-            z-index: -1;
-            content: "";     
-            position: absolute;
-            margin-top: -10px;
-            width: 100%;
-            height:6vw;
       }
       .info{
             margin: auto;
@@ -182,20 +173,12 @@
             background-position: center;
             width: 100%;
             height: 540px;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
       }
       .rectangle70{
             position: relative;
             z-index: 1;
             margin-bottom:30px;
-      }
-      .rectangle70::before{
-            transform: skewY(-3deg);
-            background-color: #fff;
-            z-index: -1;
-            content: "";     
-            position: absolute;
-            width: 100%;
-            height:7vw;
       }
       .info{
             width: 80vw;
