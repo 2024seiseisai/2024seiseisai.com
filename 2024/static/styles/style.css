@@ -1219,6 +1219,10 @@ main{
         width: 8vw;
     }
 
+    .top_introduction_more_btn:hover .top_introduction_more_btn_arrow{
+        left: 0;
+    }
+
     .top_introduction_more_btn_text{
         font-size: 5vw;
     }
