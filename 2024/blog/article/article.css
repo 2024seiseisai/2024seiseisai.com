@@ -151,19 +151,22 @@
 }
 
 .blog_back_arrow_1 {
-  position: absolute;
+  position: fixed;
   width: 40px;
   height: 40px;
-  top: 60px;
-  left: 15px;
+  top: 70px;
+  left: 4%;
+}
+.blog_back_arrow_1:hover {
+  transform: scale(1.1);
 }
 @media only screen and (min-width: 1025px) {
   .blog_back_arrow_1 {
     position: fixed;
     width: 60px;
     height: 60px;
-    top: 80px;
-    left: 45px;
+    margin-top: 100px;
+    left: 7%;
     transition: transform 0.3s;
   }
   .blog_back_arrow_1:hover {
