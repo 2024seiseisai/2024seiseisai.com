@@ -211,8 +211,8 @@ article h1 {
 
 .blog_contents {
   padding: 25px 0px 30px;
-  border-top: solid 1px #000000;
-  border-bottom: solid 1px #000000;
+  border-top: solid 1px #FF0084; /*目次上線*/
+  border-bottom: solid 1px #FF0084;
 }
 .blog_contents .blog_contents_h2 {
   margin-top: 0px;
@@ -223,6 +223,7 @@ article h1 {
   display: flex;
   margin-top: 15px;
   transition: color 0.3s;
+  text-decoration: none;
 }
 .blog_contents .blog_contents_h4::before {
   content: "・　";
@@ -244,7 +245,8 @@ article h2 {
   color: #000000;
   padding-left: 11px;
   margin-top: 51px;
-  border-left: solid 2px #52CC89;
+  border-left: solid 2px #FF0084;
+;
 }
 @media only screen and (min-width: 1025px) {
   article h2 {
@@ -328,12 +330,17 @@ article p {
     margin-bottom: 30px;
   }
 }
+.blog_contents a{
+  text-decoration: none;
+}
 article p a {
-  color: #52CC89;
+  color: #FF0084;
+;
   text-decoration: underline;
 }
 article p b {
-  background-color: #52CC89;
+  background-color: #FF0084;
+;
   color: #000000;
   padding: 0 4px;
 }
