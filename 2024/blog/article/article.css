@@ -409,5 +409,15 @@ article figure figcaption {
     letter-spacing: 0.05em;
   }
 }
+.center{
+  height: 24px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=article.css.map */
