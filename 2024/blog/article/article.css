@@ -415,11 +415,12 @@ article figure figcaption {
   align-items: center;
   text-decoration: none;
 }
-.center{
+.content{
   display: flex;
   align-items: center;
   text-decoration: none;
   gap:10px;
+  position: relative;
 }
 .mark {
   width: 24px; 
@@ -427,13 +428,111 @@ article figure figcaption {
   display: inline-block;
   margin-right: 10px;
 }
-.center:visited{
+.content:visited{
   color: #000000;
 }
-.mark:hover{
-  width:26px;
-  height: 26px;
-  image-rendering: pixelated;
+/* 下線アニメーション */
+.content::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transition: width 0.3s;
+}
+.content:hover::after {
+  width: 100%;
+}
+.center{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap:10px;
+}
+
+.blog_list_article{
+  display: flex;
+  gap: 10%;
+}
+.blog_preview {/*全体の位置と枠*/
+  margin:0 auto;
+  margin-top: 40px;
+  vertical-align: middle;
+  border: 1px solid black;
+  border-radius: 10px; 
+  background-color: #fff;
+  box-shadow: 0 4px 8px black(0, 0, 0, 0.1);
+}
+.blog_preview_img {/*画像詳細*/
+  width:100%;   
+  border-radius: 10px 10px 0px 0px;
+  aspect-ratio:16/9;
+}
+.blog_preview_link{
+  text-decoration: none;
+  color: black;
+}
+.blog_preview_sentence{/*文章全体を左右に余白10px,左揃え*/
+  padding: 0 10px;
+  text-align: left;
+}
+.blog_preview_top{/*dateとclubを横一列*/
+  display: flex;
+  align-items: center;
+  margin-bottom:-20px;
+  gap:10%;
+}
+.blog_preview_date {/*日付*/
+  color: #ff1493;
+  margin-top: 3px;
+  font-size: 10px;
+}
+.blog_preview_club {
+  background-color:#FF0084;
+  color: white;
+  border-radius: 5px;
+  margin-top: 3px;
+  margin-left: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 14px;
+  font-size: 10px;
+}
+.blog_preview_author {/*著者,右揃え*/
+  text-align: right;
+  font-size: 10px;
+}
+.blog_preview_title{/*タイトル*/
+  display: -webkit-box; 
+  -webkit-box-orient: vertical; 
+  overflow:hidden;
+  color:black;
+  -webkit-line-clamp: 2;
+  font-size: 12px;
+}
+@media only screen and (min-width: 1025px) {
+  .blog_list_article{
+    display: flex;
+    gap: 20%;
+  }
+  .blog_preview_sentence{
+    padding: 0 30px;
+  }
+  .blog_preview_date{
+    font-size: 16px;
+  }
+  .blog_preview_club{
+    height: 22px;
+    font-size: 16px;
+  }
+  .blog_preview_title{
+    font-size: 20px;
+  }
+  .blog_preview_author{
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=article.css.map */
