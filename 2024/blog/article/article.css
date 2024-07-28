@@ -409,15 +409,31 @@ article figure figcaption {
     letter-spacing: 0.05em;
   }
 }
-.center{
-  height: 24px;
+.screen-center {
+  display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+.center{
   display: flex;
   align-items: center;
-}
-a {
   text-decoration: none;
+  gap:10px;
+}
+.mark {
+  width: 24px; 
+  height: 24px; 
+  display: inline-block;
+  margin-right: 10px;
+}
+.center:visited{
+  color: #000000;
+}
+.mark:hover{
+  width:26px;
+  height: 26px;
+  image-rendering: pixelated;
 }
 
 /*# sourceMappingURL=article.css.map */
