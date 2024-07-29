@@ -234,7 +234,7 @@ article h1 {
   height: 100%;
 }
 .blog_contents .blog_contents_h4:hover {
-  color: #000000;
+  color: #b1b1b1;
 }
 
 article h2 {
@@ -414,6 +414,8 @@ article figure figcaption {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  margin-bottom:50px;
+  margin-top:60px;
 }
 .content{
   display: flex;
@@ -455,6 +457,7 @@ article figure figcaption {
 .blog_list_article{
   display: flex;
   gap: 10%;
+  margin-bottom:50px;
 }
 .blog_preview {/*全体の位置と枠*/
   margin:0 auto;
@@ -464,6 +467,7 @@ article figure figcaption {
   border-radius: 10px; 
   background-color: #fff;
   box-shadow: 0 4px 8px black(0, 0, 0, 0.1);
+  width:45%;
 }
 .blog_preview_img {/*画像詳細*/
   width:100%;   
@@ -481,7 +485,7 @@ article figure figcaption {
 .blog_preview_top{/*dateとclubを横一列*/
   display: flex;
   align-items: center;
-  margin-bottom:-20px;
+  margin-bottom:-10px;
   gap:10%;
 }
 .blog_preview_date {/*日付*/
@@ -494,9 +498,7 @@ article figure figcaption {
   color: white;
   border-radius: 5px;
   margin-top: 3px;
-  margin-left: 8px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding:0 8px;
   height: 14px;
   font-size: 10px;
 }
@@ -510,7 +512,9 @@ article figure figcaption {
   overflow:hidden;
   color:black;
   -webkit-line-clamp: 2;
-  font-size: 12px;
+}
+.blog_preview_title p{/*タイトル*/
+  line-height:20px;
 }
 @media only screen and (min-width: 1025px) {
   .blog_list_article{
@@ -522,13 +526,17 @@ article figure figcaption {
   }
   .blog_preview_date{
     font-size: 16px;
+    margin-bottom:5px;
   }
   .blog_preview_club{
     height: 22px;
     font-size: 16px;
   }
+  .blog_preview_title p{
+    line-height:32px;
+  }
   .blog_preview_title{
-    font-size: 20px;
+    -webkit-line-clamp: 3;
   }
   .blog_preview_author{
     font-size: 14px;
