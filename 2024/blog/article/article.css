@@ -467,6 +467,7 @@ article figure figcaption {
   border-radius: 10px; 
   background-color: #fff;
   box-shadow: 0 4px 8px black(0, 0, 0, 0.1);
+  width:45%;
 }
 .blog_preview_img {/*画像詳細*/
   width:100%;   
