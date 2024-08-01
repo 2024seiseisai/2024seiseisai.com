@@ -1,0 +1,21 @@
+.red{
+    color:#FF0084;
+}
+
+.rectangle30{
+    margin-left: 22px;
+    height: 30px;
+    width: 4px;
+    background-color: #FF0084;
+}
+
+.rechead{
+    display: flex;
+}
+
+.rechetext{
+    margin-top: 0;
+    margin-bottom: 80px;
+    height: 30px;
+    padding-left: 12px;
+}
