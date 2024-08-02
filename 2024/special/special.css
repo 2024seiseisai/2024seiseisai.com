@@ -16,6 +16,38 @@
     margin-right: 20px;
 }
 
+.underline_wallpaper{
+  margin-right: 20px;
+  padding-bottom: 20px;
+  background-image: url("img/underline_wallpaper.png");
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+
+.underline_icon{
+  margin-right: 20px;
+  padding-bottom: 20px;
+  background-image: url("img/underline_icon.png");
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+
+.underline_xheader{
+  margin-right: 20px;
+  padding-bottom: 20px;
+  background-image: url("img/underline_xheader.png");
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+
+.underline_logotheme{
+  margin-right: 20px;
+  padding-bottom: 20px;
+  background-image: url("img/underline_logotheme.png");
+  background-repeat: no-repeat;
+  background-position: 10px 15px;
+}
+
 .attention{
   width: 88.88%;
 }
