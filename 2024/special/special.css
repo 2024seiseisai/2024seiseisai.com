@@ -56,3 +56,92 @@ ul{ /*禁止事項位置*/
 .symbol_top_text{ /*symbol markの見出しテキスト*/
     margin-left: 20px;
 }
+
+.splide {
+    position: relative;
+  }
+  .splide img.dl_button {
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+  }
+  .splide li.is-active img.dl_button {
+    opacity: 1;
+  }
+  .splide .paginations {
+    display: flex !important;
+  }
+  .splide .pagination {
+    margin: 0 7px;
+    width: 5px;
+    height: 5px;
+    background-color: #737373;
+  }
+  .splide .pagination.is-active {
+    background-color: #FF0084;
+  }
+  .splide .splide_arrow {
+    transition: background-position-x 0.3s;
+    margin: 0 10px;
+  }
+  .splide .splide_arrow svg {
+    opacity: 0;
+  }
+  .splide .splide_arrow.arrow--next {
+    background-image: url(splide/arrow_right.svg);
+  }
+  .splide .splide_arrow.arrow--next:hover {
+    background-position-x: 10px;
+  }
+  .splide .splide_arrow.arrow--prev {
+    background-image: url(splide/arrow_left.svg);
+  }
+  .splide .splide_arrow.arrow--prev:hover {
+    background-position-x: -10px;
+  }
+  
+  .wallpapers img.dl_button, .icons img.dl_button {
+    transition: transform 0.5s, opacity 0.3s;
+  }
+
+  .wallpapers {
+    margin: 15px 0 60px;
+  }
+  .wallpapers img:not(.dl_button) {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .wallpapers img.dl_button {
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, -50%);
+  }
+
+  .icons {
+    margin: 15px 0 60px;
+  }
+  .icons img:not(.dl_button) {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .icons img.dl_button {
+    right: 12%;
+    bottom: 12%;
+    transform: translate(50%, -50%);
+  }
+
+  .headers {
+    margin: 15px 0 60px;
+  }
+  .headers img:not(.dl_button) {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .headers img.dl_button {
+    right: 12%;
+    bottom: 12%;
+    transform: translate(50%, -50%);
+  }
