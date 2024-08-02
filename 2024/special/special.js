@@ -11,8 +11,11 @@ new Splide( '.wallpapers', {
     autoplay: true,
     interval: 5000,
 
-    arrows: true,
+    fixedWidth: "150%",
 
+    arrows: true,
+    updateOnMove: true,
+    
     classes: {
         arrow : 'splide__arrow splide_arrow',
 		prev  : 'splide__arrow--prev arrow--prev',
@@ -26,8 +29,6 @@ new Splide( '.wallpapers', {
             perPage: 1,
             padding: "30%",
             gap: 35,
-
-            arrows: false,
 		},
     }
 }).mount();
@@ -45,7 +46,10 @@ new Splide( '.icons', {
     autoplay: true,
     interval: 5000,
 
+    fixedWidth: "125%",
+
     arrows: true,
+    updateOnMove: true,
 
     classes: {
         arrow : 'splide__arrow splide_arrow',
@@ -60,27 +64,26 @@ new Splide( '.icons', {
             perPage: 1,
             padding: "30%",
             gap: 35,
-
-            arrows: false,
 		},
     }
 }).mount();
 
 new Splide( '.headers', {
-
     type   : 'loop',
     perPage: 3,
     perMove: 1,
-    gap: "65%",
-    padding: "30%",
+    gap: "5%",
+    padding: "18%",
     focus  : 'center',
 
-    flickPower: 300,
+    fixedWidth: "200%",
 
+    flickPower: 300,
     autoplay: true,
     interval: 5000,
 
     arrows: true,
+    updateOnMove: true,
 
     classes: {
         arrow : 'splide__arrow splide_arrow',
@@ -94,9 +97,9 @@ new Splide( '.headers', {
 		1025: {
             perPage: 1,
             padding: "30%",
-            gap: "80%",
+            gap: "10%",
 
-            arrows: false
+            arrows: false,
 		},
     }
 }).mount();

@@ -83,23 +83,29 @@ ul{ /*禁止事項位置*/
   .splide .splide_arrow {
     transition: background-position-x 0.3s;
     margin: 0 10px;
+    width: 40px;
+    height: 40px;
   }
   .splide .splide_arrow svg {
     opacity: 0;
   }
   .splide .splide_arrow.arrow--next {
     background-image: url(splide/arrow_right.svg);
+
   }
-  .splide .splide_arrow.arrow--next:hover {
-    background-position-x: 10px;
+  /* スライド共通のスタイル */
+  .splide__slide img {
+    opacity: .5; /* 左右のスライドを薄くする */
+    transition: .5s; /* ゆっくり */
+  }
+  /* アクティブなスライドのスタイル */
+  .splide__slide.is-active img {
+    opacity: 1; /* 中央のスライドは薄くしない */
+    z-index: 1; /* 中央のスライドを一番上にする */
   }
   .splide .splide_arrow.arrow--prev {
     background-image: url(splide/arrow_left.svg);
   }
-  .splide .splide_arrow.arrow--prev:hover {
-    background-position-x: -10px;
-  }
-  
   .wallpapers img.dl_button, .icons img.dl_button {
     transition: transform 0.5s, opacity 0.3s;
   }
