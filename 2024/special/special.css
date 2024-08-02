@@ -249,3 +249,8 @@ ul{ /*禁止事項位置*/
     right: 0;
     transform: translate(50%, -50%);
   }
+  .symbol_mark .logo_description .logo_name {
+        transform-origin: left;
+            margin: 0px;
+                white-space: nowrap;
+  }
