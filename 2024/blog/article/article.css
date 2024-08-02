@@ -151,19 +151,22 @@
 }
 
 .blog_back_arrow_1 {
-  position: absolute;
+  position: fixed;
   width: 40px;
   height: 40px;
-  top: 60px;
-  left: 15px;
+  top: 70px;
+  left: 4%;
+}
+.blog_back_arrow_1:hover {
+  transform: scale(1.1);
 }
 @media only screen and (min-width: 1025px) {
   .blog_back_arrow_1 {
     position: fixed;
     width: 60px;
     height: 60px;
-    top: 80px;
-    left: 45px;
+    margin-top: 100px;
+    left: 7%;
     transition: transform 0.3s;
   }
   .blog_back_arrow_1:hover {
@@ -211,8 +214,8 @@ article h1 {
 
 .blog_contents {
   padding: 25px 0px 30px;
-  border-top: solid 1px #000000;
-  border-bottom: solid 1px #000000;
+  border-top: solid 1px #FF0084; /*目次上線*/
+  border-bottom: solid 1px #FF0084;
 }
 .blog_contents .blog_contents_h2 {
   margin-top: 0px;
@@ -223,6 +226,7 @@ article h1 {
   display: flex;
   margin-top: 15px;
   transition: color 0.3s;
+  text-decoration: none;
 }
 .blog_contents .blog_contents_h4::before {
   content: "・　";
@@ -230,7 +234,7 @@ article h1 {
   height: 100%;
 }
 .blog_contents .blog_contents_h4:hover {
-  color: #000000;
+  color: #b1b1b1;
 }
 
 article h2 {
@@ -244,7 +248,8 @@ article h2 {
   color: #000000;
   padding-left: 11px;
   margin-top: 51px;
-  border-left: solid 2px #52CC89;
+  border-left: solid 2px #FF0084;
+;
 }
 @media only screen and (min-width: 1025px) {
   article h2 {
@@ -328,12 +333,17 @@ article p {
     margin-bottom: 30px;
   }
 }
+.blog_contents a{
+  text-decoration: none;
+}
 article p a {
-  color: #52CC89;
+  color: #FF0084;
+;
   text-decoration: underline;
 }
 article p b {
-  background-color: #52CC89;
+  background-color: #FF0084;
+;
   color: #000000;
   padding: 0 4px;
 }
@@ -397,6 +407,139 @@ article figure figcaption {
     font-feature-settings: "palt" 1;
     line-height: 32px;
     letter-spacing: 0.05em;
+  }
+}
+.screen-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom:50px;
+  margin-top:60px;
+}
+.content{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap:10px;
+  position: relative;
+}
+.mark {
+  width: 24px; 
+  height: 24px; 
+  display: inline-block;
+  margin-right: 10px;
+}
+.content:visited{
+  color: #000000;
+}
+/* 下線アニメーション */
+.content::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transition: width 0.3s;
+}
+.content:hover::after {
+  width: 100%;
+}
+.center{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap:10px;
+}
+
+.blog_list_article{
+  display: flex;
+  gap: 10%;
+  margin-bottom:50px;
+}
+.blog_preview {/*全体の位置と枠*/
+  margin:0 auto;
+  margin-top: 40px;
+  vertical-align: middle;
+  border: 1px solid black;
+  border-radius: 10px; 
+  background-color: #fff;
+  box-shadow: 0 4px 8px black(0, 0, 0, 0.1);
+  width:45%;
+}
+.blog_preview_img {/*画像詳細*/
+  width:100%;   
+  border-radius: 10px 10px 0px 0px;
+  aspect-ratio:16/9;
+}
+.blog_preview_link{
+  text-decoration: none;
+  color: black;
+}
+.blog_preview_sentence{/*文章全体を左右に余白10px,左揃え*/
+  padding: 0 10px;
+  text-align: left;
+}
+.blog_preview_top{/*dateとclubを横一列*/
+  display: flex;
+  align-items: center;
+  margin-bottom:-10px;
+  gap:10%;
+}
+.blog_preview_date {/*日付*/
+  color: #ff1493;
+  margin-top: 3px;
+  font-size: 10px;
+}
+.blog_preview_club {
+  background-color:#FF0084;
+  color: white;
+  border-radius: 5px;
+  margin-top: 3px;
+  padding:0 8px;
+  height: 14px;
+  font-size: 10px;
+}
+.blog_preview_author {/*著者,右揃え*/
+  text-align: right;
+  font-size: 10px;
+}
+.blog_preview_title{/*タイトル*/
+  display: -webkit-box; 
+  -webkit-box-orient: vertical; 
+  overflow:hidden;
+  color:black;
+  -webkit-line-clamp: 2;
+}
+.blog_preview_title p{/*タイトル*/
+  line-height:20px;
+}
+@media only screen and (min-width: 1025px) {
+  .blog_list_article{
+    display: flex;
+    gap: 20%;
+  }
+  .blog_preview_sentence{
+    padding: 0 30px;
+  }
+  .blog_preview_date{
+    font-size: 16px;
+    margin-bottom:5px;
+  }
+  .blog_preview_club{
+    height: 22px;
+    font-size: 16px;
+  }
+  .blog_preview_title p{
+    line-height:32px;
+  }
+  .blog_preview_title{
+    -webkit-line-clamp: 3;
+  }
+  .blog_preview_author{
+    font-size: 14px;
   }
 }
 
