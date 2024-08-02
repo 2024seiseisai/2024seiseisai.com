@@ -14,7 +14,28 @@
 .Top_explanation{ /*ページの説明文*/
     margin-left: 20px;
     margin-right: 20px;
-    text-align: left;
+}
+
+.attention{
+  width: 88.88%;
+}
+.attention h2 {
+  display: flex;
+  align-items: center;
+}
+.attention h2::after {
+  content: "";
+  background-color: #000000;
+  height: 1px;
+  display: inline-block;
+  flex-grow: 1;
+  margin-left: 12px;
+}
+.border {
+  height: 1px;
+  background-color: #000000;
+  margin-left : 20px;
+  margin-right: 0px;
 }
 
 .logouse_text{ /*ロゴ使用許諾のテキスト*/
@@ -149,5 +170,82 @@ ul{ /*禁止事項位置*/
   .headers img.dl_button {
     right: 12%;
     bottom: 12%;
+    transform: translate(50%, -50%);
+  }
+
+  .readme_download{
+    text-align: center;
+  }
+
+  .special_title {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  section.logo_download .prev {
+    border: #737373 solid 1px;
+  }
+  .special_logo > img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+  .special_logo{
+    width: 77.77%;
+    margin: 0 auto;
+  }
+  .special_logo .logo_description .logo_name {
+    transform-origin: left;
+    margin: 0px;
+    white-space: nowrap;
+  }
+  .special_logo .logo_description {
+    margin: 3px 0 32px;
+    display: flex;
+    position: relative;
+  }
+  .special_logo .dl_button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+  .m_JP_8_500{
+    font-family: 'Noto Sans JP';
+    font-size: 8px;
+    font-weight: 500;
+  }
+  .m_JP_6_500{
+    font-family: 'Noto Sans JP';
+    font-size: 6px;
+    font-weight: 500;
+  }
+  section.logo_download .symbol_mark_title {
+    margin-top: 50px;
+  }
+  .symbol_mark {
+    display: flex;
+    justify-content: space-between;
+    width: 77.77%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  .symbol_mark > div .prev {
+    width: 100%;
+    height: auto;
+  }
+  .symbol_mark > div .logo_description p {
+    transform-origin: left;
+  }
+  .symbol_mark > div .logo_description {
+    position: relative;
+  }
+  .symbol_mark > div {
+    width: calc(50% - 22.5px);
+  }
+  .symbol_mark > div .logo_description .dl_button {
+    position: absolute;
+    top: 0;
+    right: 0;
     transform: translate(50%, -50%);
   }
