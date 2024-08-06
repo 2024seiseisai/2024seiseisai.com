@@ -1,11 +1,29 @@
-.no1-detail{
+.main{
+    width: 360px;
+    height: 1591px;
+    background: rgba(255, 255, 255, 1);
+    
+}
+.p no1 detail{
     padding: top 214px;
-    padding:left 71px;
+    padding: left 71px;
 }
 .number {
-    color:rgba(255, 0, 132, 1)
+    color:rgba(255, 0, 132, 1);
+    border:1px;
 }
 .picture{
     width:140px;
     height:100px;
+    border-radius: 4px;
+}
+.left picture{
+    padding: top 49px;
+}
+.no12{
+    width: 320px;
+    height: 251px;
+    margin-top: 140px;
+    margin-left: 20px;
+
 }
