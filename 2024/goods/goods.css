@@ -1,29 +1,181 @@
 .main{
     width: 360px;
     height: 1591px;
-    background: rgba(255, 255, 255, 1);
-    
 }
-.p no1 detail{
-    padding: top 214px;
-    padding: left 71px;
-}
+
 .number {
-    color:rgba(255, 0, 132, 1);
-    border:1px;
+    width: 99px;
+    height: 49px;
+    border-color:;
+    border: 1px solid;
+    line-height: 49.1px;
+    color: #FFFFFF;
+    text-shadow:
+           1px 1px 0px rgba(255, 0, 132, 1), -1px -1px 0px rgba(255, 0, 132, 1),
+          -1px 1px 0px rgba(255, 0, 132, 1),  1px -1px 0px rgba(255, 0, 132, 1),
+           1px 0px 0px rgba(255, 0, 132, 1), -1px  0px 0px rgba(255, 0, 132, 1),
+           0px 1px 0px rgba(255, 0, 132, 1),  0px -1px 0px rgba(255, 0, 132, 1);
 }
+
+.left.number{
+    position:absolute;
+    margin-top: 0px;
+}
+.right.number{
+    position:absolute;
+    margin-top: 0px;
+    margin-left: 180px;
+}
+.stock{
+    width: 64px; 
+    height: 20px; 
+    padding: 1px 8px 1px 8px;
+    
+    border-radius: 4px 0px 4px 0px;
+    opacity: 0px;
+    position:absolute;
+    background: rgba(255, 0, 132, 1);
+}
+.stock-inner{
+    width: 48px;
+    height: 17px;
+    gap: 0px;
+    opacity: 0px;
+    line-height: 17.38px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    margin-top: 1.5px;
+    margin-left: 8px;
+}
+
 .picture{
+    
     width:140px;
     height:100px;
     border-radius: 4px;
 }
-.left picture{
-    padding: top 49px;
+
+
+.goods-name{
+    width: 140px;
+    height: 20px;
+    position: absolute;
+    margin-top: -2px;
+    line-height: 20.27px;
+    color:  rgba(0, 0, 0, 1);
 }
-.no12{
-    width: 320px;
-    height: 251px;
-    margin-top: 140px;
-    margin-left: 20px;
+
+.money{
+    width:98px;
+    height: 29px;
+    position: absolute;
+    margin-top: 12px;
+    position:absolute;
+    margin-left: 42px;
+    color: rgba(255, 0, 132, 1);
 
 }
+.price{
+    line-height: 28.96px;
+}
+.tax{
+    line-height: 23.17px;
+}
+.detail{
+    line-height: 17.38px;
+    color: rgba(0, 0, 0, 1);
+    width: 69px;
+    height: 17px;
+    position:absolute;
+    margin-top: 214px;
+    
+    
+}
+.left.detail{
+    margin-left: 71px;
+}
+.right.detail{
+    margin-left: 251px;
+}
+
+.flame{
+    position: absolute;
+    width: 320px;
+    height: 251px;
+    margin-left: 20px;
+    border-bottom: 1px solid rgba(255, 0, 132, 1);
+}
+.no12.flame{
+    position: absolute;
+    margin-top: 94px;
+}
+.no34.flame{
+    position: absolute;
+    margin-top: 365px;
+}
+.no56.flame{
+    position: absolute;
+    margin-top: 636px;
+}
+.no78.flame{
+    position: absolute;
+    margin-top: 907px;
+}
+.container{
+    width: 140px;
+    height: 157px;
+    position:absolute;
+    margin-top: 49px;
+}
+.right.container{
+    margin-left: 180px;
+}
+
+
+
+.box {
+    background: url("Shivercrop_0-00-23-27_2.png");
+    background-repeat: repeat-y;
+    width: 360px;
+    height: 1362px;
+    margin-top: -2px;
+    margin-bottom: 62px;
+    position: relative;
+}
+.relative{
+    position: relative;
+}
+.about-stock-box{
+    position: absolute;
+    margin-top: 1216px;
+    margin-left: 20px;
+    width: 108px;
+    height: 28px;
+}
+.about-stock-bar{
+    position: absolute;
+    background: rgba(255, 0, 132, 1);
+    width: 4px;
+    height: 28px;
+}
+.about-stock-title{
+    position: absolute;
+    margin-left: 12px;
+    margin-top: 2.5px;
+    color: rgba(0, 0, 0, 1);
+    line-height: 23.17px;
+    width: 96px;
+    height: 23px;
+}
+.about-stock-paragraph{
+    line-height: 20px;
+    color: rgba(0, 0, 0, 1);
+    width: 320px;
+    height: 80px;
+    position: absolute;
+    margin-top: 1266px;
+    margin-left: 20px;
+}
+    
+
+    
