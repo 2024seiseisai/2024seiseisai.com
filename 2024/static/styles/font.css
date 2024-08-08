@@ -576,6 +576,24 @@
         font-weight: bold; 
     }
     
+    .m_EN_36_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 36px;
+        font-weight: normal; 
+    }
+    
+    .m_EN_36_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 36px;
+        font-weight: 500; 
+    }
+    
+    .m_EN_36_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 36px;
+        font-weight: bold; 
+    }
+
     .m_EN_40_Regular {
         font-family: 'Nunito Sans';
         font-size: 40px;
