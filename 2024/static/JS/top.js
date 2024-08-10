@@ -40,9 +40,11 @@ let header = "hide";
 //最初はヘッダーを非表示に
 $(document).ready(function(){
     if($(window).scrollTop() < $("#top_firstview_bg").height() - $("header").height()){
-        $("header").css("display","none");
+        $("header").css("opacity","0");
+        $(".click_hide").css("pointer-events","none");
     }else{
-        $("header").css("display","flex");
+        $("header").css("opacity","1");
+        $(".click_hide").css("pointer-events","auto");
     }
 })
 
@@ -52,7 +54,8 @@ $(window).on('scroll',function(){
         header = "show";
         $("header").css("animation","header_show 1s ease-out");
         if(header === "show"){
-            $("header").css("display","flex");
+            $("header").css("opacity","1");
+            $(".click_hide").css("pointer-events","auto");
         }
     }else{
         if(menu == "closed"){
@@ -60,7 +63,8 @@ $(window).on('scroll',function(){
             $("header").css("animation","header_hide 1s ease-out");
             setTimeout(function(){
                 if(header === "hide"){
-                    $("header").css("display","none");
+                    $("header").css("opacity","0");
+                    $(".click_hide").css("pointer-events","none");
                 }
             },1000)
         }
@@ -74,7 +78,7 @@ $("#hamburger").click(function(){
                     $("header").css("animation","header_hide 1s ease-out");
                     setTimeout(function(){
                         if(header === "hide"){
-                            $("header").css("display","none");
+                            $("header").css("opacity","0");
                         }
                     },1000)
         }

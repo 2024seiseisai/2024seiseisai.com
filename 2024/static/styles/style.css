@@ -5,6 +5,13 @@ main{
     padding-top: 0!important;
 }
 
+.humburger{
+    transition: all 0.2s;
+}
+
+.humburger:hover{
+    opacity: 1!important;
+}
 
 /*ここからトップページ本体*/
 

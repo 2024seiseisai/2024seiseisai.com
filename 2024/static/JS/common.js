@@ -85,7 +85,7 @@ $("#hamburger").click(function(){
         header = "show";
         $("header").css("animation","header_show 1s ease-out");
         if(header === "show"){
-            $("header").css("display","flex");
+            $("header").css("opacity","1");
         }
         menu = "opened";
     }else if(menu === "opened"){
