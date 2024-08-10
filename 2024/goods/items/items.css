@@ -99,4 +99,12 @@
     text-align: left;
 
 }
+.back{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
 

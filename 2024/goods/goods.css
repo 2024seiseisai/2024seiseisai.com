@@ -6,7 +6,7 @@
 .number {
     width: 99px;
     height: 49px;
-    border-color:;
+    
     border: 1px solid;
     line-height: 49.1px;
     color: #FFFFFF;
@@ -88,7 +88,7 @@
     height: 17px;
     position:absolute;
     margin-top: 214px;
-    
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
     
 }
 .left.detail{
