@@ -1,5 +1,8 @@
+main{
+    display: flex;
+    justify-content: center;
+}
 .box{
-    
     width: 360px;
     height: 681px;
     position: relative;
@@ -62,11 +65,9 @@
     color: rgba(255, 0, 132, 1);
 }
 .explanation{
-    width: 320px;
     height: 40px;
     position: absolute;
-    margin-top: 461px;
-    margin-left: 19px;
+    margin: 461px 19px 0 19px;
     color:rgba(0, 0, 0, 1);
     line-height: 20.27px;
 }
@@ -108,3 +109,13 @@
 
 }
 
+@media only screen and (max-width:359px){
+    .picture{
+        width: 90%;
+        aspect-ratio: 16/9;
+    }
+    .back,.no,.goods-name,.picture,.stock,.explanation,.detail,.detail-title{
+        margin-left: 0;
+        left: 5%;
+    }
+}
