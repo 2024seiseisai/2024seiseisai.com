@@ -1,0 +1,110 @@
+.box{
+    
+    width: 360px;
+    height: 681px;
+    position: relative;
+}
+.no{
+    color: #FFFFFF;
+    text-shadow:
+           1px 1px 0px rgba(255, 0, 132, 1), -1px -1px 0px rgba(255, 0, 132, 1),
+          -1px 1px 0px rgba(255, 0, 132, 1),  1px -1px 0px rgba(255, 0, 132, 1),
+           1px 0px 0px rgba(255, 0, 132, 1), -1px  0px 0px rgba(255, 0, 132, 1),
+           0px 1px 0px rgba(255, 0, 132, 1),  0px -1px 0px rgba(255, 0, 132, 1);
+    width: 99px;
+    height: 44px;
+    position: absolute;
+    margin-top: 72px;
+    margin-left: 20px;
+    border: 1px;
+    line-height: 49.1px;
+}
+.goods-name{
+    width: 239px;
+    height: 35px;
+    position: absolute;
+    margin-top: 116px;
+    margin-left: 20px;
+    line-height: 34.25px;
+    color: rgba(0, 0, 0, 1);
+}
+.picture{
+    width: 320px;
+    height: 180px;
+    position:absolute;
+    margin-top: 171px;
+    margin-left: 20px;
+    
+}
+.price{
+    width: 173px;
+    height: 29px;
+    line-height: 28.96px;
+    position: absolute;
+    margin-top: 371px;
+    margin-left: 19px;
+    color: rgba(0, 0, 0, 1);
+
+}
+.price-detail{
+    color: rgba(255, 0, 132, 1);
+}
+.stock{
+    width: 140px;
+    height: 29px;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 20px;
+    line-height: 28.96px;
+    color: rgba(0, 0, 0, 1);
+}
+.stock-detail{
+    color: rgba(255, 0, 132, 1);
+}
+.explanation{
+    width: 320px;
+    height: 40px;
+    position: absolute;
+    margin-top: 461px;
+    margin-left: 19px;
+    color:rgba(0, 0, 0, 1);
+    line-height: 20.27px;
+}
+.detail-title{
+    width: 90px;
+    height: 22px;
+    position: absolute;
+    margin-top: 525px;
+    margin-left: 23px;
+    color: rgba(0, 0, 0, 1);
+    line-height: 21.72px;
+    font-family: Noto Sans JP;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+
+    
+}
+.detail{
+    width: 150px;
+    height: 44px;
+    position: absolute;
+    margin-top: 555px;
+    margin-left: 20px;
+    line-height: 21.72px;
+    color: rgba(0, 0, 0, 1);
+    font-family: Noto Sans JP;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+
+}
+.back{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
