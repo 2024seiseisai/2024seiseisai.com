@@ -181,7 +181,7 @@ main{
         left: 3%;
     }
 
-    .right.container{
+    .right.container,.right.detail{
         right: 3%;
     }
 
