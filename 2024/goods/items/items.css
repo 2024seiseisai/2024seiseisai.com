@@ -114,7 +114,7 @@ main{
         width: 90%;
         aspect-ratio: 16/9;
     }
-    .no,.goods-name,.picture,.stock,.explanation,.detail,.detail-title{
+    .back,.no,.goods-name,.picture,.stock,.explanation,.detail,.detail-title{
         margin-left: 0;
         left: 5%;
     }
