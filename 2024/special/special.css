@@ -12,8 +12,7 @@
 }
 
 .Top_explanation{ /*ページの説明文*/
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 40px 20px;
 }
 
 .underline_wallpaper{
@@ -50,6 +49,7 @@
 
 .attention{
   width: 88.88%;
+  margin: 40px 0;
 }
 .attention h2 {
   display: flex;
