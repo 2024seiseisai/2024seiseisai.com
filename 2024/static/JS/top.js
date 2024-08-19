@@ -86,9 +86,10 @@ $("#hamburger").click(function(){
 });
 
 $("header").hover(function(){
-    if(header === "hide"){
+    $(".click_hide").css("pointer-events","auto");
+    setTimeout(function(){
         $(".click_hide").css("pointer-events","auto");
-    }
+    },1000);
 });
 
 
