@@ -5,11 +5,11 @@ main{
     padding-top: 0!important;
 }
 
-.humburger{
-    transition: all 0.2s;
+header{
+    transition: all 0.5s;
 }
 
-.humburger:hover{
+header:hover{
     opacity: 1!important;
 }
 
