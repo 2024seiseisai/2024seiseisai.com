@@ -85,6 +85,11 @@ $("#hamburger").click(function(){
     }
 });
 
+$("header").hover(function(){
+    if(header === "hide"){
+        $(".click_hide").css("pointer-events","auto");
+    }
+});
 
 
 
