@@ -379,7 +379,7 @@ article figure img {
   width: 100%;
 }
 article figure figcaption {
-  color: #ffffff;
+  color: black;
 }
 @media only screen and (max-width: 1024px) {
   article figure figcaption {
