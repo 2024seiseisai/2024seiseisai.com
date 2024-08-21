@@ -277,8 +277,52 @@
         <p class="JP_24_Medium m_JP_14_Regular exhibition_top">展示</p>
         <!--  blog.html から拝借, のちにexhibition_title に変更 -->
 
-        <div class="tags_instruction">
-            <!-- 本当にdiv?-->
+        <section class="map">
+            <div class="tabs">
+                <input id="tab_high" class="radio" type="radio" name="map_tab" checked>
+                <label for="tab_high" class="radio_label">高校棟</label>
+                <input id="tab_junior" class="radio" type="radio" name="map_tab">
+                <label for="tab_junior" class="radio_label">中学棟</label>
+            </div>
+            <div class="map_main">
+
+            </div>
+        </section>
+
+        <section class="exhibition_list_section">
+            <ul class="exhibition_lists">
+                <!--デザインを確認するため二つのリストを表示。のちに変更-->
+                <li id="list0" class="each_exhibition_list">
+                    <!-- each_exhibition_listはまだ使用していない -->
+                    <div class="list_img_box">
+                    </div>
+                    <div class="list_body">
+                        <div class="m_JP_12_Medium list_exhibition_place">
+                            高校棟 5年A組
+                        </div>
+                        <div class="m_JP_20_Medium list_exhibition_name">
+                            電子工作部
+                        </div>
+                        <div class="list_related_tags">
+                            <div class="tag tag_stamp_rally">
+                                スタンプラリー
+                            </div>
+                            <div class="tag tag_event">
+                                イベント
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_icon">
+
+                    </div>
+                </li>
+                <li id="list1" class="each_exhibition_list">
+
+                </li>
+            </ul>
+        </section>
+
+        <section class="tags_instruction">
             <div class="tags_instruction_title m_JP_20_Medium">
                 各種タグについて
             </div>
@@ -319,7 +363,7 @@
                     </div>
                 </li>
             </ul>
-        </div>
+        </section>
 
     </main>
     <!--　main ここまで　-->
