@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     // 公開されているページのクラスをリストアップ
     const availablePages = [
-        "Top", "News", "Access","PrivacyPolicy","Contact","Blog","Goods","Special"
+        "Top", "News", "Access","PrivacyPolicy","Contact","Blog","Goods","Special","Reserve",
     ];
 
 // 追加すると勝手に変わるページ一覧　"Top", "ThemeLogo", "News", "Access", "Events", "Exhibition", "Bazaar", "Goods", "Blog", "ClubMagazine", "Special", "Archives", "PrivacyPolicy","Reserve",
