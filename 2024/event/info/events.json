@@ -1,26 +1,52 @@
 {
+    "locations": ["中庭", "体育館"],
     "events": [
         {
-            "name": "中庭",
-            "color": "#FFD600",
-            "event": [
+            "name": "令和の小町コンテスト",
+            "day1": [
                 {
-                    "name": "T-1コンテスト",
-                    "day": 1,
+                    "name": "令和の小町コンテスト\n予選A",
+                    "location": "中庭",
                     "start_h": 10,
                     "start_m": 0,
                     "end_h": 10,
-                    "end_m": 30
+                    "end_m": 30,
+                    "brief": "予選A"
                 },
                 {
-                    "name": "ラブライブ!\nサンスクリット!!",
-                    "day": 1,
-                    "start_h": 11,
-                    "start_m": 10,
-                    "end_h": 11,
-                    "end_m": 30
+                    "name": "令和の小町コンテスト\n予選B",
+                    "location": "中庭",
+                    "start_h": 12,
+                    "start_m": 50,
+                    "end_h": 13,
+                    "end_m": 40,
+                    "summary": "予選B"
                 }
-            ]
+            ],
+            "day2": [
+                {
+                    "name": "令和の小町コンテスト\n決勝",
+                    "location": "中庭",
+                    "start_h": 13,
+                    "start_m": 10,
+                    "end_h": 13,
+                    "end_m": 40,
+                    "summary": "決勝"
+                }
+            ],
+            "summary": "「立てば芍薬 座れば牡丹 歩く姿は百合の花」 菁々祭に咲き乱れる百花繚乱に心を奪われよ…"
+        },
+        {
+            "name": "イケてるメンズコンテスト",
+            "day1": null,
+            "day2": null,
+            "summary": "うにょ"
+        },
+        {
+            "name": "マッスルコンテスト",
+            "day1": null,
+            "day2": null,
+            "summary": "うにょ"
         }
     ]
 }

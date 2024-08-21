@@ -8,7 +8,6 @@
     },
   ],
   "settings": {
-    "liveServer.settings.port": 5501,
     "liveServer.settings.CustomBrowser": null,
     "liveSassCompile.settings.includeItems": ["/*.scss"],
     "liveSassCompile.settings.excludeList": ["/../../**/*.scss"],

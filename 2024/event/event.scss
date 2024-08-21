@@ -1,0 +1,66 @@
+#main_container {
+    margin: 0px;
+    width: 200%;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    font-family: "Noto Sans JP", sans-serif;
+}
+html,body {
+    overflow-x: hidden;
+}
+
+#screen1 {
+    margin: 0px;
+    width: 50%;
+    overflow: hidden;
+}
+#title_img {
+    margin-left: 20px;
+    margin-top: 20px;
+    display: block;
+}
+#title_txt {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0px auto 0px 20px;
+}
+#buttons {
+    margin: 0px;
+    position: relative;
+}
+#arrow {
+    font-weight: 500;
+    font-size: 32px;
+    color: #FF0084;
+    display: flex;
+    padding: 68px 24px 0px 24px;
+}
+#left_arrow {
+    margin: 0px;
+}
+#right_arrow {
+    margin: 0px 0px 0px auto;
+}
+
+#screen2 {
+    margin: 0px;
+    width: 50%;
+    overflow: hidden;
+}
+#return_button {
+    margin: 20px 0 0 20px;
+    cursor: pointer;
+}
+#title2 {
+    margin: 20px 0 0 20px;
+    display: flex;
+}
+#title2_bar {
+    margin: 0;
+    display: block;
+}
+#title2_txt {
+    margin: 0 0 0 12px;
+    font-weight: 500;
+    font-size: 28px;
+}
