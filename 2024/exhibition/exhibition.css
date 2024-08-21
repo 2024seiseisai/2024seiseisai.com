@@ -1,1 +1,43 @@
- 
+@charset "UTF-8";
+
+#main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.exhibition_top_title {
+    margin-top: 20px;
+    width: 140px;
+    vertical-align: top;
+}
+
+.exhibition_top {
+    line-height: 0px;
+    margin-bottom: 20px;
+}
+
+/*---------------------------------------------------------*/
+/* タグ関連 */
+.tags_instruction {
+    display: flow-root;
+    border: solid 2px #FF0084;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    row-gap: 4px;
+}
+
+.tags_instruction_title {
+    color: #FF0084;
+}
+
+.tag {}
+
+/* スタンプラリー */
+.tag_stamp_rally {}
+
+/* イベント */
+.tag_event {}
+
+/*バザー*/
+.tag_buzzer {}
