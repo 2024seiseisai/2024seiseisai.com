@@ -1,21 +1,18 @@
 {
-	"folders": [
-		{
-			"path": "../.."
-		},
-		{
-			"path": "."
-		}
-	],
-	"settings": {
-		"liveServer.settings.port": 5501,
-		"liveServer.settings.CustomBrowser": null,
-		"liveSassCompile.settings.includeItems": [
-    		"/*.scss"
-  		],
-  	"liveSassCompile.settings.excludeList": [
-    		"/../../**/*.scss"
-		],
-		"liveServer.settings.multiRootWorkspaceName": "event"
-	}
+  "folders": [
+    {
+      "path": "../..",
+    },
+    {
+      "path": ".",
+    },
+  ],
+  "settings": {
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.CustomBrowser": null,
+    "liveSassCompile.settings.includeItems": ["/*.scss"],
+    "liveSassCompile.settings.excludeList": ["/../../**/*.scss"],
+    "liveServer.settings.multiRootWorkspaceName": "2024seiseisai.com",
+	  "prettier.tabWidth": 4,
+  },
 }

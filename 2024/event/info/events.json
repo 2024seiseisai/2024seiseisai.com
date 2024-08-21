@@ -1,0 +1,26 @@
+{
+    "events": [
+        {
+            "name": "中庭",
+            "color": "#FFD600",
+            "event": [
+                {
+                    "name": "T-1コンテスト",
+                    "day": 1,
+                    "start_h": 10,
+                    "start_m": 0,
+                    "end_h": 10,
+                    "end_m": 30
+                },
+                {
+                    "name": "ラブライブ!\nサンスクリット!!",
+                    "day": 1,
+                    "start_h": 11,
+                    "start_m": 10,
+                    "end_h": 11,
+                    "end_m": 30
+                }
+            ]
+        }
+    ]
+}
