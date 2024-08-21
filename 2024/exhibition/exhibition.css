@@ -3,6 +3,7 @@
 #main {
     margin-left: 20px;
     margin-right: 20px;
+    font-family: 'Noto Sans JP';
 }
 
 .exhibition_top_title {
@@ -16,8 +17,43 @@
     margin-bottom: 20px;
 }
 
-/*---------------------------------------------------------*/
-/* タグ関連 */
+/*--タグ関連-------------------------------------------------------*/
+
+/*--タグ---------------------------------------*/
+
+/*--タグ共通設定---*/
+.tag {
+    width: fit-content;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
+    font-family: 'Noto Sans JP';
+    font-size: 12px;
+    font-weight: 500px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* スタンプラリー */
+.tag_stamp_rally {
+    background-color: #FF0084;
+}
+
+/* イベント */
+.tag_event {
+    background-color: #04FF00;
+}
+
+/*バザー*/
+.tag_buzzer {
+    background-color: #8A00A9;
+}
+
+/* タグ説明欄 */
+
 .tags_instruction {
     display: flow-root;
     border: solid 2px #FF0084;
@@ -29,15 +65,31 @@
 
 .tags_instruction_title {
     color: #FF0084;
+    padding-bottom: 16px;
 }
 
-.tag {}
+.tags_instruction_body {
+    padding: 0;
+    margin: 0;
+}
 
-/* スタンプラリー */
-.tag_stamp_rally {}
+.tag_instruction_list {
+    align-items: flex-start;
+    display: flex;
+    padding-top: 8px;
+    padding-bottom: 12px;
+}
 
-/* イベント */
-.tag_event {}
+.tag_instruction_tag {
+    min-width: 124px;
+}
 
-/*バザー*/
-.tag_buzzer {}
+.tag_instruction_text {
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: 500px;
+    box-sizing: border-box;
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
+    margin: 0;
+}
