@@ -1,5 +1,5 @@
 #main_container {
-  margin: 0px;
+  margin: 0;
   width: 200%;
   display: flex;
   transition: transform 0.3s ease-in-out;
@@ -8,6 +8,10 @@
 
 html, body {
   overflow-x: hidden;
+}
+
+p {
+  margin: 0;
 }
 
 #screen1 {
@@ -118,4 +122,31 @@ html, body {
   height: 0;
   overflow: hidden;
   transition: 0.15s ease-in-out;
+}
+
+.location {
+  margin: 0 0 20px 32px;
+  position: relative;
+}
+
+.location img {
+  position: absolute;
+}
+
+.location p {
+  margin-left: 36px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23.17px;
+}
+
+.event_summary {
+  padding: 0 10px 32px 32px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20.27px;
+}
+
+.box_space {
+  height: 9px;
 }/*# sourceMappingURL=event.css.map */

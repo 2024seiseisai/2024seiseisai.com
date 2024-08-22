@@ -1,3 +1,12 @@
+function GetLocationInfo(arr, day) {
+    if (arr.length == 0) return "";
+    let res = `<div class="location"><img src="/2024/event/img/map_pin.svg"><p>【${day}日目】</p>`;
+    arr.forEach((val) => {
+        res += `<p>　${val.location}　${val.start_h}:${("00" + val.start_m).slice(-2)}-${val.end_h}:${("00" + val.end_m).slice(-2)}　${val.summary === undefined ? "" : val.summary}</p>`;
+    });
+    res += "</div>";
+    return res;
+}
 $(document).ready(async () => {
     let json = await fetch("./info/events.json");
     events = JSON.parse(await json.text());
@@ -14,7 +23,10 @@ $(document).ready(async () => {
         <p class="acc_title">${event.name}</p>
     </div>
     <div class="acc_box">
-    <p style="margin: 0">あああああ<br>いいいいい<br>ううううう<br>えええええ</p>
+        <div class="box_space"></div>
+        ${GetLocationInfo(event.day1, 1)}
+        ${GetLocationInfo(event.day2, 2)}
+        <p class="event_summary">${event.summary}</p>
     </div>
 </div>
 `
