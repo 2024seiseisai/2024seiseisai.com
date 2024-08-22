@@ -75,8 +75,8 @@ header {
     cursor: url(/2024/static/img/logo.svg),pointer;
 }
 
-.header_reserve_btn{
-    margin: 0 25px 0 0;
+.header_reserve_btn a{
+    margin: 0 10px 0 40px;
     border: 3px solid #FFFFFF;
     border-radius: 15px;
     width: 184px;
@@ -85,6 +85,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
     
 .header_reserve{
@@ -794,6 +795,10 @@ footer{
     .footer_nav_SNS_img{
         width: 8px;
         height: 8px;
+    }
+
+    .header_reserve_btn{
+        display: none;
     }
 
 }

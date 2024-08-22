@@ -27,7 +27,7 @@
                     <div class="footer_nav_body_item_container">
                         <a href="/2024/event/event.html" class="footer_nav_body_item unfinished Events">Events</a>
                         <a href="/2024/exhibition/exhibition.html" class="footer_nav_body_item unfinished Exhibition">Exhibition</a>
-                        <a href="/2024/bazzar/bazza.htmlr" class="footer_nav_body_item unfinished Bazaar">Bazaar</a>
+                        <a href="/2024/bazzar/bazzar.html" class="footer_nav_body_item unfinished Bazaar">Bazaar</a>
                         <a href="/2024/goods/goods.html" class="footer_nav_body_item unfinished Goods">Goods</a>
                     </div>
                 </div>
@@ -35,9 +35,9 @@
                     <h6 class="footer_nav_body_title_English">Contents</h6>
                     <div class="footer_nav_body_item_container">
                         <a href="/2024/blog/blog.html" class="footer_nav_body_item unfinished Blog">Blog</a>
-                        <a href="" class="footer_nav_body_item unfinished ClubMagazine">Club Magazine</a>
+                        <a href="/2024/downloads/downloads.html" class="footer_nav_body_item unfinished ClubMagazine">Downloads</a>
                         <a href="/2024/special/special.html" class="footer_nav_body_item unfinished Special">Special</a>
-                        <a href="/2024/archives/archives.html" class="footer_nav_body_item unfinished Archives">Archives</a>
+                        <a href="/2024/gallary/gallary.html" class="footer_nav_body_item unfinished Archives">Gallary</a>
                     </div>
                 </div>
                 <div class="footer_nav_body footer_show">
