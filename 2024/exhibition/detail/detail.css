@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Noto Sans JP';
+    overflow: scroll;
+}
+
+.exhibition_title_box {
+    display: flex;
+}
+
+.title_img_box {
+    width: 56px;
+    height: 56px;
+    border-width: 4px;
+    border-color: #0085FF;
+    border-radius: 100%;
+    border-style: solid;
+}
+
+.title_img {
+    width: 56px;
+    height: 56px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+
+.title_body {
+    padding-left: 20px;
+}
