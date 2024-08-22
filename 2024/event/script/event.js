@@ -2,7 +2,7 @@ function GetLocationInfo(arr, day) {
     if (arr.length == 0) return "";
     let res = `<div class="location"><img src="/2024/event/img/map_pin.svg"><p>【${day}日目】</p>`;
     arr.forEach((val) => {
-        res += `<p>　${val.location}　${val.start_h}:${("00" + val.start_m).slice(-2)}-${val.end_h}:${("00" + val.end_m).slice(-2)}　${val.summary === undefined ? "" : val.summary}</p>`;
+        res += `<p>　${val.location}　${("00" + val.start_h).slice(-2)}:${("00" + val.start_m).slice(-2)}-${("00" + val.end_h).slice(-2)}:${("00" + val.end_m).slice(-2)}　${val.summary === undefined ? "" : val.summary}</p>`;
     });
     res += "</div>";
     return res;
@@ -10,13 +10,15 @@ function GetLocationInfo(arr, day) {
 $(document).ready(async () => {
     let json = await fetch("./info/events.json");
     events = JSON.parse(await json.text());
-    let events_list = document.getElementById("events_list");
-    let cnt = 0;
-    events.events.forEach((event) => {
-        cnt += 1;
-        events_list.insertAdjacentHTML(
-            "beforeend",
-            `
+
+    {
+        let events_list = document.getElementById("events_list");
+        let cnt = 0;
+        events.events.forEach((event) => {
+            cnt += 1;
+            events_list.insertAdjacentHTML(
+                "beforeend",
+                `
 <div class="events_acc">
     <div class="acc_button">
         <img src="/2024/event/img/acc_play.svg" class="acc_button_img">
@@ -30,28 +32,45 @@ $(document).ready(async () => {
     </div>
 </div>
 `
-        );
-    });
-    let acc = document.querySelectorAll(".acc_button");
-    acc.forEach((element) => {
-        element.addEventListener("click", () => {
-            acc.forEach((element2) => {
-                if (element === element2) return;
-                let accbox = element2.nextElementSibling;
-                if (element2.classList.contains("acc_open")) {
-                    accbox.style.height = "0";
-                    element2.classList.remove("acc_open");
-                }
-            });
-            let accbox = element.nextElementSibling;
-            if (element.classList.contains("acc_open")) {
-                accbox.style.height = "0";
-            } else {
-                accbox.style.height = accbox.scrollHeight + "px";
-            }
-            element.classList.toggle("acc_open");
+            );
         });
-    });
+    }
+
+    {
+        let acc = document.querySelectorAll(".acc_button");
+        acc.forEach((element) => {
+            element.addEventListener("click", () => {
+                acc.forEach((element2) => {
+                    if (element === element2) return;
+                    let accbox = element2.nextElementSibling;
+                    if (element2.classList.contains("acc_open")) {
+                        accbox.style.height = "0";
+                        element2.classList.remove("acc_open");
+                    }
+                });
+                let accbox = element.nextElementSibling;
+                if (element.classList.contains("acc_open")) {
+                    accbox.style.height = "0";
+                } else {
+                    accbox.style.height = accbox.scrollHeight + "px";
+                }
+                element.classList.toggle("acc_open");
+            });
+        });
+    }
+
+    {
+        let elements = [document.getElementById("day1_button"), document.getElementById("day2_button")];
+        elements.forEach((element, index) => {
+            element.addEventListener("click", () => {
+                if (element.classList.contains("day_selected")) return;
+                element.firstElementChild.style.opacity = "100%";
+                elements[1 - index].firstElementChild.style.opacity = "0%";
+                element.classList.toggle("day_selected");
+                elements[1 - index].classList.toggle("day_selected");
+            });
+        });
+    }
 });
 function PushLeftArrow() {}
 function PushRightArrow() {

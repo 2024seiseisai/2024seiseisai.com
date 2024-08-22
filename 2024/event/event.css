@@ -6,7 +6,8 @@
   font-family: "Noto Sans JP", sans-serif;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -14,10 +15,15 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
 #screen1 {
   margin: 0px;
   width: 50%;
   overflow: hidden;
+  position: relative;
 }
 
 #title_img {
@@ -37,10 +43,65 @@ p {
   position: relative;
 }
 
+#day_button {
+  top: 75px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+#day1_button {
+  cursor: pointer;
+  position: relative;
+}
+
+#day2_button {
+  cursor: pointer;
+  position: relative;
+  margin-left: 8px;
+}
+
+.day_color {
+  position: absolute;
+  transition: opacity 0.15s ease-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.day_mono {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+#day2_button .day_color {
+  opacity: 0%;
+}
+
+#day1_button p {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+#day2_button p {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 #arrow {
   font-weight: 500;
   font-size: 32px;
-  color: #FF0084;
+  color: #ff0084;
   display: flex;
   padding: 68px 24px 0px 24px;
 }
@@ -48,11 +109,13 @@ p {
 #left_arrow {
   cursor: pointer;
   margin: 0px;
+  z-index: 4;
 }
 
 #right_arrow {
   cursor: pointer;
   margin: 0px 0px 0px auto;
+  z-index: 4;
 }
 
 #screen2 {
@@ -97,6 +160,9 @@ p {
   margin: 17px 0 0 10px;
   position: absolute;
   transition: 0.15s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .acc_open .acc_button_img {
@@ -131,6 +197,9 @@ p {
 
 .location img {
   position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .location p {
