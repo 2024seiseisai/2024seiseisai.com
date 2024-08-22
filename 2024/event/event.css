@@ -42,22 +42,24 @@ html, body {
 }
 
 #left_arrow {
+  cursor: pointer;
   margin: 0px;
 }
 
 #right_arrow {
+  cursor: pointer;
   margin: 0px 0px 0px auto;
 }
 
 #screen2 {
-  margin: 0px;
+  margin: 0;
   width: 50%;
   overflow: hidden;
 }
 
 #return_button {
-  margin: 20px 0 0 20px;
   cursor: pointer;
+  margin: 20px 0 0 20px;
 }
 
 #title2 {
@@ -74,4 +76,46 @@ html, body {
   margin: 0 0 0 12px;
   font-weight: 500;
   font-size: 28px;
+}
+
+#events_list {
+  margin-bottom: 80px;
+  transition: margin-bottom 0.15s ease-in-out;
+}
+
+.events_acc {
+  margin: 20px 20px 0 20px;
+  background-color: rgba(255, 0, 132, 0.15);
+  position: relative;
+}
+
+.acc_button_img {
+  margin: 17px 0 0 10px;
+  position: absolute;
+  transition: 0.15s ease-in-out;
+}
+
+.acc_open .acc_button_img {
+  margin: 17px 0 0 10px;
+  position: absolute;
+  transform: rotate(90deg);
+  transition: 0.15s ease-in-out;
+}
+
+.acc_title {
+  margin: 0;
+  padding: 8px 0 0 32px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.acc_button {
+  cursor: pointer;
+  height: 69px;
+}
+
+.acc_box {
+  height: 0;
+  overflow: hidden;
+  transition: 0.15s ease-in-out;
 }/*# sourceMappingURL=event.css.map */
