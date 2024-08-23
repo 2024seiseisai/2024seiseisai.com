@@ -130,7 +130,7 @@ img {
 }
 
 #title2 {
-  margin: 20px 0 0 20px;
+  margin: 20px 0 40px 20px;
   display: flex;
 }
 
@@ -143,6 +143,26 @@ img {
   margin: 0 0 0 12px;
   font-weight: 500;
   font-size: 28px;
+}
+
+#announce_rain {
+  margin: 0 20px 40px 20px;
+  border: 2px solid #ff0084;
+}
+
+#announce1 {
+  margin: 20px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28.96px;
+  color: #ff0084;
+}
+
+#announce2 {
+  margin: 0 20px 20px 20px;
+  font-weight: 500;
+  font-size: 14.5px;
+  line-height: 20.27px;
 }
 
 #events_list {
@@ -181,7 +201,6 @@ img {
 
 .acc_button {
   cursor: pointer;
-  height: 69px;
 }
 
 .acc_box {
@@ -218,4 +237,29 @@ img {
 
 .box_space {
   height: 9px;
+}
+
+.ticket_space {
+  margin: 4px 0 0 32px;
+  height: 28px;
+}
+
+.ticket_box {
+  position: relative;
+  width: 64px;
+  display: flex;
+  justify-content: center;
+}
+
+.ticket_box p {
+  font-weight: 500;
+  font-size: 12px;
+  color: #ffffff;
+  position: relative;
+}
+
+.ticket_box img {
+  position: absolute;
+  top: 0;
+  left: 0;
 }/*# sourceMappingURL=event.css.map */

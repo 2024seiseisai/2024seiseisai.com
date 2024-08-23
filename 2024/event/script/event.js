@@ -11,6 +11,26 @@ $(document).ready(async () => {
     let json = await fetch("./info/events.json");
     events = JSON.parse(await json.text());
 
+    if (events.is_rainy.day1 != "none" || events.is_rainy.day2 != "none") {
+        let events_list = document.getElementById("events_list");
+        events_list.insertAdjacentHTML(
+            "beforebegin",
+            `
+<div id="announce_rain">
+    <p id="announce1">
+        ${events.is_rainy.day1 == "all" && events.is_rainy.day2 == "none" ? "1日目(9/7)はすべて雨天スケジュールでの開催となりました。" : ""}
+        ${events.is_rainy.day1 == "partial" && events.is_rainy.day2 == "none" ? "1日目(9/7)は一部雨天スケジュールでの開催となりました。" : ""}
+        ${events.is_rainy.day1 == "none" && events.is_rainy.day2 == "all" ? "2日目(9/8)はすべて雨天スケジュールでの開催となりました。" : ""}
+        ${events.is_rainy.day1 == "none" && events.is_rainy.day2 == "partial" ? "2日目(9/8)は一部雨天スケジュールでの開催となりました。" : ""}
+        ${events.is_rainy.day1 == "all" && events.is_rainy.day2 == "all" ? "今年は両日ともにすべて雨天スケジュールでの開催となりました。" : ""}
+        ${events.is_rainy.day1 == "all" && events.is_rainy.day2 == "partial" ? "今年は両日とも一部雨天スケジュールでの開催となりました。" : ""}
+        ${events.is_rainy.day1 == "partial" && events.is_rainy.day2 == "all" ? "今年は両日とも一部雨天スケジュールでの開催となりました。" : ""}</p>
+    <p id="announce2">雨天スケジュールに変更されたため、このページに記載の時間は正しくないことがあります。詳しくは雨天スケジュールをご確認ください。</p>
+</div>
+`
+        );
+    }
+
     {
         let events_list = document.getElementById("events_list");
         let cnt = 0;
@@ -23,6 +43,11 @@ $(document).ready(async () => {
     <div class="acc_button">
         <img src="/2024/event/img/acc_play.svg" class="acc_button_img">
         <p class="acc_title">${event.name}</p>
+        <div class="ticket_space">
+            <div class="ticket_box">
+                ${event.ticket === true ? '<img src="/2024/event/img/ticket_box.svg"><p>要整理券</p>' : ""}
+            </div>
+        </div>
     </div>
     <div class="acc_box">
         <div class="box_space"></div>
