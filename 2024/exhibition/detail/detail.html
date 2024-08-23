@@ -278,22 +278,31 @@
 
 
     <main>
-        <section>
+        <section id="section_title">
             <h1 class="exhibition_title_box">
+                <!--
+                <a href="../exhibition.html">
+                    <img src="../img/arrow-back.svg" id="exhibition_arrow-back" alt="記事一覧に戻る">
+                </a>
+                -->
                 <div class="title_img_box">
                     <img src="/2024/static/img/logo.svg" alt="" class="title_img">
                 </div>
                 <div class="title_body">
-                    <div class="m_JP_12_Medium title_exhibition_place">
+                    <a href="../exhibition.html" id="title_exhibition_place" class="m_JP_12_Medium">
                         高校棟 5年A組
-                    </div>
-                    <div class="m_JP_20_Medium exhibition_title">
+                    </a>
+                    <div id="title_exhibition_name" class="m_JP_20_Medium ">
                         電子工作部
                     </div>
                 </div>
+
+
             </h1>
-            <img>
-            <p>
+            <div id="exhibition_img_box">
+                <img>
+            </div>
+            <p id="exhibition_desctiption" class="m_JP_12_Medium">
                 電子工作部ではロボットや実際に遊べるゲームなど、部員が作った作品を多数展示しています。6E教室までお気軽にお越しください！また、プログラミングとロボコンの講習会をそれぞれ行います。インフォメーションで整理券を入手した上で、ご参加ください。
             </p>
         </section>
@@ -302,19 +311,72 @@
             <h2>
                 イベント開催情報
             </h2>
+            <div id="event_place">
+                <img src="../img/pin-right.svg" alt="" id="event_place_icon">
+                <p id="event_place_text" class="m_JP_20_Regular">
+                    プログラミング教室
+                </p>
+            </div>
+            <div id="event_detail">
+                <p id="event_detail_text" class="m_JP_14_Regular">
+                    詳細情報はこちらから
+                </p>
+                <!--「から」がいらん気がする-->
+                <img src="/2024/static/img/arrow-right-circle.svg" alt="見る" id="event_detail_icon">
+            </div>
             <h2>
                 部誌
             </h2>
+            <div id="journal">
+                <p id="journal_text" class="m_JP_16_Regular">
+                    電子工作部の部誌
+                </p>
+                <button type="button" id="journal_button" class="ripple_effect">
+                    <p id="journal_button_text" class="m_JP_12_Medium">ダウンロード</p>
+                    <img src="../img/download.svg" id="journal_button_icon">
+                </button>
+                <!--ripple_effectは未実装-->
+            </div>
             <h2>
                 SNS
             </h2>
-            <h2>
-                関連コンテンツ
-            </h2>
+            <div id="SNS">
+                <a>
+                    <div id="SNS_id_0" class="SNS_content">
+                        <img src="../img/twitter.svg" class="SNS_icon">
+                        <p class="SNS_text">
+                            X (旧Twitter)
+                        </p>
+                        <img src="../img/external-link.svg" class="SNS_external_link">
+                    </div>
+                </a>
+                <a>
+                    <div id="SNS_id_0" class="SNS_content">
+                        <img src="../img/twitter.svg" class="SNS_icon">
+                        <p class="SNS_text">
+                            x(旧Twitter)
+                        </p>
+                        <img src="../img/external-link.svg" class="SNS_external_link">
+                    </div>
+                </a>
+                <a>
+                    <div id="SNS_id_0" class="SNS_content">
+                        <img src="../img/twitter.svg" class="SNS_icon">
+                        <p class="SNS_text">
+                            x(旧Twitter)
+                        </p>
+                        <img src="../img/external-link.svg" class="SNS_external_link">
+                    </div>
+                </a>
+            </div>
+
+            <!--関連コンテンツは一旦作らず-->
         </section>
 
-        <section>
-
+        <section id="section_go_back">
+            <a href="../exhibition.html" id="go_back_bottom" class="m_JP_14_Medium">
+                ＜　一覧に戻る
+            </a>
         </section>
 
     </main>

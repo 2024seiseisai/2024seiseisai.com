@@ -8,8 +8,37 @@ main {
     overflow: scroll;
 }
 
+h2 {
+    color: #FF0084;
+    font-family: 'Noto Sans JP';
+    font-size: 20px;
+    font-weight: 500;
+    font-style: bold;
+}
+
+main>section {
+    padding: 20px 0;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*--展示説明欄関係-------------------------------------------------*/
+
+#section_title {
+    padding-top: 0;
+}
+
 .exhibition_title_box {
     display: flex;
+    margin-top: 20px;
+}
+
+#exhibition_arrow-back {
+    width: 30px;
+    height: 30px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-right: 20px;
 }
 
 .title_img_box {
@@ -30,4 +59,152 @@ main {
 
 .title_body {
     padding-left: 20px;
+}
+
+#title_exhibition_place {
+    display: block;
+    color: #FF0084;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0;
+    padding-bottom: 0px;
+    margin-top: 9px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#exhibition_img_box {
+    width: 100%;
+    aspect-ratio: 320/270;
+    overflow: hidden;
+    background-color: #D9D9D9;
+    margin-top: 30px;
+}
+
+#exhibition_desctiption {
+    margin-top: 20px;
+    margin-bottom: 0;
+    line-height: 20px;
+}
+
+/*--展示説明欄関係おわり--------------------------------------*/
+/*--イベント情報関連------------------------------------------*/
+
+#event_place {
+    display: flex;
+    margin: 0;
+}
+
+#event_place_text {
+    margin: 0;
+    padding-left: 20px;
+}
+
+#event_detail {
+    display: flex;
+    margin-top: 9px;
+    height: 20px;
+}
+
+#event_detail_text {
+    margin: 0;
+    padding-left: 52px;
+    padding-right: 16px;
+}
+
+#event_detail_icon {
+    height: 20px;
+    width: 20px;
+}
+
+/*--イベント情報関連おわり------------------------------------*/
+/*--部誌関連-------------------------------------------------*/
+
+#journal {
+    display: flex;
+    height: 23px;
+    margin: 0;
+}
+
+#journal_text {
+    margin: 0;
+    padding-left: 20px;
+}
+
+#journal_button {
+    display: flex;
+    width: 116px;
+    height: 21px;
+    color: #FFFFFF;
+    background-color: #FF0084;
+    border-radius: 4px;
+    border: 1px solid #FF0084;
+    padding: 2px 8px;
+    margin: 1px 20px 1px auto;
+}
+
+.ripple_effect {}
+
+#journal_button_text {
+    margin: 0;
+    width: 72px;
+}
+
+#journal_button_icon {
+    margin: 0 0 0 auto;
+}
+
+/*--部誌関連おわり--------------------------------------------*/
+/*--SNS関連--------------------------------------------------*/
+
+#SNS {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.SNS_content {
+    display: flex;
+}
+
+.SNS_icon {
+    width: 24px;
+    height: 24px;
+}
+
+.SNS_text {
+    margin: 0 7px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: 400px;
+    font-style: bold;
+}
+
+.SNS_external_link {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+#SNS_id_0 {}
+
+/*--SNS関連おわり---------------------------------------------*/
+/*--関連コンテンツ関連----------------------------------------*/
+
+
+
+/*--関連コンテンツ関連おわり-----------------------------------*/
+
+/*一覧に戻る*/
+
+#section_go_back {
+    padding-bottom: 80px;
+}
+
+#go_back_bottom {
+    color: black;
+    text-decoration: none;
 }
