@@ -156,6 +156,7 @@
   height: 40px;
   top: 70px;
   left: 4%;
+  opacity:60%;
 }
 .blog_back_arrow_1:hover {
   transform: scale(1.1);
@@ -168,6 +169,7 @@
     margin-top: 100px;
     left: 7%;
     transition: transform 0.3s;
+    opacity:70%;
   }
   .blog_back_arrow_1:hover {
     transform: scale(1.1);
