@@ -1,3 +1,5 @@
+//import Splide from "@splidejs/splide";
+
 function GetLocationInfo(arr, day) {
     if (arr.length == 0) return "";
     let res = `<div class="location"><img src="/2024/event/img/map_pin.svg"><p>【${day}日目】</p>`;
@@ -23,8 +25,9 @@ $(document).ready(async () => {
         ${events.is_rainy.day1 == "none" && events.is_rainy.day2 == "all" ? "2日目(9/8)はすべて雨天スケジュールでの開催となりました。" : ""}
         ${events.is_rainy.day1 == "none" && events.is_rainy.day2 == "partial" ? "2日目(9/8)は一部雨天スケジュールでの開催となりました。" : ""}
         ${events.is_rainy.day1 == "all" && events.is_rainy.day2 == "all" ? "今年は両日ともにすべて雨天スケジュールでの開催となりました。" : ""}
-        ${events.is_rainy.day1 == "all" && events.is_rainy.day2 == "partial" ? "今年は両日とも一部雨天スケジュールでの開催となりました。" : ""}
-        ${events.is_rainy.day1 == "partial" && events.is_rainy.day2 == "all" ? "今年は両日とも一部雨天スケジュールでの開催となりました。" : ""}</p>
+        ${events.is_rainy.day1 == "all" && events.is_rainy.day2 == "partial" ? "今年は一部雨天スケジュールでの開催となりました。" : ""}
+        ${events.is_rainy.day1 == "partial" && events.is_rainy.day2 == "all" ? "今年は一部雨天スケジュールでの開催となりました。" : ""}
+        ${events.is_rainy.day1 == "partial" && events.is_rainy.day2 == "partical" ? "今年は両日ともに一部雨天スケジュールでの開催となりました。" : ""}</p>
     <p id="announce2">雨天スケジュールに変更されたため、このページに記載の時間は正しくないことがあります。詳しくは雨天スケジュールをご確認ください。</p>
 </div>
 `
@@ -96,11 +99,20 @@ $(document).ready(async () => {
             });
         });
     }
+
+    new Splide(".splide", {
+        type: "loop",
+        speed: 400,
+        fixedHeight: "1047px",
+        gap: "16px",
+        pagination: false,
+        easing: "ease-in-out",
+        noDrag: "",
+        dragMinThreshold: 20,
+        keyboard: true,
+    }).mount();
 });
-function PushLeftArrow() {}
-function PushRightArrow() {
-    document.querySelector("#main_container").style.transform = "translateX(-50%)";
-}
 function PushReturnButton() {
     document.querySelector("#main_container").style.transform = "translateX(0%)";
+    //document.querySelector("#main_container").style.transform = "translateX(-50%)";
 }

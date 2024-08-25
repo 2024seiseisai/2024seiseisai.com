@@ -118,6 +118,44 @@ img {
   z-index: 4;
 }
 
+#time_table {
+  padding: 67px 19px 0 21px;
+}
+
+#rain_guide {
+  margin: 80px 20px 40px 20px;
+  border: 2px solid #ff0084;
+}
+
+#ticket_guide {
+  margin: 0 20px 80px 20px;
+  border: 2px solid #ff0084;
+}
+
+.guide_box {
+  display: flex;
+}
+
+#rain_guide img,
+#ticket_guide img {
+  display: block;
+  margin: 8px 0 0 8px;
+}
+
+#rain_guide h2,
+#ticket_guide h2 {
+  margin: 9px 0 0 20px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#rain_guide p,
+#ticket_guide p {
+  margin: 12px 10px 8px 10px;
+  font-weight: 500;
+  font-size: 14.5px;
+}
+
 #screen2 {
   margin: 0;
   width: 50%;
