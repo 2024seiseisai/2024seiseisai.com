@@ -1,28 +1,30 @@
 main{
     display: block;
     text-align: center;
+    background-image: none;
 }
 .title{
     text-align: left;
 }
 .titlebox{
-    display:inline-flex;
+    overflow:auto;
 }
 .num{
     color: #FFFFFF;
     background-color: #FFB156;
-    text-align: left;
+    float: left;
 }
 .item{
-    text-align: left;
+    float: left;
 }
 .price{
-    text-align: right;
+    float: right;
 }
 .sibi{
-    text-align: right;
+    float: right;
 }
 .description{
+    float: none;
     text-align: left;
 	display: inline-block;
 }
