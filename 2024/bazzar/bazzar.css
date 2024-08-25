@@ -1,0 +1,28 @@
+main{
+    display: block;
+    text-align: center;
+}
+.title{
+    text-align: left;
+}
+.titlebox{
+    display:inline;
+}
+.num{
+    color: #FFFFFF;
+    background-color: #FFB156;
+    text-align: left;
+}
+.item{
+    text-align: left;
+}
+.price{
+    text-align: right;
+}
+.sibi{
+    text-align: right;
+}
+.description{
+    text-align: left;
+	display: inline-block;
+}
