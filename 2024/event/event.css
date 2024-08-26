@@ -44,7 +44,7 @@ img {
 }
 
 #day_button {
-  top: 75px;
+  top: 0px;
   width: 100%;
   position: absolute;
   display: flex;
@@ -103,19 +103,23 @@ img {
   font-size: 32px;
   color: #ff0084;
   display: flex;
-  padding: 68px 24px 0px 24px;
+  margin: 68px 24px 0px 24px;
+}
+
+#arrow p {
+  cursor: pointer;
+  z-index: 4;
 }
 
 #left_arrow {
   cursor: pointer;
   margin: 0px;
-  z-index: 4;
+  padding: 0 20px 0 0;
 }
 
 #right_arrow {
-  cursor: pointer;
   margin: 0px 0px 0px auto;
-  z-index: 4;
+  padding: 0 0 0 20px;
 }
 
 #time_table {

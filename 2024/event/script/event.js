@@ -100,9 +100,10 @@ $(document).ready(async () => {
         });
     }
 
-    new Splide(".splide", {
+    let splide = new Splide(".splide", {
         type: "loop",
         speed: 400,
+        arrows: false,
         fixedHeight: "1047px",
         gap: "16px",
         pagination: false,
@@ -111,6 +112,12 @@ $(document).ready(async () => {
         dragMinThreshold: 20,
         keyboard: true,
     }).mount();
+    document.getElementById("left_arrow").addEventListener("click", () => {
+        splide.go("-1");
+    });
+    document.getElementById("right_arrow").addEventListener("click", () => {
+        splide.go("+1");
+    });
 });
 function PushReturnButton() {
     document.querySelector("#main_container").style.transform = "translateX(0%)";
