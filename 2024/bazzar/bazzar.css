@@ -1,30 +1,60 @@
 main{
     display: block;
     text-align: center;
-    background-image: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 2790px;
 }
 .title{
     text-align: left;
 }
+.titleimg{
+    width: 45%;
+    height: auto;
+    margin-top: 20px;
+}
+.title_text{
+    margin-top: 0%;
+}
 .titlebox{
     overflow:auto;
+}
+.map{
+    width:90%;
+    height:auto;
+}
+.bazzar{
+    margin-top: 32px;
 }
 .num{
     color: #FFFFFF;
     background-color: #FFB156;
     float: left;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 32px;
+    height: 32px;
 }
 .item{
     float: left;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 12px;
 }
 .price{
     float: right;
-}
-.sibi{
-    float: right;
+    margin-top: 0%;
 }
 .description{
     float: none;
     text-align: left;
 	display: inline-block;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.cash{
+    float: right;
+    width: 40px;
+    height: auto;
+    margin-right: 5%;
 }
