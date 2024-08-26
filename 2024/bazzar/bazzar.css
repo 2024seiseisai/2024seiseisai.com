@@ -16,15 +16,15 @@ main{
 .title_text{
     margin-top: 0%;
 }
-.titlebox{
-    overflow:auto;
-}
 .map{
     width:90%;
     height:auto;
 }
 .bazzar{
     margin-top: 32px;
+}
+.titlebox{
+    overflow:auto;
 }
 .num{
     color: #FFFFFF;
@@ -53,8 +53,65 @@ main{
     margin-right: 5%;
 }
 .cash{
+    color:#FFFFFF;
+    background-color: #FF0084;
     float: right;
     width: 40px;
-    height: auto;
+    height: 24px;
+    margin-top: 0%;
     margin-right: 5%;
+}
+.shop{
+    overflow:auto;
+    margin-top: 32px;
+}
+.icon{
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+.shopbox{
+    float: right;
+    margin-left: 20px;
+}
+.room{
+    color: #FFFFFF;
+    float: left;
+    width: 68px;
+    height: 22px;
+    margin-left: 20px;
+    margin-right: 50px;
+
+    border-radius: 4px;
+}
+.blue{
+    background: #0085FF;
+}
+.red{
+    background: #FF3C00;
+}
+.club{
+    float: left;
+    margin-top: 12px;
+}
+.shop_scr{
+    margin-left: 25%;
+    text-align: left;
+}
+.kinken{
+    overflow:auto;
+}
+.kinken_box{
+    background: #FF0084;
+    float: left;
+    width: 4px;
+    height: 32px;
+}
+.kinken_title{
+    float: left;
+    margin-top: 0%;
+    margin-left: 8px;
+}
+.kinken_scr{
+    text-align: left;
 }
