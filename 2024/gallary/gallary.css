@@ -815,3 +815,56 @@ footer{
 .hide{
     display: none!important;
 }
+
+/* ここから追加
+スマホ版 */
+
+
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.contact_logo{
+    height: 32px;
+    margin-top: 20px;
+}
+
+.gallary_japanese{
+    font-size: 14px;
+    font-family: "Noto Sans JP";
+    font-weight: 400;
+    color: #000000;
+}
+
+.gallary_content{
+    margin-top: 25px;
+    font-size: 14px;
+    font-family: "Noto Sans JP";
+    font-weight: 500;
+    color: #000000;
+}
+
+.img_total{
+    margin-top: 25px;
+}
+
+.gallary_img_line{
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.gallary_goods_selling{
+    position: relative;
+}
+
+.gallary_goods_selling_img{
+    width: 100px;
+}
+
+.gallary_goods_selling_two_squares{
+    width: 20px;
+    position: absolute;
+    top: 75px;
+    left: 75px;
+}
