@@ -1,13 +1,6 @@
-#main_container {
-    margin: 0;
-    width: 200%;
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-    font-family: "Noto Sans JP", sans-serif;
-}
 html,
 body {
-    overflow-x: hidden;
+    font-family: "Noto Sans JP", sans-serif;
 }
 p {
     margin: 0;
@@ -16,12 +9,6 @@ img {
     display: block;
 }
 
-#screen1 {
-    margin: 0px;
-    width: 50%;
-    overflow: hidden;
-    position: relative;
-}
 #title_img {
     margin-left: 20px;
     margin-top: 20px;
@@ -224,11 +211,6 @@ img {
     font-size: 14.5px;
 }
 
-#screen2 {
-    margin: 0;
-    width: 50%;
-    overflow: hidden;
-}
 #return_button {
     cursor: pointer;
     margin: 20px 0 0 20px;
