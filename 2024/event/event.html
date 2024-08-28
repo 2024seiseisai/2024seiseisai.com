@@ -49,6 +49,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <!--Google Fonts-->
+
+    <!--Splide.js-->
+    <link rel="stylesheet" href="/2024/special/splide/splide-skyblue.min.css">
+    <script src="/2024/special/splide/splide.min.js"></script>
+    <!--Splide.js-->
+
 </head>
 <body>
     <header style="display: flex;">
@@ -250,13 +256,64 @@
         </div>
     </div>
 
-
-    
-
     <main>
+
+        <img id="title_img" src="/2024/event/img/title.svg">
+        <p id="title_txt">イベント</p>
+        <div id="buttons">
+            <div id="arrow">
+                <p id="left_arrow">＜</p>
+                <p id="right_arrow">＞</p>
+            </div>
+            <div id="day_button">
+                <div id="day1_button" class="day_selected">
+                    <img src="/2024/event/img/day1.svg" class="day_color">
+                    <img src="/2024/event/img/day1_mono.svg" class="day_mono">
+                    <p>9.07 sat</p>
+                </div>
+                <div id="day2_button">
+                    <img src="/2024/event/img/day2.svg" class="day_color">
+                    <img src="/2024/event/img/day2_mono.svg" class="day_mono">
+                    <p>9.08 sun</p>
+                </div>
+            </div>
+        </div>
+        <div id="time_table_title">
+            <div id="time_table_title_box">
+                <section class="splide" id="sub_slide" aria-label="場所の名前">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="time_table">
+            <section class="splide" id="main_slide" aria-label="タイムテーブル">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div id="rain_guide">
+            <div class="guide_box">
+                <img src="/2024/event/img/cloud_rain.svg">
+                <h2>雨天時について</h2>
+            </div>
+            <p>雨天時は中庭・転心殿前・グラウンドのイベントはすべて中止になります。雨天時のスケジュールをご確認ください。</p>
+        </div>
+        <div id="ticket_guide">
+            <div class="guide_box">
+                <img src="/2024/event/img/cloud_rain.svg">
+                <h2>整理券について</h2>
+            </div>
+            <p>「要整理券」のマークの付いたイベントには整理券が必要です。各種整理券は整理券配布場所にてイベント開始の一時間前から配布します。</p>
+        </div>
 
     </main>
     <!--　main ここまで　-->
+
     <footer>
         <div class="footer_logo">
             <a href="/2024/index.html" class="footer_logo_img">
@@ -344,6 +401,6 @@
 <!--script-->
 <script src="/2024/static/js/common.js"></script>
 
-
+<script src="/2024/event/script/event.js"></script>
 
 </html>
