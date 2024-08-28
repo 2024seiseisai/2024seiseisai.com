@@ -1,15 +1,17 @@
-const modal = $("#js-modal");
-const overlay = $("#js-overlay");
-const close = $("#js-close"); // 追記
-const open = $("#js-open");
+$(function(){
+	// 変数に要素を入れる
+	var open = $('.modal-open'),
+		close = $('.modal-close'),
+		container = $('.modal-container');
 
-open.on('click', function () { //ボタンをクリックしたら
-  modal.addClass("open"); // modalクラスにopenクラス付与
-  overlay.addClass("open"); // overlayクラスにopenクラス付与
-});
+	//開くボタンをクリックしたらモーダルを表示する
+	open.on('click',function(){	
+		container.addClass('active');
+		return false;
+	});
 
-// 追記
-close.on('click', function () { //×ボタンをクリックしたら
-  modal.removeClass("open"); // modalクラスからopenクラスを外す
-  overlay.removeClass("open"); // overlayクラスからopenクラスを外す
+	//閉じるボタンをクリックしたらモーダルを閉じる
+	close.on('click',function(){	
+		container.removeClass('active');
+	})
 });

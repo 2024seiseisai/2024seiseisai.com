@@ -857,6 +857,7 @@ main{
 
 .gallary_goods_selling{
     position: relative;
+
     width: 100px;
 }
 
@@ -881,89 +882,82 @@ main{
 /* ここからモーダルウィンドウ 
 とりあえずサンプルコピーしたやつ*/
 
-.modal {
-width: 65%;
-height: 80%;
-border: 1px solid #000;
-position: fixed;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-background: #fff;
-display: none;
+/*モーダルを開くボタンの設定*/
+
+button{
+    border: none;
+    outline: none; /* クリックしたときに表示される枠線を消す */
+    background: transparent; /* 背景の灰色を消す */
+    padding: 0px 0px;
+    width: 100px;
+    height: 100px;
 }
 
-.modal p {
-position: absolute;
-top: 50%;
-left: 50%;
-text-align: center;
-transform: translate(-50%, -50%);
-z-index: 10;
-font-size: 14px;
+/*モーダル本体の指定 + モーダル外側の背景の指定*/
+.modal-container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: rgba(0,0,0,50%);
+	overflow: auto;
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+    box-sizing: border-box;
 }
 
-.modal-close__wrap {
-position: absolute;
-right: 40px;
-top: 20px;
+/*モーダル本体の擬似要素の指定*/
+.modal-container:before{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
 }
 
-.modal-close {
-background: transparent;
-border-color: transparent;
-padding: 0;
-margin: 0;
-cursor: pointer;
-width: 28px;
-display: block;
-height: 28px;
+.gallary_modal_img_1{
+    margin-top: 98px;
+    margin-left: 20px;
+    height: 452px;
+    text-align: center;
 }
 
-.modal-close span {
-position: relative;
-width: 100%;
-height: 1px;
-background: black;
-display: block;
+/*モーダル本体に「active」クラス付与した時のスタイル*/
+.modal-container.active{
+	opacity: 1;
+	visibility: visible;
 }
+/*モーダル枠の指定*/
+.modal-body{
+	position: absolute;
+	display: inline-block;
+	max-width: 500px;
+	width: 90%;
+    left: 0px;
+}
+/*モーダルを閉じるボタンの指定*/
+.modal-close{
+    position: absolute;
+    margin-top: 63px;
+    margin-left: 15px;
+    width: 40px;
+}
+/*モーダル内のコンテンツの指定*/
+/* .modal_content{
+    width: 100px;
+    height: 100px;
+} */
 
-.modal-close span:nth-child(1) {
-transform: rotate(45deg);
-}
+.gallary_modal_text{
+    position: absolute;
+    margin-top: 50px;
+    width: 360px;
+    height: 120px;
+    border-radius: 20px 20px 0px 0px;
+    background: #FFFFFF;
+    z-index: 10;
 
-.modal-close span:nth-child(2) {
-transform: rotate(-45deg);
-}
-
-.overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: grey;
-    opacity: .6;
-    display: none; /** 追記 **/
-    z-index: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.modal {
-    width: 65%;
-    height: 80%;
-    border: 1px solid #000;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    display: none; /** 追記 **/
-}
-
-.overlay.open {
-    display: block;
-}
-.modal.open {
-    display: block;
+/* あとフォントとかの設定 */
 }
