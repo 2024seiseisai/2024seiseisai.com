@@ -850,12 +850,14 @@ main{
 }
 
 .gallary_img_line{
-    justify-content: space-between;
+    display: flex;
     margin-top: 10px;
+    justify-content: space-between;
 }
 
 .gallary_goods_selling{
     position: relative;
+    width: 100px;
 }
 
 .gallary_goods_selling_img{
@@ -867,4 +869,101 @@ main{
     position: absolute;
     top: 75px;
     left: 75px;
+}
+
+.gallary_cross_img{
+    position: absolute;
+    width: 40px;
+    margin-top: 15px;
+    left: 15px;
+}
+
+/* ここからモーダルウィンドウ 
+とりあえずサンプルコピーしたやつ*/
+
+.modal {
+width: 65%;
+height: 80%;
+border: 1px solid #000;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #fff;
+display: none;
+}
+
+.modal p {
+position: absolute;
+top: 50%;
+left: 50%;
+text-align: center;
+transform: translate(-50%, -50%);
+z-index: 10;
+font-size: 14px;
+}
+
+.modal-close__wrap {
+position: absolute;
+right: 40px;
+top: 20px;
+}
+
+.modal-close {
+background: transparent;
+border-color: transparent;
+padding: 0;
+margin: 0;
+cursor: pointer;
+width: 28px;
+display: block;
+height: 28px;
+}
+
+.modal-close span {
+position: relative;
+width: 100%;
+height: 1px;
+background: black;
+display: block;
+}
+
+.modal-close span:nth-child(1) {
+transform: rotate(45deg);
+}
+
+.modal-close span:nth-child(2) {
+transform: rotate(-45deg);
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: grey;
+    opacity: .6;
+    display: none; /** 追記 **/
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal {
+    width: 65%;
+    height: 80%;
+    border: 1px solid #000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    display: none; /** 追記 **/
+}
+
+.overlay.open {
+    display: block;
+}
+.modal.open {
+    display: block;
 }
