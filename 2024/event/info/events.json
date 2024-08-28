@@ -9,6 +9,21 @@
         "day2": "none"
     },
 
+    "locations": [
+        {
+            "name": "中庭",
+            "color": "#FFD600"
+        },
+        {
+            "name": "体育館",
+            "color": "#FFD600"
+        },
+        {
+            "name": "グラウンド",
+            "color": "#FFD600"
+        }
+    ],
+
     "events": [
         {
             "name": "令和の小町コンテスト",
@@ -47,7 +62,16 @@
         },
         {
             "name": "イケてるメンズコンテスト",
-            "day1": [],
+            "day1": [
+                {
+                    "name": "イケてるメンズコンテスト",
+                    "location": "中庭",
+                    "start_h": 10,
+                    "start_m": 30,
+                    "end_h": 12,
+                    "end_m": 50
+                }
+            ],
             "day2": [],
             "summary": "あああ"
         },

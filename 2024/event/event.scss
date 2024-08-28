@@ -25,6 +25,7 @@ img {
 #title_img {
     margin-left: 20px;
     margin-top: 20px;
+    height: 32px;
     display: block;
 }
 #title_txt {
@@ -37,7 +38,7 @@ img {
     position: relative;
 }
 #day_button {
-    top: 0px;
+    top: 75px;
     width: 100%;
     position: absolute;
     display: flex;
@@ -61,7 +62,7 @@ img {
     user-select: none;
 }
 #day2_button .day_color {
-    opacity: 0%;
+    opacity: 0;
 }
 #day1_button p {
     font-weight: 500;
@@ -76,27 +77,123 @@ img {
     user-select: none;
 }
 #arrow {
+    width: 100%;
     font-weight: 500;
     font-size: 32px;
     color: #ff0084;
     display: flex;
-    margin: 68px 24px 0px 24px;
+    position: absolute;
+    margin: 54px 0 0 0;
 }
 #arrow p {
+    position: relative;
     cursor: pointer;
+    user-select: none;
     z-index: 4;
+    padding: 15px;
+    transition: padding 0.1s;
 }
 #left_arrow {
-    cursor: pointer;
-    margin: 0px;
-    padding: 0 20px 0 0;
+    margin: 0 0 0 9px;
+}
+#left_arrow:active {
+    padding: 15px 20px 15px 10px;
 }
 #right_arrow {
-    margin: 0px 0px 0px auto;
-    padding: 0 0 0 20px;
+    margin: 0 9px 0 auto;
+}
+#right_arrow:active {
+    padding: 15px 10px 15px 20px;
+}
+#time_table_title {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#time_table_title_box {
+    width: 220px;
+}
+.slide_title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #ff0084;
+    text-align: center;
 }
 #time_table {
-    padding: 67px 19px 0 21px;
+    margin: 105px 19px 0 21px;
+}
+.slide_element {
+    position: relative;
+    height: 1047px;
+}
+.table_scale {
+    position: absolute;
+    margin: 0;
+    top: calc(128px * var(--time_index));
+    font-weight: 500;
+    font-size: 16px;
+}
+.table_scale2 {
+    position: absolute;
+    top: calc(128px * ((var(--offset_val) - 540) / 60));
+    left: 66px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 23.17px;
+}
+.table_border {
+    position: absolute;
+    top: calc(12px + 64px * var(--border_index));
+    left: 0;
+    right: 0;
+    margin-left: 40px;
+    height: 1.5px;
+    background-image: linear-gradient(to right, #000 14px, transparent 14px);
+    background-size: 28px 2px;
+}
+.table_element {
+    position: absolute;
+    top: calc(12px + 128px * (var(--start_h) + var(--start_m) / 60 - 9));
+    left: 0;
+    right: 0;
+    margin: 0 20px 0 60px;
+    height: calc(128px * ((var(--end_h) + var(--end_m) / 60) - (var(--start_h) + var(--start_m) / 60)));
+    display: flex;
+    transition: opacity 0.15s ease-out;
+}
+.day2 {
+    opacity: 0;
+}
+.table_element_content {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+.table_element_content p {
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 40px;
+}
+.table_element_content img {
+    display: block;
+    cursor: pointer;
+    margin: 0 20px 0 auto;
+}
+.table_element_bar {
+    width: 6px;
+    height: 100%;
+    background-color: var(--color);
+}
+.table_element_back {
+    background-color: var(--color);
+    height: calc(100% - var(--padding_top) - var(--padding_bottom));
+    width: calc(100% - 6px);
+    margin: var(--padding_top) 0 var(--padding_bottom) 0;
+    opacity: 0.25;
 }
 #rain_guide {
     margin: 80px 20px 40px 20px;
