@@ -1,0 +1,120 @@
+main{
+    display: block;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 2790px;
+}
+.title{
+    text-align: left;
+}
+.titleimg{
+    width: 45%;
+    height: auto;
+    margin-top: 20px;
+}
+.title_text{
+    margin-top: 0%;
+}
+.map{
+    width:100%;
+    height:auto;
+}
+.bazzar{
+    margin-top: 32px;
+}
+.title_box{
+    overflow:auto;
+    margin-bottom:-30px;
+}
+.num{
+    color: #FFFFFF;
+    background-color: #FFB156;
+    float: left;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 32px;
+    height: 32px;
+}
+.item{
+    float: left;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 12px;
+}
+.price{
+    float: right;
+    margin-top: 0%;
+}
+.description{
+    float: none;
+    text-align: left;
+	display:flex;
+    margin-left:44px;
+    width:85%;
+}
+.cash{
+    color:#FFFFFF;
+    background-color: #FF0084;
+    float: right;
+    width: 40px;
+    height: 24px;
+    margin-top: 0%;
+    margin-right: 5%;
+    margin-left:calc(100% - 305px);/*現金　の部分のmargin-leftを画面幅に合わせて大きくしてあげることで、ほかの3要素が右に流れて来ないように*/
+}
+.shop{
+    overflow:auto;
+    margin-top: 32px;
+}
+.icon{
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+.room{
+    color: #FFFFFF;
+    float: left;
+    width: 68px;
+    height: 22px;
+    margin-left: 12px;
+    margin-right: 50px;
+
+    border-radius: 4px;
+}
+.blue{
+    background: #0085FF;
+}
+.red{
+    background: #FF3C00;
+}
+.club{
+    float: left;
+    margin-left:12px;
+    margin-top:6px;
+}
+.shop_scr{
+    margin-left:92px;
+    text-align: left;
+}
+.kinken{
+    text-align: left;
+}
+.kinken_title{
+    margin-top:40px;
+    border-left:solid 4px #FF0084;
+    padding-left:8px;
+}
+.kinken_scr{
+    text-align: left;
+}
+
+/*福島クラス追加ここから*/
+/*一部の番号ををデザイン通り緑色に*/
+.green{
+    background-color:#03D100!important;
+}
+/*descriptionとtitle_boxの縦marginを狭めるために、marginマイナス指定すると、goodsのとこだけおかしくなったのでここで修正*/
+.original_goods{
+    margin-top:30px;
+}
