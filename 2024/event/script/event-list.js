@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         ${events.is_rainy.day1 == "all" && events.is_rainy.day2 == "partial" ? "今年は一部雨天スケジュールでの開催となりました。" : ""}
         ${events.is_rainy.day1 == "partial" && events.is_rainy.day2 == "all" ? "今年は一部雨天スケジュールでの開催となりました。" : ""}
         ${events.is_rainy.day1 == "partial" && events.is_rainy.day2 == "partical" ? "今年は両日ともに一部雨天スケジュールでの開催となりました。" : ""}</p>
-    <p id="announce2">雨天スケジュールに変更されたため、このページに記載の時間は正しくないことがあります。詳しくは<a href="./event.html">雨天スケジュール</a>をご確認ください。</p>
+    <p id="announce2">雨天スケジュールに変更されたため、このページに記載の時間は正しくないことがあります。詳しくは<a href="./event.html#rain">雨天スケジュール</a>をご確認ください。</p>
 </div>
 `
         );
@@ -103,10 +103,13 @@ document.addEventListener("DOMContentLoaded", async () => {
                 top: offset,
                 behavior: "smooth",
             });
-            setTimeout(() => {
-                accbox.style.height = accbox.scrollHeight + "px";
-                element.classList.toggle("acc_open");
-            }, 300);
+            const interval = setInterval(() => {
+                if (Math.min(offset, document.documentElement.scrollHeight - window.innerHeight) - 150 < window.scrollY) {
+                    accbox.style.height = accbox.scrollHeight + "px";
+                    element.classList.toggle("acc_open");
+                    clearInterval(interval);
+                }
+            }, 10);
         }
     }
 });

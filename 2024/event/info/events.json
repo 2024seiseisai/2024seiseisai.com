@@ -15,11 +15,59 @@
             "color": "#FFD600"
         },
         {
-            "name": "体育館",
+            "name": "体育館[晴天時]",
+            "color": "#FFD600"
+        },
+        {
+            "name": "体育館[雨天時]",
+            "color": "#FFD600"
+        },
+        {
+            "name": "圓融館[晴天時]",
+            "color": "#FFD600"
+        },
+        {
+            "name": "圓融館[雨天時]",
+            "color": "#FFD600"
+        },
+        {
+            "name": "転身殿前",
             "color": "#FFD600"
         },
         {
             "name": "グラウンド",
+            "color": "#FFD600"
+        },
+        {
+            "name": "小講堂",
+            "color": "#FFD600"
+        },
+        {
+            "name": "演習室B・C",
+            "color": "#FFD600"
+        },
+        {
+            "name": "地学室",
+            "color": "#FFD600"
+        },
+        {
+            "name": "物理室",
+            "color": "#FFD600"
+        },
+        {
+            "name": "情報教室",
+            "color": "#FFD600"
+        },
+        {
+            "name": "視聴覚室",
+            "color": "#FFD600"
+        },
+        {
+            "name": "4年D組",
+            "color": "#FFD600"
+        },
+        {
+            "name": "4年E組",
             "color": "#FFD600"
         }
     ],
@@ -29,7 +77,7 @@
             "name": "令和の小町コンテスト",
             "day1": [
                 {
-                    "name": "令和の小町<br>コンテスト予選A",
+                    "name": "令和の小町コンテスト<br>予選A",
                     "location": "中庭",
                     "start_h": 10,
                     "start_m": 0,
@@ -38,13 +86,31 @@
                     "summary": "予選A"
                 },
                 {
-                    "name": "令和の小町<br>コンテスト予選B",
+                    "name": "令和の小町コンテスト<br>予選B",
                     "location": "中庭",
                     "start_h": 12,
                     "start_m": 50,
                     "end_h": 13,
-                    "end_m": 40,
+                    "end_m": 20,
                     "summary": "予選B"
+                },
+                {
+                    "name": "令和の小町コンテスト<br>予選A",
+                    "location": "体育館[雨天時]",
+                    "start_h": 10,
+                    "start_m": 0,
+                    "end_h": 10,
+                    "end_m": 30,
+                    "summary": "予選A"
+                },
+                {
+                    "name": "令和の小町コンテスト<br>予選B",
+                    "location": "体育館[雨天時]",
+                    "start_h": 12,
+                    "start_m": 50,
+                    "end_h": 13,
+                    "end_m": 20,
+                    "summary": ""
                 }
             ],
             "day2": [
@@ -62,108 +128,472 @@
         },
         {
             "name": "イケてるメンズコンテスト",
-            "day1": [
+            "day1": [],
+            "day2": [
                 {
                     "name": "イケてるメンズコンテスト",
                     "location": "中庭",
-                    "start_h": 10,
-                    "start_m": 30,
-                    "end_h": 12,
-                    "end_m": 50
+                    "start_h": 14,
+                    "start_m": 40,
+                    "end_h": 15,
+                    "end_m": 0,
+                    "summary": ""
                 }
             ],
-            "day2": [],
-            "summary": "あああ"
+            "summary": ""
         },
         {
             "name": "マッスルコンテスト",
             "day1": [],
-            "day2": [],
-            "summary": "いいい"
+            "day2": [
+                {
+                    "name": "マッスルコンテスト",
+                    "location": "中庭",
+                    "start_h": 13,
+                    "start_m": 40,
+                    "end_h": 14,
+                    "end_m": 40,
+                    "summary": ""
+                }
+            ],
+            "summary": ""
         },
         {
             "name": "T-1グランプリ",
             "day1": [],
-            "day2": [],
-            "summary": "ううう"
+            "day2": [
+                {
+                    "name": "T-1グランプリ",
+                    "location": "中庭",
+                    "start_h": 10,
+                    "start_m": 0,
+                    "end_h": 10,
+                    "end_m": 30,
+                    "summary": ""
+                }
+            ],
+            "summary": ""
         },
         {
             "name": "カラオケコンテスト",
-            "day1": [],
+            "day1": [
+                {
+                    "name": "カラオケコンテスト<br>予選A",
+                    "location": "体育館[晴天時]",
+                    "start_h": 12,
+                    "start_m": 0,
+                    "end_h": 12,
+                    "end_m": 40,
+                    "summary": "予選A"
+                },
+                {
+                    "name": "カラオケコンテスト<br>予選B",
+                    "location": "体育館[晴天時]",
+                    "start_h": 13,
+                    "start_m": 20,
+                    "end_h": 14,
+                    "end_m": 0,
+                    "summary": "予選B"
+                },
+                {
+                    "name": "カラオケコンテスト<br>予選A",
+                    "location": "体育館[雨天時]",
+                    "start_h": 12,
+                    "start_m": 0,
+                    "end_h": 12,
+                    "end_m": 40,
+                    "summary": "予選A"
+                },
+                {
+                    "name": "カラオケコンテスト<br>予選B",
+                    "location": "体育館[雨天時]",
+                    "start_h": 13,
+                    "start_m": 20,
+                    "end_h": 14,
+                    "end_m": 0,
+                    "summary": "予選B"
+                }
+            ],
             "day2": [],
-            "summary": "えええ"
+            "summary": ""
         },
         {
             "name": "ラブライブ!サンスクリット!!",
-            "day1": [],
-            "day2": [],
-            "summary": "おおお"
+            "day1": [
+                {
+                    "name": "ラブライブ!<br>サンスクリット!!",
+                    "location": "中庭",
+                    "start_h": 10,
+                    "start_m": 30,
+                    "end_h": 10,
+                    "end_m": 50,
+                    "summary": ""
+                },
+                {
+                    "name": "ラブライブ!<br>サンスクリット!!",
+                    "location": "体育館[晴天時]",
+                    "start_h": 14,
+                    "start_m": 55,
+                    "end_h": 15,
+                    "end_m": 10,
+                    "summary": ""
+                },
+                {
+                    "name": "ラブライブ!<br>サンスクリット!!",
+                    "location": "体育館[雨天時]",
+                    "start_h": 10,
+                    "start_m": 30,
+                    "end_h": 10,
+                    "end_m": 50,
+                    "summary": ""
+                }
+            ],
+            "day2": [
+                {
+                    "name": "ラブライブ!<br>サンスクリット!!",
+                    "location": "中庭",
+                    "start_h": 11,
+                    "start_m": 10,
+                    "end_h": 11,
+                    "end_m": 30,
+                    "summary": ""
+                }
+            ],
+            "summary": ""
         },
         {
             "name": "寺マス",
-            "day1": [],
-            "day2": [],
+            "day1": [
+                {
+                    "name": "寺マス",
+                    "location": "中庭",
+                    "start_h": 11,
+                    "start_m": 10,
+                    "end_h": 11,
+                    "end_m": 30,
+                    "summary": ""
+                },
+                {
+                    "name": "寺マス",
+                    "location": "体育館[晴天時]",
+                    "start_h": 14,
+                    "start_m": 25,
+                    "end_h": 14,
+                    "end_m": 40,
+                    "summary": ""
+                },
+                {
+                    "name": "寺マス",
+                    "location": "体育館[雨天時]",
+                    "start_h": 11,
+                    "start_m": 10,
+                    "end_h": 11,
+                    "end_m": 30,
+                    "summary": ""
+                },
+                {
+                    "name": "寺マス",
+                    "location": "体育館[雨天時]",
+                    "start_h": 14,
+                    "start_m": 25,
+                    "end_h": 14,
+                    "end_m": 40,
+                    "summary": ""
+                }
+            ],
+            "day2": [
+                {
+                    "name": "寺マス",
+                    "location": "中庭",
+                    "start_h": 11,
+                    "start_m": 50,
+                    "end_h": 12,
+                    "end_m": 10,
+                    "summary": ""
+                }
+            ],
             "summary": "かかか"
         },
         {
             "name": "TDJ48",
-            "day1": [],
-            "day2": [],
-            "summary": "ききき"
+            "day1": [
+                {
+                    "name": "TDJ48",
+                    "location": "中庭",
+                    "start_h": 10,
+                    "start_m": 50,
+                    "end_h": 11,
+                    "end_m": 10,
+                    "summary": ""
+                },
+                {
+                    "name": "TDJ48",
+                    "location": "体育館[晴天時]",
+                    "start_h": 14,
+                    "start_m": 40,
+                    "end_h": 14,
+                    "end_m": 55,
+                    "summary": ""
+                },
+                {
+                    "name": "TDJ48",
+                    "location": "体育館[雨天時]",
+                    "start_h": 10,
+                    "start_m": 50,
+                    "end_h": 11,
+                    "end_m": 10,
+                    "summary": ""
+                },
+                {
+                    "name": "TDJ48",
+                    "location": "体育館[雨天時]",
+                    "start_h": 14,
+                    "start_m": 40,
+                    "end_h": 14,
+                    "end_m": 55,
+                    "summary": ""
+                }
+            ],
+            "day2": [
+                {
+                    "name": "TDJ48",
+                    "location": "中庭",
+                    "start_h": 12,
+                    "start_m": 10,
+                    "end_h": 12,
+                    "end_m": 30,
+                    "summary": ""
+                }
+            ],
+            "summary": ""
         },
         {
             "name": "E卍ILE",
-            "day1": [],
-            "day2": [],
+            "day1": [
+                {
+                    "name": "E卍ILE",
+                    "location": "中庭",
+                    "start_h": 11,
+                    "start_m": 30,
+                    "end_h": 11,
+                    "end_m": 50,
+                    "summary": ""
+                },
+                {
+                    "name": "E卍ILE",
+                    "location": "体育館[晴天時]",
+                    "start_h": 14,
+                    "start_m": 10,
+                    "end_h": 14,
+                    "end_m": 25,
+                    "summary": ""
+                },
+                {
+                    "name": "E卍ILE",
+                    "location": "体育館[雨天時]",
+                    "start_h": 11,
+                    "start_m": 30,
+                    "end_h": 11,
+                    "end_m": 50,
+                    "summary": ""
+                },
+                {
+                    "name": "E卍ILE",
+                    "location": "体育館[雨天時]",
+                    "start_h": 14,
+                    "start_m": 10,
+                    "end_h": 14,
+                    "end_m": 25,
+                    "summary": ""
+                }
+            ],
+            "day2": [
+                {
+                    "name": "E卍ILE",
+                    "location": "中庭",
+                    "start_h": 11,
+                    "start_m": 30,
+                    "end_h": 11,
+                    "end_m": 50,
+                    "summary": ""
+                }
+            ],
             "summary": "くくく"
         },
         {
             "name": "ソーラン節",
-            "day1": [],
+            "day1": [
+                {
+                    "name": "ソーラン節",
+                    "location": "体育館[晴天時]",
+                    "start_h": 15,
+                    "start_m": 45,
+                    "end_h": 16,
+                    "end_m": 0,
+                    "summary": ""
+                },
+                {
+                    "name": "ソーラン節",
+                    "location": "体育館[雨天時]",
+                    "start_h": 15,
+                    "start_m": 45,
+                    "end_h": 16,
+                    "end_m": 0,
+                    "summary": ""
+                }
+            ],
             "day2": [],
             "summary": "けけけ"
         },
         {
             "name": "和太鼓演奏",
-            "day1": [],
+            "day1": [
+                {
+                    "name": "和太鼓演奏",
+                    "location": "転身殿前",
+                    "start_h": 9,
+                    "start_m": 0,
+                    "end_h": 9,
+                    "end_m": 40,
+                    "summary": ""
+                },
+                {
+                    "name": "和太鼓演奏",
+                    "location": "転身殿前",
+                    "start_h": 13,
+                    "start_m": 20,
+                    "end_h": 14,
+                    "end_m": 0,
+                    "summary": ""
+                },
+                {
+                    "name": "和太鼓演奏",
+                    "location": "圓融館[雨天時]",
+                    "start_h": 10,
+                    "start_m": 20,
+                    "end_h": 11,
+                    "end_m": 0,
+                    "summary": ""
+                }
+            ],
             "day2": [],
             "summary": "こここ"
         },
         {
             "name": "バートルズ<br>ロックバンドライブ",
-            "day1": [],
+            "day1": [
+                {
+                    "name": "バートルズ<br>ロックバンドライブ",
+                    "location": "体育館[晴天時]",
+                    "start_h": 15,
+                    "start_m": 30,
+                    "end_h": 15,
+                    "end_m": 45,
+                    "summary": ""
+                },
+                {
+                    "name": "バートルズ<br>ロックバンドライブ",
+                    "location": "体育館[雨天時]",
+                    "start_h": 15,
+                    "start_m": 30,
+                    "end_h": 15,
+                    "end_m": 45,
+                    "summary": ""
+                }
+            ],
             "day2": [],
             "summary": "さささ"
         },
         {
-            "name": "PTAコーラス",
-            "day1": [],
+            "name": "科学部演示実験",
+            "day1": [
+                {
+                    "name": "科学部演示実験",
+                    "location": "物理室",
+                    "start_h": 12,
+                    "start_m": 0,
+                    "end_h": 12,
+                    "end_m": 30,
+                    "summary": ""
+                },
+                {
+                    "name": "科学部演示実験",
+                    "location": "物理室",
+                    "start_h": 13,
+                    "start_m": 0,
+                    "end_h": 13,
+                    "end_m": 30,
+                    "summary": ""
+                },
+                {
+                    "name": "科学部演示実験",
+                    "location": "物理室",
+                    "start_h": 14,
+                    "start_m": 0,
+                    "end_h": 14,
+                    "end_m": 30,
+                    "summary": ""
+                }
+            ],
             "day2": [],
-            "summary": "ししし"
-        },
-        {
-            "name": "科学演示実験",
-            "day1": [],
-            "day2": [],
-            "summary": "すすす",
+            "summary": "",
             "ticket": true
         },
         {
             "name": "模擬授業",
-            "day1": [],
+            "day1": [
+                {
+                    "name": "模擬授業",
+                    "location": "視聴覚室",
+                    "start_h": 13,
+                    "start_m": 0,
+                    "end_h": 14,
+                    "end_m": 0,
+                    "summary": ""
+                }
+            ],
             "day2": [],
             "summary": "せせせ",
             "ticket": true
         },
         {
             "name": "書道パフォーマンス",
-            "day1": [],
+            "day1": [
+                {
+                    "name": "書道パフォーマンス",
+                    "location": "中庭",
+                    "start_h": 9,
+                    "start_m": 40,
+                    "end_h": 10,
+                    "end_m": 0,
+                    "summary": ""
+                }
+            ],
             "day2": [],
-            "summary": "そそそ"
+            "summary": ""
         },
         {
             "name": "ロケット発射実験",
-            "day1": [],
+            "day1": [
+                {
+                    "name": "ロケット発射実験",
+                    "location": "グラウンド",
+                    "start_h": 12,
+                    "start_m": 0,
+                    "end_h": 12,
+                    "end_m": 20,
+                    "summary": ""
+                },
+                {
+                    "name": "ロケット発射実験",
+                    "location": "グラウンド",
+                    "start_h": 14,
+                    "start_m": 0,
+                    "end_h": 14,
+                    "end_m": 20,
+                    "summary": ""
+                }
+            ],
             "day2": [],
             "summary": "たたた"
         },
@@ -178,6 +608,347 @@
             "day1": [],
             "day2": [],
             "summary": "つつつ"
+        },
+        {
+            "name": "中2演劇",
+            "day1": [
+                {
+                    "name": "中2演劇",
+                    "location": "体育館[晴天時]",
+                    "start_h": 9,
+                    "start_m": 0,
+                    "end_h": 10,
+                    "end_m": 0,
+                    "summary": ""
+                },
+                {
+                    "name": "中2演劇",
+                    "location": "体育館[雨天時]",
+                    "start_h": 9,
+                    "start_m": 0,
+                    "end_h": 10,
+                    "end_m": 0,
+                    "summary": ""
+                }
+            ],
+            "day2": [],
+            "summary": ""
+        },
+        {
+            "name": "菁々コンサート",
+            "day1": [
+                {
+                    "name": "菁々コンサート",
+                    "location": "圓融館[晴天時]",
+                    "start_h": 9,
+                    "start_m": 0,
+                    "end_h": 10,
+                    "end_m": 0,
+                    "summary": ""
+                },
+                {
+                    "name": "菁々コンサート",
+                    "location": "圓融館[雨天時]",
+                    "start_h": 9,
+                    "start_m": 0,
+                    "end_h": 10,
+                    "end_m": 0,
+                    "summary": ""
+                }
+            ],
+            "day2": [],
+            "summary": ""
+        },
+        {
+            "name": "室内学部定期演奏会",
+            "day1": [
+                {
+                    "name": "室内学部定期演奏会",
+                    "location": "圓融館[晴天時]",
+                    "start_h": 11,
+                    "start_m": 30,
+                    "end_h": 13,
+                    "end_m": 0,
+                    "summary": ""
+                },
+                {
+                    "name": "室内学部定期演奏会",
+                    "location": "圓融館[雨天時]",
+                    "start_h": 11,
+                    "start_m": 30,
+                    "end_h": 13,
+                    "end_m": 0,
+                    "summary": ""
+                }
+            ],
+            "day2": [],
+            "summary": ""
+        },
+        {
+            "name": "音楽部ライブ",
+            "day1": [
+                {
+                    "name": "音楽部ライブ",
+                    "location": "圓融館[晴天時]",
+                    "start_h": 13,
+                    "start_m": 20,
+                    "end_h": 15,
+                    "end_m": 0,
+                    "summary": ""
+                },
+                {
+                    "name": "音楽部ライブ",
+                    "location": "圓融館[雨天時]",
+                    "start_h": 13,
+                    "start_m": 20,
+                    "end_h": 15,
+                    "end_m": 0,
+                    "summary": ""
+                }
+            ],
+            "day2": [],
+            "summary": ""
+        },
+        {
+            "name": "映画祭",
+            "day1": [
+                {
+                    "name": "映画祭",
+                    "location": "小講堂",
+                    "start_h": 10,
+                    "start_m": 0,
+                    "end_h": 10,
+                    "end_m": 30,
+                    "summary": ""
+                },
+                {
+                    "name": "映画祭",
+                    "location": "小講堂",
+                    "start_h": 11,
+                    "start_m": 30,
+                    "end_h": 12,
+                    "end_m": 0,
+                    "summary": ""
+                },
+                {
+                    "name": "映画祭",
+                    "location": "小講堂",
+                    "start_h": 13,
+                    "start_m": 0,
+                    "end_h": 13,
+                    "end_m": 30,
+                    "summary": ""
+                },
+                {
+                    "name": "映画祭",
+                    "location": "小講堂",
+                    "start_h": 14,
+                    "start_m": 30,
+                    "end_h": 15,
+                    "end_m": 0,
+                    "summary": ""
+                }
+            ],
+            "day2": [],
+            "summary": "",
+            "ticket": true
+        },
+        {
+            "name": "お化け屋敷",
+            "day1": [
+                {
+                    "name": "お化け屋敷",
+                    "location": "演習室B・C",
+                    "start_h": 9,
+                    "start_m": 0,
+                    "end_h": 9,
+                    "end_m": 50,
+                    "summary": ""
+                },
+                {
+                    "name": "お化け屋敷",
+                    "location": "演習室B・C",
+                    "start_h": 10,
+                    "start_m": 0,
+                    "end_h": 10,
+                    "end_m": 50,
+                    "summary": ""
+                },
+                {
+                    "name": "お化け屋敷",
+                    "location": "演習室B・C",
+                    "start_h": 11,
+                    "start_m": 0,
+                    "end_h": 11,
+                    "end_m": 50,
+                    "summary": ""
+                },
+                {
+                    "name": "お化け屋敷",
+                    "location": "演習室B・C",
+                    "start_h": 13,
+                    "start_m": 0,
+                    "end_h": 13,
+                    "end_m": 50,
+                    "summary": ""
+                },
+                {
+                    "name": "お化け屋敷",
+                    "location": "演習室B・C",
+                    "start_h": 14,
+                    "start_m": 0,
+                    "end_h": 14,
+                    "end_m": 50,
+                    "summary": ""
+                }
+            ],
+            "day2": [],
+            "summary": "",
+            "ticket": true
+        },
+        {
+            "name": "プログラミング教室",
+            "day1": [
+                {
+                    "name": "プログラミング教室",
+                    "location": "地学室",
+                    "start_h": 10,
+                    "start_m": 30,
+                    "end_h": 12,
+                    "end_m": 0,
+                    "summary": ""
+                }
+            ],
+            "day2": [],
+            "summary": "",
+            "ticket": true
+        },
+        {
+            "name": "マーダーミステリー体験<br>『菁々殺』",
+            "day1": [
+                {
+                    "name": "マーダーミステリー体験<br>『菁々殺』",
+                    "location": "地学室",
+                    "start_h": 13,
+                    "start_m": 0,
+                    "end_h": 15,
+                    "end_m": 0,
+                    "summary": ""
+                }
+            ],
+            "day2": [],
+            "summary": "",
+            "ticket": true
+        },
+        {
+            "name": "ロボコン講習会",
+            "day1": [
+                {
+                    "name": "ロボコン講習会",
+                    "location": "物理室",
+                    "start_h": 10,
+                    "start_m": 0,
+                    "end_h": 11,
+                    "end_m": 30,
+                    "summary": ""
+                }
+            ],
+            "day2": [],
+            "summary": "",
+            "ticket": true
+        },
+        {
+            "name": "生成AI体験会",
+            "day1": [
+                {
+                    "name": "生成AI体験会",
+                    "location": "情報教室",
+                    "start_h": 12,
+                    "start_m": 0,
+                    "end_h": 12,
+                    "end_m": 30,
+                    "summary": ""
+                }
+            ],
+            "day2": [],
+            "summary": ""
+        },
+        {
+            "name": "TVOCオリジナル曲発表",
+            "day1": [
+                {
+                    "name": "TVOCオリジナル曲発表",
+                    "location": "4年D組",
+                    "start_h": 12,
+                    "start_m": 0,
+                    "end_h": 12,
+                    "end_m": 20,
+                    "summary": ""
+                }
+            ],
+            "day2": [],
+            "summary": ""
+        },
+        {
+            "name": "マジックショー",
+            "day1": [
+                {
+                    "name": "マジックショー",
+                    "location": "4年E組",
+                    "start_h": 10,
+                    "start_m": 20,
+                    "end_h": 10,
+                    "end_m": 35,
+                    "summary": ""
+                },
+                {
+                    "name": "マジックショー",
+                    "location": "4年E組",
+                    "start_h": 10,
+                    "start_m": 45,
+                    "end_h": 11,
+                    "end_m": 0,
+                    "summary": ""
+                },
+                {
+                    "name": "マジックショー",
+                    "location": "4年E組",
+                    "start_h": 12,
+                    "start_m": 20,
+                    "end_h": 12,
+                    "end_m": 35,
+                    "summary": ""
+                },
+                {
+                    "name": "マジックショー",
+                    "location": "4年E組",
+                    "start_h": 12,
+                    "start_m": 45,
+                    "end_h": 13,
+                    "end_m": 0,
+                    "summary": ""
+                },
+                {
+                    "name": "マジックショー",
+                    "location": "4年E組",
+                    "start_h": 14,
+                    "start_m": 20,
+                    "end_h": 14,
+                    "end_m": 35,
+                    "summary": ""
+                },
+                {
+                    "name": "マジックショー",
+                    "location": "4年E組",
+                    "start_h": 14,
+                    "start_m": 45,
+                    "end_h": 15,
+                    "end_m": 0,
+                    "summary": ""
+                }
+            ],
+            "day2": [],
+            "summary": ""
         }
     ]
 }

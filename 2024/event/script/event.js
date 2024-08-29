@@ -87,7 +87,7 @@ ${ev_lists[val.name].day2
 <div class="table_element day2" style="--start_h: ${ev.start_h}; --start_m: ${ev.start_m}; --end_h: ${ev.end_h}; --end_m: ${ev.end_m}; --color: ${ev_lists[val.name].color}">
     <div class="table_element_content">
         <p>${ev.name}</p>
-        <img src="/2024/event/img/arrow_circle.svg">
+        <img src="/2024/event/img/arrow_circle.svg" class="${ev.event_name}">
     </div>
     <div class="table_element_bar"></div>
     <div class="table_element_back" style="--padding_top: ${ev_lists[val.name].day2_bound2.includes(ev.start_h * 60 + ev.start_m) ? "2px" : "0"}; --padding_bottom: ${ev_lists[val.name].day2_bound2.includes(ev.end_h * 60 + ev.end_m) ? "2px" : "0"}"></div>
@@ -137,5 +137,7 @@ ${ev_lists[val.name].day2
         document.getElementById("right_arrow").addEventListener("click", () => {
             slide.go(">");
         });
+        let hash = window.location.hash;
+        if (hash == "#rain") slide.go(2);
     }
 });
