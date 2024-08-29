@@ -11,7 +11,6 @@ new Splide( '.wallpapers', {
     autoplay: true,
     interval: 5000,
 
-    fixedWidth: "150%",
 
     arrows: true,
     updateOnMove: true,
@@ -25,7 +24,7 @@ new Splide( '.wallpapers', {
     },
 
     breakpoints: {
-		1025: {
+		1023: {
             perPage: 1,
             padding: "30%",
             gap: 35,
@@ -45,8 +44,6 @@ new Splide( '.icons', {
 
     autoplay: true,
     interval: 5000,
-
-    fixedWidth: "125%",
 
     arrows: true,
     updateOnMove: true,
@@ -76,7 +73,7 @@ new Splide( '.headers', {
     padding: "18%",
     focus  : 'center',
 
-    fixedWidth: "200%",
+    fixedWidth: "100%",
 
     flickPower: 300,
     autoplay: true,
@@ -94,7 +91,7 @@ new Splide( '.headers', {
     },
 
     breakpoints: {
-		1025: {
+		1023: {
             perPage: 1,
             padding: "30%",
             gap: "10%",
