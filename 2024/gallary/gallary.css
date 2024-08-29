@@ -895,6 +895,7 @@ button{
 
 /*モーダル本体の指定 + モーダル外側の背景の指定*/
 .modal-container{
+    z-index: 10;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -919,8 +920,7 @@ button{
 
 .gallary_modal_img_1{
     margin-top: 98px;
-    margin-left: 20px;
-    height: 452px;
+    width: 90%;
     text-align: center;
 }
 
@@ -934,7 +934,7 @@ button{
 	position: absolute;
 	display: inline-block;
 	max-width: 500px;
-	width: 90%;
+	width: 100%;
     left: 0px;
 }
 /*モーダルを閉じるボタンの指定*/
@@ -951,13 +951,21 @@ button{
 } */
 
 .gallary_modal_text{
-    position: absolute;
+    position: fixed;
     margin-top: 50px;
-    width: 360px;
-    height: 120px;
+    padding-top: 20px;
+    width: 100%;
     border-radius: 20px 20px 0px 0px;
     background: #FFFFFF;
-    z-index: 10;
+    flex-direction: column;
+    height: 100vh;
 
-/* あとフォントとかの設定 */
+
+/* 中身の設定とかの設定 */
+    font-family: "Noto Sans JP";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+
 }
