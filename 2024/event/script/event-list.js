@@ -1,9 +1,13 @@
 function GetLocationInfo(arr, day) {
     if (arr.length == 0) return "";
     let res = `<div class="location"><img src="/2024/event/img/map_pin.svg"><p>【${day}日目】</p>`;
-    arr.forEach((val) => {
-        res += `<p>　${val.location}　${val.start_h}:${("00" + val.start_m).slice(-2)}-${val.end_h}:${("00" + val.end_m).slice(-2)}　${val.summary === undefined ? "" : val.summary}</p>`;
+    let tmp = arr.map((val) => {
+        return `<p> ${val.location.replace("[晴天時]", "").replace("[雨天時]", "(雨天)")}　${val.start_h}:${("00" + val.start_m).slice(-2)}-${val.end_h}:${("00" + val.end_m).slice(-2)}　${val.summary === undefined ? "" : val.summary}</p>`;
     });
+    tmp.filter((val, idx) => {
+        if (!val.includes("(雨天)")) return true;
+        else return !tmp.includes(val.replace("(雨天)", ""));
+    }).forEach((val) => (res += val));
     res += "</div>";
     return res;
 }
@@ -98,7 +102,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             let target = document.getElementById(decodeURIComponent(hash).replace("#", ""));
             let element = target.firstElementChild;
             let accbox = element.nextElementSibling;
-            const offset = target.getBoundingClientRect().top + window.scrollY - Math.max(0, (window.innerHeight - headerheight - accbox.scrollHeight) / 2);
+            const offset = target.getBoundingClientRect().top + window.scrollY - Math.max(0, (window.innerHeight - headerheight - accbox.scrollHeight) / 2) - 30;
             window.scrollTo({
                 top: offset,
                 behavior: "smooth",

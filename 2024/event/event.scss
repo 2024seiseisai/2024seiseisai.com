@@ -112,7 +112,7 @@ img {
 }
 .slide_element {
     position: relative;
-    height: 1047px;
+    height: 1067px;
 }
 .table_scale {
     position: absolute;
@@ -164,10 +164,12 @@ img {
     font-weight: 500;
     font-size: 16px;
     margin-left: 40px;
+    line-height: 16.5px;
 }
 .table_element_content img {
     display: block;
     cursor: pointer;
+    height: 32px;
     margin: 0 20px 0 auto;
 }
 .table_element_bar {
