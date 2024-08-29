@@ -73,7 +73,7 @@ new Splide( '.headers', {
     padding: "18%",
     focus  : 'center',
 
-    fixedWidth: "100%",
+    fixedWidth: "117%",
 
     flickPower: 300,
     autoplay: true,
@@ -95,7 +95,7 @@ new Splide( '.headers', {
             perPage: 1,
             padding: "30%",
             gap: "10%",
-
+            fixedWidth: "200%",
             arrows: false,
 		},
     }
