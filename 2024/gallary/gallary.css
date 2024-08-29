@@ -846,7 +846,8 @@ main{
 }
 
 .img_total{
-    margin-top: 25px;
+    margin-top: 35px;
+    margin-bottom: 50px;
 }
 
 .gallary_img_line{
@@ -884,13 +885,14 @@ main{
 
 /*モーダルを開くボタンの設定*/
 
-button{
+#js-open{
     border: none;
     outline: none; /* クリックしたときに表示される枠線を消す */
     background: transparent; /* 背景の灰色を消す */
     padding: 0px 0px;
     width: 100px;
     height: 100px;
+
 }
 
 /*モーダル本体の指定 + モーダル外側の背景の指定*/
@@ -918,46 +920,110 @@ button{
 }
 
 .gallary_modal_img_1{
-    margin-top: 98px;
-    margin-left: 20px;
-    height: 452px;
-    text-align: center;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
+
+.gallary_modal_img_2{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallary_modal_img_3{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 /*モーダル本体に「active」クラス付与した時のスタイル*/
 .modal-container.active{
+    display: block;
 	opacity: 1;
 	visibility: visible;
+    z-index: 10;
 }
+
+.modal_img_box{
+    position: relative;
+    height: 100%;
+}
+
+.modal-content{
+    position: relative;
+    height: 100%;
+    z-index: 2;
+}
+
 /*モーダル枠の指定*/
 .modal-body{
 	position: absolute;
 	display: inline-block;
-	max-width: 500px;
-	width: 90%;
+	width: 100%;
+    top: 48px;
+    bottom: 120px;
     left: 0px;
 }
+
 /*モーダルを閉じるボタンの指定*/
-.modal-close{
+#close_button{
     position: absolute;
-    margin-top: 63px;
-    margin-left: 15px;
+    z-index: 30;
     width: 40px;
+    margin-top: 15px;
+    margin-left: 15px;
 }
+
+.modal-left{
+    position: absolute;
+    z-index: 30;
+    width: 40px;
+    margin-top: 256px;
+    margin-left: 15px;
+
+}
+
+.modal_right_img{
+    transform: scale(-1, 1);
+}
+
+.modal-right{
+    position: fixed;
+    z-index: 30;
+    width: 40px;
+    margin-top: 256px;
+    right: 15px;
+}
+
+
+
 /*モーダル内のコンテンツの指定*/
-/* .modal_content{
-    width: 100px;
-    height: 100px;
-} */
+
 
 .gallary_modal_text{
-    position: absolute;
-    margin-top: 50px;
-    width: 360px;
-    height: 120px;
+    position: fixed;
+    height: 100px;
+    padding-top: 20px;
+    width: 100%;
     border-radius: 20px 20px 0px 0px;
     background: #FFFFFF;
-    z-index: 10;
+    bottom: 0;
 
-/* あとフォントとかの設定 */
+
+/* 中身の設定とかの設定 */
+    font-family: "Noto Sans JP";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+
 }
