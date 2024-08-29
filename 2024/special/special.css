@@ -275,6 +275,9 @@ main ul{ /*禁止事項位置*/
     height: auto;
     margin-bottom: 50px;
   }
+  .Xheader .underline img{
+    width: auto;
+  }
   
   
   .splide .splide_arrow.arrow--prev {
