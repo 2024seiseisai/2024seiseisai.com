@@ -13,6 +13,7 @@
     margin: 60px 20px 0px 20px;
 }   
 .underline_pamphlet{
+    margin-right: 10px;
     margin-left: 0px;
     padding-bottom: 1px;
     background-image: url("img/underline_xheader.png");
@@ -77,16 +78,28 @@
     color:white;
     font-size:15px;
 }
+.club_list{
+    margin-bottom: 90px;
+}
 .club_start_a{
     height:32px;
     margin-right: 20px;
     margin-left: 20px;
     border-left:4px solid #FF0084; 
     border-bottom:2px solid grey;
+    display: flex;
+    margin-bottom: 20px;
 }
 .club_a_line{
     padding-left: 5px;
+    height:24px;
+    margin-top: 0px;
 }
-.club_list{
-    margin-bottom: 90px;
+.club_detail{
+    margin-top: 0px;
+    padding-left: 200px;
+    padding-top: 0px;
+    color: #FF0084;
+    font-size:24px;
+    padding-top: 0px;
 }
