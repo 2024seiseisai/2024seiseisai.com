@@ -238,16 +238,45 @@ main ul{ /*禁止事項位置*/
     background-image: url(splide/arrow_right.svg);
 
   }
-  /* スライド共通のスタイル */
-  .splide__slide img {
-    opacity: .5; /* 左右のスライドを薄くする */
+
+  .splide__slide img{
+    opacity: 0; /* 左右のスライドを薄くする */
     transition: .5s; /* ゆっくり */
   }
-  /* アクティブなスライドのスタイル */
-  .splide__slide.is-active img {
+  .splide__slide.is-visible img {
     opacity: 1; /* 中央のスライドは薄くしない */
     z-index: 1; /* 中央のスライドを一番上にする */
   }
+
+  /* スライド共通のスタイル */
+  @media screen and (max-width: 1024px) {
+    .splide__slide img{
+    opacity: .5; /* 左右のスライドを薄くする */
+    transition: .5s;  /*ゆっくり */
+  }
+  }
+  /* アクティブなスライドのスタイル */
+  @media screen and (max-width: 1024px) {
+    .splide__slide.is-active img {
+    opacity: 1; /* 中央のスライドは薄くしない */
+    z-index: 1; /* 中央のスライドを一番上にする */
+  }
+  }  
+  .Xheader .splide__slide img{
+    opacity: .5; /* 左右のスライドを薄くする */
+    transition: .5s; /* ゆっくり */
+  }
+  .Xheader .splide__slide.is-active img {
+    opacity: 1; /* 中央のスライドは薄くしない */
+    z-index: 1; /* 中央のスライドを一番上にする */
+  }
+  .Xheader img:not(.is_active) {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  
+  
   .splide .splide_arrow.arrow--prev {
     background-image: url(splide/arrow_left.svg);
   }
@@ -263,6 +292,19 @@ main ul{ /*禁止事項位置*/
     height: auto;
     margin-bottom: 50px;
   }
+  @media screen and (min-width: 1024px) {
+    .wallpapers img:not(.dl_button) {
+      width: 100%;
+      height: auto;
+      margin-bottom: 50px;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .wallpapers img.dl_button:hover, .icons img.dl_button:hover {
+      transform: translate(50%, -50%) scale(1.1);
+    }
+  }
+
   .wallpapers img.dl_button {
     right: 0;
     bottom: 0;
@@ -295,6 +337,11 @@ main ul{ /*禁止事項位置*/
     right: 12%;
     bottom: 12%;
     transform: translate(50%, -50%);
+  }
+  @media only screen and (min-width: 1025px) {
+    .headers img.dl_button:hover {
+      transform: translate(50%, 50%) scale(1.1);
+    }
   }
 
   .readme_download{
