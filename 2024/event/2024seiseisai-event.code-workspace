@@ -1,0 +1,18 @@
+{
+  "folders": [
+    {
+      "path": "../..",
+    },
+    {
+      "path": ".",
+    },
+  ],
+  "settings": {
+    "liveServer.settings.CustomBrowser": null,
+    "liveSassCompile.settings.includeItems": ["/*.scss"],
+    "liveSassCompile.settings.excludeList": ["/../../**/*.scss"],
+    "liveServer.settings.multiRootWorkspaceName": "2024seiseisai.com",
+    "prettier.printWidth": 200,
+	  "prettier.tabWidth": 4,
+  },
+}
