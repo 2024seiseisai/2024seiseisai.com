@@ -830,14 +830,14 @@ main{
     margin-top: 20px;
 }
 
-.gallary_japanese{
+.gallery_japanese{
     font-size: 14px;
     font-family: "Noto Sans JP";
     font-weight: 400;
     color: #000000;
 }
 
-.gallary_content{
+.gallery_content{
     margin-top: 25px;
     font-size: 14px;
     font-family: "Noto Sans JP";
@@ -850,30 +850,30 @@ main{
     margin-bottom: 50px;
 }
 
-.gallary_img_line{
+.gallery_img_line{
     display: flex;
     margin-top: 10px;
     justify-content: space-between;
 }
 
-.gallary_goods_selling{
+.gallery_goods_selling{
     position: relative;
 
     width: 100px;
 }
 
-.gallary_goods_selling_img{
+.gallery_goods_selling_img{
     width: 100px;
 }
 
-.gallary_goods_selling_two_squares{
+.gallery_goods_selling_two_squares{
     width: 20px;
     position: absolute;
     top: 75px;
     left: 75px;
 }
 
-.gallary_cross_img{
+.gallery_cross_img{
     position: absolute;
     width: 40px;
     margin-top: 15px;
@@ -919,7 +919,7 @@ main{
 	height: 100%;
 }
 
-.gallary_modal_img_1{
+.gallery_modal_img_1{
     width: 90%;
     position: absolute;
     top: 50%;
@@ -928,7 +928,7 @@ main{
 
 }
 
-.gallary_modal_img_2{
+.gallery_modal_img_2{
     width: 100%;
     position: absolute;
     top: 50%;
@@ -936,7 +936,7 @@ main{
     transform: translate(-50%, -50%);
 }
 
-.gallary_modal_img_3{
+.gallery_modal_img_3{
     width: 100%;
     position: absolute;
     top: 50%;
@@ -1009,7 +1009,7 @@ main{
 /*モーダル内のコンテンツの指定*/
 
 
-.gallary_modal_text{
+.gallery_modal_text{
     position: fixed;
     height: 100px;
     padding-top: 20px;
