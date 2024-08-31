@@ -8,6 +8,11 @@
   <changefreq>monthly</changefreq>
 </url>
 <url>
+  <loc>https://seiseisai.com/2024/special/special.html</loc>
+  <priority>0.8</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
   <loc>https://seiseisai.com/2024/index.html</loc>
   <priority>0.8</priority>
   <changefreq>monthly</changefreq>
