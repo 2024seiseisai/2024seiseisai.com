@@ -270,7 +270,7 @@ main ul{ /*禁止事項位置*/
     opacity: 1; /* 中央のスライドは薄くしない */
     z-index: 1; /* 中央のスライドを一番上にする */
   }
-  .Xheader img:not(.is_active) {
+  .Xheader img:not(.dl_button) {
     width: 100%;
     height: auto;
     margin-bottom: 50px;
@@ -278,7 +278,7 @@ main ul{ /*禁止事項位置*/
   .Xheader .underline img{
     width: auto;
   }
-  
+
   
   .splide .splide_arrow.arrow--prev {
     background-image: url(splide/arrow_left.svg);
@@ -331,20 +331,18 @@ main ul{ /*禁止事項位置*/
   .headers {
     margin: 15px 0 60px;
   }
+  .header_img {
+    position: relative;
+  }
   .headers img:not(.dl_button) {
     width: 100%;
     height: auto;
     margin-bottom: 50px;
   }
   .headers img.dl_button {
-    right: 12%;
-    bottom: 12%;
-    transform: translate(50%, -50%);
-  }
-  @media only screen and (min-width: 1025px) {
-    .headers img.dl_button:hover {
-      transform: translate(50%, 50%) scale(1.1);
-    }
+    right: 0;
+    bottom: 30px;
+    position: absolute;
   }
 
   .readme_download{
