@@ -331,15 +331,18 @@ main ul{ /*禁止事項位置*/
   .headers {
     margin: 15px 0 60px;
   }
+  .header_img {
+    position: relative;
+  }
   .headers img:not(.dl_button) {
     width: 100%;
     height: auto;
     margin-bottom: 50px;
   }
   .headers img.dl_button {
-    right: 12%;
-    bottom: 12%;
-    transform: translate(220%, 0%);
+    right: 0;
+    bottom: 30px;
+    position: absolute;
   }
 
   .readme_download{
