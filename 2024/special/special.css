@@ -53,6 +53,7 @@
   background-image: url("img/underline_wallpaper.png");
   background-repeat: no-repeat;
   background-position: 10px 10px;
+  background-size:100% 28px;
   }
 }
 @media screen and (max-width: 1023px){
@@ -62,6 +63,7 @@
   background-image: url("img/underline_icon.png");
   background-repeat: no-repeat;
   background-position: 10px 10px;
+  background-size:100% 28px;
   }
 }
 @media screen and (max-width: 1023px){
@@ -71,6 +73,7 @@
   background-image: url("img/underline_xheader.png");
   background-repeat: no-repeat;
   background-position: 10px 10px;
+  background-size:100% 28px;
   }
 }
 @media screen and (max-width: 1023px){
@@ -80,6 +83,7 @@
   background-image: url("img/underline_logotheme.png");
   background-repeat: no-repeat;
   background-position: 10px 15px;
+  background-size:100% 28px;
   }
 }
 
