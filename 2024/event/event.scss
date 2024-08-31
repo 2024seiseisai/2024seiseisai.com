@@ -195,6 +195,9 @@ img {
 .guide_box {
     display: flex;
 }
+.guide_box img {
+    height: 32px;
+}
 #rain_guide img,
 #ticket_guide img {
     display: block;
@@ -268,11 +271,17 @@ img {
     transform: rotate(90deg);
     transition: 0.15s ease-in-out;
 }
+.acc_button_img_pc {
+    position: absolute;
+    visibility: hidden;
+    user-select: none;
+}
 .acc_title {
     margin: 0;
     padding: 8px 0 0 32px;
     font-weight: 500;
     font-size: 20px;
+    user-select: none;
 }
 .acc_button {
     cursor: pointer;
@@ -320,9 +329,125 @@ img {
     font-size: 12px;
     color: #ffffff;
     position: relative;
+    user-select: none;
 }
 .ticket_box img {
     position: absolute;
     top: 0;
     left: 0;
+    user-select: none;
+}
+
+@media screen and (min-width: 1024px) {
+    #return_button {
+        margin: 6.94vw 0 0 6.94vw;
+        height: 8.33vw;
+    }
+    #title2 {
+        margin: 2.77vw 0 5.55vw 11.11vw;
+    }
+    #title2_bar {
+        height: 6.8vw;
+    }
+    #title2_txt {
+        margin: 0 0 0 2.63vw;
+        font-weight: 500;
+        font-size: 4.44vw;
+    }
+    #announce_rain {
+        margin: 0 11.11vw 11.11vw 11.11vw;
+        border: 4px solid #ff0084;
+    }
+    #announce1 {
+        margin: 2.77vw;
+        font-size: 3.33vw;
+        line-height: 4.82vw;
+    }
+    #announce2 {
+        margin: 0 2.77vw 2.77vw 2.77vw;
+        font-size: 2.5vw;
+        line-height: 3.62vw;
+    }
+    #events_list {
+        margin-bottom: 13.88vw;
+    }
+    .events_acc {
+        margin: 2.77vw 11.11vw 0 11.11vw;
+    }
+    .acc_button_img_pc {
+        visibility: visible;
+        margin: 2.77vw 0 0 2.77vw;
+        height: 2.77vw;
+        position: absolute;
+        transition: 0.15s ease-in-out;
+        user-select: none;
+    }
+    .acc_open .acc_button_img_pc {
+        margin: 2.77vw 0 0 2.77vw;
+        position: absolute;
+        transform: rotate(90deg);
+        transition: 0.15s ease-in-out;
+    }
+    .acc_button_img {
+        visibility: hidden;
+    }
+    .acc_title {
+        padding: 2.15vw 0 2.15vw 8.33vw;
+        font-weight: 500;
+        font-size: 2.77vw;
+    }
+    .location {
+        margin: 0 0 20px 32px;
+    }
+    .ticket_space {
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .ticket_box {
+        position: relative;
+        width: 11.66vw;
+        margin: 2.5vw 5.55vw 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .ticket_box p {
+        font-size: 2.22vw;
+    }
+    .ticket_box img {
+        width: 11.66vw;
+    }
+    .box_space {
+        height: 0.76vw;
+    }
+    .event_summary {
+        padding: 0 6.33vw 2.77vw 6.33vw;
+        font-size: 1.63vw;
+        line-height: 2.41vw;
+    }
+    .location {
+        margin: 0;
+    }
+    .location_day1 {
+        margin: 0 0 2.77vw 0;
+        width: 33.66vw;
+    }
+    .location_day2 {
+        margin: 0 0 2.77vw 0;
+    }
+    .location img {
+        height: 3.33vw;
+    }
+    .location p {
+        margin: 0;
+        padding: 1.25vw 0 0 6.11vw;
+        font-size: 1.66vw;
+        line-height: 2.41vw;
+    }
+    .locations {
+        margin: 0 0 0 6.33vw;
+        display: flex;
+    }
 }

@@ -1,19 +1,24 @@
 function GetLocationInfo(arr, day) {
     if (arr.length == 0) return "";
-    let res = `<div class="location"><img src="/2024/event/img/map_pin.svg"><p>【${day}日目】</p>`;
+    let res = `<div class="location location_${day == 1 ? "day1" : "day2"}"><img src="/2024/event/img/map_pin.svg"><p>【${day}日目】`;
     let tmp = arr.map((val) => {
-        return `<p> ${val.location.replace("[晴天時]", "").replace("[雨天時]", "(雨天)")}　${val.start_h}:${("00" + val.start_m).slice(-2)}-${val.end_h}:${("00" + val.end_m).slice(-2)}　${val.summary === undefined ? "" : val.summary}</p>`;
+        return `<br> ${val.location.replace("[晴天時]", "").replace("[雨天時]", "(雨天)")}　${val.start_h}:${("00" + val.start_m).slice(-2)}-${val.end_h}:${("00" + val.end_m).slice(-2)}　${val.summary === undefined ? "" : val.summary}`;
     });
-    tmp.filter((val, idx) => {
+    tmp.filter((val) => {
         if (!val.includes("(雨天)")) return true;
         else return !tmp.includes(val.replace("(雨天)", ""));
     }).forEach((val) => (res += val));
-    res += "</div>";
+    res += "</p></div>";
     return res;
 }
 document.addEventListener("DOMContentLoaded", async () => {
     let json = await fetch("./info/events.json");
     events = JSON.parse(await json.text());
+    const width_query = window.matchMedia("(min-width: 1024px)");
+
+    window.addEventListener("resize", () => {
+        window.location.href = "./event-list.html";
+    });
 
     if (events.is_rainy.day1 != "none" || events.is_rainy.day2 != "none") {
         let events_list = document.getElementById("events_list");
@@ -47,7 +52,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 <div class="events_acc" id="${event.name}">
     <div class="acc_button">
         <img src="/2024/event/img/acc_play.svg" class="acc_button_img">
-        <p class="acc_title">${event.name}</p>
+        <img src="/2024/event/img/acc_play_pc.svg" class="acc_button_img_pc">
+        <p class="acc_title">${width_query.matches ? event.name.replace("<br>", "") : event.name}</p>
         <div class="ticket_space">
             <div class="ticket_box">
                 ${event.ticket === true ? '<img src="/2024/event/img/ticket_box.svg"><p>要整理券</p>' : ""}
@@ -56,9 +62,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     </div>
     <div class="acc_box">
         <div class="box_space"></div>
-        ${GetLocationInfo(event.day1, 1)}
-        ${GetLocationInfo(event.day2, 2)}
-        <p class="event_summary">${event.summary}</p>
+        <div class="locations">
+            ${GetLocationInfo(event.day1, 1)}
+            ${GetLocationInfo(event.day2, 2)}
+        </div>
+        ${event.summary != "" ? `<p class="event_summary">${event.summary}</p>` : ""}
     </div>
 </div>
 `

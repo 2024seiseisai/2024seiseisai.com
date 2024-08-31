@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", async () => {
     let json = await fetch("./info/events.json");
     events = JSON.parse(await json.text());
+    const width_query = window.matchMedia("(min-width: 1024px)");
+
+    window.addEventListener("resize", () => {
+        location.reload();
+    });
 
     {
         let elements = [document.getElementById("day1_button"), document.getElementById("day2_button")];
@@ -116,21 +121,25 @@ ${ev_lists[val.name].day2
             arrows: false,
             gap: "128px",
             pagination: false,
+            mediaQuery: "min",
+            perPage: 1,
             easing: "ease-in-out",
             noDrag: "",
             dragMinThreshold: 20,
             keyboard: true,
         });
         let slide_title = new Splide("#sub_slide", {
+            type: "loop",
             speed: 400,
             arrows: false,
             pagination: false,
             easing: "ease-in-out",
+            perPage: 1,
             drag: false,
         });
         slide.sync(slide_title);
-        slide.mount();
         slide_title.mount();
+        slide.mount();
         document.getElementById("left_arrow").addEventListener("click", () => {
             slide.go("<");
         });
