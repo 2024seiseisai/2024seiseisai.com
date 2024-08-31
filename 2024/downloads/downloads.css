@@ -2,7 +2,7 @@
 .downloads_top_title{
     margin-top: 20px;
     margin-left: 20px;
-    width:140px;
+    height:30px;
     vertical-align: top;
 }
 .downloads_top{
@@ -18,6 +18,7 @@
     padding-bottom: 1px;
     background-image: url("img/underline_xheader.png");
     background-repeat: no-repeat;
+    background-size:110% 20px;
     background-position: 20px 15px;
 }
 .element_heading{
@@ -53,7 +54,7 @@
 .sixty_pamphlet_downloads{
     float:right;
     padding-right: 5px;
-    padding-left: 5px;
+    padding-left: 10px;
     margin-top: 3px;
     color:white;
     font-family: 'Noto Sans JP';
@@ -66,7 +67,8 @@
     padding-bottom: 1px;
     background-image: url("img/underline_logotheme.png");
     background-repeat: no-repeat;
-    background-position: 20px 15px;
+    background-size:110% 20px;
+    background-position: 20px;
 }
 .element_heading2{
     margin-top: 100px;
@@ -96,10 +98,47 @@
     margin-top: 0px;
 }
 .club_detail{
+    margin-left: auto; /* 右揃えにするために追加 */
+    padding-right: 10px; /* 右端からの余白を調整 */
     margin-top: 0px;
-    padding-left: 200px;
     padding-top: 0px;
     color: #FF0084;
     font-size:24px;
     padding-top: 0px;
+}
+
+
+/*福島追加 */
+.club_detail_content{
+    display:flex;
+    align-items: center;
+    margin-left:28px;
+    height:44px;
+}
+
+.club_logo{
+    width:28px;
+    height:28px;
+    border: solid #FF0084 2px;
+    border-radius:50%;   
+}
+
+.club_detail_content p{
+    margin-left:16px;
+}
+
+.club_link{
+    margin-left:auto;
+    margin-right:20px;
+    background-color: #FF0084;
+    text-decoration:none;
+    color:#FFFFFF;
+    border-radius:5px;
+    display:flex;
+    padding:2px 8px;
+}
+
+.link_img{
+    width:20px;
+    height:20px;
 }
