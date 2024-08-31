@@ -1,50 +1,101 @@
 .special_top_title{ /*ページのタイトル画像*/
     margin-top: 20px;
-    margin-left: 20px;
-    height:32px;
+    margin-left: 5.6%;
+    height: 32px;
     vertical-align: top;
+}
+@media only screen and (min-width: 1024px) {
+  .special_top_title{
+    height: 76px;
+    margin-left : 11%;
+  }
 }
 
 .special_top_jp{ /*ページのタイトル日本語*/
-    margin-left: 20px;
+    margin-left: 5.6%;
     line-height: 0px;
     margin-bottom: 20px;
 }
-
-.Top_explanation{ /*ページの説明文*/
-    margin: 40px 20px;
+@media only screen and (min-width: 1024px) {
+  .special_top_jp{
+    margin-left: 11%;
+  }
 }
 
-.underline_wallpaper{
+
+.Top_explanation{ /*ページの説明文*/
+    margin: 40px 5.6%;
+}
+@media only screen and (min-width: 1024px) {
+  .Top_explanation{
+    margin-left: 11%;
+    margin-right: 11%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .JP_36_Medium {
+    font-family: 'Noto Sans JP';
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .JP_48_Medium {
+    font-family: 'Noto Sans JP';
+    font-size: 48px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .underline_wallpaper{
   margin-right: 20px;
   padding-bottom: 20px;
   background-image: url("img/underline_wallpaper.png");
   background-repeat: no-repeat;
   background-position: 10px 10px;
+  }
 }
-
-.underline_icon{
+@media screen and (max-width: 1023px){
+  .underline_icon{
   margin-right: 20px;
   padding-bottom: 20px;
   background-image: url("img/underline_icon.png");
   background-repeat: no-repeat;
   background-position: 10px 10px;
+  }
 }
-
-.underline_xheader{
+@media screen and (max-width: 1023px){
+  .underline_xheader{
   margin-right: 20px;
   padding-bottom: 20px;
   background-image: url("img/underline_xheader.png");
   background-repeat: no-repeat;
   background-position: 10px 10px;
+  }
 }
-
-.underline_logotheme{
+@media screen and (max-width: 1023px){
+  .underline_logotheme{
   margin-right: 20px;
   padding-bottom: 20px;
   background-image: url("img/underline_logotheme.png");
   background-repeat: no-repeat;
   background-position: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .underline img{
+    display: none;    
+  }
+}
+@media screen and (min-width: 1024px) {
+  .underline{
+    position: relative;
+  }
+  .underline p{
+    position: absolute;
+    top: -40px;
+  }
 }
 
 .attention{
@@ -66,8 +117,14 @@
 .border {
   height: 1px;
   background-color: #000000;
-  margin-left : 20px;
+  margin-left : 5.6%;
   margin-right: 0px;
+}
+@media screen and (min-width: 1024px) {
+  .border {
+    margin-left : 11%;
+  }
+  
 }
 
 .logouse_text{ /*ロゴ使用許諾のテキスト*/
@@ -75,14 +132,34 @@
     margin-top: 0px;
 }
 
-ul{ /*禁止事項位置*/
-    margin-left: 20px;
-    padding-left: 20px;
+main ul{ /*禁止事項位置*/
+    margin-left: 5.6%;
+}
+@media only screen and (min-width: 1024px) {
+  main ul{
+    margin-left: 11%;
+  }
 }
 
+.prohibit{
+  margin-left: 5.6%;
+  color:#FF0084;
+}
+@media only screen and (min-width: 1024px) {
+  .prohibit{
+    margin-left: 11%;
+  }
+}
 .element_heading{ /*各要素の見出し*/
-    margin-left: 20px;
+    margin-left: 5.6%;
     color:#FF0084;
+}
+@media only screen and (min-width: 1024px) {
+  .element_heading{
+    margin-left: 11%;
+    color: white;
+    top: 25px;
+  }
 }
 
 /*rec系は'ロゴの使用について'行*/
@@ -90,6 +167,11 @@ ul{ /*禁止事項位置*/
     height: 30px;
     width: 4px;
     background-color: #FF0084;
+}
+@media only screen and (min-width: 1024px) {
+  .rectangle30{
+    height: 48px;
+  }
 }
 
 .rechead{
@@ -103,11 +185,21 @@ ul{ /*禁止事項位置*/
 }
 
 .recuse{
-    margin-left: 20px;
+    margin-left: 5.6%;
+}
+@media only screen and (min-width: 1024px) {
+  .recuse{
+    margin-left: 11%;
+  }
 }
 
 .symbol_top_text{ /*symbol markの見出しテキスト*/
-    margin-left: 20px;
+    margin-left: 5.6%;
+}
+@media only screen and (min-width: 1024px) {
+  .symbol_top_text{
+    margin-left: 11%;
+  }
 }
 
 .splide {
@@ -146,16 +238,48 @@ ul{ /*禁止事項位置*/
     background-image: url(splide/arrow_right.svg);
 
   }
-  /* スライド共通のスタイル */
-  .splide__slide img {
-    opacity: .5; /* 左右のスライドを薄くする */
+
+  .splide__slide img{
+    opacity: 0; /* 左右のスライドを薄くする */
     transition: .5s; /* ゆっくり */
   }
-  /* アクティブなスライドのスタイル */
-  .splide__slide.is-active img {
+  .splide__slide.is-visible img {
     opacity: 1; /* 中央のスライドは薄くしない */
     z-index: 1; /* 中央のスライドを一番上にする */
   }
+
+  /* スライド共通のスタイル */
+  @media screen and (max-width: 1024px) {
+    .splide__slide img{
+    opacity: .5; /* 左右のスライドを薄くする */
+    transition: .5s;  /*ゆっくり */
+  }
+  }
+  /* アクティブなスライドのスタイル */
+  @media screen and (max-width: 1024px) {
+    .splide__slide.is-active img {
+    opacity: 1; /* 中央のスライドは薄くしない */
+    z-index: 1; /* 中央のスライドを一番上にする */
+  }
+  }  
+  .Xheader .splide__slide img{
+    opacity: .5; /* 左右のスライドを薄くする */
+    transition: .5s; /* ゆっくり */
+  }
+  .Xheader .splide__slide.is-active img {
+    opacity: 1; /* 中央のスライドは薄くしない */
+    z-index: 1; /* 中央のスライドを一番上にする */
+  }
+  .Xheader img:not(.is_active) {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .Xheader .underline img{
+    width: auto;
+  }
+  
+  
   .splide .splide_arrow.arrow--prev {
     background-image: url(splide/arrow_left.svg);
   }
@@ -171,6 +295,19 @@ ul{ /*禁止事項位置*/
     height: auto;
     margin-bottom: 50px;
   }
+  @media screen and (min-width: 1024px) {
+    .wallpapers img:not(.dl_button) {
+      width: 100%;
+      height: auto;
+      margin-bottom: 50px;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .wallpapers img.dl_button:hover, .icons img.dl_button:hover {
+      transform: translate(50%, -50%) scale(1.1);
+    }
+  }
+
   .wallpapers img.dl_button {
     right: 0;
     bottom: 0;
@@ -204,15 +341,36 @@ ul{ /*禁止事項位置*/
     bottom: 12%;
     transform: translate(50%, -50%);
   }
+  @media only screen and (min-width: 1025px) {
+    .headers img.dl_button:hover {
+      transform: translate(50%, 50%) scale(1.1);
+    }
+  }
 
   .readme_download{
     text-align: center;
   }
+  @media screen and (max-width: 1023px) {
+    .readme_download_pc{
+      display: none;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .readme_download_mb{
+      display: none;
+    }
+  }
 
   .special_title {
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 5.6%;
     margin-right: 20px;
+  }
+  @media screen and (min-width: 1024px) {
+    .special_title {
+      margin-left: 11%;
+    }
+    
   }
   section.logo_download .prev {
     border: #737373 solid 1px;
