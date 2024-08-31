@@ -858,19 +858,20 @@ main{
 
 .gallery_goods_selling{
     position: relative;
-
-    width: 100px;
+    width: 100%;
+    height: 100%;
 }
 
 .gallery_goods_selling_img{
-    width: 100px;
+    width: 100%;
+    height: 100%;
 }
 
 .gallery_goods_selling_two_squares{
-    width: 20px;
+    width: 20%;
     position: absolute;
-    top: 75px;
-    left: 75px;
+    top: 75%;
+    left: 75%;
 }
 
 .gallery_cross_img{
@@ -890,8 +891,8 @@ main{
     outline: none; /* クリックしたときに表示される枠線を消す */
     background: transparent; /* 背景の灰色を消す */
     padding: 0px 0px;
-    width: 100px;
-    height: 100px;
+    width: 28%;
+    height: 28%;
 
 }
 
