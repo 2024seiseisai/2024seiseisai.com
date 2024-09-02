@@ -352,7 +352,7 @@ main{
 
 
     .gallery_modal_img_1{
-        height: calc(88vh - 100px);
+        height: calc(78vh - 100px);
         width: auto;
         position: absolute;
         top: 50%;
@@ -362,7 +362,8 @@ main{
     }
     
     .gallery_modal_img_2{
-        width: 100%;
+        height: calc(78vh - 100px);
+        width: auto;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -370,7 +371,8 @@ main{
     }
     
     .gallery_modal_img_3{
-        width: 100%;
+        height: auto;
+        width: 58.3vw;
         position: absolute;
         top: 50%;
         left: 50%;
