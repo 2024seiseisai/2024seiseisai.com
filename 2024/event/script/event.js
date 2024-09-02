@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     {
-        let elements = [document.getElementById("day1_button"), document.getElementById("day2_button")];
+        let elements = [document.getElementById(width_query.matches ? "day1_button_pc" : "day1_button"), document.getElementById(width_query.matches ? "day2_button_pc" : "day2_button")];
         elements.forEach((element, index) => {
             element.addEventListener("click", () => {
                 if (element.classList.contains("day_selected")) return;
@@ -126,19 +126,20 @@ ${ev_lists[val.name].day2
             easing: "ease-in-out",
             noDrag: "",
             dragMinThreshold: 20,
-            keyboard: true,
         });
-        let slide_title = new Splide("#sub_slide", {
-            type: "loop",
-            speed: 400,
-            arrows: false,
-            pagination: false,
-            easing: "ease-in-out",
-            perPage: 1,
-            drag: false,
-        });
-        slide.sync(slide_title);
-        slide_title.mount();
+        if (!width_query.matches) {
+            let slide_title = new Splide("#sub_slide", {
+                type: "loop",
+                speed: 400,
+                arrows: false,
+                pagination: false,
+                easing: "ease-in-out",
+                perPage: 1,
+                drag: false,
+            });
+            slide.sync(slide_title);
+            slide_title.mount();
+        }
         slide.mount();
         document.getElementById("left_arrow").addEventListener("click", () => {
             slide.go("<");
@@ -148,5 +149,25 @@ ${ev_lists[val.name].day2
         });
         let hash = window.location.hash;
         if (hash == "#rain") slide.go(2);
+
+        if (width_query.matches) {
+            let pressflag = false;
+            window.addEventListener("keydown", (keyevent) => {
+                if (pressflag) return;
+                if (keyevent.key === "ArrowLeft") {
+                    slide.go("<");
+                    pressflag = true;
+                }
+                if (keyevent.key === "ArrowRight") {
+                    slide.go(">");
+                    pressflag = true;
+                }
+            });
+            window.addEventListener("keyup", (keyevent) => {
+                if (keyevent.key === "ArrowLeft" || keyevent.key === "ArrowRight") {
+                    pressflag = false;
+                }
+            });
+        }
     }
 });

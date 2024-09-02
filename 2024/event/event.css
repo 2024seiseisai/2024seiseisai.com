@@ -3,17 +3,16 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
-p {
+main p {
   margin: 0;
 }
 
-img {
+main img {
   display: block;
 }
 
 #title_img {
-  margin-left: 20px;
-  margin-top: 20px;
+  margin: 20px 0 0 20px;
   height: 32px;
   display: block;
 }
@@ -27,6 +26,40 @@ img {
 #buttons {
   margin: 0px;
   position: relative;
+}
+
+#day_button_pc {
+  visibility: hidden;
+  top: 5.55vw;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+#day1_button_pc,
+#day2_button_pc {
+  cursor: pointer;
+  position: relative;
+}
+
+#day2_button_pc .day_color {
+  opacity: 0;
+}
+
+#day1_button_pc img,
+#day2_button_pc img {
+  height: 9.65vw;
+}
+
+#day1_button_pc p,
+#day2_button_pc p {
+  font-weight: 500;
+  font-size: 1.66vw;
+  margin-left: 9.3vw;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 #day_button {
@@ -66,15 +99,7 @@ img {
   opacity: 0;
 }
 
-#day1_button p {
-  font-weight: 500;
-  font-size: 14px;
-  text-align: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-
+#day1_button p,
 #day2_button p {
   font-weight: 500;
   font-size: 14px;
@@ -424,6 +449,30 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
+  #title_img {
+    margin: 2.77vw 0 0 11.11vw;
+    height: 5.27vw;
+  }
+  #title_txt {
+    font-weight: 500;
+    font-size: 2.77vw;
+    margin: 0 auto 0 11.11vw;
+  }
+  #day_button {
+    visibility: hidden;
+  }
+  #day_button_pc {
+    visibility: visible;
+  }
+  #arrow {
+    visibility: hidden;
+  }
+  #time_table_title {
+    position: absolute;
+  }
+  #time_table {
+    margin: 20.41vw 6.94vw 0 6.94vw;
+  }
   #return_button {
     margin: 6.94vw 0 0 6.94vw;
     height: 8.33vw;
