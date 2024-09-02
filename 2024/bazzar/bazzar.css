@@ -5,6 +5,15 @@ main{
     margin-right: 5%;
     height: 2790px;
 }
+@media screen and (min-width: 1024px){
+    main{
+        display: block;
+        text-align: left;
+        margin-left: 160px;
+        margin-right: 160px;
+        height: 3676px;
+    }
+}
 .title{
     text-align: left;
 }
@@ -13,6 +22,13 @@ main{
     height: auto;
     margin-top: 20px;
 }
+@media screen and (min-width: 1024px){
+    .titleimg{
+        width: 333px;
+        height: auto;
+        margin-top: 40px;
+    }
+}
 .title_text{
     margin-top: 0%;
 }
@@ -20,8 +36,27 @@ main{
     width:100%;
     height:auto;
 }
+@media screen and (min-width: 1024px){
+    .map{
+        width:520px;
+        height:auto;
+        float: left;
+    }
+}
 .bazzar{
     margin-top: 32px;
+}
+@media screen and (min-width: 1024px){
+    .bazzars{
+        overflow: hidden;
+    }
+}
+@media screen and (min-width: 1024px){
+    .bazzar{
+        margin-top: 40px;
+        width: 534px;
+        float: right;
+    }
 }
 .title_box{
     overflow:auto;
@@ -35,6 +70,18 @@ main{
     margin-bottom: 0%;
     width: 32px;
     height: 32px;
+}
+@media screen and (min-width: 1024px){
+    .num{
+        color: #FFFFFF;
+        background-color: #FFB156;
+        text-align: center;
+        float: left;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        width: 48px;
+        height: 48px;
+    }
 }
 .item{
     float: left;
@@ -63,9 +110,33 @@ main{
     margin-right: 5%;
     margin-left:calc(100% - 305px);/*現金　の部分のmargin-leftを画面幅に合わせて大きくしてあげることで、ほかの3要素が右に流れて来ないように*/
 }
+@media screen and (min-width: 1024px){
+    .cash{
+        color:#FFFFFF;
+        background-color: #FF0084;
+        text-align: center;
+        float: right;
+        width: 96px;
+        height: 49px;
+        margin-top: 0%;
+        margin-left: 80px;
+}
+@media screen and (min-width: 1024px){
+    .shops{
+        overflow: hidden;
+    }
+}
 .shop{
     overflow:auto;
     margin-top: 32px;
+}
+@media screen and (min-width: 1024px){
+    .shop{
+        overflow:auto;
+        margin-top: 40px;
+        width: 520px;
+        float: left;
+    }
 }
 .icon{
     float: left;
@@ -82,6 +153,19 @@ main{
 
     border-radius: 4px;
 }
+@media screen and (min-width: 1024px){
+    .room{
+        color: #FFFFFF;
+        text-align: center;
+        float: left;
+        width: 89px;
+        height: 33px;
+        margin-left: 12px;
+        margin-right: 50px;
+    
+        border-radius: 4px;
+    }
+}
 .blue{
     background: #0085FF;
 }
@@ -94,8 +178,10 @@ main{
     margin-top:6px;
 }
 .shop_scr{
-    margin-left:92px;
+    width: 368px;
+    margin-left: 152px;
     text-align: left;
+    float: left;
 }
 .kinken{
     text-align: left;
@@ -107,6 +193,21 @@ main{
 }
 .kinken_scr{
     text-align: left;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+ 
+.clearfix:before {
+    content: "";
+	display: block;
+	clear: both;
+}
+ 
+.clearfix {
+	display: block;
 }
 
 /*福島クラス追加ここから*/
