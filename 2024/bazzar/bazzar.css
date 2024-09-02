@@ -58,6 +58,11 @@ main{
         float: right;
     }
 }
+@media screen and (min-width: 1024px){
+    .first{
+        margin-top: 0%; 
+    }
+}
 .title_box{
     overflow:auto;
     margin-bottom:-30px;
@@ -124,7 +129,7 @@ main{
 @media screen and (min-width: 1024px){
     .shops{
         overflow: hidden;
-    }
+        width: 520px;
 }
 .shop{
     overflow:auto;
@@ -135,7 +140,6 @@ main{
         overflow:auto;
         margin-top: 40px;
         width: 520px;
-        float: left;
     }
 }
 .icon{
@@ -178,10 +182,16 @@ main{
     margin-top:6px;
 }
 .shop_scr{
-    width: 368px;
-    margin-left: 152px;
+    margin-left:92px;
     text-align: left;
-    float: left;
+}
+@media screen and (min-width: 1024px){
+    .shop_scr{
+        width: 368px;
+        margin-left: 152px;
+        text-align: left;
+        float: left;
+    }
 }
 .kinken{
     text-align: left;
