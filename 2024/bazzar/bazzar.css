@@ -125,11 +125,13 @@ main{
         height: 49px;
         margin-top: 0%;
         margin-left: 80px;
+    }
 }
 @media screen and (min-width: 1024px){
     .shops{
         overflow: hidden;
         width: 520px;
+    }
 }
 .shop{
     overflow:auto;
@@ -204,22 +206,24 @@ main{
 .kinken_scr{
     text-align: left;
 }
-.clearfix:after {
-	content: "";
-	display: block;
-	clear: both;
+@media screen and (min-width: 1024px){
+    .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+     
+    .clearfix:before {
+        content: "";
+        display: block;
+        clear: both;
+    }
+     
+    .clearfix {
+        display: block;
+    }
+    
 }
- 
-.clearfix:before {
-    content: "";
-	display: block;
-	clear: both;
-}
- 
-.clearfix {
-	display: block;
-}
-
 /*福島クラス追加ここから*/
 /*一部の番号ををデザイン通り緑色に*/
 .green{
