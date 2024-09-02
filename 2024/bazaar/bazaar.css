@@ -38,23 +38,22 @@ main{
 }
 @media screen and (min-width: 1024px){
     .map{
-        width:520px;
+        width:100%;
         height:auto;
-        float: left;
     }
 }
-.bazzar{
+.bazaar{
     margin-top: 32px;
 }
 @media screen and (min-width: 1024px){
-    .bazzars{
+    .bazaars{
         overflow: hidden;
     }
 }
 @media screen and (min-width: 1024px){
-    .bazzar{
+    .bazaar{
         margin-top: 40px;
-        width: 534px;
+        width: 40%;
         float: right;
     }
 }
@@ -232,4 +231,13 @@ main{
 /*descriptionとtitle_boxの縦marginを狭めるために、marginマイナス指定すると、goodsのとこだけおかしくなったのでここで修正*/
 .original_goods{
     margin-top:30px;
+}
+@media screen and (min-width: 1024px){
+    .original_goods{
+        margin-top:-50px;
+    }
+
+    .PC_bazaar_container{
+        display: flex;
+    }
 }
