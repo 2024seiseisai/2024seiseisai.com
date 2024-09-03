@@ -3,177 +3,180 @@ main{
     justify-content: center;
 }
 
-.number {
-    width: 99px;
-    height: 49px;
-    
-    border: 1px solid;
-    line-height: 49.1px;
-    color: #FFFFFF;
-    text-shadow:
-           1px 1px 0px rgba(255, 0, 132, 1), -1px -1px 0px rgba(255, 0, 132, 1),
-          -1px 1px 0px rgba(255, 0, 132, 1),  1px -1px 0px rgba(255, 0, 132, 1),
-           1px 0px 0px rgba(255, 0, 132, 1), -1px  0px 0px rgba(255, 0, 132, 1),
-           0px 1px 0px rgba(255, 0, 132, 1),  0px -1px 0px rgba(255, 0, 132, 1);
-}
+@media only screen and (max-width:359px){
+    .mobile.number {
+        width: 99px;
+        height: 49px;
+            border: 1px solid;
+        line-height: 49.1px;
+        color: #FFFFFF;
+        text-shadow:
+            1px 1px 0px rgba(255, 0, 132, 1), -1px -1px 0px rgba(255, 0, 132, 1),
+            -1px 1px 0px rgba(255, 0, 132, 1),  1px -1px 0px rgba(255, 0, 132, 1),
+            1px 0px 0px rgba(255, 0, 132, 1), -1px  0px 0px rgba(255, 0, 132, 1),
+            0px 1px 0px rgba(255, 0, 132, 1),  0px -1px 0px rgba(255, 0, 132, 1);
+    }
 
-.left.number{
-    position:absolute;
-    margin-top: 0px;
-}
-.right.number{
-    position:absolute;
-    margin-top: 0px;
-    margin-left: 180px;
-}
-.stock{
-    width: 64px; 
-    height: 20px; 
-    padding: 1px 8px 1px 8px;
-    
-    border-radius: 4px 0px 4px 0px;
-    opacity: 0px;
-    position:absolute;
-    background: rgba(255, 0, 132, 1);
-}
-.stock-inner{
-    width: 48px;
-    height: 17px;
-    gap: 0px;
-    opacity: 0px;
-    line-height: 17.38px;
-    color: rgba(255, 255, 255, 1);
-    position: absolute;
-    margin-top: 1.5px;
-    margin-left: 8px;
-}
+    .mobile.left.number{
+        position:absolute;
+        margin-top: 0px;
+    }
+    .mobile.right.number{
+        position:absolute;
+        margin-top: 0px;
+        margin-left: 180px;
+    }
+    .mobile.stock{
+        width: 64px; 
+        height: 20px; 
+        padding: 1px 8px 1px 8px;
+        
+        border-radius: 4px 0px 4px 0px;
+        opacity: 0px;
+        position:absolute;
+        background: rgba(255, 0, 132, 1);
+    }
+    .mobile.stock-inner{
+        width: 48px;
+        height: 17px;
+        gap: 0px;
+        opacity: 0px;
+        line-height: 17.38px;
+        color: rgba(255, 255, 255, 1);
+        position: absolute;
+        margin-top: 1.5px;
+        margin-left: 8px;
+    }
 
-.picture{
-    
-    width:140px;
-    height:100px;
-    border-radius: 4px;
-}
-
-
-.goods-name{
-    width: 140px;
-    height: 20px;
-    position: absolute;
-    margin-top: -2px;
-    line-height: 20.27px;
-    color:  rgba(0, 0, 0, 1);
-}
-
-.money{
-    width:98px;
-    height: 29px;
-    position: absolute;
-    margin-top: 12px;
-    position:absolute;
-    margin-left: 42px;
-    color: rgba(255, 0, 132, 1);
-
-}
-.price{
-    line-height: 28.96px;
-}
-.tax{
-    line-height: 23.17px;
-}
-.detail{
-    line-height: 17.38px;
-    color: rgba(0, 0, 0, 1);
-    width: 69px;
-    height: 17px;
-    position:absolute;
-    margin-top: 214px;
-    border-bottom: 1px solid rgba(0, 0, 0, 1);
-    
-}
-.left.detail{
-    margin-left: 71px;
-}
-.right.detail{
-    margin-left: 251px;
-}
-
-.flame{
-    position: absolute;
-    width: 320px;
-    height: 251px;
-    left: calc(50% - 160px);
-    border-bottom: 1px solid rgba(255, 0, 132, 1);
-}
-.no12.flame{
-    position: absolute;
-    margin-top: 94px;
-}
-.no34.flame{
-    position: absolute;
-    margin-top: 365px;
-}
-.no56.flame{
-    position: absolute;
-    margin-top: 636px;
-}
-.no78.flame{
-    position: absolute;
-    margin-top: 907px;
-}
-.container{
-    width: 140px;
-    height: 157px;
-    position:absolute;
-    margin-top: 49px;
-}
-.right.container{
-    margin-left: 180px;
-}
+    .mobile.picture{
+        width:140px;
+        height:100px;
+        border-radius: 4px;
+    }
 
 
+    .mobile.goods-name{
+        width: 140px;
+        height: 20px;
+        position: absolute;
+        margin-top: -2px;
+        line-height: 20.27px;
+        color:  rgba(0, 0, 0, 1);
+    }
 
-.box {
-    background: url("Shivercrop_0-00-23-27_2.png");
-    background-repeat: repeat-y;
-    width: 100%;
-    height: 1362px;
-    margin-top: -2px;
-    margin-bottom: 62px;
-    position: relative;
-}
+    .mobile.money{
+        width:98px;
+        height: 29px;
+        position: absolute;
+        margin-top: 12px;
+        position:absolute;
+        margin-left: 42px;
+        color: rgba(255, 0, 132, 1);
 
-.relative{
-    position: relative;
-}
-.about-stock-box{
-    position: absolute;
-    margin-top: 1216px;
-    margin-left: 20px;
-    width: 108px;
-    height: 28px;
-}
-.about-stock-bar{
-    position: absolute;
-    background: rgba(255, 0, 132, 1);
-    width: 4px;
-    height: 28px;
-}
-.about-stock-title{
-    position: absolute;
-    margin-left: 12px;
-    margin-top: 2.5px;
-    color: rgba(0, 0, 0, 1);
-    line-height: 23.17px;
-    width: 96px;
-    height: 23px;
-}
-.about-stock-paragraph{
-    line-height: 20px;
-    color: rgba(0, 0, 0, 1);
-    height: 80px;
-    position: absolute;
-    margin: 1266px 20px 0 20px;
+    }
+    .mobile.price{
+        line-height: 28.96px;
+    }
+    .mobile.tax{
+        line-height: 23.17px;
+    }
+    .mobile.detail{
+        line-height: 17.38px;
+        color: rgba(0, 0, 0, 1);
+        width: 69px;
+        height: 17px;
+        position:absolute;
+        margin-top: 214px;
+        border-bottom: 1px solid rgba(0, 0, 0, 1);
+        
+    }
+    .mobile.left.detail{
+        margin-left: 71px;
+    }
+    .mobile.right.detail{
+        margin-left: 251px;
+    }
+
+    .mobile.flame{
+        position: absolute;
+        width: 320px;
+        height: 251px;
+        left: calc(50% - 160px);
+        border-bottom: 1px solid rgba(255, 0, 132, 1);
+    }
+    .mobile.no12.flame{
+        position: absolute;
+        margin-top: 94px;
+    }
+    .mobile.no34.flame{
+        position: absolute;
+        margin-top: 365px;
+    }
+    .mobile.no56.flame{
+        position: absolute;
+        margin-top: 636px;
+    }
+    .mobile.no78.flame{
+        position: absolute;
+        margin-top: 907px;
+    }
+    .mobile.container{
+        width: 140px;
+        height: 157px;
+        position:absolute;
+        margin-top: 49px;
+    }
+    .mobile.right.container{
+        margin-left: 180px;
+    }
+
+
+
+    .mobile.box {
+        background: url("Shivercrop_0-00-23-27_2.png");
+        background-repeat: repeat-y;
+        width: 100%;
+        height: 1362px;
+        margin-top: -2px;
+        margin-bottom: 62px;
+        position: relative;
+    }
+
+    .mobile.relative{
+        position: relative;
+    }
+    .mobile.about-stock-box{
+        position: absolute;
+        margin-top: 1216px;
+        margin-left: 20px;
+        width: 108px;
+        height: 28px;
+    }
+    .mobile.about-stock-bar{
+        position: absolute;
+        background: rgba(255, 0, 132, 1);
+        width: 4px;
+        height: 28px;
+    }
+    .mobile.about-stock-title{
+        position: absolute;
+        margin-left: 12px;
+        margin-top: 2.5px;
+        color: rgba(0, 0, 0, 1);
+        line-height: 23.17px;
+        width: 96px;
+        height: 23px;
+    }
+    .mobile.about-stock-paragraph{
+        line-height: 20px;
+        color: rgba(0, 0, 0, 1);
+        height: 80px;
+        position: absolute;
+        margin: 1266px 20px 0 20px;
+    }
+    .pc{
+        display: none;
+    }
 }
     
 @media only screen and (max-width:359px){
@@ -189,4 +192,108 @@ main{
         transform: translateX(-3vw);
     }
 }
+@media (min-width: 360px){
+    .mobile{
+        display: none;
+    }
+    .pc.container{
+        position: absolute;
+        width: 1120px;
+        height: 560px;
+        margin-left: 160px;
+    }
+    .pc.no123.container{
+        margin-top: 354px;
+    }
+    .pc.no456.container{
+        margin-top: 989px;
+    }
+
+    .pc.flame{
+        position: absolute;
+        width: 336px;
+        height: 560px;
+        border-bottom: 2px solid rgba(255, 0, 132, 1);
+    }
+    
+    .pc.flame.middle{
+        margin-left: 392px;
+    }
+
+    .pc.number{
+        position: absolute;
+        width: 197px;
+        height: 98px;
+        border: 2px solid;
+        line-height: 98.12px;
+        color: #FFFFFF;
+        text-shadow:
+            2px 2px 0px rgba(255, 0, 132, 1), -2px -2px 0px rgba(255, 0, 132, 1),
+            -2px 2px 0px rgba(255, 0, 132, 1),  2px -2px 0px rgba(255, 0, 132, 1),
+            2px 0px 0px rgba(255, 0, 132, 1), -2px  0px 0px rgba(255, 0, 132, 1),
+            0px 2px 0px rgba(255, 0, 132, 1),  0px -2px 0px rgba(255, 0, 132, 1);
+    }
+
+
+
+
+    .pc.stock{
+        position: absolute;
+        width: 176px;
+        height: 51px;
+        margin-top: 98px;
+        padding: 4px 8px 4px 8px;
+        border-radius: 20px 0px 20px 0px;
+        background-color: rgba(255, 0, 132, 1);
+    }
+    .pc.stock-inner{
+        position: absolute;
+        width: 128px;
+        height: 46px;
+        margin-top: 2.5px;
+        margin-left: 24px;
+        line-height: 46.34px;
+        color: rgba(255, 255, 255, 1);
+    }
+    .pc.picture{
+        position: absolute;
+        width: 336px;
+        height: 240px;
+        margin-top: 98px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .pc.goods-name{
+        position: absolute;
+        width: 336px;
+        height: 46px;
+        margin-top: 338px;
+        line-height: 46.34px;
+        color: rgba(0, 0, 0, 1);
+    }
+    .pc.money{
+        position: absolute;
+        width: 196px;
+        height: 58px;
+        margin-top: 384px;
+        margin-left: 139px;
+        color: rgba(255, 0, 132, 1);
+    }
+    .pc.price{
+        line-height: 57.92px;
+    }
+    .tax{
+        line-height: 46.34px;
+    }
+    .pc.detail{
+        position: absolute;
+        width: 138px;
+        height: 35px;
+        margin-top: 482px;
+        margin-left: 197px;
+        line-height: 34.75px;
+        color: rgba(0, 0, 0, 1);
+        border-bottom: 2px solid rgba(0, 0, 0, 1);
+    }
+}
+
     
