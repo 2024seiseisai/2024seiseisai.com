@@ -196,6 +196,19 @@ main{
     .mobile{
         display: none;
     }
+}
+
+.main{
+    position: relative;
+}
+.pc.box{
+    position: relative;
+    width: 1440px;
+    height: 2739px;
+    margin-top:-96px;
+
+
+}
     .pc.container{
         position: absolute;
         width: 1120px;
@@ -219,7 +232,9 @@ main{
     .pc.flame.middle{
         margin-left: 392px;
     }
-
+    .pc.flame.right{
+        margin-left: 784px;
+    }
     .pc.number{
         position: absolute;
         width: 197px;
@@ -294,6 +309,6 @@ main{
         color: rgba(0, 0, 0, 1);
         border-bottom: 2px solid rgba(0, 0, 0, 1);
     }
-}
+
 
     
