@@ -63,22 +63,30 @@ document.addEventListener("DOMContentLoaded", async () => {
             });
             val.day2_bound1 = Array.from(new Set(val.day2_bound1));
         }
-        events.locations.forEach((val) => {
+        let res = "";
+        events.locations.forEach((val, idx) => {
             document.querySelector("#time_table_title .splide__list").insertAdjacentHTML("beforeend", `<li class="splide__slide slide_title">${val.name}</li>`);
-            document.querySelector("#time_table .splide__list").insertAdjacentHTML(
-                "beforeend",
-                `
-<li class="splide__slide slide_element">
-${ev_lists[val.name].day1_bound1.map((time) => `<p class="table_scale2 day1" style="--offset_val: ${time}">${Math.floor(time / 60)}:${("00" + (time % 60)).slice(-2)}</p>`).reduce((sum, el) => sum + el, "")}
-${ev_lists[val.name].day2_bound1.map((time) => `<p class="table_scale2 day2" style="--offset_val: ${time}">${Math.floor(time / 60)}:${("00" + (time % 60)).slice(-2)}</p>`).reduce((sum, el) => sum + el, "")}
-${[...Array(9)].map((_, i) => `<p class="table_scale" style="--time_index: ${i};">${9 + i}:00</p>`).reduce((sum, el) => sum + el, "")}
-${[...Array(17)].map((_, i) => `<div class="table_border" style="--border_index: ${i};"></div>`).reduce((sum, el) => sum + el, "")}
+            res += `
+${!width_query.matches || idx % 2 == 0 ? `<li class="splide__slide slide_element">` : ""}
+${
+    !width_query.matches
+        ? ""
+        : `
+<div class="slide_title_pc ${idx % 2 == 1 ? "table_element_right" : "table_element_left"}">
+    <p class="slide_title_pc_txt">${val.name.replace("[晴天時]", '</p><p class="slide_title_pc_wth">晴天時').replace("[雨天時]", '</p><p class="slide_title_pc_wth">雨天時')}</p>
+</div>
+`
+}
+${ev_lists[val.name].day1_bound1.map((time) => `<p class="table_scale2 day1 ${idx % 2 == 1 ? "table_element_right" : "table_element_left"}" style="--offset_val: ${time}">${Math.floor(time / 60)}:${("00" + (time % 60)).slice(-2)}</p>`).reduce((sum, el) => sum + el, "")}
+${ev_lists[val.name].day2_bound1.map((time) => `<p class="table_scale2 day2 ${idx % 2 == 1 ? "table_element_right" : "table_element_left"}" style="--offset_val: ${time}">${Math.floor(time / 60)}:${("00" + (time % 60)).slice(-2)}</p>`).reduce((sum, el) => sum + el, "")}
+${idx % 2 === 1 ? "" : [...Array(9)].map((_, i) => `<p class="table_scale" style="--time_index: ${i};">${9 + i}:00</p>`).reduce((sum, el) => sum + el, "")}
+${idx % 2 === 1 ? "" : [...Array(17)].map((_, i) => `<div class="table_border" style="--border_index: ${i};"></div>`).reduce((sum, el) => sum + el, "")}
 ${ev_lists[val.name].day1
     .map(
         (ev) => `
-<div class="table_element day1" style="--start_h: ${ev.start_h}; --start_m: ${ev.start_m}; --end_h: ${ev.end_h}; --end_m: ${ev.end_m}; --color: ${ev_lists[val.name].color}">
+<div class="table_element day1 ${idx % 2 == 1 ? "table_element_right" : "table_element_left"}" style="--start_h: ${ev.start_h}; --start_m: ${ev.start_m}; --end_h: ${ev.end_h}; --end_m: ${ev.end_m}; --color: ${ev_lists[val.name].color}">
     <div class="table_element_content">
-        <p>${ev.name}</p>
+        <p>${width_query.matches ? ev.name.replace("<br>", "") : ev.name}</p>
         <img src="/2024/event/img/arrow_circle.svg" class="${ev.event_name}">
     </div>
     <div class="table_element_bar"></div>
@@ -89,9 +97,9 @@ ${ev_lists[val.name].day1
 ${ev_lists[val.name].day2
     .map(
         (ev) => `
-<div class="table_element day2" style="--start_h: ${ev.start_h}; --start_m: ${ev.start_m}; --end_h: ${ev.end_h}; --end_m: ${ev.end_m}; --color: ${ev_lists[val.name].color}">
+<div class="table_element day2 ${idx % 2 == 1 ? "table_element_right" : "table_element_left"}" style="--start_h: ${ev.start_h}; --start_m: ${ev.start_m}; --end_h: ${ev.end_h}; --end_m: ${ev.end_m}; --color: ${ev_lists[val.name].color}">
     <div class="table_element_content">
-        <p>${ev.name}</p>
+        <p>${width_query.matches ? ev.name.replace("<br>", "") : ev.name}</p>
         <img src="/2024/event/img/arrow_circle.svg" class="${ev.event_name}">
     </div>
     <div class="table_element_bar"></div>
@@ -99,10 +107,10 @@ ${ev_lists[val.name].day2
 </div>`
     )
     .reduce((sum, el) => sum + el, "")}
-</li>
-`
-            );
+${!width_query.matches || idx % 2 == 1 ? "</li>" : ""}
+`;
         });
+        document.querySelector("#time_table .splide__list").insertAdjacentHTML("beforeend", res);
     }
 
     {

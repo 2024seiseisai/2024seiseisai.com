@@ -144,11 +144,10 @@ main img {
 }
 .table_scale2 {
     position: absolute;
-    top: calc(128px * ((var(--offset_val) - 540) / 60));
+    top: calc(128px * ((var(--offset_val) - 540) / 60) + 3px);
     left: 66px;
     font-weight: 500;
     font-size: 12px;
-    line-height: 23.17px;
 }
 .table_border {
     position: absolute;
@@ -218,20 +217,15 @@ main img {
 }
 .guide_box img {
     height: 32px;
-}
-#rain_guide img,
-#ticket_guide img {
-    display: block;
     margin: 8px 0 0 8px;
 }
-#rain_guide h2,
-#ticket_guide h2 {
+.guide_box p {
     margin: 9px 0 0 20px;
     font-weight: 500;
     font-size: 20px;
 }
-#rain_guide p,
-#ticket_guide p {
+#rain_guide > p,
+#ticket_guide > p {
     margin: 12px 10px 8px 10px;
     font-weight: 500;
     font-size: 14.5px;
@@ -383,6 +377,99 @@ main img {
     }
     #time_table {
         margin: 20.41vw 6.94vw 0 6.94vw;
+    }
+    .slide_element {
+        height: 147vw;
+    }
+    .slide_title_pc {
+        position: absolute;
+        top: 0.9vw;
+        display: flex;
+        justify-content: center;
+        width: 36.11vw;
+    }
+    .slide_title_pc.table_element_left {
+        left: 11.11vw;
+    }
+    .slide_title_pc.table_element_right {
+        left: 50vw;
+    }
+    .slide_title_pc_txt {
+        font-weight: 500;
+        font-size: 4.44vw;
+        color: #ff0084;
+    }
+    .slide_title_pc_wth {
+        margin-top: 2.84vw;
+        font-weight: 500;
+        font-size: 2.22vw;
+        color: #ff0084;
+    }
+    .table_scale {
+        top: calc(6.31vw + 16.66vw * var(--time_index));
+        left: 1.11vw;
+        font-size: 2.77vw;
+    }
+    .table_scale2 {
+        top: calc(7.28vw + 16.66vw * ((var(--offset_val) - 540) / 60));
+        left: 11.11vw;
+        padding-left: 0.55vw;
+        font-size: 1.38vw;
+    }
+    .table_border {
+        top: calc(8.33vw + 8.33vw * var(--border_index));
+        margin-left: 8.33vw;
+        height: 2px;
+        background-image: linear-gradient(to right, #000 1.38vw, transparent 1.38vw);
+        background-size: 2.76vw 5px;
+    }
+    .table_element {
+        top: calc(8.33vw + 16.66vw * (var(--start_h) + var(--start_m) / 60 - 9));
+        margin: 0 38.88vw 0 11.11vw;
+        height: calc(16.66vw * ((var(--end_h) + var(--end_m) / 60) - (var(--start_h) + var(--start_m) / 60)));
+    }
+    .table_element_right {
+        margin: 0;
+        left: 50vw;
+    }
+    .table_element_content p {
+        font-size: 1.5vw;
+        margin-left: 6.11vw;
+        line-height: 2.41vw;
+    }
+    .table_element_content img {
+        height: min(calc(100% - 0.3vw), 4.44vw);
+        margin: 0 2.77vw 0 auto;
+    }
+    .table_element_bar {
+        width: 0.55vw;
+    }
+    .table_element_back {
+        height: calc(100% - var(--padding_top) - var(--padding_bottom));
+        width: calc(100% - 0.55vw);
+        margin: var(--padding_top) 0 var(--padding_bottom) 0;
+    }
+
+    #rain_guide {
+        margin: 11.87vw 11.11vw 8.33vw 11.11vw;
+        border: 4px solid #ff0084;
+    }
+    #ticket_guide {
+        margin: 0 11.11vw 13.88vw 11.11vw;
+        border: 4px solid #ff0084;
+    }
+    .guide_box img {
+        height: 4.44vw;
+        margin: 2.77vw 0 0 2.77vw;
+    }
+    .guide_box p {
+        margin: 2.77vw 0 0 2.77vw;
+        font-size: 2.77vw;
+    }
+    #rain_guide > p,
+    #ticket_guide > p {
+        margin: 2.77vw 6.94vw 2.77vw 10vw;
+        font-size: 2.22vw;
     }
 
     #return_button {
