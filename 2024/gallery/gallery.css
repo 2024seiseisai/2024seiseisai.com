@@ -465,12 +465,14 @@ main{
     }
 
     .pc_only_prev{
+        border: 1px solid #000000;
+        outline: none; /* クリックしたときに表示される枠線を消す */
+        background: transparent; /* 背景の灰色を消す */
         margin-top: 3.3vh;
         padding-left: 20px;
         padding-right: 20px;
         width: auto;
         height: 12.2vh;
-        border: 1px solid #000000;
         display: flex;
     }
 
@@ -503,6 +505,8 @@ main{
         width: auto;
         height: 12.2vh;
         border: 1px solid #000000;
+        outline: none; /* クリックしたときに表示される枠線を消す */
+        background: transparent; /* 背景の灰色を消す */
         display: flex;
     }
 
