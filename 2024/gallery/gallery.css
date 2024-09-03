@@ -37,6 +37,9 @@ main{
     display: flex;
     justify-content:space-evenly;
     margin-top:3.75%;
+    display: grid; /* グリッドレイアウトを使用 */
+    grid-template-columns: repeat(3, 1fr); /* 3列のグリッドを作成 */
+    gap: 1.875%; /* アイテム間の間隔を設定 */
 }
 
 .gallery_goods_selling{
@@ -74,8 +77,8 @@ main{
     outline: none; /* クリックしたときに表示される枠線を消す */
     background: transparent; /* 背景の灰色を消す */
     padding: 0px 0px;
-    width: 28%;
-    height: 28%;
+    width: 100px;
+    height: 100%;
 
 }
 
@@ -214,4 +217,314 @@ main{
     line-height: 20px;
     text-align: left;
 
+}
+
+/* PC版のみのものを隠すコード */
+@media screen and (max-width: 1023px){
+
+    .pc_only{
+        display: none !important;
+    }
+}
+
+
+/* ここからPC版 */
+@media screen and (min-width: 1024px){
+    main{
+        margin:0 20%;
+        margin-bottom: 0px;
+    }
+    
+    .contact_logo{
+        height: 76px;
+        margin-top: 50px;
+    }
+    
+    .gallery_japanese{
+        font-size: 24px;
+        font-family: "Noto Sans JP";
+        font-weight: 500;
+        color: #000000;
+    }
+    
+    .gallery_content{
+        margin-top: 40px;
+        font-size: 16px;
+        font-family: "Noto Sans JP";
+        font-weight: 500;
+        color: #000000;
+    }
+    
+    .img_total{
+        margin-top: 80px;
+        margin-bottom: 120px;
+        width:100%;
+    }
+    
+    .gallery_img_line{
+        display: flex;
+        justify-content:space-evenly;
+        display: grid; /* グリッドレイアウトを使用 */
+        grid-template-columns: repeat(4, 1fr); /* 3列のグリッドを作成 */
+        column-gap: 1.875%; /* アイテム間の間隔を設定 */
+        row-gap: 40px;
+    }
+    
+    .gallery_goods_selling{
+        position: relative;
+        width: 14vw;
+        height: 100%;
+    }
+    
+    .gallery_goods_selling_img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .gallery_goods_selling_two_squares{
+        width: 20%;
+        position: absolute;
+        top: 75%;
+        left: 75%;
+    }
+    
+    .gallery_cross_img{
+        position: absolute;
+        width: 40px;
+        margin-top: 15px;
+        left: 15px;
+    }
+    
+    /* ここからモーダルウィンドウ */
+    
+    /*モーダルを開くボタンの設定*/
+    
+    #js-open{
+        border: none;
+        outline: none; /* クリックしたときに表示される枠線を消す */
+        background: transparent; /* 背景の灰色を消す */
+        padding: 0px 0px;
+        width: 100px;
+        height: 100%;
+    
+    }
+    
+    /*モーダル本体の指定 + モーダル外側の背景の指定*/
+    .modal-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background: rgba(0,0,0,50%);
+        overflow: auto;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        box-sizing: border-box;
+    }
+    
+    /*モーダル枠の指定*/
+    .modal-body{
+        position: absolute;
+        display: inline-block;
+        height: calc(100vh - 100px);
+        width: 100%;
+        top: 100px;
+        bottom: 120px;
+        left: 0px;
+    }
+
+
+    /*モーダル本体の擬似要素の指定*/
+    .modal-container:before{
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+    .modal_img_box{
+        position: relative;
+        width: 72%;
+    }
+
+
+    .gallery_modal_img_1{
+        height: calc(78vh - 100px);
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+    
+    .gallery_modal_img_2{
+        height: calc(78vh - 100px);
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .gallery_modal_img_3{
+        height: auto;
+        width: 58.3vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    
+    /*モーダル本体に「active」クラス付与した時のスタイル*/
+    .modal-container.active{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        z-index: 10;
+    }
+    
+    
+    .modal-content{
+        position: relative;
+        height: calc(100vh - 100px);
+        z-index: 2;
+    }
+    
+
+    
+    /*モーダルを閉じるボタンの指定*/
+    #close_button{
+        position: absolute;
+        z-index: 30;
+        width: 50px;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    
+    .modal-left{
+        position: absolute;
+        z-index: 30;
+        width: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 25px;    
+    }
+    
+    .modal_right_img{
+        transform: scale(-1, 1);
+    }
+    
+    .modal-right{
+        position: absolute;
+        z-index: 30;
+        width: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: calc(28vw + 25px);
+    }
+    
+    
+    
+    /*モーダル内のコンテンツの指定*/
+    
+    
+    .gallery_modal_text{
+        height: auto;
+        right: 0;
+        top: 0;
+        padding-top:27.8vh;
+        padding-left:3.5%;
+        padding-right:3.5%;
+        width: 21%;
+        border-radius: 0px 0px 0px 0px;
+        background: #FFFFFF;
+    
+    
+    /* 中身の設定とかの設定 */
+        font-family: "Noto Sans JP";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+    
+    }
+
+    /* PC版のみのもの */
+    .pc_only_img_number{
+        font-family: Noto Sans JP;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: right;
+
+    }
+
+    .pc_only_prev{
+        margin-top: 3.3vh;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: auto;
+        height: 12.2vh;
+        border: 1px solid #000000;
+        display: flex;
+    }
+
+    .pc_only_prev_img{
+        margin: auto;
+        height: 8.9vh;
+        width: auto;
+    }
+
+    .pc_only_prev_comment{
+        margin: auto;
+        display: block;
+        margin-left: 10px;
+    }
+
+
+    .pc_only_prev_content{
+        font-family: Noto Sans JP;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+
+    }
+
+    .pc_only_next{
+        margin-top: 3.3vh;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: auto;
+        height: 12.2vh;
+        border: 1px solid #000000;
+        display: flex;
+    }
+
+    .pc_only_next_img{
+        margin: auto;
+        height: 8.9vh;
+        width: auto;
+    }
+
+    .pc_only_next_comment{
+        margin: auto;
+        display: block;
+        margin-left: 10px;
+    }
+
+
+    .pc_only_next_content{
+        font-family: Noto Sans JP;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+
+    }
 }

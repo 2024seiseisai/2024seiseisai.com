@@ -25,7 +25,7 @@
             color: #fff;
       }
       .top{
-            background-image: url(/2024/access/img/image1.png);
+            background-image: url(/2024/access/img/image1.webp);
             background-size: cover;
             background-position: center;
             width: 100%;
@@ -127,9 +127,12 @@
       .rectangle66{
             margin: auto;
             width: 80%;
-            height: 350px;
-            background-color: #D9D9D9;
+            aspect-ratio: 100/100;
+            background-image: url(/2024/access/img/image3.webp);
+            background-repeat: no-repeat;
             margin-top: 22px;
+            background-size: contain;
+            margin: auto;
       }
       .routemap{
             margin-top: 40px;
@@ -141,7 +144,7 @@
             width: 80%;
             aspect-ratio: 141/100;
             background-size: cover;
-            background-image: url(/2024/access/img/image2.png);
+            background-image: url(/2024/access/img/image2.webp);
       }
 @media screen and (min-width: 1024px) { 
       .mobile_only{
@@ -168,7 +171,7 @@
             color: #fff;
       }
       .top{
-            background-image: url(/2024/access/img/image1.png);
+            background-image: url(/2024/access/img/image1.webp);
             background-size: cover;
             background-position: center;
             width: 100%;
@@ -282,9 +285,12 @@
       .rectangle66{
             margin: auto;
             width: 55vw;
-            height: 640px;
-            background-color: #D9D9D9;
+            aspect-ratio: 100/100;
+            background-image: url(/2024/access/img/image3.webp);
+            background-repeat: no-repeat;
             margin-top: 22px;
+            background-size: contain;
+            margin: auto;
       }
       .routemap{
             margin: auto;
@@ -295,7 +301,7 @@
             margin: auto;
             width: 56.875vw;
             height: auto;
-            background-image: url(/2024/access/img/image2.png);
+            background-image: url(/2024/access/img/image2.webp);
             margin-top: 22px;
             background-size: contain;
             background-repeat: no-repeat;
