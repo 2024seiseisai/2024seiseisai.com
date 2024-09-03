@@ -63,9 +63,19 @@ document.addEventListener("DOMContentLoaded", async () => {
             });
             val.day2_bound1 = Array.from(new Set(val.day2_bound1));
         }
+        const pad = width_query.matches ? "0.34vw" : "2px";
         let res = "";
         events.locations.forEach((val, idx) => {
-            document.querySelector("#time_table_title .splide__list").insertAdjacentHTML("beforeend", `<li class="splide__slide slide_title">${val.name}</li>`);
+            document.querySelector("#time_table_title .splide__list").insertAdjacentHTML(
+                "beforeend",
+                `
+<li class="splide__slide">
+    <div class="slide_title_ph">
+        <p class="slide_title_ph_txt">${val.name.replace("[晴天時]", '</p><p class="slide_title_ph_wth">晴天時').replace("[雨天時]", '</p><p class="slide_title_ph_wth">雨天時')}</p>
+    </div>
+</li>
+`
+            );
             res += `
 ${!width_query.matches || idx % 2 == 0 ? `<li class="splide__slide slide_element">` : ""}
 ${
@@ -79,8 +89,8 @@ ${
 }
 ${ev_lists[val.name].day1_bound1.map((time) => `<p class="table_scale2 day1 ${idx % 2 == 1 ? "table_element_right" : "table_element_left"}" style="--offset_val: ${time}">${Math.floor(time / 60)}:${("00" + (time % 60)).slice(-2)}</p>`).reduce((sum, el) => sum + el, "")}
 ${ev_lists[val.name].day2_bound1.map((time) => `<p class="table_scale2 day2 ${idx % 2 == 1 ? "table_element_right" : "table_element_left"}" style="--offset_val: ${time}">${Math.floor(time / 60)}:${("00" + (time % 60)).slice(-2)}</p>`).reduce((sum, el) => sum + el, "")}
-${idx % 2 === 1 ? "" : [...Array(9)].map((_, i) => `<p class="table_scale" style="--time_index: ${i};">${9 + i}:00</p>`).reduce((sum, el) => sum + el, "")}
-${idx % 2 === 1 ? "" : [...Array(17)].map((_, i) => `<div class="table_border" style="--border_index: ${i};"></div>`).reduce((sum, el) => sum + el, "")}
+${width_query.matches && idx % 2 == 1 ? "" : [...Array(9)].map((_, i) => `<p class="table_scale" style="--time_index: ${i};">${9 + i}:00</p>`).reduce((sum, el) => sum + el, "")}
+${width_query.matches && idx % 2 == 1 ? "" : [...Array(17)].map((_, i) => `<div class="table_border" style="--border_index: ${i};"></div>`).reduce((sum, el) => sum + el, "")}
 ${ev_lists[val.name].day1
     .map(
         (ev) => `
@@ -90,7 +100,7 @@ ${ev_lists[val.name].day1
         <img src="/2024/event/img/arrow_circle.svg" class="${ev.event_name}">
     </div>
     <div class="table_element_bar"></div>
-    <div class="table_element_back" style="--padding_top: ${ev_lists[val.name].day1_bound2.includes(ev.start_h * 60 + ev.start_m) ? "2px" : "0"}; --padding_bottom: ${ev_lists[val.name].day1_bound2.includes(ev.end_h * 60 + ev.end_m) ? "2px" : "0"}"></div>
+    <div class="table_element_back" style="--padding_top: ${ev_lists[val.name].day1_bound2.includes(ev.start_h * 60 + ev.start_m) ? pad : "0"}; --padding_bottom: ${ev_lists[val.name].day1_bound2.includes(ev.end_h * 60 + ev.end_m) ? pad : "0"}"></div>
 </div>`
     )
     .reduce((sum, el) => sum + el, "")}
@@ -103,7 +113,7 @@ ${ev_lists[val.name].day2
         <img src="/2024/event/img/arrow_circle.svg" class="${ev.event_name}">
     </div>
     <div class="table_element_bar"></div>
-    <div class="table_element_back" style="--padding_top: ${ev_lists[val.name].day2_bound2.includes(ev.start_h * 60 + ev.start_m) ? "2px" : "0"}; --padding_bottom: ${ev_lists[val.name].day2_bound2.includes(ev.end_h * 60 + ev.end_m) ? "2px" : "0"}"></div>
+    <div class="table_element_back" style="--padding_top: ${ev_lists[val.name].day2_bound2.includes(ev.start_h * 60 + ev.start_m) ? pad : "0"}; --padding_bottom: ${ev_lists[val.name].day2_bound2.includes(ev.end_h * 60 + ev.end_m) ? pad : "0"}"></div>
 </div>`
     )
     .reduce((sum, el) => sum + el, "")}

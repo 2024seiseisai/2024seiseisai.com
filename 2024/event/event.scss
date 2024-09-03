@@ -122,11 +122,20 @@ main img {
 #time_table_title_box {
     width: 220px;
 }
-.slide_title {
+.slide_title_ph {
+    display: flex;
+    justify-content: center;
+}
+.slide_title_ph_txt {
     font-weight: 500;
     font-size: 24px;
     color: #ff0084;
-    text-align: center;
+}
+.slide_title_ph_wth {
+    font-weight: 500;
+    font-size: 14px;
+    color: #ff0084;
+    margin-top: 13px;
 }
 #time_table {
     margin: 105px 19px 0 21px;
@@ -438,7 +447,7 @@ main img {
         line-height: 2.41vw;
     }
     .table_element_content img {
-        height: min(calc(100% - 0.3vw), 4.44vw);
+        height: min(calc(100% - 0.5vw), 4.44vw);
         margin: 0 2.77vw 0 auto;
     }
     .table_element_bar {
