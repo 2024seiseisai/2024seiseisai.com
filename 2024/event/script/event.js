@@ -166,7 +166,7 @@ ${!width_query.matches || idx % 2 == 1 ? "</li>" : ""}
             slide.go(">");
         });
         let hash = window.location.hash;
-        if (hash == "#rain") slide.go(2);
+        if (hash == "#rain") slide.go(width_query.matches ? 1 : 2);
 
         if (width_query.matches) {
             let pressflag = false;
