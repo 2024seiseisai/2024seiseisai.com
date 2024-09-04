@@ -284,14 +284,30 @@
 
         <section class="map">
             <div class="tabs">
-                <input id="tab_high" class="radio" type="radio" name="map_tab" checked>
-                <label for="tab_high" class="radio_label">高校棟</label>
-                <input id="tab_junior" class="radio" type="radio" name="map_tab">
-                <label for="tab_junior" class="radio_label">中学棟</label>
+                <input id="tab_high" class="radio_tab" type="radio" name="map_tab" checked>
+                <label for="tab_high" class="m_JP_20_Regular radio_label_tab">高校棟</label>
+                <input id="tab_junior" class="radio_tab" type="radio" name="map_tab">
+                <label for="tab_junior" class="m_JP_20_Regular radio_label_tab">中学棟</label>
             </div>
             <div class="map_main">
                 <img>
+                <div id="floors">
+                    <input id="floor_4" class="radio_floor" type="radio" name="map_floor" checked>
+                    <label id="floor_4_label" for="floor_4" class="m_JP_20_Medium radio_label_floor">4F</label>
+                    <input id="floor_3" class="radio_floor" type="radio" name="map_floor">
+                    <label for="floor_3" class="m_JP_20_Medium radio_label_floor">3F</label>
+                    <input id="floor_2" class="radio_floor" type="radio" name="map_floor">
+                    <label id="floor_2_label" for="floor_2" class="m_JP_20_Medium radio_label_floor">2F</label>
+                    <input id="floor_1" class="radio_floor" type="radio" name="map_floor">
+                    <label id="floor_1_label" for="floor_1" class="m_JP_20_Medium radio_label_floor">1F</label>
+                    <input id="floor_1_2" class="radio_floor" type="radio" name="map_floor">
+                    <label id="floor_1_2_label" for="floor_1_2" class="radio_label_floor">
+                        <div id="floor_1_2_2_label" class="m_JP_20_Medium">2F</div>
+                        <div id="floor_1_2_1_label" class="m_JP_20_Medium">1F</div>
+                    </label>
+                </div>
             </div>
+            
         </section>
 
         <section class="exhibition_list_section">
@@ -340,9 +356,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="list_icon_box">
+                    <a href="./detail/detail.html" class="list_icon_box">
                         <img src="/2024/static/img/arrow-right-circle.svg" alt="見る" class="list_icon">
-                    </div>
+                    </a>
                 </li>
                 <li id="list2" class="each_exhibition_list">
                     <!-- each_exhibition_listはまだ使用していない -->

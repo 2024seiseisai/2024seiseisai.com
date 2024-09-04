@@ -279,26 +279,27 @@
 
     <main>
         <section id="section_title">
-            <h1 class="exhibition_title_box">
-                <!--
+            <div class="exhibition_title_box">
+
                 <a href="../exhibition.html">
                     <img src="../img/arrow-back.svg" id="exhibition_arrow-back" alt="記事一覧に戻る">
                 </a>
-                -->
-                <div class="title_img_box">
-                    <img src="/2024/static/img/logo.svg" alt="" class="title_img">
-                </div>
+
+
                 <div class="title_body">
-                    <a href="../exhibition.html" id="title_exhibition_place" class="m_JP_12_Medium">
+                    <div href="../exhibition.html" id="title_exhibition_place" class="m_JP_12_Medium">
                         高校棟 5年A組
-                    </a>
+                    </div>
                     <div id="title_exhibition_name" class="m_JP_20_Medium ">
                         電子工作部
                     </div>
                 </div>
 
+                <div class="title_img_box">
+                    <img src="../img/電子工作部.svg" alt="" class="title_img">
+                </div>
 
-            </h1>
+            </div>
             <div id="exhibition_img_box">
                 <img>
             </div>
@@ -311,21 +312,50 @@
             <h2 id="h2_event">
                 イベント開催情報
             </h2>
-            <div id="event_place">
-                <img src="../img/pin-right.svg" alt="" id="event_place_icon">
-                <p id="event_place_text" class="m_JP_20_Regular">
-                    プログラミング教室
-                </p>
-            </div>
-            <div id="event_detail">
-                <p id="event_detail_text" class="m_JP_14_Regular">
-                    詳細情報はこちらから
-                </p>
-                <!--「から」がいらん気がする-->
-                <img src="/2024/static/img/arrow-right-circle.svg" alt="見る" id="event_detail_icon">
-            </div>
+            <ul role="list">
+                <li>
+                    <div id="event_place">
+                        <img src="../img/pin-right.svg" alt="" id="event_place_icon">
+                        <p id="event_place_text" class="m_JP_20_Regular">
+                            プログラミング教室
+                        </p>
+                    </div>
+                    <div id="event_detail">
+                        <p id="event_detail_text" class="m_JP_14_Regular">
+                            詳細情報はこちらから
+                        </p>
+                        <!--「から」がいらん気がする-->
+                        <a href="../exhibition.html">
+                            <img src="/2024/static/img/arrow-right-circle.svg" alt="見る" id="event_detail_icon">
+                        </a>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div id="event_place">
+                        <img src="../img/pin-right.svg" alt="" id="event_place_icon">
+                        <p id="event_place_text" class="m_JP_20_Regular">
+                            プログラミング教室
+                        </p>
+                    </div>
+                    <div id="event_detail">
+                        <p id="event_detail_text" class="m_JP_14_Regular">
+                            詳細情報はこちらから
+                        </p>
+                        <!--「から」がいらん気がする-->
+                        <a href="../exhibition.html">
+                            <img src="/2024/static/img/arrow-right-circle.svg" alt="見る" id="event_detail_icon">
+                        </a>
+                        
+                    </div>
+                </li>
+            </ul>
+            
             <h2 id="h2_journal">
                 部誌
+                <img src="../img/test2/left.svg" class="h2_journal_left">
+                <img src="../img/test2/middle.svg" class="h2_journal_middle">
+                <img src="../img/test2/right.svg" class="h2_journal_right">
             </h2>
             <div id="journal">
                 <p id="journal_text" class="m_JP_16_Regular">
