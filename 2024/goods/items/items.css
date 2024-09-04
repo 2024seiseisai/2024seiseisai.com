@@ -2,12 +2,14 @@ main{
     display: flex;
     justify-content: center;
 }
-.box{
+@media only screen and (max-width:1023px){
+.mobile.box{
+    margin-top: 0px;
     width: 360px;
     height: 681px;
     position: relative;
 }
-.no{
+.mobile.no{
     color: #FFFFFF;
     text-shadow:
            1px 1px 0px rgba(255, 0, 132, 1), -1px -1px 0px rgba(255, 0, 132, 1),
@@ -22,7 +24,7 @@ main{
     border: 1px;
     line-height: 49.1px;
 }
-.goods-name{
+.mobile.goods-name{
     width: 239px;
     height: 35px;
     position: absolute;
@@ -31,7 +33,7 @@ main{
     line-height: 34.25px;
     color: rgba(0, 0, 0, 1);
 }
-.picture{
+.mobile.picture{
     width: 320px;
     height: 180px;
     position:absolute;
@@ -39,7 +41,7 @@ main{
     margin-left: 20px;
     
 }
-.price{
+.mobile.price{
     width: 173px;
     height: 29px;
     line-height: 28.96px;
@@ -49,10 +51,10 @@ main{
     color: rgba(0, 0, 0, 1);
 
 }
-.price-detail{
+.mobile.price-detail{
     color: rgba(255, 0, 132, 1);
 }
-.stock{
+.mobile.stock{
     width: 140px;
     height: 29px;
     position: absolute;
@@ -61,17 +63,18 @@ main{
     line-height: 28.96px;
     color: rgba(0, 0, 0, 1);
 }
-.stock-detail{
+.mobile.stock-detail{
     color: rgba(255, 0, 132, 1);
 }
-.explanation{
+.mobile.explanation{
+    width: 320px;
     height: 40px;
     position: absolute;
     margin: 461px 19px 0 19px;
     color:rgba(0, 0, 0, 1);
     line-height: 20.27px;
 }
-.detail-title{
+.mobile.detail-title{
     width: 90px;
     height: 22px;
     position: absolute;
@@ -86,7 +89,7 @@ main{
 
     
 }
-.detail{
+.mobile.detail{
     width: 150px;
     height: 44px;
     position: absolute;
@@ -100,7 +103,7 @@ main{
     text-align: left;
 
 }
-.back{
+.mobile.back{
     width: 40px;
     height: 40px;
     position: absolute;
@@ -108,14 +111,131 @@ main{
     margin-left: 20px;
 
 }
+}
 
-@media only screen and (max-width:359px){
+@media only screen and (max-width:1023px){
+        
     .picture{
         width: 90%;
         aspect-ratio: 16/9;
     }
-    .back,.no,.goods-name,.picture,.stock,.explanation,.detail,.detail-title{
+    .back,.no,.goods-name,.picture,.price,.stock,.explanation,.detail,.detail-title{
         margin-left: 0;
         left: 5%;
     }
+    .pc{
+        display: none;
+    }
 }
+@media only screen and (min-width:1024px){
+    .mobile{
+        display: none;
+    }
+}
+
+.box{
+    margin-top: -48px;
+    width: 1400px;
+    height: 886px;
+    position: relative;
+}
+.no{
+    color: #FFFFFF;
+    text-shadow:
+           1px 1px 0px rgba(255, 0, 132, 1), -1px -1px 0px rgba(255, 0, 132, 1),
+          -1px 1px 0px rgba(255, 0, 132, 1),  1px -1px 0px rgba(255, 0, 132, 1),
+           1px 0px 0px rgba(255, 0, 132, 1), -1px  0px 0px rgba(255, 0, 132, 1),
+           0px 1px 0px rgba(255, 0, 132, 1),  0px -1px 0px rgba(255, 0, 132, 1);
+    width: 316px;
+    height: 112px;
+    position: absolute;
+    margin-top: 144px;
+    margin-left: 160px;
+    border: 1px;
+    line-height: 130.94px;
+}
+.goods-name{
+    width: 399px;
+    height: 58px;
+    position: absolute;
+    margin-top: 296px;
+    margin-left: 800px;
+    line-height: 57.92px;
+    color: rgba(0, 0, 0, 1);
+}
+.picture{
+    width: 600px;
+    height: 337.69px;
+    position:absolute;
+    margin-top: 296px;
+    margin-left: 160px;
+    
+}
+.price{
+    width: 312px;
+    height: 52px;
+    line-height: 52.13px;
+    position: absolute;
+    margin-top: 374px;
+    margin-left: 800px;
+    color: rgba(0, 0, 0, 1);
+
+}
+.price-detail{
+    color: rgba(255, 0, 132, 1);
+}
+.stock{
+    width: 252px;
+    height: 52px;
+    position: absolute;
+    margin-top: 426px;
+    margin-left: 800px;
+    line-height: 52.13px;
+    color: rgba(0, 0, 0, 1);
+}
+.stock-detail{
+    color: rgba(255, 0, 132, 1);
+}
+.explanation{
+    width: 480px;
+    height: 70px;
+    position: absolute;
+    margin-top: 498px;
+    margin-left: 800px;
+    color:rgba(0, 0, 0, 1);
+    line-height: 34.75px;
+}
+.detail-flame{
+    position: absolute;
+    width: 240px;
+    height: 105px;
+    margin-top: 581px;
+    margin-left: 795px;
+}
+.detail-title{
+    margin-top: 0px;
+    width: 144px;
+    height: 35px;
+    position: absolute;
+    color: rgba(0, 0, 0, 1);
+    line-height: 34.75px;
+    
+    
+}
+.detail{
+    width: 240px;
+    height: 70px;
+    position: absolute;
+    margin-top: 35px;
+    line-height: 34.75px;
+    color: rgba(0, 0, 0, 1);
+}
+.back{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 40px;
+}
+
+    
