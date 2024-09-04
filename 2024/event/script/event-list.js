@@ -15,9 +15,19 @@ document.addEventListener("DOMContentLoaded", async () => {
     let json = await fetch("./info/events.json");
     events = JSON.parse(await json.text());
     const width_query = window.matchMedia("(min-width: 1024px)");
+    const mobileBreakpoint = 1023; // 例: 768px以下をスマホとする
 
-    window.addEventListener("resize", () => {
-        window.location.href = "./event-list.html";
+    let isMobile = window.matchMedia(`(max-width: ${mobileBreakpoint}px)`).matches;
+    
+    // メディアクエリの変更を監視するリスナーを設定
+    const mediaQueryList = window.matchMedia(`(max-width: ${mobileBreakpoint}px)`);
+    
+    mediaQueryList.addEventListener('change', (event) => {
+        // スマホ版とPC版の切り替えを検出
+        if (isMobile !== event.matches) {
+            isMobile = event.matches;
+            window.location.href = "./event-list.html";// 切り替えを検出した場合にリロード
+        }
     });
 
     if (events.is_rainy.day1 != "none" || events.is_rainy.day2 != "none") {
