@@ -2,10 +2,26 @@
 
 
 main {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: calc(12.5% - 30px);
+    margin-right: calc(12.5% - 30px);
+    padding-right: 0;
     font-family: 'Noto Sans JP';
     overflow: scroll;
+    width: auto;
+    border: 0;
+    /*IE(Internet Explorer)・Microsoft Edgeへの対応*/
+    -ms-overflow-style: none;
+    /*Firefoxへの対応*/
+    scrollbar-width: none;
+}
+
+/*Google Chrome、Safariへの対応*/
+.main::-webkit-scrollbar{
+ display: none;
+}
+
+h1{
+    height: auto;
 }
 
 h2 {
@@ -19,14 +35,17 @@ h2 {
     padding-right: 8px;
 }
 
-h2::after {
-    content: '';
-    position: absolute;
-
-}
-
 main>section {
     padding: 20px 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    padding-bottom: 20px;
 }
 
 /*--------------------------------------------------------------------------*/
@@ -40,48 +59,51 @@ main>section {
 .exhibition_title_box {
     display: flex;
     margin-top: 20px;
+    height: fit-content;
 }
 
 #exhibition_arrow-back {
-    width: 30px;
-    height: 30px;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    padding-right: 20px;
+    width: 25px;
+    height: 25px;
+    padding-top: 5px;
+    padding-bottom: 29px;
 }
 
 .title_img_box {
-    width: 56px;
-    height: 56px;
-    border-width: 4px;
+    width: 50px;
+    height: 50px;
+    border-width: 3px;
     border-color: #0085FF;
     border-radius: 100%;
     border-style: solid;
+    margin-top: 3.5px;
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 .title_img {
-    width: 56px;
-    height: 56px;
+    width: 50px;
+    height: 50px;
     clip-path: circle(50% at 50% 50%);
 }
 
 
 .title_body {
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 #title_exhibition_place {
     display: block;
-    color: #FF0084;
+    /*color: #FF0084;*/
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 0;
     padding-bottom: 0px;
-    margin-top: 9px;
+    margin-top: 5px;
     margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
     width: fit-content;
+    text-align: center;
 }
 
 #exhibition_img_box {
@@ -102,7 +124,7 @@ main>section {
 /*--イベント情報関連------------------------------------------*/
 
 #h2_event {
-    background-image: url(../img/h2-event.svg);
+    background-image: url(../img/vector_for_experiment/svg.svg);
     background-repeat: no-repeat;
     height: 32px;
     background-size: 100% 16px;
@@ -141,12 +163,34 @@ main>section {
 /*--部誌関連-------------------------------------------------*/
 
 #h2_journal {
-    background-image: url(../img/h2-journal.svg);
-    background-repeat: no-repeat;
+    /*background-image: url(../img/h2-journal.svg);
+    background-repeat: no-repeat;*/
     height: 32px;
-    background-size: 100% 16px;
-    background-position: 0% 100%;
+    /*background-size: 100% 16px;
+    background-position: 0% 100%;*/
     min-width: 320px;
+    position: relative;
+}
+
+.h2_journal_left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.h2_journal_middle{
+    position: absolute;
+    bottom: 0;
+    left: 72px;
+    width: calc(100% - 72px - 4.5px);
+    height: 22px;
+}
+
+.h2_journal_right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 22px;
 }
 
 #journal {
