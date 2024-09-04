@@ -221,6 +221,9 @@ main{
     .pc.no456.container{
         margin-top: 989px;
     }
+    .pc.no78.container{
+        margin-top: 1624px;
+    }
 
     .pc.flame{
         position: absolute;
@@ -296,7 +299,7 @@ main{
     .pc.price{
         line-height: 57.92px;
     }
-    .tax{
+    .pc.tax{
         line-height: 46.34px;
     }
     .pc.detail{
@@ -308,6 +311,36 @@ main{
         line-height: 34.75px;
         color: rgba(0, 0, 0, 1);
         border-bottom: 2px solid rgba(0, 0, 0, 1);
+    }
+    .pc.about-stock-box{
+        position: absolute;
+        margin-top: 2304px;
+        margin-left: 160px;
+        width: 319px;
+        height: 67px;
+    }
+    .pc.about-stock-bar{
+        position: absolute;
+        background: rgba(255, 0, 132, 1);
+        width: 12px;
+        height: 64px;
+    }
+    .pc.about-stock-title{
+        position: absolute;
+        margin-left: 32px;
+        margin-top: -3px;
+        color: rgba(0, 0, 0, 1);
+        line-height: 69.5px;
+        width: 287px;
+        height: 70px;
+    }
+    .pc.about-stock-paragraph{
+        line-height: 64px;
+        color: rgba(0, 0, 0, 1);
+        height: 128px;
+        position: absolute;
+        margin-top: 2411px ;
+        margin-left: 160px;
     }
 
 
