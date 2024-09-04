@@ -94,7 +94,7 @@ header:hover{
 .top_firstview{
     width: 100%;
     height: 100vh;
-    background: url(/2024/static/img/firstview_bg_mono.png);
+    background: url(/2024/static/img/firstview_bg_mono.webp);
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -105,7 +105,7 @@ header:hover{
     position: absolute;
     top: 0;
     left: 0;
-    background: url(/2024/static/img/firstview_bg_color.png);
+    background: url(/2024/static/img/firstview_bg_color.webp);
     width: 100%;
     height: 100%;
     background-size: cover;

@@ -1,0 +1,283 @@
+main{
+    display: block;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom:80px;
+}
+@media screen and (min-width: 1024px){
+    main{
+        display: block;
+        text-align: left;
+        margin-right:0;
+        margin-bottom:200px;
+    }
+}
+.title{
+    text-align: left;
+}
+.titleimg{
+    width: 45%;
+    height: auto;
+    margin-top: 20px;
+}
+@media screen and (min-width: 1024px){
+    .titleimg{
+        width: 333px;
+        height: auto;
+        margin-top: 40px;
+    }
+}
+.title_text{
+    margin-top: 0%;
+}
+.map{
+    width:100%;
+    height:auto;
+}
+@media screen and (min-width: 1024px){
+    .map{
+        width:520px;
+        height:auto;
+        margin-right:66px;
+    }
+}
+.bazaar{
+    margin-top: 32px;
+}
+@media screen and (min-width: 1024px){
+    .bazaars{
+        overflow: hidden;
+    }
+}
+@media screen and (min-width: 1024px){
+    .bazaar{
+        margin-top: 40px;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1024px){
+    .first{
+        margin-top: 0%; 
+    }
+}
+.title_box{
+    overflow:auto;
+    margin-bottom:-30px;
+    display: flex;
+    align-items: center;
+}
+.num{
+    color: #FFFFFF;
+    background-color: #FFB156;
+    float: left;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 32px;
+    height: 32px;
+}
+@media screen and (min-width: 1024px){
+    .num{
+        color: #FFFFFF;
+        background-color: #FFB156;
+        text-align: center;
+        float: left;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        width: 48px;
+        height: 48px;
+    }
+}
+.item{
+    float: left;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 12px;
+}
+.price{
+    margin-left:auto;
+    margin-right:0;
+    min-width:87px;
+}
+.description{
+    float: none;
+    text-align: left;
+	display:flex;
+    margin-left:44px;
+    width:85%;
+}
+.cash{
+    color:#FFFFFF;
+    background-color: #FF0084;
+    float: right;
+    width: 40px;
+    height: 24px;
+    margin-left:auto;
+    margin-right: 5%;
+}
+@media screen and (min-width: 1024px){
+    .cash{
+        color:#FFFFFF;
+        background-color: #FF0084;
+        text-align: center;
+        width: 96px;
+        padding-bottom:14px;
+        margin-left:auto;
+        margin-right:20px;
+
+    }
+}
+@media screen and (min-width: 1024px){
+    .shops{
+        overflow: hidden;
+        width: 520px;
+    }
+}
+.shop{
+    overflow:auto;
+    margin-top: 32px;
+}
+@media screen and (min-width: 1024px){
+    .shop{
+        overflow:auto;
+        margin-top: 40px;
+        width: 520px;
+    }
+}
+.icon{
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+.room{
+    color: #FFFFFF;
+    float: left;
+    width: 68px;
+    height: 22px;
+    margin-left: 12px;
+    margin-right: 50px;
+
+    border-radius: 4px;
+}
+@media screen and (min-width: 1024px){
+    .room{
+        color: #FFFFFF;
+        text-align: center;
+        float: left;
+        width: 89px;
+        height: 33px;
+        margin-left: 12px;
+        margin-right: 50px;
+    
+        border-radius: 4px;
+    }
+}
+.blue{
+    background: #0085FF;
+}
+.red{
+    background: #FF3C00;
+}
+.club{
+    float: left;
+    margin-left:12px;
+    margin-top:6px;
+}
+.shop_scr{
+    margin-left:92px;
+    text-align: left;
+}
+@media screen and (min-width: 1024px){
+    .shop_scr{
+        width: 368px;
+        margin-left: 152px;
+        text-align: left;
+        float: left;
+    }
+}
+.kinken{
+    text-align: left;
+}
+.kinken_title{
+    margin-top:40px;
+    border-left:solid 4px #FF0084;
+    padding-left:8px;
+}
+.kinken_scr{
+    text-align: left;
+}
+@media screen and (min-width: 1024px){
+    .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+     
+    .clearfix:before {
+        content: "";
+        display: block;
+        clear: both;
+    }
+     
+    .clearfix {
+        display: block;
+    }
+    
+}
+/*福島クラス追加ここから*/
+/*一部の番号ををデザイン通り緑色に*/
+.green{
+    background-color:#03D100!important;
+}
+/*descriptionとtitle_boxの縦marginを狭めるために、marginマイナス指定すると、goodsのとこだけおかしくなったのでここで修正*/
+.original_goods{
+    margin-top:30px;
+}
+/*現金タグの調節*/
+.cash_bottom{
+    margin-top:0%;
+    margin-left:calc(100% - 305px);/*現金　の部分のmargin-leftを画面幅に合わせて大きくしてあげることで、ほかの3要素が右に流れて来ないように*/
+}
+
+@media screen and (max-width: 1023px){
+    .mobile_hide{
+        display:none;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .description{
+        margin-left:62px;
+    }
+    .PC_bazaar_container{
+        display: flex;
+    }
+    .price{
+        min-width:120px;
+    }
+    .map{
+        margin-bottom:200px;
+    }
+    .PC_hide{
+        display:none;
+    }
+    .cash_bottom{
+        margin-top:-40px;
+        margin-left:100px;/*現金　の部分のmargin-leftを画面幅に合わせて大きくしてあげることで、ほかの3要素が右に流れて来ないように*/
+    }
+    .icon{
+        width: 120px;
+        height: 120px;
+    }
+    .club{
+        margin-top:40px;
+        margin-left:-150px;
+    }
+}
+@media screen and (min-width: 1425px){
+    main{
+        margin-right: 160px;
+        margin-left: 160px;
+    }
+    
+}

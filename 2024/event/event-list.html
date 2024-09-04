@@ -39,7 +39,7 @@
     <meta name="twitter:site" content="@seiseisai_tdj" />
 
     <!--css-->
-    <link rel="stylesheet" href="event-list.css">
+    <link rel="stylesheet" href="event.css">
     <link rel="stylesheet" href="/2024/static/styles/common.css">
     <link rel="stylesheet" href="/2024/static/styles/font.css">
     <!--css-->
@@ -49,6 +49,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <!--Google Fonts-->
+
 </head>
 <body>
     <header style="display: flex;">
@@ -93,7 +94,7 @@
                     <div class="menu_main_item_container">
                         <a href="/2024/event/event.html" class="menu_main_item unfinished Events">Events</a>
                         <a href="/2024/exhibition/exhibition.html" class="menu_main_item unfinished Exhibition">Exhibition</a>
-                        <a href="/2024/bazzar/bazzar.html" class="menu_main_item unfinished Bazaar">Bazaar</a>
+                        <a href="/2024/bazaar/bazaar.html" class="menu_main_item unfinished Bazaar">Bazaar</a>
                         <a href="/2024/goods/goods.html" class="menu_main_item unfinished Goods">Goods</a>
                     </div>
                 </div>
@@ -104,7 +105,7 @@
                         <a href="/2024/blog/blog.html" class="menu_main_item unfinished Blog">Blog</a>
                         <a href="/2024/downloads/downloads.html" class="menu_main_item unfinished ClubMagazine">Downloads</a>
                         <a href="/2024/special/special.html" class="menu_main_item unfinished Special">Special</a>
-                        <a href="/2024/gallary/gallary.html" class="menu_main_item unfinished Archives">Gallary</a>
+                        <a href="/2024/gallery/gallery.html" class="menu_main_item unfinished Archives">Gallery</a>
                     </div>
                 </div>
             </div>
@@ -178,7 +179,7 @@
                     <div class="menu_mobile_main_detail" id="menu_mobile_object_2">
                         <a href="/2024/event/event.html" class="menu_mobile_main_detail_link unfinished Events">Events</a>
                         <a href="/2024/exhibition/exhibition.html" class="menu_mobile_main_detail_link unfinished Exhibition">Exhibition</a>
-                        <a href="/2024/bazzar/bazzar.html" class="menu_mobile_main_detail_link unfinished Bazaar">Bazaar</a>
+                        <a href="/2024/bazaar/bazaar.html" class="menu_mobile_main_detail_link unfinished Bazaar">Bazaar</a>
                         <a href="/2024/goods/goods.html" class="menu_mobile_main_detail_link unfinished Goods">Goods</a>
                     </div> 
                 </div>
@@ -194,7 +195,7 @@
                         <a href="/2024/blog/blog.html" class="menu_mobile_main_detail_link unfinished Blog">Blog</a>
                         <a href="/2024/downloads/downloads.html" class="menu_mobile_main_detail_link unfinished ClubMagazine">Downloads</a>
                         <a href="/2024/special/special.html" class="menu_mobile_main_detail_link unfinished Special">Special</a>
-                        <a href="/2024/gallary/gallary.html" class="menu_mobile_main_detail_link unfinished Archives">Gallary</a>
+                        <a href="/2024/gallery/gallery.html" class="menu_mobile_main_detail_link unfinished Archives">Gallery</a>
                     </div>
                 </div>
                 <!--
@@ -250,13 +251,18 @@
         </div>
     </div>
 
-
-    
-
     <main>
+
+        <img id="return_button" src="/2024/event/img/return_button.svg">
+        <div id="title2">
+            <img id="title2_bar" src="/2024/event/img/title_bar.svg">
+            <p id="title2_txt">イベント紹介一覧</p>
+        </div>
+        <div id="events_list"></div>
 
     </main>
     <!--　main ここまで　-->
+
     <footer>
         <div class="footer_logo">
             <a href="/2024/index.html" class="footer_logo_img">
@@ -286,7 +292,7 @@
                     <div class="footer_nav_body_item_container">
                         <a href="/2024/event/event.html" class="footer_nav_body_item unfinished Events">Events</a>
                         <a href="/2024/exhibition/exhibition.html" class="footer_nav_body_item unfinished Exhibition">Exhibition</a>
-                        <a href="/2024/bazzar/bazzar.html" class="footer_nav_body_item unfinished Bazaar">Bazaar</a>
+                        <a href="/2024/bazaar/bazaar.html" class="footer_nav_body_item unfinished Bazaar">Bazaar</a>
                         <a href="/2024/goods/goods.html" class="footer_nav_body_item unfinished Goods">Goods</a>
                     </div>
                 </div>
@@ -296,7 +302,7 @@
                         <a href="/2024/blog/blog.html" class="footer_nav_body_item unfinished Blog">Blog</a>
                         <a href="/2024/downloads/downloads.html" class="footer_nav_body_item unfinished ClubMagazine">Downloads</a>
                         <a href="/2024/special/special.html" class="footer_nav_body_item unfinished Special">Special</a>
-                        <a href="/2024/gallary/gallary.html" class="footer_nav_body_item unfinished Archives">Gallary</a>
+                        <a href="/2024/gallery/gallery.html" class="footer_nav_body_item unfinished Archives">Gallery</a>
                     </div>
                 </div>
                 <div class="footer_nav_body footer_show">
@@ -344,5 +350,6 @@
 <!--script-->
 <script src="/2024/static/js/common.js"></script>
 
+<script src="/2024/event/script/event-list.js"></script>
 
 </html>
