@@ -209,6 +209,7 @@ main img {
   height: 1.5px;
   background-image: linear-gradient(to right, #000 14px, transparent 14px);
   background-size: 28px 2px;
+  opacity:30%;
 }
 
 .table_element {
@@ -682,4 +683,38 @@ main img {
     margin: 0 0 0 6.33vw;
     display: flex;
   }
-}/*# sourceMappingURL=event.css.map */
+}
+/*ここから福島追加*/
+.event-ticket-back{
+  position: absolute;
+  top:60%;
+  left:40px;
+  height:30px;
+  width:60px;
+  z-index:1;
+  opacity:0.7;
+}
+.event-ticket{
+  position: absolute;
+  top:60%;
+  left:42px;
+  font-family: 'Noto Sans JP';
+  font-weight:500;
+  font-size:14px;
+  transform: translateY(5px);
+  z-index:1;
+  opacity:0.8;
+}
+@media screen and (min-width: 1024px) {
+  .event-ticket-back{
+    left:17.5%;
+  }
+  .event-ticket{
+    font-size:14px;
+    left:18%;
+    transform: translateY(5px);
+    z-index:1;
+    opacity:0.8;
+  }
+}
+/*# sourceMappingURL=event.css.map */

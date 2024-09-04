@@ -5,7 +5,7 @@
         "partial": "「partial」を選択すると、午後からにわか雨が降ったなどで一部雨天スケジュールになったことを表します。"
     },
     "is_rainy": {
-        "day1": "all",
+        "day1": "none",
         "day2": "none"
     },
 
@@ -300,6 +300,15 @@
                     "start_m": 30,
                     "end_h": 10,
                     "end_m": 50,
+                    "summary": ""
+                },
+                {
+                    "name": "ラブライブ!<br>サンスクリット!!",
+                    "location": "体育館[雨天時]",
+                    "start_h": 14,
+                    "start_m": 55,
+                    "end_h": 15,
+                    "end_m": 10,
                     "summary": ""
                 }
             ],

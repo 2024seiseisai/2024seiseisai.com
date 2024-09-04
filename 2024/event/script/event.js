@@ -36,12 +36,14 @@ document.addEventListener("DOMContentLoaded", async () => {
             event.day1.forEach((val) => {
                 if (!(val.location in ev_lists)) return;
                 val.event_name = event.name;
-                ev_lists[val.location].day1.push(val);
+                const ticketHtml = event.ticket ? '<img class = "event-ticket-back" src="/2024/event/img/ticket_box.svg"><p class = "event-ticket">要整理券</p>' : '';
+                ev_lists[val.location].day1.push({...val, ticketHtml});
             });
             event.day2.forEach((val) => {
                 if (!(val.location in ev_lists)) return;
                 val.event_name = event.name;
-                ev_lists[val.location].day2.push(val);
+                const ticketHtml = event.ticket ? '<img class = "event-ticket-back" src="/2024/event/img/ticket_box.svg"><p class = "event-ticket>要整理券</p>' : '';
+                ev_lists[val.location].day2.push({...val, ticketHtml});
             });
         });
         for (let val of Object.values(ev_lists)) {
@@ -99,6 +101,7 @@ ${ev_lists[val.name].day1
         <p>${width_query.matches ? ev.name.replace("<br>", "") : ev.name}</p>
         <img src="/2024/event/img/arrow_circle.svg" class="${ev.event_name}">
     </div>
+    ${ev.ticketHtml}
     <div class="table_element_bar"></div>
     <div class="table_element_back" style="--padding_top: ${ev_lists[val.name].day1_bound2.includes(ev.start_h * 60 + ev.start_m) ? pad : "0"}; --padding_bottom: ${ev_lists[val.name].day1_bound2.includes(ev.end_h * 60 + ev.end_m) ? pad : "0"}"></div>
 </div>`
@@ -111,6 +114,7 @@ ${ev_lists[val.name].day2
     <div class="table_element_content">
         <p>${width_query.matches ? ev.name.replace("<br>", "") : ev.name}</p>
         <img src="/2024/event/img/arrow_circle.svg" class="${ev.event_name}">
+        ${ev.ticketHtml}
     </div>
     <div class="table_element_bar"></div>
     <div class="table_element_back" style="--padding_top: ${ev_lists[val.name].day2_bound2.includes(ev.start_h * 60 + ev.start_m) ? pad : "0"}; --padding_bottom: ${ev_lists[val.name].day2_bound2.includes(ev.end_h * 60 + ev.end_m) ? pad : "0"}"></div>
@@ -124,12 +128,24 @@ ${!width_query.matches || idx % 2 == 1 ? "</li>" : ""}
     }
 
     {
-        document.querySelectorAll(".table_element_content img").forEach((el) =>
-            el.addEventListener("click", () => {
-                if (!document.getElementById(el.parentElement.parentElement.classList.contains("day1") ? "day1_button" : "day2_button").classList.contains("day_selected")) return;
-                window.location.href = "./event-list.html#" + el.classList[0];
-            })
-        );
+                // 画面サイズに応じて条件分岐
+        if (window.innerWidth <= 1023) {
+            // スマートフォンやタブレットなどの小さな画面向け
+            document.querySelectorAll(".table_element_content").forEach((el) => {
+                el.addEventListener("click", () => {
+                    if (!document.getElementById(el.parentElement.classList.contains("day1") ? "day1_button" : "day2_button").classList.contains("day_selected")) return;
+                    window.location.href = "./event-list.html#" + el.lastElementChild.classList[0];
+                });
+            });
+        } else {
+            // PC向け
+            document.querySelectorAll(".table_element_content").forEach((el) => {
+                el.addEventListener("click", () => {
+                    if (!document.getElementById(el.parentElement.classList.contains("day1") ? "day1_button_pc" : "day2_button_pc").classList.contains("day_selected")) return;
+                    window.location.href = "./event-list.html#" + el.lastElementChild.classList[0];
+                });
+            });
+        }
     }
 
     {
