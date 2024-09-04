@@ -3,8 +3,19 @@ document.addEventListener("DOMContentLoaded", async () => {
     events = JSON.parse(await json.text());
     const width_query = window.matchMedia("(min-width: 1024px)");
 
-    window.addEventListener("resize", () => {
-        location.reload();
+    const mobileBreakpoint = 1023; // 例: 768px以下をスマホとする
+
+    let isMobile = window.matchMedia(`(max-width: ${mobileBreakpoint}px)`).matches;
+    
+    // メディアクエリの変更を監視するリスナーを設定
+    const mediaQueryList = window.matchMedia(`(max-width: ${mobileBreakpoint}px)`);
+    
+    mediaQueryList.addEventListener('change', (event) => {
+        // スマホ版とPC版の切り替えを検出
+        if (isMobile !== event.matches) {
+            isMobile = event.matches;
+            location.reload(); // 切り替えを検出した場合にリロード
+        }
     });
 
     {
