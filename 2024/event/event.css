@@ -209,7 +209,7 @@ main img {
   height: 1.5px;
   background-image: linear-gradient(to right, #000 14px, transparent 14px);
   background-size: 28px 2px;
-  opacity:30%;
+  opacity: 30%;
 }
 
 .table_element {
@@ -227,25 +227,57 @@ main img {
   opacity: 0;
 }
 
+.table_element.day1 {
+  cursor: pointer;
+}
+
 .table_element_content {
   position: absolute;
   z-index: 3;
+  cursor: default;
   display: flex;
   height: 100%;
   width: 100%;
   align-items: center;
 }
 
-.table_element_content p {
+.mouse_over {
+  cursor: pointer;
+}
+
+.table_element_content_box {
+  margin-left: 40px;
+}
+
+.table_element_content_box > p {
   font-weight: 500;
   font-size: 16px;
-  margin-left: 40px;
   line-height: 16.5px;
 }
 
-.table_element_content img {
+.table_ticket_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 64px;
+  margin: 5px 0 0 0;
+}
+
+.table_ticket_box img {
+  position: absolute;
+  width: 100%;
+}
+
+.table_ticket_box p {
+  font-weight: 500;
+  font-size: 12px;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.table_element_content > img {
   display: block;
-  cursor: pointer;
   height: 32px;
   margin: 0 20px 0 auto;
 }
@@ -262,10 +294,11 @@ main img {
   width: calc(100% - 6px);
   margin: var(--padding_top) 0 var(--padding_bottom) 0;
   opacity: 0.25;
+  transition: opacity 0.25s ease-in-out;
 }
 
 #rain_guide {
-  margin: 80px 20px 40px 20px;
+  margin: 60px 20px 40px 20px;
   border: 2px solid #ff0084;
 }
 
@@ -453,6 +486,15 @@ main img {
           user-select: none;
 }
 
+#event_list_link {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ff0084;
+  margin: 10px 0 0 20px;
+  width: 170px;
+}
+
 @media screen and (min-width: 1024px) {
   #title_img {
     margin: 2.77vw 0 0 11.11vw;
@@ -532,12 +574,21 @@ main img {
     margin: 0;
     left: 50vw;
   }
-  .table_element_content p {
-    font-size: 1.5vw;
+  .table_element_content_box {
     margin-left: 6.11vw;
+  }
+  .table_element_content_box > p {
+    font-size: 1.5vw;
     line-height: 2.41vw;
   }
-  .table_element_content img {
+  .table_ticket_box {
+    width: 6.5vw;
+    margin: 0.5vw 0 0 0;
+  }
+  .table_ticket_box p {
+    font-size: 1.2vw;
+  }
+  .table_element_content > img {
     height: min(100% - 0.5vw, 4.44vw);
     margin: 0 2.77vw 0 auto;
   }
@@ -569,6 +620,11 @@ main img {
   #ticket_guide > p {
     margin: 2.77vw 6.94vw 2.77vw 10vw;
     font-size: 2.22vw;
+  }
+  #event_list_link {
+    margin: 0 0 0 11.11vw;
+    font-size: 2.22vw;
+    width: 23vw;
   }
   #return_button {
     margin: 6.94vw 0 0 6.94vw;
@@ -683,38 +739,4 @@ main img {
     margin: 0 0 0 6.33vw;
     display: flex;
   }
-}
-/*ここから福島追加*/
-.event-ticket-back{
-  position: absolute;
-  top:60%;
-  left:40px;
-  height:30px;
-  width:60px;
-  z-index:1;
-  opacity:0.7;
-}
-.event-ticket{
-  position: absolute;
-  top:60%;
-  left:42px;
-  font-family: 'Noto Sans JP';
-  font-weight:500;
-  font-size:14px;
-  transform: translateY(5px);
-  z-index:1;
-  opacity:0.8;
-}
-@media screen and (min-width: 1024px) {
-  .event-ticket-back{
-    left:17.5%;
-  }
-  .event-ticket{
-    font-size:14px;
-    left:18%;
-    transform: translateY(5px);
-    z-index:1;
-    opacity:0.8;
-  }
-}
-/*# sourceMappingURL=event.css.map */
+}/*# sourceMappingURL=event.css.map */

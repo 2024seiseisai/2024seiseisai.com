@@ -31,7 +31,7 @@
             "color": "#FFD600"
         },
         {
-            "name": "転身殿前",
+            "name": "転心殿前",
             "color": "#FFD600"
         },
         {
@@ -622,7 +622,7 @@
             "day1": [
                 {
                     "name": "和太鼓演奏",
-                    "location": "転身殿前",
+                    "location": "転心殿前",
                     "start_h": 9,
                     "start_m": 0,
                     "end_h": 9,
@@ -631,7 +631,7 @@
                 },
                 {
                     "name": "和太鼓演奏",
-                    "location": "転身殿前",
+                    "location": "転心殿前",
                     "start_h": 13,
                     "start_m": 30,
                     "end_h": 14,
@@ -651,7 +651,7 @@
             "day2": [
                 {
                     "name": "和太鼓演奏",
-                    "location": "転身殿前",
+                    "location": "転心殿前",
                     "start_h": 9,
                     "start_m": 0,
                     "end_h": 9,
@@ -660,7 +660,7 @@
                 },
                 {
                     "name": "和太鼓演奏",
-                    "location": "転身殿前",
+                    "location": "転心殿前",
                     "start_h": 13,
                     "start_m": 30,
                     "end_h": 14,
