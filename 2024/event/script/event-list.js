@@ -16,8 +16,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     events = JSON.parse(await json.text());
     const width_query = window.matchMedia("(min-width: 1024px)");
 
-    window.addEventListener("resize", () => {
-        window.location.href = "./event-list.html";
+    const current_type = width_query.matches;
+    width_query.addEventListener("change", () => {
+        if (width_query.matches !== current_type) {
+            window.location.href = "./event-list.html";
+        }
     });
 
     if (events.is_rainy.day1 != "none" || events.is_rainy.day2 != "none") {

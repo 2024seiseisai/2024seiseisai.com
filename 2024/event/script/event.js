@@ -3,8 +3,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     events = JSON.parse(await json.text());
     const width_query = window.matchMedia("(min-width: 1024px)");
 
-    const mobileBreakpoint = 1023; // 例: 768px以下をスマホとする
-
+    /*
     let isMobile = window.matchMedia(`(max-width: ${mobileBreakpoint}px)`).matches;
     
     // メディアクエリの変更を監視するリスナーを設定
@@ -17,6 +16,14 @@ document.addEventListener("DOMContentLoaded", async () => {
             location.reload(); // 切り替えを検出した場合にリロード
         }
     });
+    */
+
+    const current_type = width_query.matches;
+    width_query.addEventListener("change", () => {
+        if (width_query.matches !== current_type) {
+            window.location.href = "./event.html";
+        }
+    });
 
     {
         let elements = [document.getElementById(width_query.matches ? "day1_button_pc" : "day1_button"), document.getElementById(width_query.matches ? "day2_button_pc" : "day2_button")];
@@ -27,13 +34,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 elements[1 - index].firstElementChild.style.opacity = "0%";
                 element.classList.toggle("day_selected");
                 elements[1 - index].classList.toggle("day_selected");
-                if (index == 0) {
-                    document.querySelectorAll(".day1").forEach((content) => (content.style.opacity = 1));
-                    document.querySelectorAll(".day2").forEach((content) => (content.style.opacity = 0));
-                } else {
-                    document.querySelectorAll(".day1").forEach((content) => (content.style.opacity = 0));
-                    document.querySelectorAll(".day2").forEach((content) => (content.style.opacity = 1));
-                }
+                document.querySelectorAll(index == 0 ? ".day1" : ".day2").forEach((content) => (content.style.opacity = 1));
+                document.querySelectorAll(index == 0 ? ".day2" : ".day1").forEach((content) => (content.style.opacity = 0));
             });
         });
     }
@@ -47,14 +49,16 @@ document.addEventListener("DOMContentLoaded", async () => {
             event.day1.forEach((val) => {
                 if (!(val.location in ev_lists)) return;
                 val.event_name = event.name;
-                const ticketHtml = event.ticket ? '<img class = "event-ticket-back" src="/2024/event/img/ticket_box.svg"><p class = "event-ticket">要整理券</p>' : '';
-                ev_lists[val.location].day1.push({...val, ticketHtml});
+                val.ticket = event.ticket === true;
+                const ticketHtml = false ? '<img class = "event-ticket-back" src="/2024/event/img/ticket_box.svg"><p class = "event-ticket">要整理券</p>' : "";
+                ev_lists[val.location].day1.push({ ...val, ticketHtml });
             });
             event.day2.forEach((val) => {
                 if (!(val.location in ev_lists)) return;
                 val.event_name = event.name;
-                const ticketHtml = event.ticket ? '<img class = "event-ticket-back" src="/2024/event/img/ticket_box.svg"><p class = "event-ticket>要整理券</p>' : '';
-                ev_lists[val.location].day2.push({...val, ticketHtml});
+                val.ticket = event.ticket === true;
+                const ticketHtml = false ? '<img class = "event-ticket-back" src="/2024/event/img/ticket_box.svg"><p class = "event-ticket>要整理券</p>' : "";
+                ev_lists[val.location].day2.push({ ...val, ticketHtml });
             });
         });
         for (let val of Object.values(ev_lists)) {
@@ -100,8 +104,6 @@ ${
 </div>
 `
 }
-${ev_lists[val.name].day1_bound1.map((time) => `<p class="table_scale2 day1 ${idx % 2 == 1 ? "table_element_right" : "table_element_left"}" style="--offset_val: ${time}">${Math.floor(time / 60)}:${("00" + (time % 60)).slice(-2)}</p>`).reduce((sum, el) => sum + el, "")}
-${ev_lists[val.name].day2_bound1.map((time) => `<p class="table_scale2 day2 ${idx % 2 == 1 ? "table_element_right" : "table_element_left"}" style="--offset_val: ${time}">${Math.floor(time / 60)}:${("00" + (time % 60)).slice(-2)}</p>`).reduce((sum, el) => sum + el, "")}
 ${width_query.matches && idx % 2 == 1 ? "" : [...Array(9)].map((_, i) => `<p class="table_scale" style="--time_index: ${i};">${9 + i}:00</p>`).reduce((sum, el) => sum + el, "")}
 ${width_query.matches && idx % 2 == 1 ? "" : [...Array(17)].map((_, i) => `<div class="table_border" style="--border_index: ${i};"></div>`).reduce((sum, el) => sum + el, "")}
 ${ev_lists[val.name].day1
@@ -109,7 +111,18 @@ ${ev_lists[val.name].day1
         (ev) => `
 <div class="table_element day1 ${idx % 2 == 1 ? "table_element_right" : "table_element_left"}" style="--start_h: ${ev.start_h}; --start_m: ${ev.start_m}; --end_h: ${ev.end_h}; --end_m: ${ev.end_m}; --color: ${ev_lists[val.name].color}">
     <div class="table_element_content">
-        <p>${width_query.matches ? ev.name.replace("<br>", "") : ev.name}</p>
+        <div class="table_element_content_box">
+            <p>${width_query.matches ? ev.name.replace("<br>", "") : ev.name}</p>
+            ${
+                !ev.ticket
+                    ? ""
+                    : `
+<div class="table_ticket_box">
+    <p>要整理券</p>
+    <img src="/2024/event/img/ticket_box.svg">
+</div>`
+            }
+        </div>
         <img src="/2024/event/img/arrow_circle.svg" class="${ev.event_name}">
     </div>
     ${ev.ticketHtml}
@@ -123,7 +136,18 @@ ${ev_lists[val.name].day2
         (ev) => `
 <div class="table_element day2 ${idx % 2 == 1 ? "table_element_right" : "table_element_left"}" style="--start_h: ${ev.start_h}; --start_m: ${ev.start_m}; --end_h: ${ev.end_h}; --end_m: ${ev.end_m}; --color: ${ev_lists[val.name].color}">
     <div class="table_element_content">
-        <p>${width_query.matches ? ev.name.replace("<br>", "") : ev.name}</p>
+        <div class="table_element_content_box">
+            <p>${width_query.matches ? ev.name.replace("<br>", "") : ev.name}</p>
+            ${
+                !ev.ticket
+                    ? ""
+                    : `
+<div class="table_ticket_box">
+    <p>要整理券</p>
+    <img src="/2024/event/img/ticket_box.svg">
+</div>`
+            }
+        </div>
         <img src="/2024/event/img/arrow_circle.svg" class="${ev.event_name}">
         ${ev.ticketHtml}
     </div>
@@ -132,6 +156,8 @@ ${ev_lists[val.name].day2
 </div>`
     )
     .reduce((sum, el) => sum + el, "")}
+${ev_lists[val.name].day1_bound1.map((time) => `<p class="table_scale2 day1 ${idx % 2 == 1 ? "table_element_right" : "table_element_left"}" style="--offset_val: ${time}">${Math.floor(time / 60)}:${("00" + (time % 60)).slice(-2)}</p>`).reduce((sum, el) => sum + el, "")}
+${ev_lists[val.name].day2_bound1.map((time) => `<p class="table_scale2 day2 ${idx % 2 == 1 ? "table_element_right" : "table_element_left"}" style="--offset_val: ${time}">${Math.floor(time / 60)}:${("00" + (time % 60)).slice(-2)}</p>`).reduce((sum, el) => sum + el, "")}    
 ${!width_query.matches || idx % 2 == 1 ? "</li>" : ""}
 `;
         });
@@ -139,13 +165,20 @@ ${!width_query.matches || idx % 2 == 1 ? "</li>" : ""}
     }
 
     {
-                // 画面サイズに応じて条件分岐
-        if (window.innerWidth <= 1023) {
+        // 画面サイズに応じて条件分岐
+        if (!width_query.matches) {
             // スマートフォンやタブレットなどの小さな画面向け
             document.querySelectorAll(".table_element_content").forEach((el) => {
                 el.addEventListener("click", () => {
                     if (!document.getElementById(el.parentElement.classList.contains("day1") ? "day1_button" : "day2_button").classList.contains("day_selected")) return;
                     window.location.href = "./event-list.html#" + el.lastElementChild.classList[0];
+                });
+                el.addEventListener("mouseover", () => {
+                    if (!document.getElementById(el.parentElement.classList.contains("day1") ? "day1_button" : "day2_button").classList.contains("day_selected")) return;
+                    el.classList.add("mouse_over");
+                });
+                el.addEventListener("mouseout", () => {
+                    el.classList.remove("mouse_over");
                 });
             });
         } else {
@@ -155,6 +188,15 @@ ${!width_query.matches || idx % 2 == 1 ? "</li>" : ""}
                     if (!document.getElementById(el.parentElement.classList.contains("day1") ? "day1_button_pc" : "day2_button_pc").classList.contains("day_selected")) return;
                     window.location.href = "./event-list.html#" + el.lastElementChild.classList[0];
                 });
+                el.addEventListener("mouseover", () => {
+                    if (!document.getElementById(el.parentElement.classList.contains("day1") ? "day1_button_pc" : "day2_button_pc").classList.contains("day_selected")) return;
+                    el.classList.add("mouse_over");
+                    el.nextElementSibling.nextElementSibling.style.opacity = 0.4;
+                });
+                el.addEventListener("mouseout", () => {
+                    el.classList.remove("mouse_over");
+                    el.nextElementSibling.nextElementSibling.style.opacity = 0.25;
+                });
             });
         }
     }
@@ -162,7 +204,7 @@ ${!width_query.matches || idx % 2 == 1 ? "</li>" : ""}
     {
         let slide = new Splide("#main_slide", {
             type: "loop",
-            speed: 400,
+            speed: 0,
             arrows: false,
             gap: "128px",
             pagination: false,
@@ -173,9 +215,9 @@ ${!width_query.matches || idx % 2 == 1 ? "</li>" : ""}
             dragMinThreshold: 20,
         });
         if (!width_query.matches) {
-            let slide_title = new Splide("#sub_slide", {
+            var slide_title = new Splide("#sub_slide", {
                 type: "loop",
-                speed: 400,
+                speed: 0,
                 arrows: false,
                 pagination: false,
                 easing: "ease-in-out",
@@ -192,8 +234,23 @@ ${!width_query.matches || idx % 2 == 1 ? "</li>" : ""}
         document.getElementById("right_arrow").addEventListener("click", () => {
             slide.go(">");
         });
-        let hash = window.location.hash;
-        if (hash == "#rain") slide.go(width_query.matches ? 1 : 2);
+        if (window.location.hash == "#rain") {
+            slide.go(width_query.matches ? 1 : 2);
+        } else {
+            let init_page = sessionStorage.getItem("slide_page");
+            if (init_page !== null) slide.go(Math.floor(Number(init_page) / (width_query.matches ? 2 : 1)));
+        }
+        slide.options = {
+            speed: 400,
+        };
+        if (!width_query.matches) {
+            slide_title.options = {
+                speed: 400,
+            };
+        }
+        setInterval(() => {
+            sessionStorage.setItem("slide_page", slide.index * (width_query.matches ? 2 : 1));
+        }, 500);
 
         if (width_query.matches) {
             let pressflag = false;
