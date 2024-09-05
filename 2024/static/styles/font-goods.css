@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* PC版(1024px以上)*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1451px) {
     .JP_16_Regular {
         font-family: 'Noto Sans JP';
         font-size: 16px;
@@ -306,7 +306,7 @@
 }
 
 /* スマホ版(1023px以下)*/
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1450px) {
     .m_JP_10_Regular {
         font-family: 'Noto Sans JP';
         font-size: 10px;
