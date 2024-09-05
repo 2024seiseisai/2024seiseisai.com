@@ -2,7 +2,7 @@ main{
     display: flex;
     justify-content: center;
 }
-@media only screen and (max-width:1023px){
+@media only screen and (max-width:1450px){
 .mobile.box{
     margin-top: 0px;
     width: 360px;
@@ -113,7 +113,7 @@ main{
 }
 }
 
-@media only screen and (max-width:1023px){
+@media only screen and (max-width:1450px){
         
     .picture{
         width: 90%;
@@ -127,7 +127,7 @@ main{
         display: none;
     }
 }
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:1451px){
     .mobile{
         display: none;
     }

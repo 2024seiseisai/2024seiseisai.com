@@ -3,7 +3,7 @@ main{
     justify-content: center;
 }
 
-@media only screen and (max-width:359px){
+@media only screen and (max-width:1450px){
     .mobile.number {
         width: 99px;
         height: 49px;
@@ -65,7 +65,7 @@ main{
     }
 
     .mobile.money{
-        width:98px;
+        width:120px;
         height: 29px;
         position: absolute;
         margin-top: 12px;
@@ -106,19 +106,19 @@ main{
     }
     .mobile.no12.flame{
         position: absolute;
-        margin-top: 94px;
+        margin-top: 124px;
     }
     .mobile.no34.flame{
         position: absolute;
-        margin-top: 365px;
+        margin-top: 395px;
     }
     .mobile.no56.flame{
         position: absolute;
-        margin-top: 636px;
+        margin-top: 666px;
     }
     .mobile.no78.flame{
         position: absolute;
-        margin-top: 907px;
+        margin-top: 937px;
     }
     .mobile.container{
         width: 140px;
@@ -192,22 +192,49 @@ main{
         transform: translateX(-3vw);
     }
 }
-@media (min-width: 360px){
+
+.PC_title_img{
+    position: absolute;
+    left:0;
+    margin-top:140px;
+    width:400px;
+}
+.m_title_img{
+    position: absolute;
+    left:0;
+    margin-top:30px;
+    width:200px;
+}
+.m_title_text{
+    position: absolute;
+    left:0;
+    margin-top:80px;
+    width:200px;
+}
+.PC_title_text{
+    position: absolute;
+    left:0;
+    margin-top:240px;
+    width:200px;
+}
+
+@media (min-width: 1451px){
     .mobile{
+        display: none;
+    }
+    .m_title_img{
+        display: none;
+    }
+    .m_title_text{
         display: none;
     }
 }
 
-.main{
-    position: relative;
-}
 .pc.box{
     position: relative;
     width: 1440px;
     height: 2739px;
     margin-top:-96px;
-
-
 }
     .pc.container{
         position: absolute;
@@ -242,6 +269,7 @@ main{
         position: absolute;
         width: 197px;
         height: 98px;
+        transform: translateY(-80px);
         border: 2px solid;
         line-height: 98.12px;
         color: #FFFFFF;
@@ -290,7 +318,7 @@ main{
     }
     .pc.money{
         position: absolute;
-        width: 196px;
+        width: 300px;
         height: 58px;
         margin-top: 384px;
         margin-left: 139px;
