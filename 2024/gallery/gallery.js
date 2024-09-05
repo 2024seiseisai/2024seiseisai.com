@@ -1,12 +1,13 @@
 const description_list = [
-    [],
-    ["1-1","1-2","1-3"],
-    ["2-1"],
-    ["3-1","3-2"]
+    "",
+    "PRパート パート員集会で使用したスライドから､一部抜粋です｡<br>製作セクションには新しく12人もが加入し､合計17人になりました！",
+    ""
 ];
 
-let group = 0
-let index = 0
+const length = [0,7,13,9,5,3,3,12,7,5,9,5,3,5,1,2,4,5,1,5,3,2,5,1,1]
+
+let group = 1
+let index = 1
 
 
 $(function(){
@@ -45,16 +46,16 @@ $(function(){
 
 
 function modal_set(){
-    $("#description").text(description_list[group][index]);
-    $("#gallery_modal_img").attr("src","/2024/gallery/" + group + "/" + index + ".png");
+    $("#description").html(description_list[group]);
+    $("#gallery_modal_img").attr("src","/2024/gallery/" + group + "/" + index + ".webp");
     
-    if(index + 1 >= description_list[group].length){
+    if(index >= length[group]){
         $("#modal-right").hide();
     }else{
         $("#modal-right").show();
     }
 
-    if(index <= 0){
+    if(index <= 1){
         $("#modal-left").css("display","none");
     }else{
         $("#modal-left").show();
@@ -68,7 +69,7 @@ $(document).ready(function(){
     $(".modal-open").on("click", function(){
         // クリックされた要素の 'group' 属性を取得
         group = $(this).attr("group");
-        index = 0;
+        index = 1;
         modal_set();
     });
     $("#modal-left").click(function(){
