@@ -116,7 +116,7 @@ h2{
 .download_list{
     position: absolute;
     width: 110px;
-    height: 94px;
+    height: 90px;
     border: 1px solid #000000;
     border-radius: 10px;
     background-color: #FFFFFF;
@@ -133,7 +133,7 @@ h2{
     color: #000000;
     text-decoration: none;
     text-align: right;
-    margin: 8px 15px 8px 0;
+    margin: 7px 15px 7px 0;
 }
 
 .line::after{
@@ -144,7 +144,7 @@ h2{
     background-color: #000000;
     position: relative;
     left: 10px;
-    margin: 8px 0;
+    margin: 7px 0;
 }
 
 .guideline_preview{
@@ -178,5 +178,56 @@ h2{
         font-family: 'Noto Sans JP';
         font-size: 12px;
         font-weight: 500;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    main{
+        margin: 0 20vw;
+    }
+
+    .page_description{
+        margin: 3vw 0 6vw 0;
+    }
+
+    h2{
+        margin: 0 0 20px 0;
+    }
+
+    .description_bullet{
+        width: 40px;
+        height: 30px;
+    }
+
+    .description_container{
+        align-items: center;
+        gap: 20px;
+    }
+
+    .download_btn{
+        width: 50px;
+        height: 50px;
+    }
+
+    .download_list{
+        width: 160px;
+        height: 120px;
+    }
+
+    .download_list a{
+        font-size: 16px;
+    }
+
+    .line::after{
+        width: 140px;
+    }
+
+    .guideline_preview{
+        margin: 0 15vw;
+    }
+
+    .guideline_preview_text{
+        font-size: 24px;
+        padding: 5px 12px;
     }
 }
