@@ -212,7 +212,7 @@ main{
 
 /* 中身の設定とかの設定 */
     font-family: "Noto Sans JP";
-    font-size: 3%;
+    font-size: 3vw;
     font-weight: 500;
     line-height: 2vh;
     text-align: left;
@@ -222,6 +222,10 @@ main{
 .gallery_modal_link{
     display: block;
     margin: 0;
+    width: 100%;
+    white-space: nowrap; /* 改行を防止 */
+    overflow: hidden; /* はみ出した部分を非表示 */
+    text-overflow: ellipsis; /* 省略記号を表示 */
 }
 
 /* PC版のみのものを隠すコード */
