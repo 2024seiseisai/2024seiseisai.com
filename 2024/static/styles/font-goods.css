@@ -1,0 +1,632 @@
+@charset "UTF-8";
+/* PC版(1024px以上)*/
+@media screen and (min-width: 1451px) {
+    .JP_16_Regular {
+        font-family: 'Noto Sans JP';
+        font-size: 16px;
+        font-weight: normal; 
+    }
+    
+    .JP_16_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 16px;
+        font-weight: 500; 
+    }
+    
+    .JP_16_Bold {
+        font-family: 'Noto Sans JP';
+        font-size: 16px;
+        font-weight: bold; 
+    }
+    .JP_18_Regular {
+        font-family: 'Noto Sans JP';
+        font-size: 18px;
+        font-weight: normal; 
+    }
+    
+    .JP_18_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 18px;
+        font-weight: 500; 
+    }
+    
+    .JP_18_Bold {
+        font-family: 'Noto Sans JP';
+        font-size: 18px;
+        font-weight: bold; 
+    }
+    .JP_20_Regular {
+        font-family: 'Noto Sans JP';
+        font-size: 20px;
+        font-weight: normal; 
+    }
+    
+    .JP_20_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 20px;
+        font-weight: 500; 
+    }
+    
+    .JP_20_Bold {
+        font-family: 'Noto Sans JP';
+        font-size: 20px;
+        font-weight: bold; 
+    }
+    
+    .JP_24_Regular {
+        font-family: 'Noto Sans JP';
+        font-size: 24px;
+        font-weight: normal; 
+    }
+    
+    .JP_24_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 24px;
+        font-weight: 500; 
+    }
+    
+    .JP_24_Bold {
+        font-family: 'Noto Sans JP';
+        font-size: 24px;
+        font-weight: bold; 
+    }
+    
+    .JP_32_Regular {
+        font-family: 'Noto Sans JP';
+        font-size: 32px;
+        font-weight: normal; 
+    }
+    
+    .JP_32_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 32px;
+        font-weight: 500; 
+    }
+    
+    .JP_32_Bold {
+        font-family: 'Noto Sans JP';
+        font-size: 32px;
+        font-weight: bold; 
+    }
+    
+    .JP_36_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 36px;
+        font-weight: 500; 
+    }
+
+    .JP_40_Regular {
+        font-family: 'Noto Sans JP';
+        font-size: 40px;
+        font-weight: normal; 
+    }
+    
+    .JP_40_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 40px;
+        font-weight: 500; 
+    }
+    
+    .JP_48_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 48px;
+        font-weight: 500; 
+    }
+
+    .JP_40_Bold {
+        font-family: 'Noto Sans JP';
+        font-size: 40px;
+        font-weight: bold; 
+    }
+    
+    .JP_64_Regular {
+        font-family: 'Noto Sans JP';
+        font-size: 64px;
+        font-weight: normal; 
+    }
+    
+    .JP_64_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 64px;
+        font-weight: 500; 
+    }
+    
+    .JP_64_Bold {
+        font-family: 'Noto Sans JP';
+        font-size: 64px;
+        font-weight: bold; 
+    }
+    
+    .JP_96_Regular {
+        font-family: 'Noto Sans JP';
+        font-size: 96px;
+        font-weight: normal; 
+    }
+    
+    .JP_96_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 96px;
+        font-weight: 500; 
+    }
+    
+    .JP_96_Bold {
+        font-family: 'Noto Sans JP';
+        font-size: 96px;
+        font-weight: bold; 
+    }
+    .EN_16_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 16px;
+        font-weight: normal; 
+    }
+    
+    .EN_16_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 16px;
+        font-weight: 500; 
+    }
+    
+    .EN_16_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 16px;
+        font-weight: bold; 
+    }
+    
+    .EN_18_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 18px;
+        font-weight: normal; 
+    }
+    
+    .EN_18_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 18px;
+        font-weight: 500; 
+    }
+    
+    .EN_18_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 18px;
+        font-weight: bold; 
+    }
+    
+    .EN_20_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 20px;
+        font-weight: normal; 
+    }
+    
+    .EN_20_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 20px;
+        font-weight: 500; 
+    }
+    
+    .EN_20_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 20px;
+        font-weight: bold; 
+    }
+    
+    .EN_24_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 24px;
+        font-weight: normal; 
+    }
+    
+    .EN_24_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 24px;
+        font-weight: 500; 
+    }
+    
+    .EN_24_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 24px;
+        font-weight: bold; 
+    }
+    
+    .EN_32_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 32px;
+        font-weight: normal; 
+    }
+    
+    .EN_32_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 32px;
+        font-weight: 500; 
+    }
+    
+    .EN_32_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 32px;
+        font-weight: bold; 
+    }
+    
+    .EN_40_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 40px;
+        font-weight: normal; 
+    }
+    
+    .EN_40_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 40px;
+        font-weight: 500; 
+    }
+    
+    .EN_40_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 40px;
+        font-weight: bold; 
+    }
+    
+    .EN_64_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 64px;
+        font-weight: normal; 
+    }
+    
+    .EN_64_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 64px;
+        font-weight: 500; 
+    }
+    
+    .EN_64_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 64px;
+        font-weight: bold; 
+    }
+
+    .EN_72_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 72px;
+        font-weight: bold; 
+    }
+    
+    .EN_96_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 96px;
+        font-weight: normal; 
+    }
+    
+    .EN_96_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 96px;
+        font-weight: 500; 
+    }
+    
+    .EN_96_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 96px;
+        font-weight: bold; 
+    }
+}
+
+/* スマホ版(1023px以下)*/
+@media screen and (max-width: 1450px) {
+    .m_JP_10_Regular {
+        font-family: 'Noto Sans JP';
+        font-size: 10px;
+        font-weight: normal; 
+    }
+    
+    .m_JP_10_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 10px;
+        font-weight: 500; 
+    }
+    
+    .m_JP_10_Bold {
+        font-family: 'Noto Sans JP';
+        font-size: 10px;
+        font-weight: bold; 
+    }
+    
+    .m_JP_12_Regular {
+        font-family: 'Noto Sans JP';
+        font-size: 12px;
+        font-weight: normal; 
+    }
+    
+    .m_JP_12_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 12px;
+        font-weight: 500; 
+    }
+    
+    .m_JP_12_Bold {
+        font-family: 'Noto Sans JP';
+        font-size: 12px;
+        font-weight: bold; 
+    }
+    
+    .m_JP_14_Regular {
+        font-family: 'Noto Sans JP';
+        font-size: 14px;
+        font-weight: normal; 
+    }
+    
+    .m_JP_14_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 14px;
+        font-weight: 500; 
+    }
+    
+    .m_JP_14_Bold {
+        font-family: 'Noto Sans JP';
+        font-size: 14px;
+        font-weight: bold; 
+    }
+    
+    .m_JP_16_Regular {
+        font-family: 'Noto Sans JP';
+        font-size: 16px;
+        font-weight: normal; 
+    }
+    
+    .m_JP_16_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 16px;
+        font-weight: 500; 
+    }
+    
+    .m_JP_16_Bold {
+        font-family: 'Noto Sans JP';
+        font-size: 16px;
+        font-weight: bold; 
+    }
+    
+    .m_JP_20_Regular {
+        font-family: 'Noto Sans JP';
+        font-size: 20px;
+        font-weight: normal; 
+    }
+    
+    .m_JP_20_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 20px;
+        font-weight: 500; 
+    }
+    
+    .m_JP_20_Bold {
+        font-family: 'Noto Sans JP';
+        font-size: 20px;
+        font-weight: bold; 
+    }
+    
+    .m_JP_24_Regular {
+        font-family: 'Noto Sans JP';
+        font-size: 24px;
+        font-weight: normal; 
+    }
+    
+    .m_JP_24_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 24px;
+        font-weight: 500; 
+    }
+    
+    .m_JP_24_Bold {
+        font-family: 'Noto Sans JP';
+        font-size: 24px;
+        font-weight: bold; 
+    }
+    
+    .m_JP_32_Regular {
+        font-family: 'Noto Sans JP';
+        font-size: 32px;
+        font-weight: normal; 
+    }
+    
+    .m_JP_32_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 32px;
+        font-weight: 500; 
+    }
+    
+    .m_JP_32_Bold {
+        font-family: 'Noto Sans JP';
+        font-size: 32px;
+        font-weight: bold; 
+    }
+
+    .m_JP_36_Regular {
+        font-family: 'Noto Sans JP';
+        font-size: 36px;
+        font-weight: normal; 
+    }
+    
+    .m_JP_36_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 36px;
+        font-weight: 500; 
+    }
+    
+    .m_JP_36_Bold {
+        font-family: 'Noto Sans JP';
+        font-size: 36px;
+        font-weight: bold; 
+    }
+
+    .m_JP_40_Regular {
+        font-family: 'Noto Sans JP';
+        font-size: 40px;
+        font-weight: normal; 
+    }
+    
+    .m_JP_40_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 40px;
+        font-weight: 500; 
+    }
+    
+    .m_JP_40_Bold {
+        font-family: 'Noto Sans JP';
+        font-size: 40px;
+        font-weight: bold; 
+    }
+    .m_EN_10_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 10px;
+        font-weight: normal; 
+    }
+    
+    .m_EN_10_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 10px;
+        font-weight: 500; 
+    }
+    
+    .m_EN_10_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 10px;
+        font-weight: bold; 
+    }
+    
+    .m_EN_12_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 12px;
+        font-weight: normal; 
+    }
+    
+    .m_EN_12_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 12px;
+        font-weight: 500; 
+    }
+    
+    .m_EN_12_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 12px;
+        font-weight: bold; 
+    }
+    
+    .m_EN_14_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 14px;
+        font-weight: normal; 
+    }
+    
+    .m_EN_14_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 14px;
+        font-weight: 500; 
+    }
+    
+    .m_EN_14_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 14px;
+        font-weight: bold; 
+    }
+    
+    .m_EN_16_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 16px;
+        font-weight: normal; 
+    }
+    
+    .m_EN_16_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 16px;
+        font-weight: 500; 
+    }
+    
+    .m_EN_16_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 16px;
+        font-weight: bold; 
+    }
+    
+    .m_EN_20_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 20px;
+        font-weight: normal; 
+    }
+    
+    .m_EN_20_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 20px;
+        font-weight: 500; 
+    }
+    
+    .m_EN_20_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 20px;
+        font-weight: bold; 
+    }
+    
+    .m_EN_24_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 24px;
+        font-weight: normal; 
+    }
+    
+    .m_EN_24_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 24px;
+        font-weight: 500; 
+    }
+    
+    .m_EN_24_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 24px;
+        font-weight: bold; 
+    }
+    
+    .m_EN_32_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 32px;
+        font-weight: normal; 
+    }
+    
+    .m_EN_32_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 32px;
+        font-weight: 500; 
+    }
+    
+    .m_EN_32_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 32px;
+        font-weight: bold; 
+    }
+    
+    .m_EN_36_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 36px;
+        font-weight: normal; 
+    }
+    
+    .m_EN_36_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 36px;
+        font-weight: 500; 
+    }
+    
+    .m_EN_36_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 36px;
+        font-weight: bold; 
+    }
+
+    .m_EN_40_Regular {
+        font-family: 'Nunito Sans';
+        font-size: 40px;
+        font-weight: normal; 
+    }
+    
+    .m_EN_40_Medium {
+        font-family: 'Nunito Sans';
+        font-size: 40px;
+        font-weight: 500; 
+    }
+    
+    .m_EN_40_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 40px;
+        font-weight: bold; 
+    }
+}

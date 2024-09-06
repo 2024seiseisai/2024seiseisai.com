@@ -48,48 +48,108 @@
 
 @media screen and (max-width: 1023px) {
   .underline_wallpaper{
-  margin-right: 20px;
-  padding-bottom: 20px;
-  background-image: url("img/underline_wallpaper.png");
-  background-repeat: no-repeat;
-  background-position: 10px 10px;
-  background-size:100% 28px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  #underline_mobile_middle_wallpaper{
+    position: absolute;
+    bottom: 40px;
+    left: calc(84px - 8px + 5.6%);
+    width: calc(100% - 84px - 4.5px + 8px - 5.6%);
+    height: 26px;
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #underline_mobile_middle_wallpaper{
+    display: none;
   }
 }
 @media screen and (max-width: 1023px){
   .underline_icon{
   margin-right: 20px;
   padding-bottom: 20px;
-  background-image: url("img/underline_icon.png");
-  background-repeat: no-repeat;
-  background-position: 10px 10px;
-  background-size:100% 28px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  #underline_mobile_middle_icon{
+    position: absolute;
+    bottom: 40px;
+    left: calc(131px - 8px + 5.6%);
+    width: calc(100% - 131px - 4.5px + 8px - 5.6%);
+    height: 26px;
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #underline_mobile_middle_icon{
+    display: none;
   }
 }
 @media screen and (max-width: 1023px){
   .underline_xheader{
   margin-right: 20px;
   padding-bottom: 20px;
-  background-image: url("img/underline_xheader.png");
-  background-repeat: no-repeat;
-  background-position: 10px 10px;
-  background-size:100% 28px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  #under_line_mobile_left_xheader{
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  #underline_mobile_middle_xheader{
+    position: absolute;
+    bottom: 40px;
+    left: calc(131px - 8px + 5.6%);
+    width: calc(100% - 131px - 4.5px + 8px - 5.6%);
+    height: 26px;
+    display: block;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #underline_mobile_middle_xheader{
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  #under_line_mobile_right_xheader{
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 1023px){
   .underline_logotheme{
   margin-right: 20px;
   padding-bottom: 20px;
-  background-image: url("img/underline_logotheme.png");
-  background-repeat: no-repeat;
-  background-position: 10px 15px;
-  background-size:100% 28px;
   }
 }
-
 @media screen and (max-width: 1023px) {
-  .underline img{
+  #underline_mobile_middle_logotheme{
+    position: absolute;
+    bottom: 40px;
+    left: calc(189px - 8px + 5.6%);
+    width: calc(100% - 189px - 4.5px + 8px - 5.6%);
+    height: 26px;
+    display: block;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #underline_mobile_middle_logotheme{
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .underline_pc{
     display: none;    
+  }
+}
+@media screen and (max-width: 1023px) {
+  .underline{
+    position: relative;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -99,6 +159,38 @@
   .underline p{
     position: absolute;
     top: -40px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .underline_mobile_left{
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    left: calc(5.6% - 8px);
+    height: 26px;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .underline_mobile_left{
+    display: none;    
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .underline_mobile_right{
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    height: 26px;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .underline_mobile_right{
+    display: none;    
   }
 }
 

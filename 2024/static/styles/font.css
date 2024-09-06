@@ -89,6 +89,12 @@
         font-weight: bold; 
     }
     
+    .JP_36_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 36px;
+        font-weight: 500; 
+    }
+
     .JP_40_Regular {
         font-family: 'Noto Sans JP';
         font-size: 40px;
@@ -101,6 +107,12 @@
         font-weight: 500; 
     }
     
+    .JP_48_Medium {
+        font-family: 'Noto Sans JP';
+        font-size: 48px;
+        font-weight: 500; 
+    }
+
     .JP_40_Bold {
         font-family: 'Noto Sans JP';
         font-size: 40px;
@@ -265,6 +277,12 @@
     .EN_64_Bold {
         font-family: 'Nunito Sans';
         font-size: 64px;
+        font-weight: bold; 
+    }
+
+    .EN_72_Bold {
+        font-family: 'Nunito Sans';
+        font-size: 72px;
         font-weight: bold; 
     }
     

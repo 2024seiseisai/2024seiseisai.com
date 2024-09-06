@@ -23,7 +23,7 @@
     <meta name="keywords"
         content="東大寺,東大寺学園,tdj,文化祭,菁々祭,IGNITION,ignition,igunition,IGUNITIONいぐにしょん,イグニション,2024,60回,60th,点火">
     <meta name="description"
-        content="東大寺学園の文化祭「菁々祭」の公式Webサイトです。第60回菁々祭&quot;RESONANCE&quot;は2024年9月7日・8日に開催されます。展示やイベント、グッズなどの各種情報に加えブログ記事やオンラインでの部誌の配布など！">
+        content="東大寺学園の文化祭「菁々祭」の公式Webサイトです。第60回菁々祭&quot;ignition&quot;は2024年9月7日・8日に開催されます。展示やイベント、グッズなどの各種情報に加えブログ記事やオンラインでの部誌の配布など！">
     <meta name="theme-color" content="#000000">
     <!--favicon-->
     <link rel="icon" type="image/png" href="/2024/favicon/16.png" sizes="16x16">
@@ -34,7 +34,7 @@
     <meta property="og:url" content="https://seiseisai.com/2024/" />
     <meta property="og:title" content=" 第60回菁々祭 - 東大寺学園文化祭2024" />
     <meta property="og:description"
-        content="東大寺学園の文化祭「菁々祭」の公式Webサイトです。第60回菁々祭&quot;RESONANCE&quot;は2024年9月7日・8日に開催されます。展示やイベント、グッズなどの各種新着情報に加え、ブログ記事やオンラインでの部誌の配布なども！" />
+        content="東大寺学園の文化祭「菁々祭」の公式Webサイトです。第60回菁々祭&quot;ignition&quot;は2024年9月7日・8日に開催されます。展示やイベント、グッズなどの各種新着情報に加え、ブログ記事やオンラインでの部誌の配布なども！" />
     <meta property="og:site_name" content="第60回菁々祭 - 東大寺学園文化祭2024" />
     <meta property="og:image" content="https://seiseisai.com/2024/OGP/ogp.png" />
     <meta property="og:type" content="website" />
@@ -102,8 +102,8 @@
                         <a href="/2024/event/event.html" class="menu_main_item unfinished Events">Events</a>
                         <a href="/2024/exhibition/exhibition.html"
                             class="menu_main_item unfinished Exhibition">Exhibition</a>
-                        <a href="/2024/bazzar/bazzar.html" class="menu_main_item unfinished Bazaar">Bazaar</a>
-                        <a href="/2024/goods/goods.html" class="menu_main_item unfinished Goods">Goods</a>
+                        <a href="/2024/bazaar/bazaar.html" class="menu_main_item unfinished Bazaar">Bazaar</a>
+                        <a href="/2024/goods/" class="menu_main_item unfinished Goods">Goods</a>
                     </div>
                 </div>
                 <div class="menu_main_content">
@@ -198,9 +198,9 @@
                             class="menu_mobile_main_detail_link unfinished Events">Events</a>
                         <a href="/2024/exhibition/exhibition.html"
                             class="menu_mobile_main_detail_link unfinished Exhibition">Exhibition</a>
-                        <a href="/2024/bazzar/bazzar.html"
+                        <a href="/2024/bazaar/bazaar.html"
                             class="menu_mobile_main_detail_link unfinished Bazaar">Bazaar</a>
-                        <a href="/2024/goods/goods.html" class="menu_mobile_main_detail_link unfinished Goods">Goods</a>
+                        <a href="/2024/goods/" class="menu_mobile_main_detail_link unfinished Goods">Goods</a>
                     </div>
                 </div>
                 <div class="menu_mobile_main" id="menu_mobile_main_3">
@@ -248,7 +248,7 @@
                             <p class="menu_mobile_link_btn_text">予約はこちらから</p>
                             <img src="/2024/static/img/log-out.svg" alt="">
                         </div>
-                        <a href="" class="SNS_link"></a>
+                        <a href="https://mirai-compass.net/usr/tdijgj/event/evtIndex.jsf" class="SNS_link"></a>
                     </div>
                     <div class="menu_mobile_link_btn_main hide Contact">
                         <div class="menu_mobile_link_btn">
@@ -284,14 +284,30 @@
 
         <section class="map">
             <div class="tabs">
-                <input id="tab_high" class="radio" type="radio" name="map_tab" checked>
-                <label for="tab_high" class="radio_label">高校棟</label>
-                <input id="tab_junior" class="radio" type="radio" name="map_tab">
-                <label for="tab_junior" class="radio_label">中学棟</label>
+                <input id="tab_high" class="radio_tab" type="radio" name="map_tab" checked>
+                <label for="tab_high" class="m_JP_20_Regular radio_label_tab">高校棟</label>
+                <input id="tab_junior" class="radio_tab" type="radio" name="map_tab">
+                <label for="tab_junior" class="m_JP_20_Regular radio_label_tab">中学棟</label>
             </div>
             <div class="map_main">
                 <img>
+                <div id="floors">
+                    <input id="floor_4" class="radio_floor" type="radio" name="map_floor" checked>
+                    <label id="floor_4_label" for="floor_4" class="m_JP_20_Medium radio_label_floor">4F</label>
+                    <input id="floor_3" class="radio_floor" type="radio" name="map_floor">
+                    <label for="floor_3" class="m_JP_20_Medium radio_label_floor">3F</label>
+                    <input id="floor_2" class="radio_floor" type="radio" name="map_floor">
+                    <label id="floor_2_label" for="floor_2" class="m_JP_20_Medium radio_label_floor">2F</label>
+                    <input id="floor_1" class="radio_floor" type="radio" name="map_floor">
+                    <label id="floor_1_label" for="floor_1" class="m_JP_20_Medium radio_label_floor">1F</label>
+                    <input id="floor_1_2" class="radio_floor" type="radio" name="map_floor">
+                    <label id="floor_1_2_label" for="floor_1_2" class="radio_label_floor">
+                        <div id="floor_1_2_2_label" class="m_JP_20_Medium">2F</div>
+                        <div id="floor_1_2_1_label" class="m_JP_20_Medium">1F</div>
+                    </label>
+                </div>
             </div>
+            
         </section>
 
         <section class="exhibition_list_section">
@@ -340,9 +356,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="list_icon_box">
+                    <a href="./detail/detail.html" class="list_icon_box">
                         <img src="/2024/static/img/arrow-right-circle.svg" alt="見る" class="list_icon">
-                    </div>
+                    </a>
                 </li>
                 <li id="list2" class="each_exhibition_list">
                     <!-- each_exhibition_listはまだ使用していない -->
@@ -407,7 +423,7 @@
                     </div>
 
                     <p class="tag_instruction_text">
-                        販売を行っている団体です。詳しくは<a href="/2024/bazzar/bazzar.html" style="color:#0085FF">Bazzar</a>をチェック！！
+                        販売を行っている団体です。詳しくは<a href="/2024/bazaar/bazaar.html" style="color:#0085FF">bazaar</a>をチェック！！
 
                     </p>
                 </li>
@@ -447,8 +463,8 @@
                         <a href="/2024/event/event.html" class="footer_nav_body_item unfinished Events">Events</a>
                         <a href="/2024/exhibition/exhibition.html"
                             class="footer_nav_body_item unfinished Exhibition">Exhibition</a>
-                        <a href="/2024/bazzar/bazzar.html" class="footer_nav_body_item unfinished Bazaar">Bazaar</a>
-                        <a href="/2024/goods/goods.html" class="footer_nav_body_item unfinished Goods">Goods</a>
+                        <a href="/2024/bazaar/bazaar.html" class="footer_nav_body_item unfinished Bazaar">Bazaar</a>
+                        <a href="/2024/goods/" class="footer_nav_body_item unfinished Goods">Goods</a>
                     </div>
                 </div>
                 <div class="footer_nav_body">

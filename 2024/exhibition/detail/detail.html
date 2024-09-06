@@ -23,7 +23,7 @@
     <meta name="keywords"
         content="東大寺,東大寺学園,tdj,文化祭,菁々祭,IGNITION,ignition,igunition,IGUNITIONいぐにしょん,イグニション,2024,60回,60th,点火">
     <meta name="description"
-        content="東大寺学園の文化祭「菁々祭」の公式Webサイトです。第60回菁々祭&quot;RESONANCE&quot;は2024年9月7日・8日に開催されます。展示やイベント、グッズなどの各種情報に加えブログ記事やオンラインでの部誌の配布など！">
+        content="東大寺学園の文化祭「菁々祭」の公式Webサイトです。第60回菁々祭&quot;ignition&quot;は2024年9月7日・8日に開催されます。展示やイベント、グッズなどの各種情報に加えブログ記事やオンラインでの部誌の配布など！">
     <meta name="theme-color" content="#000000">
     <!--favicon-->
     <link rel="icon" type="image/png" href="/2024/favicon/16.png" sizes="16x16">
@@ -34,7 +34,7 @@
     <meta property="og:url" content="https://seiseisai.com/2024/" />
     <meta property="og:title" content=" 第60回菁々祭 - 東大寺学園文化祭2024" />
     <meta property="og:description"
-        content="東大寺学園の文化祭「菁々祭」の公式Webサイトです。第60回菁々祭&quot;RESONANCE&quot;は2024年9月7日・8日に開催されます。展示やイベント、グッズなどの各種新着情報に加え、ブログ記事やオンラインでの部誌の配布なども！" />
+        content="東大寺学園の文化祭「菁々祭」の公式Webサイトです。第60回菁々祭&quot;ignition&quot;は2024年9月7日・8日に開催されます。展示やイベント、グッズなどの各種新着情報に加え、ブログ記事やオンラインでの部誌の配布なども！" />
     <meta property="og:site_name" content="第60回菁々祭 - 東大寺学園文化祭2024" />
     <meta property="og:image" content="https://seiseisai.com/2024/OGP/ogp.png" />
     <meta property="og:type" content="website" />
@@ -102,8 +102,8 @@
                         <a href="/2024/event/event.html" class="menu_main_item unfinished Events">Events</a>
                         <a href="/2024/exhibition/exhibition.html"
                             class="menu_main_item unfinished Exhibition">Exhibition</a>
-                        <a href="/2024/bazzar/bazzar.html" class="menu_main_item unfinished Bazaar">Bazaar</a>
-                        <a href="/2024/goods/goods.html" class="menu_main_item unfinished Goods">Goods</a>
+                        <a href="/2024/bazaar/bazaar.html" class="menu_main_item unfinished Bazaar">Bazaar</a>
+                        <a href="/2024/goods/" class="menu_main_item unfinished Goods">Goods</a>
                     </div>
                 </div>
                 <div class="menu_main_content">
@@ -198,9 +198,9 @@
                             class="menu_mobile_main_detail_link unfinished Events">Events</a>
                         <a href="/2024/exhibition/exhibition.html"
                             class="menu_mobile_main_detail_link unfinished Exhibition">Exhibition</a>
-                        <a href="/2024/bazzar/bazzar.html"
+                        <a href="/2024/bazaar/bazaar.html"
                             class="menu_mobile_main_detail_link unfinished Bazaar">Bazaar</a>
-                        <a href="/2024/goods/goods.html" class="menu_mobile_main_detail_link unfinished Goods">Goods</a>
+                        <a href="/2024/goods/" class="menu_mobile_main_detail_link unfinished Goods">Goods</a>
                     </div>
                 </div>
                 <div class="menu_mobile_main" id="menu_mobile_main_3">
@@ -248,7 +248,7 @@
                             <p class="menu_mobile_link_btn_text">予約はこちらから</p>
                             <img src="/2024/static/img/log-out.svg" alt="">
                         </div>
-                        <a href="" class="SNS_link"></a>
+                        <a href="https://mirai-compass.net/usr/tdijgj/event/evtIndex.jsf" class="SNS_link"></a>
                     </div>
                     <div class="menu_mobile_link_btn_main hide Contact">
                         <div class="menu_mobile_link_btn">
@@ -279,26 +279,27 @@
 
     <main>
         <section id="section_title">
-            <h1 class="exhibition_title_box">
-                <!--
+            <div class="exhibition_title_box">
+
                 <a href="../exhibition.html">
                     <img src="../img/arrow-back.svg" id="exhibition_arrow-back" alt="記事一覧に戻る">
                 </a>
-                -->
-                <div class="title_img_box">
-                    <img src="/2024/static/img/logo.svg" alt="" class="title_img">
-                </div>
+
+
                 <div class="title_body">
-                    <a href="../exhibition.html" id="title_exhibition_place" class="m_JP_12_Medium">
+                    <div href="../exhibition.html" id="title_exhibition_place" class="m_JP_12_Medium">
                         高校棟 5年A組
-                    </a>
+                    </div>
                     <div id="title_exhibition_name" class="m_JP_20_Medium ">
                         電子工作部
                     </div>
                 </div>
 
+                <div class="title_img_box">
+                    <img src="../img/電子工作部.svg" alt="" class="title_img">
+                </div>
 
-            </h1>
+            </div>
             <div id="exhibition_img_box">
                 <img>
             </div>
@@ -311,21 +312,50 @@
             <h2 id="h2_event">
                 イベント開催情報
             </h2>
-            <div id="event_place">
-                <img src="../img/pin-right.svg" alt="" id="event_place_icon">
-                <p id="event_place_text" class="m_JP_20_Regular">
-                    プログラミング教室
-                </p>
-            </div>
-            <div id="event_detail">
-                <p id="event_detail_text" class="m_JP_14_Regular">
-                    詳細情報はこちらから
-                </p>
-                <!--「から」がいらん気がする-->
-                <img src="/2024/static/img/arrow-right-circle.svg" alt="見る" id="event_detail_icon">
-            </div>
+            <ul role="list">
+                <li>
+                    <div id="event_place">
+                        <img src="../img/pin-right.svg" alt="" id="event_place_icon">
+                        <p id="event_place_text" class="m_JP_20_Regular">
+                            プログラミング教室
+                        </p>
+                    </div>
+                    <div id="event_detail">
+                        <p id="event_detail_text" class="m_JP_14_Regular">
+                            詳細情報はこちらから
+                        </p>
+                        <!--「から」がいらん気がする-->
+                        <a href="../exhibition.html">
+                            <img src="/2024/static/img/arrow-right-circle.svg" alt="見る" id="event_detail_icon">
+                        </a>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div id="event_place">
+                        <img src="../img/pin-right.svg" alt="" id="event_place_icon">
+                        <p id="event_place_text" class="m_JP_20_Regular">
+                            プログラミング教室
+                        </p>
+                    </div>
+                    <div id="event_detail">
+                        <p id="event_detail_text" class="m_JP_14_Regular">
+                            詳細情報はこちらから
+                        </p>
+                        <!--「から」がいらん気がする-->
+                        <a href="../exhibition.html">
+                            <img src="/2024/static/img/arrow-right-circle.svg" alt="見る" id="event_detail_icon">
+                        </a>
+                        
+                    </div>
+                </li>
+            </ul>
+            
             <h2 id="h2_journal">
                 部誌
+                <img src="../img/test2/left.svg" class="h2_journal_left">
+                <img src="../img/test2/middle.svg" class="h2_journal_middle">
+                <img src="../img/test2/right.svg" class="h2_journal_right">
             </h2>
             <div id="journal">
                 <p id="journal_text" class="m_JP_16_Regular">
@@ -412,8 +442,8 @@
                         <a href="/2024/event/event.html" class="footer_nav_body_item unfinished Events">Events</a>
                         <a href="/2024/exhibition/exhibition.html"
                             class="footer_nav_body_item unfinished Exhibition">Exhibition</a>
-                        <a href="/2024/bazzar/bazzar.html" class="footer_nav_body_item unfinished Bazaar">Bazaar</a>
-                        <a href="/2024/goods/goods.html" class="footer_nav_body_item unfinished Goods">Goods</a>
+                        <a href="/2024/bazaar/bazaar.html" class="footer_nav_body_item unfinished Bazaar">Bazaar</a>
+                        <a href="/2024/goods/" class="footer_nav_body_item unfinished Goods">Goods</a>
                     </div>
                 </div>
                 <div class="footer_nav_body">

@@ -40,8 +40,8 @@
                     <div class="menu_main_item_container">
                         <a href="/2024/event/event.html" class="menu_main_item unfinished Events">Events</a>
                         <a href="/2024/exhibition/exhibition.html" class="menu_main_item unfinished Exhibition">Exhibition</a>
-                        <a href="/2024/bazzar/bazzar.html" class="menu_main_item unfinished Bazaar">Bazaar</a>
-                        <a href="/2024/goods/goods.html" class="menu_main_item unfinished Goods">Goods</a>
+                        <a href="/2024/bazaar/bazaar.html" class="menu_main_item unfinished Bazaar">Bazaar</a>
+                        <a href="/2024/goods/" class="menu_main_item unfinished Goods">Goods</a>
                     </div>
                 </div>
                 <div class="menu_main_content">
@@ -125,8 +125,8 @@
                     <div class="menu_mobile_main_detail" id="menu_mobile_object_2">
                         <a href="/2024/event/event.html" class="menu_mobile_main_detail_link unfinished Events">Events</a>
                         <a href="/2024/exhibition/exhibition.html" class="menu_mobile_main_detail_link unfinished Exhibition">Exhibition</a>
-                        <a href="/2024/bazzar/bazzar.html" class="menu_mobile_main_detail_link unfinished Bazaar">Bazaar</a>
-                        <a href="/2024/goods/goods.html" class="menu_mobile_main_detail_link unfinished Goods">Goods</a>
+                        <a href="/2024/bazaar/bazaar.html" class="menu_mobile_main_detail_link unfinished Bazaar">Bazaar</a>
+                        <a href="/2024/goods/" class="menu_mobile_main_detail_link unfinished Goods">Goods</a>
                     </div> 
                 </div>
                 <div class="menu_mobile_main" id="menu_mobile_main_3">
@@ -171,7 +171,7 @@
                             <p class="menu_mobile_link_btn_text">予約はこちらから</p>
                             <img src="/2024/static/img/log-out.svg" alt="">
                         </div>
-                        <a href="" class="SNS_link"></a>
+                        <a href="https://mirai-compass.net/usr/tdijgj/event/evtIndex.jsf" class="SNS_link"></a>
                     </div>
                     <div class="menu_mobile_link_btn_main hide Contact">
                         <div class="menu_mobile_link_btn">

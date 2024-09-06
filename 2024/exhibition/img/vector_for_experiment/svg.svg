@@ -1,0 +1,39 @@
+<svg preserveAspectRatio="none" width="320" height="22" viewBox="0 0 320 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <link
+        rel="stylesheet" href="style.css"
+    />
+    <g>
+        <path d="
+            M5 18.5
+            L0 16.1132
+            V21.8868
+            L5 19.5
+            V18.5
+            Z
+            M315 3.5
+            L320 5.88675
+            V0.113249
+            L315 2.5
+            V3.5
+            Z" fill="black"/>
+    </g>
+    <g id="stable">
+    
+        <path d="
+            M4.5 19.5
+            H56.4142
+            V18.5
+            H4.5
+            V19.5
+            Z
+            M56.4142 19.5
+            L73.4142 2.5
+            H72
+            L55 19.5
+            Z" fill="black"/>
+    </g>
+    <g id="changable">
+
+        <line id="changable_line" x1="72" y1="3" x2="315.5" y2="3" stroke="black"/>
+    </g>
+</svg>

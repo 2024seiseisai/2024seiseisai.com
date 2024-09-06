@@ -3,8 +3,8 @@ $(document).ready(function() {
     var articles = [
         //{ href: '/2024/blog/article/60/01/01.html', img: '../catch_img/01.webp', date: '2023.06.05', title: 'ロゴデザインの裏側に密着？！', author: 'PRパート員 S.Y.' },
         //{ href: '/2024/blog/article/60/02/02.html', img: '../catch_img/02.webp', date: '2023.06.05', title: '【迷ってる人必見】菁々祭どこ巡る？体験型展示のすゝめ', author: 'PRパート員 S.K. & H.K.' },
-        //{ href: '/2024/blog/article/60/03/03.html', img: '../catch_img/03.webp', date: '2023.06.05', title: '部誌編集者に聞く！「番茶党」のウラ苦労【新聞部】', author: 'PRパート副パート長' },
-        //{ href: '/2024/blog/article/60/04/04.html', img: '../catch_img/04.webp', date: '2023.06.05', title: 'お化け屋敷の正体を直撃インタビュー！', author: 'PRパート員 M.K.' },
+        { href: '/2024/blog/article/60/03/03.html', img: '../catch_img/03.webp', date: '2023.09.05', title: '作者的文化祭のあるきかた', author: 'PRパート員 S.K.' },
+        { href: '/2024/blog/article/60/04/04.html', img: '../catch_img/04.webp', date: '2023.09.05', title: 'テーマ・ロゴ発表映像のあれこれ', author: 'PRパート員 S.Y.' },
         { href: '/2024/blog/article/60/05/05.html', img: '../catch_img/05.webp', date: '2024.08.22', title: '復活した書道パフォーマンス‼︎', author: 'PRパート員 Y.T. & H.A.' },
         //{ href: '/2024/blog/article/60/06/06.html', img: '../catch_img/06.webp', date: '2023.06.26', title: '折り紙研究部の巨大作品に迫る', author: 'PRパート員K.K.' },
         //{ href: '/2024/blog/article/60/07/07.html', img: '../catch_img/07.webp', date: '2023.06.26', title: '菁々祭との出会い', author: 'PRパート副パート長' },
