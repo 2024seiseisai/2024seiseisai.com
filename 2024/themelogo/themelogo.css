@@ -1,0 +1,43 @@
+main{
+    margin: 0 6%;
+}
+
+.page_title{
+    margin: 0;
+}
+
+.page_description{
+    margin: 6vw 0 10vw 0;
+}
+
+.container{
+    margin-bottom: 11vw;
+}
+
+h2{
+    color: #FF0084;
+    margin: 0;
+}
+
+.description_container{
+    margin-top: 15px;
+    display: flex;
+
+}
+
+.description_bullet{
+    width: 15px;
+    height: 20px;
+}
+
+.description{
+    margin: 0;
+}
+
+@media only screen and (max-width: 1023px){
+    .m_JP_12_Medium{
+        font-family: 'Noto Sans JP';
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
