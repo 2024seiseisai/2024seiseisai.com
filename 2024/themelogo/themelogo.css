@@ -2,6 +2,11 @@ main{
     margin: 0 6%;
 }
 
+.page_title_img{
+    height: 32px;
+    margin-top: 6vw;
+}
+
 .page_title{
     margin: 0;
 }
