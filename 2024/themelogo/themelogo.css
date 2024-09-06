@@ -21,7 +21,7 @@ main{
 
 h2{
     color: #FF0084;
-    margin: 0;
+    margin: 0 0 10px 0;
 }
 
 .description_container{
@@ -37,6 +37,19 @@ h2{
 
 .description{
     margin: 0;
+}
+
+.images{
+    background-color: #FFFFFF;
+}
+
+.img_container{
+    border: 1px solid #000000;
+}
+
+.img_container img{
+    width: 100%;
+    height: auto;
 }
 
 @media only screen and (max-width: 1023px){
